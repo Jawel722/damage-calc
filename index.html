@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damage Calculator</title>
+<style>
+.megacol {
+  display: flex;
+  gap: 24px
+}
+.col {
+    display: flex;
+    flex-direction: column
+}
+</style>
+</head>
+<body>
+<div class = "megacol">
+<div class = "col">
+Тип Оружия: <select id = 'gunType'></select>
+Оружие: <select id = 'gun'></select>
+Магазин: <select id = 'magazine'></select>
+Дистанция: <input type="number" id="dist" value="0" min="0">
+<label>С двух рук: <input type="checkbox" id="bothArmCheck" checked></label>
+</div>
+<div class = "col">
+Ксеноморф: <select id = 'xeno'></select>
+Стрейн: <select id = 'strain'></select>
+</div>
+<div class = "col">
+<label>Урон: <span id = 'damageOut'></span></label>
+<label>Шанс попадания: <span id = 'hitChance'></span>%</label>
+<label>УвС: <span id = 'out'></span></label>
+<label>Ожидаемый УвС: <span id = 'realOut'></span></label>
+</div>
+</div>
+<script src = 'guns.js'></script>
+<script src = 'magazines.js'></script>
+<script src = 'projectiles.js'></script>
+<script src = 'xenos.js'></script>
+<script>
+function findById(array,idFromSelect) {
+    for (const item of array) {
+        if (item.id === idFromSelect) {
+            return item
+        }
+    }
+return null
+}
+function applyFalloff(falloffStart,distance,falloff,damage,weaponMult, cutRange){
+    const pastEffectiveRange = distance - falloffStart
+    if (distance > cutRange){
+        return 0;
+    } else {
+        if (pastEffectiveRange > 0) {
+            const newDamage =  Math.max(damage - (pastEffectiveRange * falloff * weaponMult), damage *0.05);
+            return newDamage;
+        } else {
+            return damage;
+        }
+    }
+}
+
+function applyArmor(damage,ap,armor){
+    const effectiveArmor = Math.max(armor - ap, 0)
+    const resist = 1.1**(effectiveArmor/5)
+    let newDamage = damage/resist
+    if (newDamage < effectiveArmor * 2) {
+        const damageWithArmor = Math.max(0,newDamage * 4 - effectiveArmor)
+        newDamage = damageWithArmor / 4
+    } return newDamage;
+}
+function buckshotCheck(applyArmor,pellets) {
+    const newDamage = applyArmor*pellets
+    return newDamage
+}
+
+function accuracyCalc(projectile,gun,bothArmCheck,dist,evasion) {
+    if (projectile.accuracy === null) {
+        return 1
+    }
+    let acc = projectile.accuracy
+    if (bothArmCheck === true) {
+        acc *= gun.accuracyMult
+    } else {
+        acc *= gun.accuracyMultUnwielded
+    }
+    for (const threshold of projectile.accuracyThresholds) {
+        const range = threshold.range + gun.accuracyRangeFlat
+        if (dist > range && threshold.buildup===false) {
+            acc -= threshold.falloff * (dist - range)
+        } else if (range > dist && threshold.buildup===true) {
+            acc -= threshold.falloff * (range - dist)
+        }
+    }
+    acc = Math.max(acc - evasion, projectile.minAccuracy)
+    const accChance = Math.min(acc/100, 1)
+    return accChance
+}
+function dps(damage, fireRate){
+    return damage * fireRate;
+}
+
+function scatterCalc (gun,bothArmCheck,dist,radHitbox) {
+    let scatter = gun.scatterWielded
+    if (bothArmCheck === true) {
+        scatter = gun.scatterWielded
+    } else {
+        scatter = gun.scatterUnwielded
+    }
+    if (scatter === 0 || dist === 0) {
+        return 1
+    }
+    const scatterRad = scatter * Math.PI/180
+    const targetWidth = 2 * Math.atan(radHitbox / dist)
+    const scatterChance = Math.min(targetWidth/scatterRad,1)
+    return scatterChance
+}
+
+function recalc() {
+    const dist = Math.max(Number(document.getElementById("dist").value), 0)
+    const gunId = gunSelect.value
+    const magId = magazineSelect.value
+    const xenoId = strainSelect.value
+    const bothArmChecked = bothArmCheck.checked
+    const gun = findById(GUNS, gunId)
+    const magazine = findById(MAGAZINES, magId)
+    const projectile = findById(PROJECTILES, magazine.projectile)
+    const xeno = findById(XENOS, xenoId)
+    const falloffResult = applyFalloff(projectile.falloffStart||0,dist,projectile.falloffPerTile||0,projectile.damage*gun.damageMult,gun.falloffMult,projectile.cutRange||999)
+    const armorResult = applyArmor(falloffResult, projectile.ap,xeno.xenoArmor)
+    const damageResult = buckshotCheck(armorResult, projectile.pellets)
+    const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xeno.evasionModified)
+    const scatter = scatterCalc(gun,bothArmChecked,dist,xeno.hitboxRadius)
+    const hitChance = acc*scatter*100
+    const dpsResult = dps(damageResult,gun.fireRate)
+    const dpsRealResult = dpsResult*hitChance/100
+    document.getElementById("out").textContent = dpsResult.toFixed(1)
+    document.getElementById("damageOut").textContent = damageResult.toFixed(1)
+    document.getElementById("realOut").textContent = dpsRealResult.toFixed(1)
+    document.getElementById("hitChance").textContent = hitChance.toFixed(1)
+}
+
+const gunTypeSelect = document.getElementById("gunType");
+const types = []
+function selectGunType(){
+    for (const gunType of GUNS) {
+        const gunTypeOption = document.createElement("option");
+        gunTypeOption.value = gunType.category;
+        gunTypeOption.textContent = gunType.category;
+        if (!types.includes(gunType.category)) {
+            types.push(gunType.category)
+            gunTypeSelect.appendChild(gunTypeOption)
+        }
+    }
+}
+const gunSelect = document.getElementById("gun");
+function selectGun() {
+    gunSelect.innerHTML = ""
+    const selectedGunType = gunTypeSelect.value
+    for (const gun of GUNS) {
+        const gunOption = document.createElement("option");
+        gunOption.value = gun.id;
+        gunOption.textContent = gun.name;
+            if (gun.category === selectedGunType) {
+        gunSelect.appendChild(gunOption);
+        }
+    }
+}
+const magazineSelect = document.getElementById("magazine");
+function selectGunMagazine() {
+    const selectedGunId = gunSelect.value
+    let foundGun = null;
+    for (const gun of GUNS) {
+            if (gun.id === selectedGunId) {
+                foundGun = gun
+            }
+        }
+    magazineSelect.innerHTML = ""
+    for (const magazine of MAGAZINES) {
+        const magazineOption = document.createElement("option");
+        magazineOption.value = magazine.id;
+        magazineOption.textContent = magazine.name;
+        if (foundGun.magazines.includes(magazine.id)) {
+            magazineSelect.appendChild(magazineOption);
+        }
+    }
+}
+
+const xenoSelect = document.getElementById("xeno");
+for (const xeno of XENOS) {
+    const xenoOption = document.createElement("option");
+    xenoOption.value = xeno.name;
+    xenoOption.textContent = xeno.name;
+    if (xeno.strain === null) { 
+        xenoSelect.appendChild(xenoOption);
+    }
+}
+
+const strainSelect = document.getElementById("strain");
+function selectXenoStrain () {
+    const selectedXeno = xenoSelect.value
+    strainSelect.innerHTML = ""
+    for (const strain of XENOS) {
+        const strainOption = document.createElement("option");
+        strainOption.value = strain.id
+        if (strain.strain) {
+            strainOption.textContent = strain.strain
+        } else {
+            strainOption.textContent = "База"
+        }
+        if (strain.name===selectedXeno) { 
+            strainSelect.appendChild(strainOption)
+        }
+    }
+}
+selectGunType();
+selectGun();
+selectGunMagazine();
+selectXenoStrain();
+xenoSelect.addEventListener("change", selectXenoStrain);
+gunSelect.addEventListener("change", selectGunMagazine);
+gunTypeSelect.addEventListener("change", selectGun);
+gunTypeSelect.addEventListener("change", selectGunMagazine);
+bothArmCheck.addEventListener("input",recalc)
+gunSelect.addEventListener("change", recalc)
+magazineSelect.addEventListener("change", recalc)
+xenoSelect.addEventListener("change",recalc)
+strainSelect.addEventListener("change", recalc)
+gunTypeSelect.addEventListener("change", recalc)
+dist.addEventListener("input",recalc)
+recalc()
+</script>
+</body>
+</html>
