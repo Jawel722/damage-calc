@@ -28,6 +28,12 @@
 <div class = "col">
 Ксеноморф: <select id = 'xeno'></select>
 Стрейн: <select id = 'strain'></select>
+<div id="abilityArmor"></div>
+<div hidden id="armor">
+<label>Лоб:<input type='radio' id='armorCheckFront' name='armor' checked></label>
+<label>Бок:<input type='radio' id='armorCheckSide' name='armor'></label>
+<label>Спина:<input type='radio' id='armorCheckBack' name='armor'></label>
+</div>
 </div>
 <div class = "col">
 <label>Урон: <span id = 'damageOut'></span></label>
@@ -124,13 +130,48 @@ function recalc() {
     const gunId = gunSelect.value
     const magId = magazineSelect.value
     const xenoId = strainSelect.value
+    const armorCheckFront = document.getElementById("armorCheckFront").checked
+    const armorCheckSide = document.getElementById("armorCheckSide").checked
+    const armorCheckBack = document.getElementById("armorCheckBack").checked
     const bothArmChecked = bothArmCheck.checked
     const gun = findById(GUNS, gunId)
     const magazine = findById(MAGAZINES, magId)
     const projectile = findById(PROJECTILES, magazine.projectile)
     const xeno = findById(XENOS, xenoId)
+    let xenoAbilityArmor = 0
+    let xenoAbilityFrontalArmor = 0
+    let xenoAbilitySideArmor = 0
+    let armorStack = 0
+    let armorCheckTrue = document.getElementById("armor")
+    for (const ability of xeno.armorAbilities) {
+        const abilityInput = document.getElementById("ability-"+ability.id)
+        if (abilityInput.checked===true) {
+            xenoAbilityArmor += ability.xenoArmor
+            xenoAbilityFrontalArmor += ability.frontalArmor
+            xenoAbilitySideArmor += ability.sideArmor
+        } else if (abilityInput.type === "number") {
+            const currentStack = Math.max(Math.min(Number(abilityInput.value),ability.max),0)
+            armorStack += Math.trunc(Math.floor(currentStack/ability.step)*ability.per)
+        }
+
+    }
+    if (xeno.frontalArmor>0 || xeno.sideArmor>0 || xenoAbilityFrontalArmor>0 || xenoAbilitySideArmor > 0) { 
+        armorCheckTrue.hidden = false
+    } else if (xeno.frontalArmor===0 && xeno.sideArmor===0) {
+        armorCheckTrue.hidden = true
+    }
+    let armorCheck = null
+    if (armorCheckFront === true) {
+        armorCheck = xeno.frontalArmor + xenoAbilityFrontalArmor
+    } else if (armorCheckSide === true) {
+        armorCheck = xeno.sideArmor +xenoAbilitySideArmor
+    } else {
+        armorCheck = 0
+    }
+    
+    const realXenoArmor = xeno.xenoArmor + armorCheck + xenoAbilityArmor + armorStack
     const falloffResult = applyFalloff(projectile.falloffStart||0,dist,projectile.falloffPerTile||0,projectile.damage*gun.damageMult,gun.falloffMult,projectile.cutRange||999)
-    const armorResult = applyArmor(falloffResult, projectile.ap,xeno.xenoArmor)
+    const armorResult = applyArmor(falloffResult, projectile.ap,realXenoArmor)
     const damageResult = buckshotCheck(armorResult, projectile.pellets)
     const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xeno.evasionModified)
     const scatter = scatterCalc(gun,bothArmChecked,dist,xeno.hitboxRadius)
@@ -216,20 +257,51 @@ function selectXenoStrain () {
         }
     }
 }
+
+let abilitySelect = document.getElementById("abilityArmor")
+function selectXenoAbility () {
+    const xeno = findById(XENOS, strainSelect.value)
+    abilitySelect.innerHTML = ""
+    for (const ability of xeno.armorAbilities) {
+        let baseLabel = document.createElement("label")
+        baseLabel.textContent = ability.name
+        let baseInput = document.createElement("input")
+        if (ability.kind === "toggle") {
+            baseInput.type = "checkbox"
+        } else if (ability.kind === "counter") {
+            baseInput.type = "number"
+            baseInput.min = 0
+            baseInput.max = ability.max
+            baseInput.step = ability.step
+            baseInput.value = 0
+        }
+        baseInput.id = "ability-" + ability.id
+        baseLabel.appendChild(baseInput)
+        abilitySelect.appendChild(baseLabel)
+    }
+}
 selectGunType();
 selectGun();
 selectGunMagazine();
 selectXenoStrain();
+selectXenoAbility();
 xenoSelect.addEventListener("change", selectXenoStrain);
+xenoSelect.addEventListener("change", selectXenoAbility);
+strainSelect.addEventListener("change", selectXenoAbility);
 gunSelect.addEventListener("change", selectGunMagazine);
 gunTypeSelect.addEventListener("change", selectGun);
 gunTypeSelect.addEventListener("change", selectGunMagazine);
 bothArmCheck.addEventListener("input",recalc)
+abilitySelect.addEventListener("input",recalc)
+abilitySelect.addEventListener("change",recalc)
 gunSelect.addEventListener("change", recalc)
 magazineSelect.addEventListener("change", recalc)
 xenoSelect.addEventListener("change",recalc)
 strainSelect.addEventListener("change", recalc)
 gunTypeSelect.addEventListener("change", recalc)
+armorCheckFront.addEventListener("change", recalc)
+armorCheckSide.addEventListener("change", recalc)
+armorCheckBack.addEventListener("change", recalc)
 dist.addEventListener("input",recalc)
 recalc()
 </script>

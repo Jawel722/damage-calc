@@ -11,7 +11,8 @@ const XENOS = [
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoCarrier",
@@ -25,7 +26,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoDefender",
@@ -39,7 +41,31 @@ const XENOS = [
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 0,
-    "hitboxRadius": 0.45
+    "hitboxRadius": 0.45,
+    "armorAbilities": [
+      {
+        "id": "crest",
+        "name": "Защита гребня",
+        "kind": "toggle",
+        "xenoArmor": 5,
+        "frontalArmor": 0,
+        "sideArmor": 0,
+        "exclusiveWith": [
+          "fortify"
+        ]
+      },
+      {
+        "id": "fortify",
+        "name": "Укрепление",
+        "kind": "toggle",
+        "xenoArmor": 30,
+        "frontalArmor": 5,
+        "sideArmor": 0,
+        "exclusiveWith": [
+          "crest"
+        ]
+      }
+    ]
   },
   {
     "id": "CMXenoDefenderSteelcrest",
@@ -53,7 +79,31 @@ const XENOS = [
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 0,
-    "hitboxRadius": 0.45
+    "hitboxRadius": 0.45,
+    "armorAbilities": [
+      {
+        "id": "crest",
+        "name": "Защита гребня",
+        "kind": "toggle",
+        "xenoArmor": 5,
+        "frontalArmor": 0,
+        "sideArmor": 0,
+        "exclusiveWith": [
+          "fortify"
+        ]
+      },
+      {
+        "id": "fortify",
+        "name": "Укрепление",
+        "kind": "toggle",
+        "xenoArmor": 10.0,
+        "frontalArmor": 15.0,
+        "sideArmor": 0,
+        "exclusiveWith": [
+          "crest"
+        ]
+      }
+    ]
   },
   {
     "id": "CMXenoDrone",
@@ -67,7 +117,8 @@ const XENOS = [
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 15.0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoDroneGardener",
@@ -81,7 +132,8 @@ const XENOS = [
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 15.0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoDroneHealer",
@@ -95,7 +147,8 @@ const XENOS = [
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 15.0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoHivelord",
@@ -109,7 +162,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoHivelordDesigner",
@@ -123,7 +177,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoHivelordResinWhisperer",
@@ -137,7 +192,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoLarva",
@@ -151,7 +207,8 @@ const XENOS = [
     "size": "Small",
     "sizeEvasionMod": 10,
     "evasionModified": 10,
-    "hitboxRadius": 0.25
+    "hitboxRadius": 0.25,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoLesserDrone",
@@ -165,7 +222,8 @@ const XENOS = [
     "size": "VerySmallXeno",
     "sizeEvasionMod": 0,
     "evasionModified": 10.0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoLurker",
@@ -179,7 +237,8 @@ const XENOS = [
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoParasite",
@@ -193,7 +252,8 @@ const XENOS = [
     "size": "Small",
     "sizeEvasionMod": 10,
     "evasionModified": 10,
-    "hitboxRadius": 0.25
+    "hitboxRadius": 0.25,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoPraetorian",
@@ -207,7 +267,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.45
+    "hitboxRadius": 0.45,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoQueen",
@@ -221,7 +282,8 @@ const XENOS = [
     "size": "Immobile",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.52
+    "hitboxRadius": 0.52,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoRavager",
@@ -235,7 +297,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.5
+    "hitboxRadius": 0.5,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoRunner",
@@ -249,7 +312,8 @@ const XENOS = [
     "size": "SmallXeno",
     "sizeEvasionMod": 0,
     "evasionModified": 0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoSentinel",
@@ -263,7 +327,8 @@ const XENOS = [
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "CMXenoSpitter",
@@ -277,7 +342,17 @@ const XENOS = [
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": [
+      {
+        "id": "chargeSpit",
+        "name": "Заряженный плевок",
+        "kind": "toggle",
+        "xenoArmor": 5,
+        "frontalArmor": 0,
+        "sideArmor": 0
+      }
+    ]
   },
   {
     "id": "CMXenoWarrior",
@@ -291,7 +366,8 @@ const XENOS = [
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoBoiler",
@@ -305,7 +381,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.45
+    "hitboxRadius": 0.45,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoBoilerSapper",
@@ -319,7 +396,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.45
+    "hitboxRadius": 0.45,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoCarrierEggsac",
@@ -333,7 +411,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoCrusher",
@@ -347,7 +426,8 @@ const XENOS = [
     "size": "Immobile",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoCrusherCharger",
@@ -361,7 +441,8 @@ const XENOS = [
     "size": "Immobile",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoKing",
@@ -375,7 +456,8 @@ const XENOS = [
     "size": "Immobile",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.52
+    "hitboxRadius": 0.52,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoLurkerVampire",
@@ -389,7 +471,8 @@ const XENOS = [
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoParasiteWatcher",
@@ -403,7 +486,8 @@ const XENOS = [
     "size": "Small",
     "sizeEvasionMod": 10,
     "evasionModified": 10,
-    "hitboxRadius": 0.25
+    "hitboxRadius": 0.25,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoPraetorianDancer",
@@ -417,7 +501,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.45
+    "hitboxRadius": 0.45,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoPraetorianOppressor",
@@ -431,7 +516,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.45
+    "hitboxRadius": 0.45,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoPraetorianValkyrie",
@@ -445,7 +531,17 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.45
+    "hitboxRadius": 0.45,
+    "armorAbilities": [
+      {
+        "id": "tantrum",
+        "name": "Вспышка ярости",
+        "kind": "toggle",
+        "xenoArmor": 10,
+        "frontalArmor": 0,
+        "sideArmor": 0
+      }
+    ]
   },
   {
     "id": "RMCXenoPraetorianVanguard",
@@ -459,7 +555,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.45
+    "hitboxRadius": 0.45,
+    "armorAbilities": []
   },
   {
     "id": "RMCXenoRavagerBerserker",
@@ -473,7 +570,18 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.5
+    "hitboxRadius": 0.5,
+    "armorAbilities": [
+      {
+        "id": "rage",
+        "name": "Ярость",
+        "kind": "counter",
+        "per": 3,
+        "step": 1,
+        "max": 5,
+        "unit": "стаков"
+      }
+    ]
   },
   {
     "id": "RMCXenoRavagerHedgehog",
@@ -487,7 +595,18 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.5
+    "hitboxRadius": 0.5,
+    "armorAbilities": [
+      {
+        "id": "shards",
+        "name": "Осколки",
+        "kind": "counter",
+        "per": 2.5,
+        "step": 50,
+        "max": 300.0,
+        "unit": "осколков"
+      }
+    ]
   },
   {
     "id": "RMCXenoRunnerAcider",
@@ -501,7 +620,8 @@ const XENOS = [
     "size": "SmallXeno",
     "sizeEvasionMod": 0,
     "evasionModified": 0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "STXenoDespoiler",
@@ -515,7 +635,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.45
+    "hitboxRadius": 0.45,
+    "armorAbilities": []
   },
   {
     "id": "STXenoWarriorBoxer",
@@ -529,7 +650,8 @@ const XENOS = [
     "size": "Big",
     "sizeEvasionMod": -10,
     "evasionModified": -10,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "armorAbilities": []
   },
   {
     "id": "STXenoWarriorBulwark",
@@ -537,12 +659,26 @@ const XENOS = [
     "strain": "Бастион",
     "file": "_Stories/Entities/Mobs/Xeno/warrior.yml",
     "xenoArmor": 30.0,
-    "frontalArmor": 0,
-    "sideArmor": 0,
+    "frontalArmor": 10,
+    "sideArmor": 10,
     "evasion": 0,
     "size": "Xeno",
     "sizeEvasionMod": 0,
     "evasionModified": 0,
-    "hitboxRadius": 0.4
+    "hitboxRadius": 0.4,
+    "passiveArmor": {
+      "frontal": 10,
+      "side": 10
+    },
+    "armorAbilities": [
+      {
+        "id": "encasedPlates",
+        "name": "Закованные Пластины",
+        "kind": "toggle",
+        "xenoArmor": 0,
+        "frontalArmor": 10,
+        "sideArmor": -10
+      }
+    ]
   }
 ];
