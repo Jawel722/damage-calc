@@ -67,7 +67,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "CMM96SSniperRifle",
@@ -139,7 +140,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "CMWeaponPistolM1911",
@@ -192,7 +194,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "CMWeaponPistolM1984",
@@ -248,7 +251,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "CMWeaponPistolM1984Custom",
@@ -304,7 +308,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCAttachmentL90GL",
@@ -355,7 +360,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCAttachmentL90UBS",
@@ -407,7 +413,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCAttachmentM203GrenadeLauncher",
@@ -458,7 +465,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCAttachmentMK1GrenadeLauncher",
@@ -509,7 +517,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCAttachmentU1GrenadeLauncher",
@@ -560,7 +569,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCAttachmentU7UnderbarrelShotgun",
@@ -607,7 +617,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCL112SniperRifle",
@@ -678,7 +689,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCL112SniperRifleSuppressed",
@@ -749,7 +761,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCM96SBSniperRifle",
@@ -821,7 +834,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCMK80",
@@ -830,7 +844,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/mk80_pistol.yml",
     "fireRate": 2.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -880,7 +894,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCMK80RCM",
@@ -889,7 +904,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/mk80_pistol.yml",
     "fireRate": 2.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -939,7 +954,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCMachineGunM2C",
@@ -992,7 +1008,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": 125
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCRoyalGrenadeLauncher",
@@ -1048,7 +1065,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGun",
@@ -1104,7 +1122,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 80
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGunCLF",
@@ -1160,7 +1179,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 80
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGunCO",
@@ -1216,7 +1236,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 80
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGunMounted",
@@ -1272,7 +1293,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": 700
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGunMountedStatic",
@@ -1327,7 +1349,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": 700
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGunOvertunedPVE",
@@ -1383,7 +1406,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 80
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGunPMC",
@@ -1439,7 +1463,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 80
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGunPMCPVE",
@@ -1495,7 +1520,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 80
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGunPVE",
@@ -1551,7 +1577,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 80
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGunRCMPVE",
@@ -1607,7 +1634,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 80
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGunRoyal",
@@ -1663,7 +1691,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 80
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCSmartGunWhiteOut",
@@ -1719,7 +1748,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 80
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCType88SniperRifle",
@@ -1789,7 +1819,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponBoltActionRifle",
@@ -1859,7 +1890,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponLMGM60",
@@ -1868,7 +1900,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/LMGs/m60_lmg.yml",
     "fireRate": 3.5,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 5.0,
+    "shotsPerBurst": 5,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -1932,7 +1964,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponLMGQYJ72",
@@ -1941,7 +1974,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/LMGs/qyj_72.yml",
     "fireRate": 3.33,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 6.0,
+    "shotsPerBurst": 6,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -1999,7 +2032,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": null
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponLauncherHJRA12",
@@ -2032,7 +2066,8 @@ const GUNS = [
     "scatterIncrease": 0.5,
     "scatterDecay": 4.0,
     "burstScatterMult": null,
-    "fireModeMods": {}
+    "fireModeMods": {},
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponLauncherM5ATL",
@@ -2065,7 +2100,8 @@ const GUNS = [
     "scatterIncrease": 0.5,
     "scatterDecay": 4.0,
     "burstScatterMult": null,
-    "fireModeMods": {}
+    "fireModeMods": {},
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponLauncherM6HBrute",
@@ -2096,7 +2132,8 @@ const GUNS = [
     "scatterIncrease": 0.5,
     "scatterDecay": 4.0,
     "burstScatterMult": null,
-    "fireModeMods": {}
+    "fireModeMods": {},
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponLauncherM85A1",
@@ -2152,7 +2189,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponMar50LMG",
@@ -2161,7 +2199,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/LMGs/mar50.yml",
     "fireRate": 5.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 5.0,
+    "shotsPerBurst": 5,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2211,7 +2249,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": null
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponPistolB92FS",
@@ -2263,7 +2302,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolD18",
@@ -2316,7 +2356,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolHG45Aguila",
@@ -2368,7 +2409,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolHG45Marina",
@@ -2420,7 +2462,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolHandcannon",
@@ -2429,7 +2472,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/peregrine_handcannon.yml",
     "fireRate": 1.43,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1.4,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2477,7 +2520,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponPistolHandcannonGold",
@@ -2486,7 +2530,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/peregrine_handcannon.yml",
     "fireRate": 1.43,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1.4,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2536,7 +2580,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponPistolHandcannonWinterWyvern",
@@ -2545,7 +2590,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/peregrine_handcannon.yml",
     "fireRate": 1.43,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1.4,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2595,7 +2640,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponPistolHoldout",
@@ -2648,7 +2694,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolKT42",
@@ -2700,7 +2747,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolL14",
@@ -2756,7 +2804,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolL14Custom",
@@ -2812,7 +2861,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolL54",
@@ -2865,7 +2915,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolL54Custom",
@@ -2918,7 +2969,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolM13",
@@ -2977,7 +3029,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 40
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolM77",
@@ -2986,7 +3039,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/m77_pistol.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.2,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3035,7 +3088,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponPistolM82F",
@@ -3090,7 +3144,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolMK45",
@@ -3142,7 +3197,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolNP92",
@@ -3151,7 +3207,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/np92_pistol.yml.yml",
     "fireRate": 3.5,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.15,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3200,7 +3256,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponPistolNPZ92",
@@ -3209,7 +3266,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/np92_pistol.yml.yml",
     "fireRate": 3.5,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.15,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3257,7 +3314,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponPistolPK7",
@@ -3311,7 +3369,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponPistolSU6",
@@ -3320,7 +3379,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/su6_pistol.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3370,7 +3429,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponPistolT73",
@@ -3379,7 +3439,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/t73_pistol.yml",
     "fireRate": 2.5,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.3,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3427,7 +3487,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponPistolT74",
@@ -3481,7 +3542,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponRifleABR40",
@@ -3551,7 +3613,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponRifleABR40Tactical",
@@ -3621,7 +3684,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponRifleL24",
@@ -3630,7 +3694,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/L24_rifle.yml",
     "fireRate": 2.75,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3700,7 +3764,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleL24B",
@@ -3709,7 +3774,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/L24B_rifle.yml",
     "fireRate": 2.75,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3779,7 +3844,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleL42A",
@@ -3853,7 +3919,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponRifleL83A2",
@@ -3862,7 +3929,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/l83a2_rifle.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.3,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3930,7 +3997,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleL83A3",
@@ -3991,7 +4059,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponRifleL83A3F",
@@ -4000,7 +4069,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/L83A3.yml",
     "fireRate": 2.85,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.5,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4068,7 +4137,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleL88A1",
@@ -4141,7 +4211,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponRifleL88A2",
@@ -4214,7 +4285,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponRifleL89A1",
@@ -4285,7 +4357,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponRifleL89A2",
@@ -4356,7 +4429,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponRifleL90A1",
@@ -4433,7 +4507,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponRifleL90A2",
@@ -4512,7 +4587,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponRifleL91SWS",
@@ -4578,7 +4654,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 3
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponRifleM16A5",
@@ -4587,7 +4664,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/m16_rifle.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.3,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4651,7 +4728,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleM54C",
@@ -4660,7 +4738,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/m54c_rifle.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4731,7 +4809,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleM54C2",
@@ -4740,7 +4819,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/m54c2_rifle.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1.25,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4794,7 +4873,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": null
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleM54CE2",
@@ -4803,7 +4883,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/m54c_heavy_rifle.yml",
     "fireRate": 5.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 5.0,
+    "shotsPerBurst": 5,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4873,7 +4953,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 30
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleM54CMK1",
@@ -4882,7 +4963,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/m54c_mk1_rifle.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 4.0,
+    "shotsPerBurst": 4,
     "damageMult": 1.1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4953,7 +5034,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleM59A",
@@ -4962,7 +5044,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/m59a_prototype_rifle.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 4.0,
+    "shotsPerBurst": 4,
     "damageMult": 1.1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5038,7 +5120,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleMAR30",
@@ -5047,7 +5130,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/mar30_carbine.yml",
     "fireRate": 2.9,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 0.9,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5112,7 +5195,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.1665
   },
   {
     "id": "RMCWeaponRifleSSG45",
@@ -5121,7 +5205,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/ssg45.yml",
     "fireRate": 3.25,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.25,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5191,7 +5275,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleType71",
@@ -5200,7 +5285,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/type71.yml",
     "fireRate": 2.5,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 4.0,
+    "shotsPerBurst": 4,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5251,7 +5336,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": null
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleType71PVE",
@@ -5260,7 +5346,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/type71.yml",
     "fireRate": 3.5,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 4.0,
+    "shotsPerBurst": 4,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5311,7 +5397,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": null
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleType71C",
@@ -5320,7 +5407,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/type71c.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 4.0,
+    "shotsPerBurst": 4,
     "damageMult": 0.8,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5371,7 +5458,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": null
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleType71Flamer",
@@ -5380,7 +5468,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/type71.yml",
     "fireRate": 2.5,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 4.0,
+    "shotsPerBurst": 4,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5431,7 +5519,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": null
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleType73",
@@ -5440,7 +5529,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/type73.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 4.0,
+    "shotsPerBurst": 4,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5491,7 +5580,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": null
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleType77",
@@ -5500,7 +5590,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/Type77_rifle.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5569,7 +5659,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponRifleXM40",
@@ -5578,7 +5669,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/xm40.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5633,7 +5724,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": null
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponSMGFP9000",
@@ -5642,7 +5734,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/fp9000.yml",
     "fireRate": 6.66,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.05,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5707,7 +5799,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponSMGFP9000PMC",
@@ -5716,7 +5809,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/fp9000.yml",
     "fireRate": 6.66,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.2,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5781,7 +5874,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 20
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponSMGL7A3",
@@ -5790,7 +5884,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/L7A3.yml",
     "fireRate": 8.333,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 4.0,
+    "shotsPerBurst": 4,
     "damageMult": 1.35,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5855,7 +5949,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponSMGM63B2",
@@ -5864,7 +5959,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/m63b2_smg.yml",
     "fireRate": 6.666,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.35,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5935,7 +6030,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "WeaponSMGM63",
@@ -5944,7 +6040,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/m63_smg.yml",
     "fireRate": 6.667,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -6015,7 +6111,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponSMGMP27",
@@ -6024,7 +6121,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/mp27.yml",
     "fireRate": 6.66,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -6090,7 +6187,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponSMGMP5Alt",
@@ -6099,7 +6197,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/mp5alt_smg.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.2,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -6164,7 +6262,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponSMGPDW90",
@@ -6173,7 +6272,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/pdw90.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.2,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -6239,7 +6338,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponSMGPDW90TSE",
@@ -6248,7 +6348,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/pdw90.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.2,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -6314,7 +6414,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponSMGType19",
@@ -6323,7 +6424,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/type19.yml",
     "fireRate": 6.666,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.2,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -6389,7 +6490,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponSMGType64",
@@ -6398,7 +6500,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/type64.yml",
     "fireRate": 6.667,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -6464,7 +6566,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "RMCWeaponSMGUZI",
@@ -6523,7 +6626,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 50
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponShotgunL49",
@@ -6584,7 +6688,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponShotgunM12",
@@ -6644,7 +6749,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponShotgunM3717",
@@ -6704,7 +6810,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponShotgunM42A2",
@@ -6764,7 +6871,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponShotgunM890",
@@ -6831,7 +6939,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponShotgunSyracuse",
@@ -6891,7 +7000,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponShotgunType23",
@@ -6950,7 +7060,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponShotgunXM38",
@@ -7019,7 +7130,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCWeaponShotgunXM51",
@@ -7077,7 +7189,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "RMCXM43E1AntiMaterielRifle",
@@ -7147,7 +7260,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "STWeaponSharpRifle",
@@ -7202,7 +7316,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponLauncherM83",
@@ -7258,7 +7373,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponNailgun",
@@ -7267,7 +7383,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/nailgun.yml",
     "fireRate": 2.4,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.2,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -7332,7 +7448,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "WeaponRifleAR10",
@@ -7341,7 +7458,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/ar10_rifle.yml",
     "fireRate": 2.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.4,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -7391,7 +7508,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "WeaponRifleL83A3M",
@@ -7452,7 +7570,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponRifleM16",
@@ -7461,7 +7580,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/m16_rifle.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.3,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -7525,7 +7644,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "WeaponRifleM4SPR",
@@ -7601,7 +7721,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponRifleM4SPRCustom",
@@ -7664,7 +7785,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponRifleM5SPR",
@@ -7673,7 +7795,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/m4spr_rifle.yml",
     "fireRate": 2.86,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1.4,
     "falloffMult": 0.0,
     "rangeFlat": 0,
@@ -7731,7 +7853,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.75
   },
   {
     "id": "WeaponRifleM5SPR2",
@@ -7740,7 +7863,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/m4spr_rifle.yml",
     "fireRate": 2.8,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1.4,
     "falloffMult": 0.0,
     "rangeFlat": 0,
@@ -7798,7 +7921,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 6
       }
-    }
+    },
+    "burstCooldown": 0.75
   },
   {
     "id": "WeaponRifleMAR40",
@@ -7807,7 +7931,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/mar40_rifle.yml",
     "fireRate": 2.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 4.0,
+    "shotsPerBurst": 4,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -7872,7 +7996,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.1665
   },
   {
     "id": "WeaponRifleXM88",
@@ -7942,7 +8067,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponSMGMAC15",
@@ -8001,7 +8127,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 70
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponSMGMP5",
@@ -8010,7 +8137,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/mp5_smg.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.2,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -8075,7 +8202,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "WeaponShotgunCustomBuilt",
@@ -8084,7 +8212,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/custombuilt.yml",
     "fireRate": 0.85,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -8142,7 +8270,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": null
       }
-    }
+    },
+    "burstCooldown": 0.0
   },
   {
     "id": "WeaponShotgunM357",
@@ -8209,7 +8338,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponShotgunM357Sawn",
@@ -8276,7 +8406,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponShotgunM42A1",
@@ -8336,7 +8467,8 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   },
   {
     "id": "WeaponShotgunMOU53",
@@ -8394,6 +8526,7 @@ const GUNS = [
         "unwieldedScatterMultiplier": 2.0,
         "shotsToMaxScatter": 4
       }
-    }
+    },
+    "burstCooldown": null
   }
 ];

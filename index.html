@@ -24,6 +24,7 @@
 Магазин: <select id = 'magazine'></select>
 Дистанция: <input type="number" id="dist" value="0" min="0">
 <label>С двух рук: <input type="checkbox" id="bothArmCheck" checked></label>
+<div id = 'fireMode'></div>
 </div>
 <div class = "col">
 Ксеноморф: <select id = 'xeno'></select>
@@ -109,13 +110,7 @@ function dps(damage, fireRate){
     return damage * fireRate;
 }
 
-function scatterCalc (gun,bothArmCheck,dist,radHitbox) {
-    let scatter = gun.scatterWielded
-    if (bothArmCheck === true) {
-        scatter = gun.scatterWielded
-    } else {
-        scatter = gun.scatterUnwielded
-    }
+function scatterCalc (scatter,dist,radHitbox) {
     if (scatter === 0 || dist === 0) {
         return 1
     }
@@ -138,6 +133,13 @@ function recalc() {
     const magazine = findById(MAGAZINES, magId)
     const projectile = findById(PROJECTILES, magazine.projectile)
     const xeno = findById(XENOS, xenoId)
+    const fireMode = fireModeSelect.querySelector("input:checked").value
+    let scatterW = gun.scatterWielded
+    if (bothArmChecked === true) {
+        scatterW = gun.scatterWielded
+    } else {
+        scatterW = gun.scatterUnwielded
+    }
     let xenoAbilityArmor = 0
     let xenoAbilityFrontalArmor = 0
     let xenoAbilitySideArmor = 0
@@ -168,15 +170,44 @@ function recalc() {
     } else {
         armorCheck = 0
     }
-    
+    const fireModeMods = gun.fireModeMods[fireMode]
+    let max = scatterW
+    let step = 0
+    if (fireModeMods !== undefined) {
+        let maxUp = fireModeMods.maxScatterModifier
+        if (fireModeMods.shotsToMaxScatter !== null) {
+            if (fireModeMods.useBurstScatterMult===true) {
+                maxUp = maxUp * gun.burstScatterMult
+            }
+            if (bothArmChecked===false) {
+                maxUp = maxUp * fireModeMods.unwieldedScatterMultiplier
+            }
+        max = max + maxUp
+        step = (max - scatterW)/fireModeMods.shotsToMaxScatter
+        }
+    }
+    let gunFire = 1
+    if (fireMode==="Burst") {
+        gunFire = gun.shotsPerBurst
+    }
+    if (fireMode==="FullAuto" && magazine.capacity!==null) {
+        gunFire = magazine.capacity
+    }
+    let sumHitChance = 0 
+    for (let k = 1; k <= gunFire; k++) {
+        const boba = Math.min(scatterW + k * step, max)
+        const biba = scatterCalc(boba,dist,xeno.hitboxRadius)
+        sumHitChance += biba
+    }
+    const realHitChance = sumHitChance/gunFire
     const realXenoArmor = xeno.xenoArmor + armorCheck + xenoAbilityArmor + armorStack
     const falloffResult = applyFalloff(projectile.falloffStart||0,dist,projectile.falloffPerTile||0,projectile.damage*gun.damageMult,gun.falloffMult,projectile.cutRange||999)
     const armorResult = applyArmor(falloffResult, projectile.ap,realXenoArmor)
     const damageResult = buckshotCheck(armorResult, projectile.pellets)
     const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xeno.evasionModified)
-    const scatter = scatterCalc(gun,bothArmChecked,dist,xeno.hitboxRadius)
-    const hitChance = acc*scatter*100
-    const dpsResult = dps(damageResult,gun.fireRate)
+    const hitChance = acc*realHitChance*100
+    const realFireRate = fireRateCalc(fireMode,gun)
+    const dpsResult = dps(damageResult,realFireRate)
     const dpsRealResult = dpsResult*hitChance/100
     document.getElementById("out").textContent = dpsResult.toFixed(1)
     document.getElementById("damageOut").textContent = damageResult.toFixed(1)
@@ -228,6 +259,49 @@ function selectGunMagazine() {
             magazineSelect.appendChild(magazineOption);
         }
     }
+}
+
+let fireModeSelect = document.getElementById("fireMode")
+function selectFireMods () {
+    const gun = findById(GUNS, gunSelect.value)
+    fireModeSelect.innerHTML=""
+    for (const fireMode of gun.fireModes) {
+        let baseLabel = document.createElement("label")
+        let baseInput = document.createElement("input")
+        baseInput.type = "radio"
+        baseInput.name = "fireMode"
+        baseInput.value= fireMode
+        if (baseInput.value === "SemiAuto") {
+            baseLabel.textContent = "Полуавто"
+        } else if (baseInput.value === "FullAuto") {
+            baseLabel.textContent = "Авто"
+        } else if (baseInput.value === "Burst") {
+            baseLabel.textContent = "Очередь"
+        }
+        if (baseInput.value === gun.fireModes[0])
+            baseInput.checked = true
+        baseLabel.appendChild(baseInput)
+        fireModeSelect.appendChild(baseLabel)
+    }
+}
+
+
+function fireRateCalc (fireMode,gun) {
+    let fireRate = 0
+    if (fireMode === 'SemiAuto') {
+        fireRate = gun.fireRate
+    } else if (fireMode === 'FullAuto') {
+        let fireDelay = 0
+        if (gun.fireModeMods.FullAuto === undefined) {
+            fireDelay = 0
+        } else {
+            fireDelay = gun.fireModeMods.FullAuto.fireDelay
+        }
+        fireRate = 1/(1/gun.fireRate + fireDelay)
+    } else if (fireMode === 'Burst') {
+        fireRate = gun.shotsPerBurst/(gun.shotsPerBurst*(1/(gun.fireRate * gun.burstFireRateMult) + gun.fireModeMods.Burst.fireDelay)+gun.burstCooldown)
+    }
+    return fireRate
 }
 
 const xenoSelect = document.getElementById("xeno");
@@ -283,14 +357,18 @@ function selectXenoAbility () {
 selectGunType();
 selectGun();
 selectGunMagazine();
+selectFireMods();
 selectXenoStrain();
 selectXenoAbility();
 xenoSelect.addEventListener("change", selectXenoStrain);
 xenoSelect.addEventListener("change", selectXenoAbility);
 strainSelect.addEventListener("change", selectXenoAbility);
 gunSelect.addEventListener("change", selectGunMagazine);
+gunSelect.addEventListener("change", selectFireMods);
 gunTypeSelect.addEventListener("change", selectGun);
 gunTypeSelect.addEventListener("change", selectGunMagazine);
+gunTypeSelect.addEventListener("change", selectFireMods);
+fireModeSelect.addEventListener("change",recalc)
 bothArmCheck.addEventListener("input",recalc)
 abilitySelect.addEventListener("input",recalc)
 abilitySelect.addEventListener("change",recalc)
