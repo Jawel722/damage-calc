@@ -68,7 +68,23 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": true,
+        "starting": "RMCM96SIntegratedScope",
+        "allowed": [
+          "RMCM96SIntegratedScope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBipod"
+        ]
+      }
+    }
   },
   {
     "id": "CMM96SSniperRifle",
@@ -141,7 +157,23 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": true,
+        "starting": "RMCM96SIntegratedScope",
+        "allowed": [
+          "RMCM96SIntegratedScope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBipod"
+        ]
+      }
+    }
   },
   {
     "id": "CMWeaponPistolM1911",
@@ -195,7 +227,39 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "CMWeaponPistolM1984",
@@ -252,7 +316,39 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "CMWeaponPistolM1984Custom",
@@ -309,7 +405,39 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCAttachmentL90GL",
@@ -361,7 +489,8 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "RMCAttachmentL90UBS",
@@ -414,7 +543,8 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "RMCAttachmentM203GrenadeLauncher",
@@ -466,7 +596,8 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "RMCAttachmentMK1GrenadeLauncher",
@@ -518,7 +649,8 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "RMCAttachmentU1GrenadeLauncher",
@@ -570,7 +702,8 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "RMCAttachmentU7UnderbarrelShotgun",
@@ -618,7 +751,8 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "RMCL112SniperRifle",
@@ -690,7 +824,45 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": true,
+        "starting": "RMCL112IntegratedScope",
+        "allowed": [
+          "RMCL112IntegratedScope"
+        ]
+      },
+      "barrel": {
+        "locked": false,
+        "starting": "RMCAttachmentExtendedBarrel",
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCL112SniperRifleSuppressed",
@@ -762,7 +934,30 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": true,
+        "starting": "RMCL112IntegratedScope",
+        "allowed": [
+          "RMCL112IntegratedScope"
+        ]
+      },
+      "barrel": {
+        "locked": true,
+        "starting": "RMCAttachmentSuppressorL112",
+        "allowed": [
+          "RMCAttachmentSuppressorL112"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBipod"
+        ]
+      }
+    }
   },
   {
     "id": "RMCM96SBSniperRifle",
@@ -835,7 +1030,30 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": true,
+        "starting": "RMCM96SIntegratedScope",
+        "allowed": [
+          "RMCM96SIntegratedScope"
+        ]
+      },
+      "barrel": {
+        "locked": true,
+        "starting": "RMCAttachmentSuppressorM96SB",
+        "allowed": [
+          "RMCAttachmentSuppressorM96SB"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBipod"
+        ]
+      }
+    }
   },
   {
     "id": "RMCMK80",
@@ -895,7 +1113,38 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": true,
+        "starting": "RMCAttachmentLaserLightModule",
+        "allowed": [
+          "RMCAttachmentLaserLightModule"
+        ]
+      }
+    }
   },
   {
     "id": "RMCMK80RCM",
@@ -955,7 +1204,38 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": true,
+        "starting": "RMCAttachmentLaserLightModule",
+        "allowed": [
+          "RMCAttachmentLaserLightModule"
+        ]
+      }
+    }
   },
   {
     "id": "RMCMachineGunM2C",
@@ -1009,7 +1289,8 @@ const GUNS = [
         "shotsToMaxScatter": 125
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "RMCRoyalGrenadeLauncher",
@@ -1066,7 +1347,16 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": true,
+        "starting": "RMCAttachmentScopeMGLIntegrated",
+        "allowed": [
+          "RMCAttachmentScopeMGLIntegrated"
+        ]
+      }
+    }
   },
   {
     "id": "RMCSmartGun",
@@ -1123,7 +1413,16 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCSmartGunCLF",
@@ -1180,7 +1479,16 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCSmartGunCO",
@@ -1237,7 +1545,16 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCSmartGunMounted",
@@ -1294,7 +1611,8 @@ const GUNS = [
         "shotsToMaxScatter": 700
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "RMCSmartGunMountedStatic",
@@ -1350,7 +1668,8 @@ const GUNS = [
         "shotsToMaxScatter": 700
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "RMCSmartGunOvertunedPVE",
@@ -1407,7 +1726,16 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCSmartGunPMC",
@@ -1464,7 +1792,16 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCSmartGunPMCPVE",
@@ -1521,7 +1858,16 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCSmartGunPVE",
@@ -1578,7 +1924,16 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCSmartGunRCMPVE",
@@ -1635,7 +1990,16 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCSmartGunRoyal",
@@ -1692,7 +2056,16 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCSmartGunWhiteOut",
@@ -1749,7 +2122,16 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCType88SniperRifle",
@@ -1820,7 +2202,37 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": true,
+        "starting": "RMCType88IntegratedScope",
+        "allowed": [
+          "RMCType88IntegratedScope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBipod",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponBoltActionRifle",
@@ -1891,7 +2303,38 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": "RMCAttachmentMiniscopeHunting",
+        "allowed": [
+          "RMCAttachmentHuntingScope",
+          "RMCAttachmentMiniscopeHunting",
+          "RMCAttachmentS84xTelescopicScope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentHuntingStock",
+        "allowed": [
+          "RMCAttachmentHuntingStock"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponLMGM60",
@@ -1965,7 +2408,16 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "underbarrel": {
+        "locked": false,
+        "starting": "RMCAttachmentBipod",
+        "allowed": [
+          "RMCAttachmentBipod"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponLMGQYJ72",
@@ -2033,7 +2485,16 @@ const GUNS = [
         "shotsToMaxScatter": null
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "underbarrel": {
+        "locked": true,
+        "starting": "RMCAttachmentBipodQYJ",
+        "allowed": [
+          "RMCAttachmentBipodQYJ"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponLauncherHJRA12",
@@ -2067,7 +2528,16 @@ const GUNS = [
     "scatterDecay": 4.0,
     "burstScatterMult": null,
     "fireModeMods": {},
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentHJRA12Back",
+        "allowed": [
+          "RMCAttachmentHJRA12Back"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponLauncherM5ATL",
@@ -2101,7 +2571,8 @@ const GUNS = [
     "scatterDecay": 4.0,
     "burstScatterMult": null,
     "fireModeMods": {},
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "RMCWeaponLauncherM6HBrute",
@@ -2133,7 +2604,8 @@ const GUNS = [
     "scatterDecay": 4.0,
     "burstScatterMult": null,
     "fireModeMods": {},
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "RMCWeaponLauncherM85A1",
@@ -2190,7 +2662,20 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponMar50LMG",
@@ -2250,7 +2735,27 @@ const GUNS = [
         "shotsToMaxScatter": null
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": true,
+        "starting": "RMCAttachmentBarrelMar50",
+        "allowed": [
+          "RMCAttachmentBarrelMar50"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolB92FS",
@@ -2303,7 +2808,37 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolD18",
@@ -2357,7 +2892,27 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolHG45Aguila",
@@ -2410,7 +2965,51 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentGyroscopicStabilizer"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolHG45Marina",
@@ -2463,7 +3062,51 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentGyroscopicStabilizer"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolHandcannon",
@@ -2521,7 +3164,35 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolHandcannonGold",
@@ -2581,7 +3252,35 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolHandcannonWinterWyvern",
@@ -2641,7 +3340,35 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolHoldout",
@@ -2695,7 +3422,33 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolKT42",
@@ -2748,7 +3501,37 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolL14",
@@ -2805,7 +3588,39 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolL14Custom",
@@ -2862,7 +3677,39 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolL54",
@@ -2916,7 +3763,39 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolL54Custom",
@@ -2970,7 +3849,39 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolM13",
@@ -3030,7 +3941,49 @@ const GUNS = [
         "shotsToMaxScatter": 40
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentRecoilCompensatorM13",
+          "RMCAttachmentRecoilCompensatorM13Spiked"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5MicroRedDotSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMicroLaserSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentM13StockCollapsible",
+          "RMCAttachmentM13StockSolid"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolM77",
@@ -3089,7 +4042,42 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolM82F",
@@ -3145,7 +4133,17 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": "RMCAttachmentS42xTelescopicMiniscope",
+        "allowed": [
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolMK45",
@@ -3198,7 +4196,51 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentGyroscopicStabilizer"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolNP92",
@@ -3257,7 +4299,28 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolNPZ92",
@@ -3315,7 +4378,26 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": true,
+        "starting": "RMCAttachmentSuppressorNPZ92",
+        "allowed": [
+          "RMCAttachmentSuppressorNPZ92"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolPK7",
@@ -3370,7 +4452,26 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolSU6",
@@ -3430,7 +4531,37 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolT73",
@@ -3488,7 +4619,35 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponPistolT74",
@@ -3543,7 +4702,28 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleABR40",
@@ -3614,7 +4794,52 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleABR40Tactical",
@@ -3685,7 +4910,52 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL24",
@@ -3765,7 +5035,65 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentL24Stock",
+        "allowed": [
+          "RMCAttachmentL24Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentU1GrenadeLauncher"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL24B",
@@ -3845,7 +5173,47 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentL24BStock",
+        "allowed": [
+          "RMCAttachmentL24BStock"
+        ]
+      },
+      "underbarrel": {
+        "locked": true,
+        "starting": "RMCAttachmentU7UnderbarrelShotgun",
+        "allowed": [
+          "RMCAttachmentU7UnderbarrelShotgun"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL42A",
@@ -3920,7 +5288,54 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentB8SmartScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL83A2",
@@ -3998,7 +5413,66 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentL83A2Stock",
+        "allowed": [
+          "RMCAttachmentL83A2Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentBipod",
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentM203GrenadeLauncher"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL83A3",
@@ -4060,7 +5534,67 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentRecoilCompensator",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentL83A3Stock",
+        "allowed": [
+          "RMCAttachmentL83A3Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentBipod",
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentM203GrenadeLauncher"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponRifleL83A3F",
@@ -4138,7 +5672,67 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB",
+          "RMCAttachmentRecoilCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentL83A3Stock",
+        "allowed": [
+          "RMCAttachmentL83A3Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentBipod",
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentM203GrenadeLauncher"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL88A1",
@@ -4212,7 +5806,46 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": true,
+        "starting": "RMCAttachmentL88Grip",
+        "allowed": [
+          "RMCAttachmentL88Grip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL88A2",
@@ -4286,7 +5919,56 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentBipod",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL89A1",
@@ -4358,7 +6040,42 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": true,
+        "starting": "RMCAttachmentL89Scope",
+        "allowed": [
+          "RMCAttachmentL89Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": true,
+        "starting": "RMCAttachmentL88Grip",
+        "allowed": [
+          "RMCAttachmentL88Grip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL89A2",
@@ -4430,7 +6147,46 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": true,
+        "starting": "RMCAttachmentL89Scope",
+        "allowed": [
+          "RMCAttachmentL89Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL90A1",
@@ -4508,7 +6264,46 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": "RMCAttachmentL90GL",
+        "allowed": [
+          "RMCAttachmentL90GL",
+          "RMCAttachmentL90UBS",
+          "RMCAttachmentL90UBF"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL90A2",
@@ -4588,7 +6383,59 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": "RMCAttachmentL90GL",
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentBipod",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentL90GL",
+          "RMCAttachmentL90UBS",
+          "RMCAttachmentL90UBF"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleL91SWS",
@@ -4655,7 +6502,43 @@ const GUNS = [
         "shotsToMaxScatter": 3
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope",
+          "RMCAttachmentSASOS"
+        ]
+      },
+      "underbarrel": {
+        "locked": true,
+        "starting": "RMCAttachmentL91Bipod",
+        "allowed": [
+          "RMCAttachmentL91Bipod"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleM16A5",
@@ -4729,7 +6612,67 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentM16A5Stock",
+        "allowed": [
+          "RMCAttachmentM16A5Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentBipod",
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentM203GrenadeLauncher"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleM54C",
@@ -4810,7 +6753,69 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentM54CStockCollapsible",
+        "allowed": [
+          "RMCAttachmentM54CStockSolid",
+          "RMCAttachmentM54CStockCollapsible",
+          "RMCAttachmentM54CMK1StockCollapsible",
+          "RMCAttachmentM54C2StockCollapsible",
+          "RMCAttachmentM54CStockCollapsibleWhite"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": "RMCAttachmentU1GrenadeLauncher",
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleM54C2",
@@ -4874,7 +6879,65 @@ const GUNS = [
         "shotsToMaxScatter": null
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentM54C2StockCollapsible",
+        "allowed": [
+          "RMCAttachmentM54C2StockCollapsible"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleM54CE2",
@@ -4954,7 +7017,44 @@ const GUNS = [
         "shotsToMaxScatter": 30
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": "RMCAttachmentBipod",
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleM54CMK1",
@@ -5035,7 +7135,55 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentM54CMK1StockCollapsible",
+        "allowed": [
+          "RMCAttachmentM54CStockCollapsible",
+          "RMCAttachmentM54CMK1StockCollapsible",
+          "RMCAttachmentM54C2StockCollapsible",
+          "RMCAttachmentM54CStockCollapsibleWhite"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": "RMCAttachmentMK1GrenadeLauncher",
+        "allowed": [
+          "RMCAttachmentMK1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleM59A",
@@ -5121,7 +7269,65 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentM54CStockCollapsible",
+        "allowed": [
+          "RMCAttachmentM54CStockCollapsible",
+          "RMCAttachmentM54CMK1StockCollapsible",
+          "RMCAttachmentM54C2StockCollapsible",
+          "RMCAttachmentM54CStockCollapsibleWhite"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleMAR30",
@@ -5196,7 +7402,58 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.1665
+    "burstCooldown": 0.1665,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope",
+          "RMCAttachmentS84xTelescopicScope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleSSG45",
@@ -5276,7 +7533,56 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": "RMCAttachmentMiniFlamethrower",
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleType71",
@@ -5337,7 +7643,61 @@ const GUNS = [
         "shotsToMaxScatter": null
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentType71Stock",
+        "allowed": [
+          "RMCAttachmentType71Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentBurstFireAssembly"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleType71PVE",
@@ -5398,7 +7758,61 @@ const GUNS = [
         "shotsToMaxScatter": null
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentType71Stock",
+        "allowed": [
+          "RMCAttachmentType71Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentBurstFireAssembly"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleType71C",
@@ -5459,7 +7873,52 @@ const GUNS = [
         "shotsToMaxScatter": null
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentExtendedCompensator",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentBurstFireAssembly"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleType71Flamer",
@@ -5520,7 +7979,55 @@ const GUNS = [
         "shotsToMaxScatter": null
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentType71Stock",
+        "allowed": [
+          "RMCAttachmentType71Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": true,
+        "starting": "RMCAttachmentMiniFlamethrower",
+        "allowed": [
+          "RMCAttachmentMiniFlamethrower"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleType73",
@@ -5581,7 +8088,38 @@ const GUNS = [
         "shotsToMaxScatter": null
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": true,
+        "starting": "RMCAttachmentSuppressor",
+        "allowed": [
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40"
+        ]
+      },
+      "rail": {
+        "locked": true,
+        "starting": "RMCAttachmentS42xTelescopicMiniscope",
+        "allowed": [
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentBurstFireAssembly"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleType77",
@@ -5660,7 +8198,65 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentType77StockCollapsible",
+        "allowed": [
+          "RMCAttachmentType77StockCollapsible"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponRifleXM40",
@@ -5725,7 +8321,32 @@ const GUNS = [
         "shotsToMaxScatter": null
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": true,
+        "starting": "RMCAttachmentSuppressorXM40",
+        "allowed": [
+          "RMCAttachmentSuppressorXM40"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponSMGFP9000",
@@ -5800,7 +8421,33 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentRecoilCompensator"
+        ]
+      },
+      "rail": {
+        "locked": true,
+        "starting": "RMCAttachmentFP9000Scope",
+        "allowed": [
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponSMGFP9000PMC",
@@ -5875,7 +8522,37 @@ const GUNS = [
         "shotsToMaxScatter": 20
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponSMGL7A3",
@@ -5950,7 +8627,63 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentM63StockCollapsible",
+        "allowed": [
+          "RMCAttachmentM63StockCollapsible"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponSMGM63B2",
@@ -6031,7 +8764,61 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": "RMCAttachmentExtendedBarrel",
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": "RMCAttachmentMagneticHarness",
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentM63Stock",
+        "allowed": [
+          "RMCAttachmentM63ArmBrace",
+          "RMCAttachmentM63Stock",
+          "RMCAttachmentM63StockCollapsible"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": "RMCAttachmentAngledGrip",
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponSMGM63",
@@ -6112,7 +8899,65 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentM63StockCollapsible",
+        "allowed": [
+          "RMCAttachmentM63ArmBrace",
+          "RMCAttachmentM63Stock",
+          "RMCAttachmentM63StockCollapsible"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponSMGMP27",
@@ -6188,7 +9033,54 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentBipod",
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponSMGMP5Alt",
@@ -6263,7 +9155,63 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentBipod",
+          "RMCAttachmentM203GrenadeLauncher",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentMP5AltStockCollapsible",
+        "allowed": [
+          "RMCAttachmentMP5AltStockCollapsible"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponSMGPDW90",
@@ -6339,7 +9287,42 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponSMGPDW90TSE",
@@ -6415,7 +9398,42 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponSMGType19",
@@ -6491,7 +9509,42 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentRailFlashlight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponSMGType64",
@@ -6567,7 +9620,51 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponSMGUZI",
@@ -6627,7 +9724,43 @@ const GUNS = [
         "shotsToMaxScatter": 50
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponShotgunL49",
@@ -6689,7 +9822,45 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": true,
+        "starting": "RMCAttachmentL49Barrel",
+        "allowed": [
+          "RMCAttachmentL49Barrel"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentL49Stock",
+        "allowed": [
+          "RMCAttachmentL49Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponShotgunM12",
@@ -6750,7 +9921,43 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentRecoilCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentModel12Stock",
+        "allowed": [
+          "RMCAttachmentModel12Stock"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponShotgunM3717",
@@ -6811,7 +10018,36 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentRecoilCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponShotgunM42A2",
@@ -6872,7 +10108,56 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentShotgunChoke",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentM42A2CollapsibleStock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponShotgunM890",
@@ -6940,7 +10225,50 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentM890Stock",
+        "allowed": [
+          "RMCAttachmentM890Stock",
+          "RMCAttachmentM890StockGuard"
+        ]
+      },
+      "underbarrel": {
+        "locked": true,
+        "starting": "RMCAttachmentU1GrenadeLauncher",
+        "allowed": [
+          "RMCAttachmentU1GrenadeLauncher"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponShotgunSyracuse",
@@ -7001,7 +10329,56 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentShotgunChoke",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentM42A1WoodenStock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponShotgunType23",
@@ -7061,7 +10438,54 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentRecoilCompensator",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentType23Stock",
+        "allowed": [
+          "RMCAttachmentType23Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentBurstFireAssembly"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponShotgunXM38",
@@ -7131,7 +10555,50 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedBarrel",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentMK221Stock",
+        "allowed": [
+          "RMCAttachmentMK221Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "RMCWeaponShotgunXM51",
@@ -7190,7 +10657,52 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentXM51Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   },
   {
     "id": "RMCXM43E1AntiMaterielRifle",
@@ -7261,7 +10773,23 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": true,
+        "starting": "RMCXM43E1IntegratedScope",
+        "allowed": [
+          "RMCXM43E1IntegratedScope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBipod"
+        ]
+      }
+    }
   },
   {
     "id": "STWeaponSharpRifle",
@@ -7317,7 +10845,8 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {}
   },
   {
     "id": "WeaponLauncherM83",
@@ -7374,7 +10903,17 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponNailgun",
@@ -7449,7 +10988,8 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {}
   },
   {
     "id": "WeaponRifleAR10",
@@ -7509,7 +11049,53 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponRifleL83A3M",
@@ -7571,7 +11157,59 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": "RMCAttachmentSuppressor",
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": true,
+        "starting": "RMCAttachmentS84xTelescopicScope",
+        "allowed": [
+          "RMCAttachmentS84xTelescopicScope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentL83A3Stock",
+        "allowed": [
+          "RMCAttachmentL83A3Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": "RMCAttachmentBipod",
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentBipod",
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentM203GrenadeLauncher"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponRifleM16",
@@ -7645,7 +11283,67 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": true,
+        "starting": "RMCAttachmentM16Stock",
+        "allowed": [
+          "RMCAttachmentM16Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentBipod",
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentMiniFlamethrower",
+          "RMCAttachmentU1GrenadeLauncher",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentM203GrenadeLauncher"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponRifleM4SPR",
@@ -7722,7 +11420,54 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentB8SmartScope",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponRifleM4SPRCustom",
@@ -7786,7 +11531,53 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponRifleM5SPR",
@@ -7854,7 +11645,54 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.75
+    "burstCooldown": 0.75,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentB8SmartScope",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponRifleM5SPR2",
@@ -7922,7 +11760,54 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": 0.75
+    "burstCooldown": 0.75,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentB8SmartScope",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponRifleMAR40",
@@ -7997,7 +11882,52 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.1665
+    "burstCooldown": 0.1665,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBipod",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentU7UnderbarrelShotgun",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec",
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentMiniFlamethrower"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponRifleXM88",
@@ -8068,7 +11998,53 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB",
+          "RMCAttachmentBarrelCharger"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentXS-9"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentXM88Stock"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponSMGMAC15",
@@ -8128,7 +12104,52 @@ const GUNS = [
         "shotsToMaxScatter": 70
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponSMGMP5",
@@ -8203,7 +12224,56 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentBipod",
+          "RMCAttachmentM203GrenadeLauncher",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponShotgunCustomBuilt",
@@ -8271,7 +12341,16 @@ const GUNS = [
         "shotsToMaxScatter": null
       }
     },
-    "burstCooldown": 0.0
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRecoilCompensator"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponShotgunM357",
@@ -8339,7 +12418,48 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentDoubleBarrelShotgunStock",
+        "allowed": [
+          "RMCAttachmentDoubleBarrelShotgunStock",
+          "RMCAttachmentHJRA12Back"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentGyroscopicStabilizer"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponShotgunM357Sawn",
@@ -8407,7 +12527,35 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": "RMCAttachmentDoubleBarrelShotgunStock",
+        "allowed": [
+          "RMCAttachmentDoubleBarrelShotgunStock",
+          "RMCAttachmentHJRA12Back"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentGyroscopicStabilizer"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponShotgunM42A1",
@@ -8468,7 +12616,56 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentShotgunChoke",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentM42A1WoodenStock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   },
   {
     "id": "WeaponShotgunMOU53",
@@ -8527,6 +12724,54 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMOU53Stock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentFlashlightGrip",
+          "RMCAttachmentAngledGrip",
+          "RMCAttachmentVerticalGrip",
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentUnderbarrelExtinguisher",
+          "RMCAttachmentUnderbarrelExtinguisherSpec"
+        ]
+      }
+    }
   }
 ];

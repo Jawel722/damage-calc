@@ -25,6 +25,24 @@
 Дистанция: <input type="number" id="dist" value="0" min="0">
 <label>С двух рук: <input type="checkbox" id="bothArmCheck" checked></label>
 <div id = 'fireMode'></div>
+<div class = "col">
+<div class = "megacol">
+<label id="labelBarrel">Дуло: <select id = 'barrel'></select></label>
+<label id="labelBarrelActive">Активирован: <input type="checkbox" id = "barrelActive"></label>
+</div>
+<div class = "megacol">
+<label id="labelRail">Прицел: <select id = 'rail'></select></label>
+<label id="labelRailActive">Активирован: <input type="checkbox" id = "railActive"></label>
+</div>
+<div class = "megacol">
+<label id="labelUnderbarrel">Подствольное: <select id = 'underbarrel'></select></label>
+<label id="labelUnderbarrelActive">Активирован: <input type="checkbox" id = "underbarrelActive"></label>
+</div>
+<div class = "megacol">
+<label id="labelStock">Приклад: <select id = 'stock'></select></label>
+<label id="labelStockActive">Активирован: <input type="checkbox" id = "stockActive"></label>
+</div>
+</div>
 </div>
 <div class = "col">
 Ксеноморф: <select id = 'xeno'></select>
@@ -47,6 +65,7 @@
 <script src = 'magazines.js'></script>
 <script src = 'projectiles.js'></script>
 <script src = 'xenos.js'></script>
+<script src = 'attachments.js'></script>
 <script>
 function findById(array,idFromSelect) {
     for (const item of array) {
@@ -84,18 +103,18 @@ function buckshotCheck(applyArmor,pellets) {
     return newDamage
 }
 
-function accuracyCalc(projectile,gun,bothArmCheck,dist,evasion) {
+function accuracyCalc(projectile,gun,bothArmCheck,dist,evasion, rangeFlat, accuracyAddMult) {
     if (projectile.accuracy === null) {
         return 1
     }
     let acc = projectile.accuracy
     if (bothArmCheck === true) {
-        acc *= gun.accuracyMult
+        acc *= Math.max(gun.accuracyMult+accuracyAddMult, 0.1)
     } else {
-        acc *= gun.accuracyMultUnwielded
+        acc *= Math.max(gun.accuracyMultUnwielded+accuracyAddMult, 0.1)
     }
     for (const threshold of projectile.accuracyThresholds) {
-        const range = threshold.range + gun.accuracyRangeFlat
+        const range = threshold.range + gun.accuracyRangeFlat + rangeFlat
         if (dist > range && threshold.buildup===false) {
             acc -= threshold.falloff * (dist - range)
         } else if (range > dist && threshold.buildup===true) {
@@ -120,6 +139,60 @@ function scatterCalc (scatter,dist,radHitbox) {
     return scatterChance
 }
 
+function attachmentsCalc (bothArmChecked) {
+    const selects = [selectBarrel,selectRail,selectUnderbarrel,selectStock]
+    const actives = [barrelActive,railActive,underbarrelActive,stockActive]
+    let damageAddMult = 0
+    let accuracyAddMult = 0
+    let rangeFlat = 0
+    let damageFalloffAddMult = 0
+    let scatterFlat = 0
+    let burstScatterAddMult = 0
+    let fireDelayFlat = 0
+    let shotsPerBurstFlat = 0
+    for (let i = 0; i < selects.length; i++) {
+        if (selects[i].value==='' || selects[i].parentElement.hidden === true) {
+            continue
+        }
+        let attachmentActive = false
+        const attachment = findById(ATTACHMENTS,selects[i].value)
+        if (actives[i].checked===true && attachment.toggleable === true) {
+            attachmentActive = true
+        }
+        for (const mod of attachment.modifiers) {
+            let attachmentWork = true
+            if (mod.conditions.wieldedOnly === true && bothArmChecked === false) {
+                attachmentWork = false
+            } else if (mod.conditions.unwieldedOnly && bothArmChecked === true) {
+                attachmentWork = false
+            } else if (mod.conditions.activeOnly && attachmentActive === false) {
+                attachmentWork = false
+            } else if (mod.conditions.inactiveOnly && attachmentActive === true) {
+                attachmentWork = false
+            }
+            if (attachmentWork === true) {
+                damageAddMult += mod.damageAddMult
+                accuracyAddMult += mod.accuracyAddMult
+                rangeFlat += mod.rangeFlat
+                damageFalloffAddMult += mod.damageFalloffAddMult
+                scatterFlat += mod.scatterFlat
+                burstScatterAddMult += mod.burstScatterAddMult
+                fireDelayFlat += mod.fireDelayFlat
+                shotsPerBurstFlat += mod.shotsPerBurstFlat
+            }
+        }
+    }
+    return {    damageAddMult: damageAddMult,
+                accuracyAddMult: accuracyAddMult,
+                rangeFlat: rangeFlat,
+                damageFalloffAddMult: damageFalloffAddMult,
+                scatterFlat: scatterFlat,
+                burstScatterAddMult: burstScatterAddMult,
+                fireDelayFlat: fireDelayFlat,
+                shotsPerBurstFlat: shotsPerBurstFlat
+            }
+}
+
 function recalc() {
     const dist = Math.max(Number(document.getElementById("dist").value), 0)
     const gunId = gunSelect.value
@@ -134,11 +207,12 @@ function recalc() {
     const projectile = findById(PROJECTILES, magazine.projectile)
     const xeno = findById(XENOS, xenoId)
     const fireMode = fireModeSelect.querySelector("input:checked").value
+    const mods = attachmentsCalc(bothArmChecked)
     let scatterW = gun.scatterWielded
     if (bothArmChecked === true) {
-        scatterW = gun.scatterWielded
+        scatterW = Math.max(gun.scatterWielded + mods.scatterFlat,0)
     } else {
-        scatterW = gun.scatterUnwielded
+        scatterW = Math.max(gun.scatterUnwielded + mods.scatterFlat,0)
     }
     let xenoAbilityArmor = 0
     let xenoAbilityFrontalArmor = 0
@@ -177,18 +251,18 @@ function recalc() {
         let maxUp = fireModeMods.maxScatterModifier
         if (fireModeMods.shotsToMaxScatter !== null) {
             if (fireModeMods.useBurstScatterMult===true) {
-                maxUp = maxUp * gun.burstScatterMult
+                maxUp = maxUp * (gun.burstScatterMult + mods.burstScatterAddMult)
             }
             if (bothArmChecked===false) {
                 maxUp = maxUp * fireModeMods.unwieldedScatterMultiplier
             }
-        max = max + maxUp
+        max = Math.max(max + maxUp, scatterW)
         step = (max - scatterW)/fireModeMods.shotsToMaxScatter
         }
     }
     let gunFire = 1
     if (fireMode==="Burst") {
-        gunFire = gun.shotsPerBurst
+        gunFire = Math.max(gun.shotsPerBurst + mods.shotsPerBurstFlat,1)
     }
     if (fireMode==="FullAuto" && magazine.capacity!==null) {
         gunFire = magazine.capacity
@@ -199,14 +273,15 @@ function recalc() {
         const biba = scatterCalc(boba,dist,xeno.hitboxRadius)
         sumHitChance += biba
     }
+    
     const realHitChance = sumHitChance/gunFire
     const realXenoArmor = xeno.xenoArmor + armorCheck + xenoAbilityArmor + armorStack
-    const falloffResult = applyFalloff(projectile.falloffStart||0,dist,projectile.falloffPerTile||0,projectile.damage*gun.damageMult,gun.falloffMult,projectile.cutRange||999)
+    const falloffResult = applyFalloff(((projectile.falloffStart||0)+gun.rangeFlat+mods.rangeFlat)||0,dist,projectile.falloffPerTile||0,projectile.damage*(gun.damageMult+mods.damageAddMult),Math.max(gun.falloffMult+mods.damageFalloffAddMult,0),(projectile.cutRange||999) + gun.rangeFlat + mods.rangeFlat)
     const armorResult = applyArmor(falloffResult, projectile.ap,realXenoArmor)
     const damageResult = buckshotCheck(armorResult, projectile.pellets)
-    const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xeno.evasionModified)
+    const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xeno.evasionModified, mods.rangeFlat,mods.accuracyAddMult)
     const hitChance = acc*realHitChance*100
-    const realFireRate = fireRateCalc(fireMode,gun)
+    const realFireRate = fireRateCalc(fireMode,gun,mods.shotsPerBurstFlat,mods.fireDelayFlat)
     const dpsResult = dps(damageResult,realFireRate)
     const dpsRealResult = dpsResult*hitChance/100
     document.getElementById("out").textContent = dpsResult.toFixed(1)
@@ -285,11 +360,59 @@ function selectFireMods () {
     }
 }
 
+function selectAttachments(slot, idLabel,idSelect) {
+    if (slot===undefined) {
+        idLabel.hidden = true
+    } else {
+        idSelect.innerHTML=""
+        idLabel.hidden = false
+        let attachmentOption = document.createElement("option")
+        attachmentOption.value = ''
+        attachmentOption.textContent = "Нет"
+        idSelect.appendChild(attachmentOption)
+        for (const attachment of slot.allowed) {
+            attachmentOption = document.createElement("option")
+            attachmentOption.textContent = findById(ATTACHMENTS, attachment).name
+            attachmentOption.value = attachment
+            idSelect.appendChild(attachmentOption)
+        }
+        if (slot.starting!== null) {
+            idSelect.value = slot.starting
+        }
+    }
+}
 
-function fireRateCalc (fireMode,gun) {
+const labelBarrel = document.getElementById("labelBarrel")
+const labelRail = document.getElementById("labelRail")
+const labelUnderbarrel = document.getElementById("labelUnderbarrel")
+const labelStock = document.getElementById("labelStock")
+const selectBarrel = document.getElementById("barrel")
+const selectRail = document.getElementById("rail")
+const selectUnderbarrel = document.getElementById("underbarrel")
+const selectStock = document.getElementById("stock")
+const labelBarrelActive = document.getElementById("labelBarrelActive")
+const labelRailActive = document.getElementById("labelRailActive")
+const labelUnderbarrelActive = document.getElementById("labelUnderbarrelActive")
+const labelStockActive = document.getElementById("labelStockActive")
+
+function attachmentsToggleableCheck () {
+    const actives = [labelBarrelActive,labelRailActive,labelUnderbarrelActive,labelStockActive]
+    const selects = [selectBarrel,selectRail,selectUnderbarrel,selectStock]
+    for (let i = 0; i < selects.length; i++) {
+        actives[i].hidden = true
+        if (selects[i].value !== "" && selects[i].parentElement.hidden === false) {
+            const attachment = findById(ATTACHMENTS, selects[i].value)
+            if (attachment.toggleable === true) {
+                    actives[i].hidden = false
+            }
+        }
+    }
+}
+
+function fireRateCalc (fireMode,gun,shotsPerBurstFlat,fireDelayFlat) {
     let fireRate = 0
     if (fireMode === 'SemiAuto') {
-        fireRate = gun.fireRate
+        fireRate = 1/(1/gun.fireRate+fireDelayFlat)
     } else if (fireMode === 'FullAuto') {
         let fireDelay = 0
         if (gun.fireModeMods.FullAuto === undefined) {
@@ -298,8 +421,9 @@ function fireRateCalc (fireMode,gun) {
             fireDelay = gun.fireModeMods.FullAuto.fireDelay
         }
         fireRate = 1/(1/gun.fireRate + fireDelay)
+        fireRate = 1/(1/fireRate + fireDelayFlat)
     } else if (fireMode === 'Burst') {
-        fireRate = gun.shotsPerBurst/(gun.shotsPerBurst*(1/(gun.fireRate * gun.burstFireRateMult) + gun.fireModeMods.Burst.fireDelay)+gun.burstCooldown)
+        fireRate = (Math.max(gun.shotsPerBurst+shotsPerBurstFlat,1))/((Math.max(gun.shotsPerBurst+shotsPerBurstFlat,1))*(1/(gun.fireRate * gun.burstFireRateMult) + gun.fireModeMods.Burst.fireDelay)+gun.burstCooldown)
     }
     return fireRate
 }
@@ -354,20 +478,32 @@ function selectXenoAbility () {
         abilitySelect.appendChild(baseLabel)
     }
 }
+
 selectGunType();
 selectGun();
 selectGunMagazine();
 selectFireMods();
 selectXenoStrain();
 selectXenoAbility();
+function setAllAttachments(){
+    const gunSlots = findById(GUNS, gunSelect.value).attachmentSlots
+    selectAttachments(gunSlots.barrel,labelBarrel,selectBarrel)
+    selectAttachments(gunSlots.rail,labelRail,selectRail)
+    selectAttachments(gunSlots.underbarrel,labelUnderbarrel,selectUnderbarrel)
+    selectAttachments(gunSlots.stock,labelStock,selectStock)
+    attachmentsToggleableCheck ()
+}
+setAllAttachments();
 xenoSelect.addEventListener("change", selectXenoStrain);
 xenoSelect.addEventListener("change", selectXenoAbility);
 strainSelect.addEventListener("change", selectXenoAbility);
 gunSelect.addEventListener("change", selectGunMagazine);
 gunSelect.addEventListener("change", selectFireMods);
+gunSelect.addEventListener("change", setAllAttachments);
 gunTypeSelect.addEventListener("change", selectGun);
 gunTypeSelect.addEventListener("change", selectGunMagazine);
 gunTypeSelect.addEventListener("change", selectFireMods);
+gunTypeSelect.addEventListener("change", setAllAttachments);
 fireModeSelect.addEventListener("change",recalc)
 bothArmCheck.addEventListener("input",recalc)
 abilitySelect.addEventListener("input",recalc)
@@ -381,6 +517,18 @@ armorCheckFront.addEventListener("change", recalc)
 armorCheckSide.addEventListener("change", recalc)
 armorCheckBack.addEventListener("change", recalc)
 dist.addEventListener("input",recalc)
+barrel.addEventListener("change",recalc)
+underbarrel.addEventListener("change",recalc)
+rail.addEventListener("change",recalc)
+stock.addEventListener("change",recalc)
+barrel.addEventListener("change",attachmentsToggleableCheck)
+underbarrel.addEventListener("change",attachmentsToggleableCheck)
+rail.addEventListener("change",attachmentsToggleableCheck)
+stock.addEventListener("change",attachmentsToggleableCheck)
+barrelActive.addEventListener("input",recalc)
+underbarrelActive.addEventListener("input",recalc)
+railActive.addEventListener("input",recalc)
+stockActive.addEventListener("input",recalc)
 recalc()
 </script>
 </body>
