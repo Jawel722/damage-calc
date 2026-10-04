@@ -84,7 +84,10 @@ const GUNS = [
           "RMCAttachmentBipod"
         ]
       }
-    }
+    },
+    "tags": [
+      "CMM96CSniperRifle"
+    ]
   },
   {
     "id": "CMM96SSniperRifle",
@@ -173,7 +176,10 @@ const GUNS = [
           "RMCAttachmentBipod"
         ]
       }
-    }
+    },
+    "tags": [
+      "CMM96SSniperRifle"
+    ]
   },
   {
     "id": "CMWeaponPistolM1911",
@@ -259,7 +265,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "CMWeaponPistolM1911"
+    ]
   },
   {
     "id": "CMWeaponPistolM1984",
@@ -348,7 +358,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "CMWeaponPistolM1984"
+    ]
   },
   {
     "id": "CMWeaponPistolM1984Custom",
@@ -437,7 +451,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "CMWeaponPistolM1984"
+    ]
   },
   {
     "id": "RMCAttachmentL90GL",
@@ -490,7 +508,11 @@ const GUNS = [
       }
     },
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentL90GL"
+    ]
   },
   {
     "id": "RMCAttachmentL90UBS",
@@ -544,7 +566,11 @@ const GUNS = [
       }
     },
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentL90UBS"
+    ]
   },
   {
     "id": "RMCAttachmentM203GrenadeLauncher",
@@ -597,7 +623,11 @@ const GUNS = [
       }
     },
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentM203GrenadeLauncher"
+    ]
   },
   {
     "id": "RMCAttachmentMK1GrenadeLauncher",
@@ -650,7 +680,11 @@ const GUNS = [
       }
     },
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentMK1GrenadeLauncher"
+    ]
   },
   {
     "id": "RMCAttachmentU1GrenadeLauncher",
@@ -703,7 +737,11 @@ const GUNS = [
       }
     },
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentU1GrenadeLauncher"
+    ]
   },
   {
     "id": "RMCAttachmentU7UnderbarrelShotgun",
@@ -752,7 +790,11 @@ const GUNS = [
       }
     },
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentU7UnderbarrelShotgun"
+    ]
   },
   {
     "id": "RMCL112SniperRifle",
@@ -862,7 +904,10 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCL112SniperRifle"
+    ]
   },
   {
     "id": "RMCL112SniperRifleSuppressed",
@@ -957,7 +1002,11 @@ const GUNS = [
           "RMCAttachmentBipod"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCL112SniperRifle",
+      "RMCL112SniperRifleSuppressed"
+    ]
   },
   {
     "id": "RMCM96SBSniperRifle",
@@ -1053,7 +1102,10 @@ const GUNS = [
           "RMCAttachmentBipod"
         ]
       }
-    }
+    },
+    "tags": [
+      "CMM96SSniperRifle"
+    ]
   },
   {
     "id": "RMCMK80",
@@ -1144,7 +1196,11 @@ const GUNS = [
           "RMCAttachmentLaserLightModule"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCMK80"
+    ]
   },
   {
     "id": "RMCMK80RCM",
@@ -1235,7 +1291,11 @@ const GUNS = [
           "RMCAttachmentLaserLightModule"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCMK80"
+    ]
   },
   {
     "id": "RMCMachineGunM2C",
@@ -1290,7 +1350,10 @@ const GUNS = [
       }
     },
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": [
+      "RMCMachineGunM2C"
+    ]
   },
   {
     "id": "RMCRoyalGrenadeLauncher",
@@ -1356,7 +1419,8 @@ const GUNS = [
           "RMCAttachmentScopeMGLIntegrated"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCSmartGun",
@@ -1422,7 +1486,8 @@ const GUNS = [
           "RMCAttachmentRailFlashlight"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCSmartGunCLF",
@@ -1488,7 +1553,8 @@ const GUNS = [
           "RMCAttachmentRailFlashlight"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCSmartGunCO",
@@ -1554,7 +1620,8 @@ const GUNS = [
           "RMCAttachmentRailFlashlight"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCSmartGunMounted",
@@ -1612,7 +1679,10 @@ const GUNS = [
       }
     },
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": [
+      "RMCSmartGunMounted"
+    ]
   },
   {
     "id": "RMCSmartGunMountedStatic",
@@ -1669,7 +1739,10 @@ const GUNS = [
       }
     },
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": [
+      "RMCSmartGunMounted"
+    ]
   },
   {
     "id": "RMCSmartGunOvertunedPVE",
@@ -1735,7 +1808,8 @@ const GUNS = [
           "RMCAttachmentRailFlashlight"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCSmartGunPMC",
@@ -1801,7 +1875,8 @@ const GUNS = [
           "RMCAttachmentRailFlashlight"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCSmartGunPMCPVE",
@@ -1867,7 +1942,8 @@ const GUNS = [
           "RMCAttachmentRailFlashlight"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCSmartGunPVE",
@@ -1933,7 +2009,8 @@ const GUNS = [
           "RMCAttachmentRailFlashlight"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCSmartGunRCMPVE",
@@ -1999,7 +2076,8 @@ const GUNS = [
           "RMCAttachmentRailFlashlight"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCSmartGunRoyal",
@@ -2065,7 +2143,8 @@ const GUNS = [
           "RMCAttachmentRailFlashlight"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCSmartGunWhiteOut",
@@ -2131,7 +2210,8 @@ const GUNS = [
           "RMCAttachmentRailFlashlight"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCType88SniperRifle",
@@ -2232,7 +2312,10 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCType88SniperRifle"
+    ]
   },
   {
     "id": "RMCWeaponBoltActionRifle",
@@ -2334,7 +2417,8 @@ const GUNS = [
           "RMCAttachmentHuntingStock"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCWeaponLMGM60",
@@ -2417,7 +2501,10 @@ const GUNS = [
           "RMCAttachmentBipod"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponLMGM60"
+    ]
   },
   {
     "id": "RMCWeaponLMGQYJ72",
@@ -2494,7 +2581,10 @@ const GUNS = [
           "RMCAttachmentBipodQYJ"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponLMGQYJ72"
+    ]
   },
   {
     "id": "RMCWeaponLauncherHJRA12",
@@ -2537,7 +2627,8 @@ const GUNS = [
           "RMCAttachmentHJRA12Back"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCWeaponLauncherM5ATL",
@@ -2572,7 +2663,8 @@ const GUNS = [
     "burstScatterMult": null,
     "fireModeMods": {},
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": []
   },
   {
     "id": "RMCWeaponLauncherM6HBrute",
@@ -2605,7 +2697,10 @@ const GUNS = [
     "burstScatterMult": null,
     "fireModeMods": {},
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": [
+      "RMCWeaponLauncherM6HBrute"
+    ]
   },
   {
     "id": "RMCWeaponLauncherM85A1",
@@ -2675,7 +2770,10 @@ const GUNS = [
           "RMCAttachmentS6ReflexSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponLauncherM85A1"
+    ]
   },
   {
     "id": "RMCWeaponMar50LMG",
@@ -2755,7 +2853,10 @@ const GUNS = [
           "RMCAttachmentS6ReflexSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponMar50LMG"
+    ]
   },
   {
     "id": "RMCWeaponPistolB92FS",
@@ -2838,7 +2939,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCb92fs"
+    ]
   },
   {
     "id": "RMCWeaponPistolD18",
@@ -2912,7 +3017,11 @@ const GUNS = [
           "RMCAttachmentS6ReflexSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Holdout",
+      "RMCWeaponPistolD18"
+    ]
   },
   {
     "id": "RMCWeaponPistolHG45Aguila",
@@ -3009,7 +3118,11 @@ const GUNS = [
           "RMCAttachmentGyroscopicStabilizer"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCMK45"
+    ]
   },
   {
     "id": "RMCWeaponPistolHG45Marina",
@@ -3106,7 +3219,11 @@ const GUNS = [
           "RMCAttachmentGyroscopicStabilizer"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCMK45"
+    ]
   },
   {
     "id": "RMCWeaponPistolHandcannon",
@@ -3192,7 +3309,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolHandcannon"
+    ]
   },
   {
     "id": "RMCWeaponPistolHandcannonGold",
@@ -3280,7 +3401,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolHandcannonGold"
+    ]
   },
   {
     "id": "RMCWeaponPistolHandcannonWinterWyvern",
@@ -3368,7 +3493,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolHandcannonWyvern"
+    ]
   },
   {
     "id": "RMCWeaponPistolHoldout",
@@ -3448,7 +3577,10 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Holdout"
+    ]
   },
   {
     "id": "RMCWeaponPistolKT42",
@@ -3531,7 +3663,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolKT42"
+    ]
   },
   {
     "id": "RMCWeaponPistolL14",
@@ -3620,7 +3756,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolL14"
+    ]
   },
   {
     "id": "RMCWeaponPistolL14Custom",
@@ -3709,7 +3849,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolL14"
+    ]
   },
   {
     "id": "RMCWeaponPistolL54",
@@ -3795,7 +3939,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolL54"
+    ]
   },
   {
     "id": "RMCWeaponPistolL54Custom",
@@ -3881,7 +4029,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolL54"
+    ]
   },
   {
     "id": "RMCWeaponPistolM13",
@@ -3983,7 +4135,11 @@ const GUNS = [
           "RMCAttachmentM13StockSolid"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolM13"
+    ]
   },
   {
     "id": "RMCWeaponPistolM77",
@@ -4077,7 +4233,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolM77"
+    ]
   },
   {
     "id": "RMCWeaponPistolM82F",
@@ -4143,7 +4303,11 @@ const GUNS = [
           "RMCAttachmentFP9000Scope"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCFlareGun",
+      "Sidearm"
+    ]
   },
   {
     "id": "RMCWeaponPistolMK45",
@@ -4240,7 +4404,11 @@ const GUNS = [
           "RMCAttachmentGyroscopicStabilizer"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCMK45"
+    ]
   },
   {
     "id": "RMCWeaponPistolNP92",
@@ -4320,7 +4488,11 @@ const GUNS = [
           "RMCAttachmentS6ReflexSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolNP92"
+    ]
   },
   {
     "id": "RMCWeaponPistolNPZ92",
@@ -4397,7 +4569,11 @@ const GUNS = [
           "RMCAttachmentS6ReflexSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolNPZ92"
+    ]
   },
   {
     "id": "RMCWeaponPistolPK7",
@@ -4471,7 +4647,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolPK7"
+    ]
   },
   {
     "id": "RMCWeaponPistolSU6",
@@ -4561,7 +4741,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCSmartPistol"
+    ]
   },
   {
     "id": "RMCWeaponPistolT73",
@@ -4647,7 +4831,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolT73"
+    ]
   },
   {
     "id": "RMCWeaponPistolT74",
@@ -4723,7 +4911,11 @@ const GUNS = [
           "RMCAttachmentS6ReflexSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCWeaponPistolT74"
+    ]
   },
   {
     "id": "RMCWeaponRifleABR40",
@@ -4839,7 +5031,8 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCWeaponRifleABR40Tactical",
@@ -4955,7 +5148,8 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCWeaponRifleL24",
@@ -5093,7 +5287,8 @@ const GUNS = [
           "RMCAttachmentU1GrenadeLauncher"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCWeaponRifleL24B",
@@ -5213,7 +5408,8 @@ const GUNS = [
           "RMCAttachmentU7UnderbarrelShotgun"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCWeaponRifleL42A",
@@ -5335,7 +5531,8 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCWeaponRifleL83A2",
@@ -5472,7 +5669,8 @@ const GUNS = [
           "RMCAttachmentM203GrenadeLauncher"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCWeaponRifleL83A3",
@@ -5594,7 +5792,8 @@ const GUNS = [
           "RMCAttachmentM203GrenadeLauncher"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "WeaponRifleL83A3F",
@@ -5732,7 +5931,8 @@ const GUNS = [
           "RMCAttachmentM203GrenadeLauncher"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCWeaponRifleL88A1",
@@ -5845,7 +6045,11 @@ const GUNS = [
           "RMCAttachmentL88Grip"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCRifleL88",
+      "RMCRifleL88A1"
+    ]
   },
   {
     "id": "RMCWeaponRifleL88A2",
@@ -5968,7 +6172,11 @@ const GUNS = [
           "RMCAttachmentU7UnderbarrelShotgun"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCRifleL88",
+      "RMCRifleL88A2"
+    ]
   },
   {
     "id": "RMCWeaponRifleL89A1",
@@ -6075,7 +6283,11 @@ const GUNS = [
           "RMCAttachmentL88Grip"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCRifleL89",
+      "RMCRifleL89A1"
+    ]
   },
   {
     "id": "RMCWeaponRifleL89A2",
@@ -6186,7 +6398,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCRifleL89",
+      "RMCRifleL89A2"
+    ]
   },
   {
     "id": "RMCWeaponRifleL90A1",
@@ -6303,7 +6519,11 @@ const GUNS = [
           "RMCAttachmentL90UBF"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCRifleL90",
+      "RMCRifleL90A1"
+    ]
   },
   {
     "id": "RMCWeaponRifleL90A2",
@@ -6435,7 +6655,11 @@ const GUNS = [
           "RMCAttachmentL90UBF"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCRifleL90",
+      "RMCRifleL90A2"
+    ]
   },
   {
     "id": "RMCWeaponRifleL91SWS",
@@ -6538,7 +6762,10 @@ const GUNS = [
           "RMCAttachmentL91Bipod"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCRifleL91SWS"
+    ]
   },
   {
     "id": "RMCWeaponRifleM16A5",
@@ -6672,7 +6899,8 @@ const GUNS = [
           "RMCAttachmentM203GrenadeLauncher"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCWeaponRifleM54C",
@@ -6815,7 +7043,10 @@ const GUNS = [
           "RMCAttachmentMiniFlamethrower"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleM54CMK2"
+    ]
   },
   {
     "id": "RMCWeaponRifleM54C2",
@@ -6937,7 +7168,10 @@ const GUNS = [
           "RMCAttachmentMiniFlamethrower"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleM54C2"
+    ]
   },
   {
     "id": "RMCWeaponRifleM54CE2",
@@ -7054,7 +7288,10 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleM54CE2"
+    ]
   },
   {
     "id": "RMCWeaponRifleM54CMK1",
@@ -7183,7 +7420,10 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleM54CMK1"
+    ]
   },
   {
     "id": "RMCWeaponRifleM59A",
@@ -7327,7 +7567,10 @@ const GUNS = [
           "RMCAttachmentMiniFlamethrower"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleM59A"
+    ]
   },
   {
     "id": "RMCWeaponRifleMAR30",
@@ -7453,7 +7696,8 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "RMCWeaponRifleSSG45",
@@ -7582,7 +7826,10 @@ const GUNS = [
           "RMCAttachmentMiniFlamethrower"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleSSG45"
+    ]
   },
   {
     "id": "RMCWeaponRifleType71",
@@ -7697,7 +7944,10 @@ const GUNS = [
           "RMCAttachmentBurstFireAssembly"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleType71"
+    ]
   },
   {
     "id": "RMCWeaponRifleType71PVE",
@@ -7812,7 +8062,10 @@ const GUNS = [
           "RMCAttachmentBurstFireAssembly"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleType71PVE"
+    ]
   },
   {
     "id": "RMCWeaponRifleType71C",
@@ -7918,7 +8171,10 @@ const GUNS = [
           "RMCAttachmentBurstFireAssembly"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleType71C"
+    ]
   },
   {
     "id": "RMCWeaponRifleType71Flamer",
@@ -8027,7 +8283,10 @@ const GUNS = [
           "RMCAttachmentMiniFlamethrower"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleType71"
+    ]
   },
   {
     "id": "RMCWeaponRifleType73",
@@ -8119,7 +8378,10 @@ const GUNS = [
           "RMCAttachmentBurstFireAssembly"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleType73"
+    ]
   },
   {
     "id": "RMCWeaponRifleType77",
@@ -8256,7 +8518,10 @@ const GUNS = [
           "RMCAttachmentMiniFlamethrower"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleType77"
+    ]
   },
   {
     "id": "RMCWeaponRifleXM40",
@@ -8346,7 +8611,10 @@ const GUNS = [
           "RMCAttachmentMiniFlamethrower"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleXM40"
+    ]
   },
   {
     "id": "RMCWeaponSMGFP9000",
@@ -8447,7 +8715,10 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG"
+    ]
   },
   {
     "id": "RMCWeaponSMGFP9000PMC",
@@ -8552,7 +8823,10 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG"
+    ]
   },
   {
     "id": "RMCWeaponSMGL7A3",
@@ -8683,7 +8957,11 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG",
+      "RMCWeaponSMGL7A3"
+    ]
   },
   {
     "id": "RMCWeaponSMGM63B2",
@@ -8818,7 +9096,11 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG",
+      "RMCWeaponSMGM63B2"
+    ]
   },
   {
     "id": "WeaponSMGM63",
@@ -8957,7 +9239,11 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG",
+      "RMCWeaponSMGM63"
+    ]
   },
   {
     "id": "RMCWeaponSMGMP27",
@@ -9080,7 +9366,10 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG"
+    ]
   },
   {
     "id": "RMCWeaponSMGMP5Alt",
@@ -9211,7 +9500,10 @@ const GUNS = [
           "RMCAttachmentMP5AltStockCollapsible"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG"
+    ]
   },
   {
     "id": "RMCWeaponSMGPDW90",
@@ -9322,7 +9614,10 @@ const GUNS = [
           "RMCAttachmentFP9000Scope"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG"
+    ]
   },
   {
     "id": "RMCWeaponSMGPDW90TSE",
@@ -9433,7 +9728,10 @@ const GUNS = [
           "RMCAttachmentFP9000Scope"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG"
+    ]
   },
   {
     "id": "RMCWeaponSMGType19",
@@ -9544,7 +9842,10 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG"
+    ]
   },
   {
     "id": "RMCWeaponSMGType64",
@@ -9664,7 +9965,11 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG",
+      "RMCWeaponSMGType64"
+    ]
   },
   {
     "id": "RMCWeaponSMGUZI",
@@ -9760,7 +10065,10 @@ const GUNS = [
           "RMCAttachmentBurstFireAssembly"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG"
+    ]
   },
   {
     "id": "RMCWeaponShotgunL49",
@@ -9860,7 +10168,11 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgunL49",
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "RMCWeaponShotgunM12",
@@ -9957,7 +10269,11 @@ const GUNS = [
           "RMCAttachmentModel12Stock"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgunModel12",
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "RMCWeaponShotgunM3717",
@@ -10047,7 +10363,11 @@ const GUNS = [
           "RMCAttachmentGyroscopicStabilizer"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgunM3717",
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "WeaponShotgunM42A2",
@@ -10157,7 +10477,11 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgunM42A2",
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "WeaponShotgunM890",
@@ -10268,7 +10592,10 @@ const GUNS = [
           "RMCAttachmentU1GrenadeLauncher"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "RMCWeaponShotgunSyracuse",
@@ -10378,7 +10705,11 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgunSyracuse",
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "RMCWeaponShotgunType23",
@@ -10485,7 +10816,11 @@ const GUNS = [
           "RMCAttachmentBurstFireAssembly"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgunType23",
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "RMCWeaponShotgunXM38",
@@ -10598,7 +10933,10 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "RMCWeaponShotgunXM51",
@@ -10702,7 +11040,12 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgun",
+      "RMCWeaponShotgunXM51",
+      "RMCXM51StockBurst"
+    ]
   },
   {
     "id": "RMCXM43E1AntiMaterielRifle",
@@ -10789,7 +11132,10 @@ const GUNS = [
           "RMCAttachmentBipod"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCXM43E1AntiMaterielRifle"
+    ]
   },
   {
     "id": "STWeaponSharpRifle",
@@ -10846,7 +11192,8 @@ const GUNS = [
       }
     },
     "burstCooldown": null,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": []
   },
   {
     "id": "WeaponLauncherM83",
@@ -10913,7 +11260,8 @@ const GUNS = [
           "RMCAttachmentTwoPointSling"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "WeaponNailgun",
@@ -10989,7 +11337,10 @@ const GUNS = [
       }
     },
     "burstCooldown": 0.0,
-    "attachmentSlots": {}
+    "attachmentSlots": {},
+    "tags": [
+      "RMCWeaponSMGNailgun"
+    ]
   },
   {
     "id": "WeaponRifleAR10",
@@ -11095,7 +11446,8 @@ const GUNS = [
           "RMCAttachmentVerticalGrip"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "WeaponRifleL83A3M",
@@ -11209,7 +11561,8 @@ const GUNS = [
           "RMCAttachmentM203GrenadeLauncher"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "WeaponRifleM16",
@@ -11343,7 +11696,8 @@ const GUNS = [
           "RMCAttachmentM203GrenadeLauncher"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "WeaponRifleM4SPR",
@@ -11467,7 +11821,10 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleM4SPR"
+    ]
   },
   {
     "id": "WeaponRifleM4SPRCustom",
@@ -11577,7 +11934,10 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleM4SPR"
+    ]
   },
   {
     "id": "WeaponRifleM5SPR",
@@ -11692,7 +12052,10 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleM5SPR"
+    ]
   },
   {
     "id": "WeaponRifleM5SPR2",
@@ -11807,7 +12170,10 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponRifleM5SPR2"
+    ]
   },
   {
     "id": "WeaponRifleMAR40",
@@ -11927,7 +12293,8 @@ const GUNS = [
           "RMCAttachmentMiniFlamethrower"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "WeaponRifleXM88",
@@ -12044,7 +12411,8 @@ const GUNS = [
           "RMCAttachmentXM88Stock"
         ]
       }
-    }
+    },
+    "tags": []
   },
   {
     "id": "WeaponSMGMAC15",
@@ -12149,7 +12517,10 @@ const GUNS = [
           "RMCAttachmentLaserSight"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG"
+    ]
   },
   {
     "id": "WeaponSMGMP5",
@@ -12273,7 +12644,10 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponSMG"
+    ]
   },
   {
     "id": "WeaponShotgunCustomBuilt",
@@ -12350,7 +12724,10 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "WeaponShotgunM357",
@@ -12459,7 +12836,11 @@ const GUNS = [
           "RMCAttachmentGyroscopicStabilizer"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgunM357",
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "WeaponShotgunM357Sawn",
@@ -12555,7 +12936,11 @@ const GUNS = [
           "RMCAttachmentGyroscopicStabilizer"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgunM357",
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "WeaponShotgunM42A1",
@@ -12665,7 +13050,11 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgunM42A1",
+      "RMCWeaponShotgun"
+    ]
   },
   {
     "id": "WeaponShotgunMOU53",
@@ -12772,6 +13161,10 @@ const GUNS = [
           "RMCAttachmentUnderbarrelExtinguisherSpec"
         ]
       }
-    }
+    },
+    "tags": [
+      "RMCWeaponShotgunMOU53",
+      "RMCWeaponShotgun"
+    ]
   }
 ];

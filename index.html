@@ -40,7 +40,7 @@
 </div>
 <div class = "megacol">
 <label id="labelStock">Приклад: <select id = 'stock'></select></label>
-<label id="labelStockActive">Активирован: <input type="checkbox" id = "stockActive"></label>
+<label id="labelStockActive">Разложен: <input type="checkbox" id = "stockActive"></label>
 </div>
 </div>
 </div>
@@ -139,7 +139,7 @@ function scatterCalc (scatter,dist,radHitbox) {
     return scatterChance
 }
 
-function attachmentsCalc (bothArmChecked) {
+function attachmentsCalc (bothArmChecked,gun) {
     const selects = [selectBarrel,selectRail,selectUnderbarrel,selectStock]
     const actives = [barrelActive,railActive,underbarrelActive,stockActive]
     let damageAddMult = 0
@@ -169,6 +169,28 @@ function attachmentsCalc (bothArmChecked) {
                 attachmentWork = false
             } else if (mod.conditions.inactiveOnly && attachmentActive === true) {
                 attachmentWork = false
+            }
+            if (mod.conditions.whitelistTags !== null) {
+                let found = false
+                for (const tag of mod.conditions.whitelistTags) {
+                    if (gun.tags.includes(tag)) {
+                        found = true
+                    }
+                }
+                if (found === false) {
+                   attachmentWork = false
+                }
+            }
+            if (mod.conditions.blacklistTags !== null) {
+                let found = false
+                for (const tag of mod.conditions.blacklistTags) {
+                    if (gun.tags.includes(tag)) {
+                    found = true
+                    }
+                }
+                if (found === true) {
+                   attachmentWork = false
+                }
             }
             if (attachmentWork === true) {
                 damageAddMult += mod.damageAddMult
@@ -207,7 +229,7 @@ function recalc() {
     const projectile = findById(PROJECTILES, magazine.projectile)
     const xeno = findById(XENOS, xenoId)
     const fireMode = fireModeSelect.querySelector("input:checked").value
-    const mods = attachmentsCalc(bothArmChecked)
+    const mods = attachmentsCalc(bothArmChecked,gun)
     let scatterW = gun.scatterWielded
     if (bothArmChecked === true) {
         scatterW = Math.max(gun.scatterWielded + mods.scatterFlat,0)

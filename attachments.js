@@ -14,7 +14,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -43,7 +45,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -71,7 +75,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -87,7 +93,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -115,7 +123,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -131,7 +141,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -159,7 +171,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": -0.2,
         "accuracyAddMult": 0.0,
@@ -175,7 +189,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -204,7 +220,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -233,7 +251,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -261,7 +281,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -277,7 +299,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -293,7 +317,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -321,7 +347,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -349,7 +377,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.25,
@@ -365,7 +395,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.25,
@@ -404,7 +436,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -420,7 +454,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -481,7 +517,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": -0.2,
         "accuracyAddMult": 0.0,
@@ -497,7 +535,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.2,
@@ -525,7 +565,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -541,7 +583,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -569,7 +613,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.15,
@@ -585,7 +631,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -613,7 +661,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -629,7 +679,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.25,
@@ -655,50 +707,6 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
-    "id": "RMCAttachmentM54CStockCollapsible",
-    "name": "M41A складной приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM54CStockCollapsible"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.1,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -4.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": true,
-          "inactiveOnly": false
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
     "id": "RMCAttachmentM54C2StockCollapsible",
     "name": "M41A складной приклад",
     "tags": [
@@ -712,7 +720,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.1,
@@ -728,7 +738,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -756,7 +768,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.1,
@@ -772,7 +786,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -800,7 +816,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.1,
@@ -816,7 +834,57 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0.0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0.0,
+        "damageFalloffAddMult": 0.0,
+        "scatterFlat": 6.0,
+        "burstScatterAddMult": 0.0,
+        "fireDelayFlat": 0.0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM54CStockCollapsible",
+    "name": "M41A складной приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM54CStockCollapsible"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0.0,
+        "accuracyAddMult": 0.1,
+        "rangeFlat": 0.0,
+        "damageFalloffAddMult": 0.0,
+        "scatterFlat": -4.0,
+        "burstScatterAddMult": 0.0,
+        "fireDelayFlat": 0.0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -844,7 +912,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.25,
@@ -860,7 +930,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -888,7 +960,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.5,
@@ -904,42 +978,15 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
         "rangeFlat": 0.0,
         "damageFalloffAddMult": 0.0,
         "scatterFlat": 6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCTantoB",
-    "name": "MK3 infantry service tanto",
-    "tags": [
-      "Knife",
-      "RMCAttachmentBarrel",
-      "RMCM5Bayonet"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
         "burstScatterAddMult": 0.0,
         "fireDelayFlat": 0.0,
         "shotsPerBurstFlat": 0
@@ -962,7 +1009,40 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0.0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0.0,
+        "damageFalloffAddMult": 0.0,
+        "scatterFlat": 0.0,
+        "burstScatterAddMult": 0.0,
+        "fireDelayFlat": 0.0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCTantoB",
+    "name": "MK3 infantry service tanto",
+    "tags": [
+      "Knife",
+      "RMCAttachmentBarrel",
+      "RMCM5Bayonet"
+    ],
+    "toggleable": false,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -1001,7 +1081,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1017,7 +1099,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.25,
@@ -1033,7 +1117,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.25,
@@ -1049,7 +1135,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1065,7 +1153,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": [
+            "CMM96SSniperRifle"
+          ],
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1081,7 +1173,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": [
+            "CMM96SSniperRifle"
+          ]
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1097,7 +1193,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": [
+            "RMCWeaponLMGM60"
+          ],
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1115,7 +1215,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": [
+            "RMCGunBipodFullAuto"
+          ],
+          "blacklistTags": null
         },
         "extraFireModes": [
           "FullAuto"
@@ -1138,7 +1242,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -1154,7 +1260,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -1182,7 +1290,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -1198,7 +1308,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -1226,7 +1338,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.25,
@@ -1244,7 +1358,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": [
+            "RMCGunBipodFullAuto"
+          ],
+          "blacklistTags": null
         },
         "extraFireModes": [
           "FullAuto"
@@ -1278,7 +1396,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.2,
@@ -1294,7 +1414,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -1322,7 +1444,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.2,
@@ -1338,7 +1462,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -1366,7 +1492,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.1,
@@ -1382,7 +1510,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -1410,7 +1540,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.15,
@@ -1426,7 +1558,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -1454,7 +1588,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1470,7 +1606,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1486,7 +1624,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1502,7 +1642,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": [
+            "RMCWeaponShotgun"
+          ],
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.55,
@@ -1518,7 +1662,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": [
+            "RMCWeaponShotgun"
+          ]
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.15,
@@ -1546,7 +1694,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1574,7 +1724,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1613,7 +1765,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.05,
@@ -1641,7 +1795,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1657,7 +1813,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1673,7 +1831,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": -0.2,
         "accuracyAddMult": 0.25,
@@ -1701,7 +1861,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": -0.1,
         "accuracyAddMult": 0.2,
@@ -1729,7 +1891,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1745,7 +1909,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -1761,7 +1927,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.35,
@@ -1777,7 +1945,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": [
+            "RMCWeaponShotgun"
+          ],
+          "blacklistTags": null
         },
         "damageAddMult": 0.05,
         "accuracyAddMult": 0.0,
@@ -1793,7 +1965,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": [
+            "RMCWeaponShotgun"
+          ]
         },
         "damageAddMult": 0.3,
         "accuracyAddMult": 0.0,
@@ -1832,7 +2008,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1860,7 +2038,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1876,7 +2056,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -1892,7 +2074,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -1920,7 +2104,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1936,7 +2122,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -1952,7 +2140,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -1980,7 +2170,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -1996,7 +2188,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -2012,7 +2206,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -2040,7 +2236,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -2069,7 +2267,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.05,
@@ -2085,7 +2285,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -2101,7 +2303,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -2129,7 +2333,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.05,
@@ -2145,7 +2351,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.05,
@@ -2195,7 +2403,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -2223,7 +2433,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.05,
@@ -2239,7 +2451,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.05,
@@ -2267,7 +2481,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.15,
@@ -2283,7 +2499,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.05,
@@ -2334,7 +2552,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -2350,7 +2570,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -2366,7 +2588,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.2,
@@ -2394,7 +2618,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -2410,7 +2636,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -2439,7 +2667,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.05,
@@ -2544,7 +2774,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.15,
@@ -2560,7 +2792,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.25,
@@ -2578,7 +2812,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": [
+            "RMCXM51StockBurst"
+          ],
+          "blacklistTags": null
         },
         "extraFireModes": [
           "Burst"
@@ -2601,7 +2839,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.3,
@@ -2617,7 +2857,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.1,
@@ -2645,7 +2887,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -2673,7 +2917,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.2,
@@ -2689,7 +2935,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.05,
@@ -2728,7 +2976,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.15,
@@ -2744,7 +2994,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.05,
@@ -2772,7 +3024,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": [
+            "RMCWeaponPistolL14"
+          ]
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -2788,7 +3044,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -2804,7 +3062,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.2,
@@ -2822,7 +3082,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "extraFireModes": [
           "Burst"
@@ -2845,7 +3107,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.15,
@@ -2861,7 +3125,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -2889,7 +3155,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.15,
@@ -2905,7 +3173,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -2933,7 +3203,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -2949,7 +3221,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.25,
@@ -2965,7 +3239,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.25,
@@ -2981,7 +3257,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -2997,7 +3275,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": [
+            "CMM96SSniperRifle"
+          ],
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -3013,7 +3295,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": [
+            "CMM96SSniperRifle"
+          ]
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -3029,7 +3315,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": [
+            "RMCWeaponLMGM60"
+          ],
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -3047,7 +3337,11 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": [
+            "RMCGunBipodFullAuto"
+          ],
+          "blacklistTags": null
         },
         "extraFireModes": [
           "FullAuto"
@@ -3070,7 +3364,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.2,
@@ -3086,7 +3382,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -3114,7 +3412,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.15,
@@ -3130,7 +3430,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -3158,7 +3460,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.5,
@@ -3174,7 +3478,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.15,
@@ -3202,7 +3508,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.5,
@@ -3218,7 +3526,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.5,
@@ -3246,7 +3556,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.3,
@@ -3262,7 +3574,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.1,
@@ -3290,7 +3604,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.0,
@@ -3306,7 +3622,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": true,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.35,
@@ -3322,7 +3640,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
@@ -3361,7 +3681,9 @@ const ATTACHMENTS = [
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": 0.2,
@@ -3389,7 +3711,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": -0.1,
         "accuracyAddMult": 0.3,
@@ -3405,7 +3729,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.3,
@@ -3433,7 +3759,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.05,
         "accuracyAddMult": 0.15,
@@ -3449,7 +3777,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.2,
@@ -3521,7 +3851,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.05,
         "accuracyAddMult": 0.15,
@@ -3537,7 +3869,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.2,
@@ -3566,7 +3900,9 @@ const ATTACHMENTS = [
           "wieldedOnly": false,
           "unwieldedOnly": true,
           "activeOnly": false,
-          "inactiveOnly": false
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
         },
         "damageAddMult": 0.0,
         "accuracyAddMult": -0.05,
