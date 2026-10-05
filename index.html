@@ -22,9 +22,7 @@
 Тип Оружия: <select id = 'gunType'></select>
 Оружие: <select id = 'gun'></select>
 Магазин: <select id = 'magazine'></select>
-Дистанция: <input type="number" id="dist" value="0" min="0">
-<label>С двух рук: <input type="checkbox" id="bothArmCheck" checked></label>
-<div id = 'fireMode'></div>
+<label>Дистанция: <input type="number" id="dist" value="0" min="0"></label>
 <div class = "col">
 <div class = "megacol">
 <label id="labelBarrel">Дуло: <select id = 'barrel'></select></label>
@@ -43,6 +41,8 @@
 <label id="labelStockActive">Разложен: <input type="checkbox" id = "stockActive"></label>
 </div>
 </div>
+<div id = 'fireMode'></div>
+<label>С двух рук: <input type="checkbox" id="bothArmCheck" checked></label>
 </div>
 <div class = "col">
 Ксеноморф: <select id = 'xeno'></select>
@@ -53,6 +53,7 @@
 <label>Бок:<input type='radio' id='armorCheckSide' name='armor'></label>
 <label>Спина:<input type='radio' id='armorCheckBack' name='armor'></label>
 </div>
+<label>Стаки голотаргета:<input type = "number" id= "holotarget" value = "0" min = "0" max = "100" step = "10"></label>
 </div>
 <div class = "col">
 <label>Урон: <span id = 'damageOut'></span></label>
@@ -217,6 +218,7 @@ function attachmentsCalc (bothArmChecked,gun) {
 
 function recalc() {
     const dist = Math.max(Number(document.getElementById("dist").value), 0)
+    const holotarget = (Math.min(Math.max(Number(document.getElementById("holotarget").value), 0),100))/1000
     const gunId = gunSelect.value
     const magId = magazineSelect.value
     const xenoId = strainSelect.value
@@ -299,7 +301,7 @@ function recalc() {
     const realHitChance = sumHitChance/gunFire
     const realXenoArmor = xeno.xenoArmor + armorCheck + xenoAbilityArmor + armorStack
     const falloffResult = applyFalloff(((projectile.falloffStart||0)+gun.rangeFlat+mods.rangeFlat)||0,dist,projectile.falloffPerTile||0,projectile.damage*(gun.damageMult+mods.damageAddMult),Math.max(gun.falloffMult+mods.damageFalloffAddMult,0),(projectile.cutRange||999) + gun.rangeFlat + mods.rangeFlat)
-    const armorResult = applyArmor(falloffResult, projectile.ap,realXenoArmor)
+    const armorResult = applyArmor(falloffResult*(1+holotarget), projectile.ap,realXenoArmor)
     const damageResult = buckshotCheck(armorResult, projectile.pellets)
     const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xeno.evasionModified, mods.rangeFlat,mods.accuracyAddMult)
     const hitChance = acc*realHitChance*100
@@ -538,6 +540,7 @@ gunTypeSelect.addEventListener("change", recalc)
 armorCheckFront.addEventListener("change", recalc)
 armorCheckSide.addEventListener("change", recalc)
 armorCheckBack.addEventListener("change", recalc)
+holotarget.addEventListener("input",recalc)
 dist.addEventListener("input",recalc)
 barrel.addEventListener("change",recalc)
 underbarrel.addEventListener("change",recalc)

@@ -2854,5 +2854,29 @@ const PROJECTILES = [
     "minAccuracy": null,
     "accuracyThresholds": [],
     "forceHit": false
+  },
+  {
+    "id": "RMCBullet458SOCOMMaxStacks",
+    "name": ".458 SOCOM (макс. стаки)",
+    "damage": 80.0,
+    "damageTypes": {
+      "Piercing": 80.0
+    },
+    "ap": 50,
+    "pellets": 1,
+    "falloffStart": 7.0,
+    "falloffPerTile": 1.0,
+    "cutRange": 22.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 14.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
   }
 ];

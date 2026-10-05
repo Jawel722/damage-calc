@@ -1150,5 +1150,11 @@ const MAGAZINES = [
     "name": "магазин 9X-T с липкими зажигательными дротиками",
     "projectile": "STBulletSharpStickyIncendiary",
     "capacity": 10.0
+  },
+  {
+    "id": "RMCCartridge458SOCOMMaxStacks",
+    "name": "горсть пуль .458 SOCOM (макс. стаки)",
+    "projectile": "RMCBullet458SOCOMMaxStacks",
+    "capacity": null
   }
 ];

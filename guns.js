@@ -12415,6 +12415,124 @@ const GUNS = [
     "tags": []
   },
   {
+    "id": "WeaponRifleXM88MaxStacks",
+    "name": "тяжелая винтовка XM88 (макс. стаки)",
+    "category": "Винтовки",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/xm88_rifle.yml",
+    "fireRate": 1.4285,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 1.0,
+    "damageMult": 1.2,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 3,
+      "recoilUnwielded": 5,
+      "scatterWielded": 6,
+      "scatterUnwielded": 20,
+      "baseFireRate": 1,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "Burst": {
+          "fireDelay": 0.1665,
+          "maxScatterModifier": 10,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 6
+        },
+        "FullAuto": {
+          "maxScatterModifier": 13,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 4
+        }
+      }
+    },
+    "magazines": [
+      "RMCCartridge458SOCOMMaxStacks"
+    ],
+    "accuracyMult": 1.25,
+    "accuracyMultUnwielded": 0.5,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 6.0,
+    "scatterUnwielded": 20.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1665,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 13.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": null,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB",
+          "RMCAttachmentBarrelCharger"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentXS-9"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentXM88Stock"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
     "id": "WeaponSMGMAC15",
     "name": "пистолет-пулемет MAC-15",
     "category": "Пистолеты-пулемёты",
