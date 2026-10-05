@@ -2878,5 +2878,149 @@ const PROJECTILES = [
       }
     ],
     "forceHit": false
+  },
+  {
+    "id": "CMBulletSmartGun10x30mmMode0",
+    "name": "пуля (10x30 мм) (высокоточный режим)",
+    "damage": 30.0,
+    "damageTypes": {
+      "Piercing": 30.0
+    },
+    "ap": 0.0,
+    "pellets": 1,
+    "falloffStart": 7.0,
+    "falloffPerTile": 4.0,
+    "cutRange": 12.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 105.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletSmartGun10x30mmHTMode0",
+    "name": "ГТ пуля (10x30mm) (высокоточный режим)",
+    "damage": 30.0,
+    "damageTypes": {
+      "Piercing": 30.0
+    },
+    "ap": 0.0,
+    "pellets": 1,
+    "falloffStart": 7.0,
+    "falloffPerTile": 4.0,
+    "cutRange": 12.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 105.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletSmartGun10x30mmirradiatedMode0",
+    "name": "облученная пуля (10x30 мм) (высокоточный режим)",
+    "damage": 30.0,
+    "damageTypes": {
+      "Piercing": 30.0
+    },
+    "ap": 0.0,
+    "pellets": 1,
+    "falloffStart": 7.0,
+    "falloffPerTile": 4.0,
+    "cutRange": 12.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 105.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "CMBulletSmartGun10x30mmMode1",
+    "name": "пуля (10x30 мм) (бронебойный режим)",
+    "damage": 20.0,
+    "damageTypes": {
+      "Piercing": 20.0
+    },
+    "ap": 40.0,
+    "pellets": 1,
+    "falloffStart": 7.0,
+    "falloffPerTile": 4.0,
+    "cutRange": 12.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 105.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletSmartGun10x30mmHTMode1",
+    "name": "ГТ пуля (10x30mm) (бронебойный режим)",
+    "damage": 20.0,
+    "damageTypes": {
+      "Piercing": 20.0
+    },
+    "ap": 40.0,
+    "pellets": 1,
+    "falloffStart": 7.0,
+    "falloffPerTile": 4.0,
+    "cutRange": 12.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 105.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletSmartGun10x30mmirradiatedMode1",
+    "name": "облученная пуля (10x30 мм) (бронебойный режим)",
+    "damage": 20.0,
+    "damageTypes": {
+      "Piercing": 20.0
+    },
+    "ap": 40.0,
+    "pellets": 1,
+    "falloffStart": 7.0,
+    "falloffPerTile": 4.0,
+    "cutRange": 12.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 105.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
   }
 ];

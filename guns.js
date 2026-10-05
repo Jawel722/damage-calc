@@ -6,7 +6,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Snipers/m96c_sniper.yml",
     "fireRate": 0.333,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -68,7 +68,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": true,
@@ -87,7 +87,14 @@ const GUNS = [
     },
     "tags": [
       "CMM96CSniperRifle"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "CMM96SSniperRifle",
@@ -96,7 +103,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Snipers/m96s_sniper.yml",
     "fireRate": 0.667,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -160,7 +167,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": true,
@@ -179,7 +186,14 @@ const GUNS = [
     },
     "tags": [
       "CMM96SSniperRifle"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "CMWeaponPistolM1911",
@@ -188,7 +202,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/m1911_pistol.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.25,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -233,7 +247,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -269,7 +283,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "CMWeaponPistolM1911"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "CMWeaponPistolM1984",
@@ -278,7 +299,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/m1984_pistol.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -326,7 +347,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -362,7 +383,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "CMWeaponPistolM1984"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "CMWeaponPistolM1984Custom",
@@ -371,7 +399,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/m1984_custom_pistol.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -419,7 +447,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -455,7 +483,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "CMWeaponPistolM1984"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCAttachmentL90GL",
@@ -464,7 +499,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Attachments/under_attachments.yml",
     "fireRate": 0.417,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -507,12 +542,15 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.25,
     "attachmentSlots": {},
     "tags": [
       "RMCAttachmentUnderbarrel",
       "RMCAttachmentL90GL"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0,
+    "unskilledPenalty": null,
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCAttachmentL90UBS",
@@ -521,7 +559,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Attachments/under_attachments.yml",
     "fireRate": 0.66,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 0.66,
     "falloffMult": 1.5,
     "rangeFlat": -1.5,
@@ -565,12 +603,15 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.25,
     "attachmentSlots": {},
     "tags": [
       "RMCAttachmentUnderbarrel",
       "RMCAttachmentL90UBS"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0,
+    "unskilledPenalty": null,
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCAttachmentM203GrenadeLauncher",
@@ -579,7 +620,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Attachments/under_attachments.yml",
     "fireRate": 0.334,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -622,12 +663,15 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.25,
     "attachmentSlots": {},
     "tags": [
       "RMCAttachmentUnderbarrel",
       "RMCAttachmentM203GrenadeLauncher"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0,
+    "unskilledPenalty": null,
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCAttachmentMK1GrenadeLauncher",
@@ -636,7 +680,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Attachments/under_attachments.yml",
     "fireRate": 0.334,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -679,12 +723,15 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.25,
     "attachmentSlots": {},
     "tags": [
       "RMCAttachmentUnderbarrel",
       "RMCAttachmentMK1GrenadeLauncher"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0,
+    "unskilledPenalty": null,
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCAttachmentU1GrenadeLauncher",
@@ -693,7 +740,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Attachments/under_attachments.yml",
     "fireRate": 0.417,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -736,12 +783,15 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.25,
     "attachmentSlots": {},
     "tags": [
       "RMCAttachmentUnderbarrel",
       "RMCAttachmentU1GrenadeLauncher"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0,
+    "unskilledPenalty": null,
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCAttachmentU7UnderbarrelShotgun",
@@ -750,7 +800,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Attachments/under_attachments.yml",
     "fireRate": 0.476,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 0.85,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -789,12 +839,15 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.25,
     "attachmentSlots": {},
     "tags": [
       "RMCAttachmentUnderbarrel",
       "RMCAttachmentU7UnderbarrelShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0,
+    "unskilledPenalty": null,
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCL112SniperRifle",
@@ -803,7 +856,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Snipers/l112_sniper.yml",
     "fireRate": 3.8,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -866,7 +919,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": true,
@@ -907,7 +960,14 @@ const GUNS = [
     },
     "tags": [
       "RMCL112SniperRifle"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCL112SniperRifleSuppressed",
@@ -916,7 +976,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Snipers/l112_sniper.yml",
     "fireRate": 3.8,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -979,7 +1039,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": true,
@@ -1006,7 +1066,14 @@ const GUNS = [
     "tags": [
       "RMCL112SniperRifle",
       "RMCL112SniperRifleSuppressed"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCM96SBSniperRifle",
@@ -1015,7 +1082,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Snipers/m96sb_sniper.yml",
     "fireRate": 0.667,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -1079,7 +1146,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": true,
@@ -1105,7 +1172,14 @@ const GUNS = [
     },
     "tags": [
       "CMM96SSniperRifle"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCMK80",
@@ -1200,7 +1274,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCMK80"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCMK80RCM",
@@ -1295,7 +1376,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCMK80"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCMachineGunM2C",
@@ -1304,7 +1392,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/HMGs/m2c.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -1349,11 +1437,18 @@ const GUNS = [
         "shotsToMaxScatter": 125
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {},
     "tags": [
       "RMCMachineGunM2C"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 0,
+      "accuracyAddMult": 0.0,
+      "scatterFlat": 0.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCRoyalGrenadeLauncher",
@@ -1362,7 +1457,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/l989a2_grenade_launcher.yml",
     "fireRate": 1.43,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -1410,7 +1505,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": true,
@@ -1420,16 +1515,23 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
-    "id": "RMCSmartGun",
-    "name": "ML66A smart gun",
+    "id": "RMCSmartGunMode0",
+    "name": "ML66A smart gun (высокоточный режим)",
     "category": "Смартганы",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
     "fireRate": 5.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -1451,9 +1553,9 @@ const GUNS = [
       }
     },
     "magazines": [
-      "RMCMagazineSmartGun",
-      "RMCMagazineSmartGunHT",
-      "RMCMagazineSmartGunirradiated"
+      "RMCMagazineSmartGunMode0",
+      "RMCMagazineSmartGunHTMode0",
+      "RMCMagazineSmartGunirradiatedMode0"
     ],
     "accuracyMult": 1.05,
     "accuracyMultUnwielded": 1,
@@ -1477,7 +1579,7 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -1487,16 +1589,23 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
-    "id": "RMCSmartGunCLF",
-    "name": "умная пушка M56B \"Свобода\"",
+    "id": "RMCSmartGunMode1",
+    "name": "ML66A smart gun (бронебойный режим)",
     "category": "Смартганы",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
     "fireRate": 5.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -1518,9 +1627,9 @@ const GUNS = [
       }
     },
     "magazines": [
-      "RMCMagazineSmartGun",
-      "RMCMagazineSmartGunHT",
-      "RMCMagazineSmartGunirradiated"
+      "RMCMagazineSmartGunMode1",
+      "RMCMagazineSmartGunHTMode1",
+      "RMCMagazineSmartGunirradiatedMode1"
     ],
     "accuracyMult": 1.05,
     "accuracyMultUnwielded": 1,
@@ -1544,7 +1653,7 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -1554,16 +1663,23 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
-    "id": "RMCSmartGunCO",
-    "name": "умная пушка M56B \"Кавалер\"",
+    "id": "RMCSmartGunCLFMode0",
+    "name": "умная пушка M56B \"Свобода\" (высокоточный режим)",
     "category": "Смартганы",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
     "fireRate": 5.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -1585,9 +1701,9 @@ const GUNS = [
       }
     },
     "magazines": [
-      "RMCMagazineSmartGun",
-      "RMCMagazineSmartGunHT",
-      "RMCMagazineSmartGunirradiated"
+      "RMCMagazineSmartGunMode0",
+      "RMCMagazineSmartGunHTMode0",
+      "RMCMagazineSmartGunirradiatedMode0"
     ],
     "accuracyMult": 1.05,
     "accuracyMultUnwielded": 1,
@@ -1611,7 +1727,7 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -1621,7 +1737,236 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunCLFMode1",
+    "name": "умная пушка M56B \"Свобода\" (бронебойный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
+    "fireRate": 5.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 5,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode1",
+      "RMCMagazineSmartGunHTMode1",
+      "RMCMagazineSmartGunirradiatedMode1"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunCOMode0",
+    "name": "умная пушка M56B \"Кавалер\" (высокоточный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
+    "fireRate": 5.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 5,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode0",
+      "RMCMagazineSmartGunHTMode0",
+      "RMCMagazineSmartGunirradiatedMode0"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunCOMode1",
+    "name": "умная пушка M56B \"Кавалер\" (бронебойный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
+    "fireRate": 5.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 5,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode1",
+      "RMCMagazineSmartGunHTMode1",
+      "RMCMagazineSmartGunirradiatedMode1"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCSmartGunMounted",
@@ -1630,7 +1975,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/HMGs/ml66d.yml",
     "fireRate": 3.33,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -1678,11 +2023,18 @@ const GUNS = [
         "shotsToMaxScatter": 700
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {},
     "tags": [
       "RMCSmartGunMounted"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 0,
+      "accuracyAddMult": 0.0,
+      "scatterFlat": 0.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCSmartGunMountedStatic",
@@ -1691,7 +2043,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/HMGs/ml66d.yml",
     "fireRate": 5.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -1738,20 +2090,27 @@ const GUNS = [
         "shotsToMaxScatter": 700
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {},
     "tags": [
       "RMCSmartGunMounted"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 0,
+      "accuracyAddMult": 0.0,
+      "scatterFlat": 0.0
+    },
+    "gunBurstFireRate": 8
   },
   {
-    "id": "RMCSmartGunOvertunedPVE",
-    "name": "ML66OT heavy support gun",
+    "id": "RMCSmartGunOvertunedPVEMode0",
+    "name": "ML66OT heavy support gun (высокоточный режим)",
     "category": "Смартганы",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun_pve.yml",
     "fireRate": 6.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 12.0,
@@ -1773,9 +2132,9 @@ const GUNS = [
       }
     },
     "magazines": [
-      "RMCMagazineSmartGun",
-      "RMCMagazineSmartGunHT",
-      "RMCMagazineSmartGunirradiated"
+      "RMCMagazineSmartGunMode0",
+      "RMCMagazineSmartGunHTMode0",
+      "RMCMagazineSmartGunirradiatedMode0"
     ],
     "accuracyMult": 1.05,
     "accuracyMultUnwielded": 1,
@@ -1799,7 +2158,7 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -1809,16 +2168,97 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
-    "id": "RMCSmartGunPMC",
-    "name": "ML79A smart gun",
+    "id": "RMCSmartGunOvertunedPVEMode1",
+    "name": "ML66OT heavy support gun (бронебойный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun_pve.yml",
+    "fireRate": 6.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 12.0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 6,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode1",
+      "RMCMagazineSmartGunHTMode1",
+      "RMCMagazineSmartGunirradiatedMode1"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunPMCMode0",
+    "name": "ML79A smart gun (высокоточный режим)",
     "category": "Смартганы",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
     "fireRate": 5.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -1840,9 +2280,9 @@ const GUNS = [
       }
     },
     "magazines": [
-      "RMCMagazineSmartGun",
-      "RMCMagazineSmartGunHT",
-      "RMCMagazineSmartGunirradiated"
+      "RMCMagazineSmartGunMode0",
+      "RMCMagazineSmartGunHTMode0",
+      "RMCMagazineSmartGunirradiatedMode0"
     ],
     "accuracyMult": 1.05,
     "accuracyMultUnwielded": 1,
@@ -1866,7 +2306,7 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -1876,217 +2316,23 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
-    "id": "RMCSmartGunPMCPVE",
-    "name": "ML79A heavy support gun",
-    "category": "Смартганы",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun_pve.yml",
-    "fireRate": 6.0,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
-    "damageMult": 1.0,
-    "falloffMult": 1,
-    "rangeFlat": 12.0,
-    "selectiveFire": {
-      "baseFireModes": [
-        "FullAuto"
-      ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
-      "baseFireRate": 6,
-      "burstScatterMult": 4,
-      "modifiers": {
-        "FullAuto": {
-          "maxScatterModifier": 4,
-          "useBurstScatterMult": true,
-          "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
-        }
-      }
-    },
-    "magazines": [
-      "RMCMagazineSmartGun",
-      "RMCMagazineSmartGunHT",
-      "RMCMagazineSmartGunirradiated"
-    ],
-    "accuracyMult": 1.05,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "FullAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10.0,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
-    "fireModeMods": {
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 4.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 80
-      }
-    },
-    "burstCooldown": null,
-    "attachmentSlots": {
-      "rail": {
-        "locked": false,
-        "starting": null,
-        "allowed": [
-          "RMCAttachmentRailFlashlight"
-        ]
-      }
-    },
-    "tags": []
-  },
-  {
-    "id": "RMCSmartGunPVE",
-    "name": "ML66A heavy support gun",
-    "category": "Смартганы",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun_pve.yml",
-    "fireRate": 6.0,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
-    "damageMult": 1.0,
-    "falloffMult": 1,
-    "rangeFlat": 12.0,
-    "selectiveFire": {
-      "baseFireModes": [
-        "FullAuto"
-      ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
-      "baseFireRate": 6,
-      "burstScatterMult": 4,
-      "modifiers": {
-        "FullAuto": {
-          "maxScatterModifier": 4,
-          "useBurstScatterMult": true,
-          "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
-        }
-      }
-    },
-    "magazines": [
-      "RMCMagazineSmartGun",
-      "RMCMagazineSmartGunHT",
-      "RMCMagazineSmartGunirradiated"
-    ],
-    "accuracyMult": 1.05,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "FullAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10.0,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
-    "fireModeMods": {
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 4.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 80
-      }
-    },
-    "burstCooldown": null,
-    "attachmentSlots": {
-      "rail": {
-        "locked": false,
-        "starting": null,
-        "allowed": [
-          "RMCAttachmentRailFlashlight"
-        ]
-      }
-    },
-    "tags": []
-  },
-  {
-    "id": "RMCSmartGunRCMPVE",
-    "name": "ML66C general purpose machine gun",
-    "category": "Смартганы",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun_pve.yml",
-    "fireRate": 6.0,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
-    "damageMult": 1.0,
-    "falloffMult": 1,
-    "rangeFlat": 12.0,
-    "selectiveFire": {
-      "baseFireModes": [
-        "FullAuto"
-      ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
-      "baseFireRate": 6,
-      "burstScatterMult": 4,
-      "modifiers": {
-        "FullAuto": {
-          "maxScatterModifier": 4,
-          "useBurstScatterMult": true,
-          "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
-        }
-      }
-    },
-    "magazines": [
-      "RMCMagazineSmartGun",
-      "RMCMagazineSmartGunHT",
-      "RMCMagazineSmartGunirradiated"
-    ],
-    "accuracyMult": 1.05,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "FullAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10.0,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
-    "fireModeMods": {
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 4.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 80
-      }
-    },
-    "burstCooldown": null,
-    "attachmentSlots": {
-      "rail": {
-        "locked": false,
-        "starting": null,
-        "allowed": [
-          "RMCAttachmentRailFlashlight"
-        ]
-      }
-    },
-    "tags": []
-  },
-  {
-    "id": "RMCSmartGunRoyal",
-    "name": "умная пушка M56B \"королевский\"",
+    "id": "RMCSmartGunPMCMode1",
+    "name": "ML79A smart gun (бронебойный режим)",
     "category": "Смартганы",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
     "fireRate": 5.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2108,9 +2354,9 @@ const GUNS = [
       }
     },
     "magazines": [
-      "RMCMagazineSmartGun",
-      "RMCMagazineSmartGunHT",
-      "RMCMagazineSmartGunirradiated"
+      "RMCMagazineSmartGunMode1",
+      "RMCMagazineSmartGunHTMode1",
+      "RMCMagazineSmartGunirradiatedMode1"
     ],
     "accuracyMult": 1.05,
     "accuracyMultUnwielded": 1,
@@ -2134,7 +2380,7 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -2144,16 +2390,615 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
-    "id": "RMCSmartGunWhiteOut",
-    "name": "умная пушка M56B",
+    "id": "RMCSmartGunPMCPVEMode0",
+    "name": "ML79A heavy support gun (высокоточный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun_pve.yml",
+    "fireRate": 6.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 12.0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 6,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode0",
+      "RMCMagazineSmartGunHTMode0",
+      "RMCMagazineSmartGunirradiatedMode0"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunPMCPVEMode1",
+    "name": "ML79A heavy support gun (бронебойный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun_pve.yml",
+    "fireRate": 6.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 12.0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 6,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode1",
+      "RMCMagazineSmartGunHTMode1",
+      "RMCMagazineSmartGunirradiatedMode1"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunPVEMode0",
+    "name": "ML66A heavy support gun (высокоточный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun_pve.yml",
+    "fireRate": 6.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 12.0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 6,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode0",
+      "RMCMagazineSmartGunHTMode0",
+      "RMCMagazineSmartGunirradiatedMode0"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunPVEMode1",
+    "name": "ML66A heavy support gun (бронебойный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun_pve.yml",
+    "fireRate": 6.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 12.0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 6,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode1",
+      "RMCMagazineSmartGunHTMode1",
+      "RMCMagazineSmartGunirradiatedMode1"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunRCMPVEMode0",
+    "name": "ML66C general purpose machine gun (высокоточный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun_pve.yml",
+    "fireRate": 6.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 12.0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 6,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode0",
+      "RMCMagazineSmartGunHTMode0",
+      "RMCMagazineSmartGunirradiatedMode0"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunRCMPVEMode1",
+    "name": "ML66C general purpose machine gun (бронебойный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun_pve.yml",
+    "fireRate": 6.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 12.0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 6,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode1",
+      "RMCMagazineSmartGunHTMode1",
+      "RMCMagazineSmartGunirradiatedMode1"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunRoyalMode0",
+    "name": "умная пушка M56B \"королевский\" (высокоточный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
+    "fireRate": 5.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 5,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode0",
+      "RMCMagazineSmartGunHTMode0",
+      "RMCMagazineSmartGunirradiatedMode0"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunRoyalMode1",
+    "name": "умная пушка M56B \"королевский\" (бронебойный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
+    "fireRate": 5.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 5,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 4,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode1",
+      "RMCMagazineSmartGunHTMode1",
+      "RMCMagazineSmartGunirradiatedMode1"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 4.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunWhiteOutMode0",
+    "name": "умная пушка M56B (высокоточный режим)",
     "category": "Смартганы",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2175,9 +3020,9 @@ const GUNS = [
       }
     },
     "magazines": [
-      "RMCMagazineSmartGun",
-      "RMCMagazineSmartGunHT",
-      "RMCMagazineSmartGunirradiated"
+      "RMCMagazineSmartGunMode0",
+      "RMCMagazineSmartGunHTMode0",
+      "RMCMagazineSmartGunirradiatedMode0"
     ],
     "accuracyMult": 1.05,
     "accuracyMultUnwielded": 1,
@@ -2201,7 +3046,7 @@ const GUNS = [
         "shotsToMaxScatter": 80
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -2211,7 +3056,88 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCSmartGunWhiteOutMode1",
+    "name": "умная пушка M56B (бронебойный режим)",
+    "category": "Смартганы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/SmartGuns/smart_gun.yml",
+    "fireRate": 10.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "FullAuto"
+      ],
+      "recoilWielded": 3,
+      "scatterWielded": 10,
+      "baseFireRate": 10,
+      "burstScatterMult": 1,
+      "modifiers": {
+        "FullAuto": {
+          "maxScatterModifier": 0,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 80
+        }
+      }
+    },
+    "magazines": [
+      "RMCMagazineSmartGunMode1",
+      "RMCMagazineSmartGunHTMode1",
+      "RMCMagazineSmartGunirradiatedMode1"
+    ],
+    "accuracyMult": 1.05,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "FullAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 1.0,
+    "fireModeMods": {
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 0.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 80
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight"
+        ]
+      }
+    },
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCType88SniperRifle",
@@ -2220,7 +3146,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Snipers/type88_sniper.yml",
     "fireRate": 1.6675,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2282,7 +3208,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -2315,7 +3241,14 @@ const GUNS = [
     },
     "tags": [
       "RMCType88SniperRifle"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponBoltActionRifle",
@@ -2324,7 +3257,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/BoltAction/hunting_rifle.yml",
     "fireRate": 1.25,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.4,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2386,7 +3319,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -2418,7 +3351,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponLMGM60",
@@ -2504,7 +3444,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponLMGM60"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponLMGQYJ72",
@@ -2584,7 +3531,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponLMGQYJ72"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponLauncherHJRA12",
@@ -2593,7 +3547,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/hjra_12_rocket_launcher.yml",
     "fireRate": 0.83,
     "fireRateSource": "Gun",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2618,7 +3572,7 @@ const GUNS = [
     "scatterDecay": 4.0,
     "burstScatterMult": null,
     "fireModeMods": {},
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "stock": {
         "locked": true,
@@ -2628,7 +3582,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponLauncherM5ATL",
@@ -2637,7 +3598,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/m5_atl_rocket_launcher.yml",
     "fireRate": 0.83,
     "fireRateSource": "Gun",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2662,9 +3623,16 @@ const GUNS = [
     "scatterDecay": 4.0,
     "burstScatterMult": null,
     "fireModeMods": {},
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {},
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponLauncherM6HBrute",
@@ -2673,7 +3641,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/m6h_brute_launcher.yml",
     "fireRate": 0.83,
     "fireRateSource": "Gun",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2696,11 +3664,18 @@ const GUNS = [
     "scatterDecay": 4.0,
     "burstScatterMult": null,
     "fireModeMods": {},
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {},
     "tags": [
       "RMCWeaponLauncherM6HBrute"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponLauncherM85A1",
@@ -2709,7 +3684,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/m85a1_grenade_launcher.yml",
     "fireRate": 0.3125,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2757,7 +3732,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -2773,7 +3748,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponLauncherM85A1"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponMar50LMG",
@@ -2856,7 +3838,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponMar50LMG"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolB92FS",
@@ -2865,7 +3854,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/b92fs.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 0.9,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2909,7 +3898,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -2943,7 +3932,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCb92fs"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolD18",
@@ -2952,7 +3948,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/hummingbird.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.2,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -2997,7 +3993,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -3021,7 +4017,14 @@ const GUNS = [
     "tags": [
       "Holdout",
       "RMCWeaponPistolD18"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolHG45Aguila",
@@ -3030,7 +4033,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/hg45_Aguila_pistol.yml",
     "fireRate": 1.428,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.4,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3074,7 +4077,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -3122,7 +4125,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCMK45"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolHG45Marina",
@@ -3131,7 +4141,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/hg45_Marina_pistol.yml",
     "fireRate": 1.428,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.4,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3175,7 +4185,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -3223,7 +4233,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCMK45"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolHandcannon",
@@ -3313,7 +4330,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolHandcannon"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolHandcannonGold",
@@ -3405,7 +4429,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolHandcannonGold"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolHandcannonWinterWyvern",
@@ -3497,7 +4528,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolHandcannonWyvern"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolHoldout",
@@ -3506,7 +4544,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/holdout_pistol.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3551,7 +4589,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -3580,7 +4618,14 @@ const GUNS = [
     },
     "tags": [
       "Holdout"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolKT42",
@@ -3589,7 +4634,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/kt42_pistol.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3633,7 +4678,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -3667,7 +4712,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolKT42"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolL14",
@@ -3676,7 +4728,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/l14_pistol.yml",
     "fireRate": 6.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3724,7 +4776,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.33,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -3760,7 +4812,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolL14"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolL14Custom",
@@ -3769,7 +4828,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/l14_pistol.yml",
     "fireRate": 6.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3817,7 +4876,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.33,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -3853,7 +4912,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolL14"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolL54",
@@ -3862,7 +4928,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/l54_pistol.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3907,7 +4973,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -3943,7 +5009,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolL54"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolL54Custom",
@@ -3952,7 +5025,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/l54_pistol.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.25,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -3997,7 +5070,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -4033,7 +5106,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolL54"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolM13",
@@ -4042,7 +5122,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/m13_auto_pistol.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 0.75,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4093,7 +5173,7 @@ const GUNS = [
         "shotsToMaxScatter": 40
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -4139,7 +5219,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolM13"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolM77",
@@ -4237,7 +5324,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolM77"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolM82F",
@@ -4246,7 +5340,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/m82f.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4293,7 +5387,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -4307,7 +5401,14 @@ const GUNS = [
     "tags": [
       "RMCFlareGun",
       "Sidearm"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolMK45",
@@ -4316,7 +5417,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/mk45_pistol.yml",
     "fireRate": 1.428,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.4,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4360,7 +5461,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -4408,7 +5509,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCMK45"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolNP92",
@@ -4492,7 +5600,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolNP92"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolNPZ92",
@@ -4573,7 +5688,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolNPZ92"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolPK7",
@@ -4582,7 +5704,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/pk7.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4628,7 +5750,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -4651,7 +5773,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolPK7"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolSU6",
@@ -4745,7 +5874,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCSmartPistol"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolT73",
@@ -4835,7 +5971,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolT73"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponPistolT74",
@@ -4844,7 +5987,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/t73_pistol.yml",
     "fireRate": 2.5,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.3,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4890,7 +6033,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -4915,7 +6058,14 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCWeaponPistolT74"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleABR40",
@@ -4924,7 +6074,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/abr40.yml",
     "fireRate": 2.857,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1.3,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -4986,7 +6136,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -5032,7 +6182,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleABR40Tactical",
@@ -5041,7 +6198,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/abr40.yml",
     "fireRate": 3.33,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1.35,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5103,7 +6260,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -5149,7 +6306,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL24",
@@ -5288,7 +6452,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL24B",
@@ -5409,7 +6580,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL42A",
@@ -5418,7 +6596,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/l42a.yml",
     "fireRate": 2.857,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1.3,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5484,7 +6662,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -5532,7 +6710,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL83A2",
@@ -5670,7 +6855,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL83A3",
@@ -5679,7 +6871,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/L83A3.yml",
     "fireRate": 2.85,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.7,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -5732,7 +6924,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -5793,7 +6985,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponRifleL83A3F",
@@ -5932,7 +7131,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL88A1",
@@ -5941,7 +7147,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/l88.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -6006,7 +7212,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -6049,7 +7255,14 @@ const GUNS = [
     "tags": [
       "RMCRifleL88",
       "RMCRifleL88A1"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL88A2",
@@ -6058,7 +7271,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/l88.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -6123,7 +7336,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -6176,7 +7389,14 @@ const GUNS = [
     "tags": [
       "RMCRifleL88",
       "RMCRifleL88A2"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL89A1",
@@ -6185,7 +7405,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/l89.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.6,
     "falloffMult": 0.0,
     "rangeFlat": 0,
@@ -6248,7 +7468,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -6287,7 +7507,14 @@ const GUNS = [
     "tags": [
       "RMCRifleL89",
       "RMCRifleL89A1"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL89A2",
@@ -6296,7 +7523,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/l89.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.6,
     "falloffMult": 0.0,
     "rangeFlat": 0,
@@ -6359,7 +7586,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -6402,7 +7629,14 @@ const GUNS = [
     "tags": [
       "RMCRifleL89",
       "RMCRifleL89A2"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL90A1",
@@ -6411,7 +7645,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/l90.yml",
     "fireRate": 2.5,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -6480,7 +7714,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -6523,7 +7757,14 @@ const GUNS = [
     "tags": [
       "RMCRifleL90",
       "RMCRifleL90A1"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL90A2",
@@ -6532,7 +7773,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/l90.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -6603,7 +7844,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -6659,7 +7900,14 @@ const GUNS = [
     "tags": [
       "RMCRifleL90",
       "RMCRifleL90A2"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleL91SWS",
@@ -6668,7 +7916,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/l90.yml",
     "fireRate": 2.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.4,
     "falloffMult": 0.0,
     "rangeFlat": 0,
@@ -6726,7 +7974,7 @@ const GUNS = [
         "shotsToMaxScatter": 3
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -6765,7 +8013,14 @@ const GUNS = [
     },
     "tags": [
       "RMCRifleL91SWS"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleM16A5",
@@ -6900,7 +8155,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleM54C",
@@ -7046,7 +8308,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleM54CMK2"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleM54C2",
@@ -7171,7 +8440,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleM54C2"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleM54CE2",
@@ -7291,7 +8567,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleM54CE2"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleM54CMK1",
@@ -7423,7 +8706,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleM54CMK1"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleM59A",
@@ -7570,7 +8860,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleM59A"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleMAR30",
@@ -7697,7 +8994,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleSSG45",
@@ -7829,7 +9133,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleSSG45"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleType71",
@@ -7947,7 +9258,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleType71"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleType71PVE",
@@ -8065,7 +9383,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleType71PVE"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleType71C",
@@ -8174,7 +9499,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleType71C"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleType71Flamer",
@@ -8286,7 +9618,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleType71"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleType73",
@@ -8381,7 +9720,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleType73"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleType77",
@@ -8521,7 +9867,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleType77"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponRifleXM40",
@@ -8614,7 +9967,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleXM40"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponSMGFP9000",
@@ -8718,7 +10078,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponSMG"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponSMGFP9000PMC",
@@ -8826,7 +10193,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponSMG"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponSMGL7A3",
@@ -8961,7 +10335,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponSMG",
       "RMCWeaponSMGL7A3"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponSMGM63B2",
@@ -9100,7 +10481,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponSMG",
       "RMCWeaponSMGM63B2"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponSMGM63",
@@ -9243,7 +10631,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponSMG",
       "RMCWeaponSMGM63"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponSMGMP27",
@@ -9369,7 +10764,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponSMG"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponSMGMP5Alt",
@@ -9503,7 +10905,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponSMG"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponSMGPDW90",
@@ -9617,7 +11026,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponSMG"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponSMGPDW90TSE",
@@ -9731,7 +11147,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponSMG"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponSMGType19",
@@ -9845,7 +11268,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponSMG"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponSMGType64",
@@ -9969,7 +11399,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponSMG",
       "RMCWeaponSMGType64"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponSMGUZI",
@@ -9978,7 +11415,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/uzi.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -10029,7 +11466,7 @@ const GUNS = [
         "shotsToMaxScatter": 50
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -10068,7 +11505,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponSMG"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponShotgunL49",
@@ -10077,7 +11521,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/l49_combat.yml",
     "fireRate": 0.75,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 0.66,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -10130,7 +11574,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": true,
@@ -10172,7 +11616,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponShotgunL49",
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponShotgunM12",
@@ -10181,7 +11632,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/model_12.yml",
     "fireRate": 0.625,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -10233,7 +11684,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -10273,7 +11724,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponShotgunModel12",
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponShotgunM3717",
@@ -10282,7 +11740,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/m3717.yml",
     "fireRate": 0.625,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1.15,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -10334,7 +11792,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -10367,7 +11825,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponShotgunM3717",
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponShotgunM42A2",
@@ -10376,7 +11841,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/m42a2_shotgun.yml",
     "fireRate": 0.5,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -10428,7 +11893,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -10481,7 +11946,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponShotgunM42A2",
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponShotgunM890",
@@ -10490,7 +11962,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/m890_shotgun.yml",
     "fireRate": 0.7,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -10549,7 +12021,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -10595,7 +12067,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponShotgunSyracuse",
@@ -10604,7 +12083,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/syracuse_shotgun.yml",
     "fireRate": 2.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -10656,7 +12135,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -10709,7 +12188,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponShotgunSyracuse",
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponShotgunType23",
@@ -10718,7 +12204,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/type23.yml",
     "fireRate": 0.4,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -10769,7 +12255,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -10820,7 +12306,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponShotgunType23",
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponShotgunXM38",
@@ -10829,7 +12322,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/xm38_shotgun.yml",
     "fireRate": 1.666,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -10890,7 +12383,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -10936,7 +12429,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCWeaponShotgunXM51",
@@ -10945,7 +12445,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/xm51_shotgun.yml",
     "fireRate": 0.625,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -10995,7 +12495,7 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 1.5,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -11045,7 +12545,14 @@ const GUNS = [
       "RMCWeaponShotgun",
       "RMCWeaponShotgunXM51",
       "RMCXM51StockBurst"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "RMCXM43E1AntiMaterielRifle",
@@ -11054,7 +12561,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Snipers/xm43e1_anti_materiel_rifle.yml",
     "fireRate": 0.335,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -11116,7 +12623,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": true,
@@ -11135,7 +12642,14 @@ const GUNS = [
     },
     "tags": [
       "RMCXM43E1AntiMaterielRifle"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "STWeaponSharpRifle",
@@ -11144,7 +12658,7 @@ const GUNS = [
     "file": "_Stories/Entities/Objects/Weapons/Guns/Sharp/sharp_weapon.yml",
     "fireRate": 0.3425,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -11191,9 +12705,12 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.25,
     "attachmentSlots": {},
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0,
+    "unskilledPenalty": null,
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponLauncherM83",
@@ -11202,7 +12719,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/m83_grenade_launcher.yml",
     "fireRate": 0.675,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": null,
+    "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -11250,7 +12767,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -11261,7 +12778,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponNailgun",
@@ -11340,7 +12864,14 @@ const GUNS = [
     "attachmentSlots": {},
     "tags": [
       "RMCWeaponSMGNailgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponRifleAR10",
@@ -11447,7 +12978,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponRifleL83A3M",
@@ -11456,7 +12994,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/L83A3.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 1.7,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -11509,7 +13047,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -11562,7 +13100,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponRifleM16",
@@ -11697,7 +13242,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponRifleM4SPR",
@@ -11706,7 +13258,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/m4spr_rifle.yml",
     "fireRate": 2.86,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 0.0,
+    "shotsPerBurst": 0,
     "damageMult": 1.4,
     "falloffMult": 0.0,
     "rangeFlat": 0,
@@ -11774,7 +13326,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -11824,7 +13376,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleM4SPR"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponRifleM4SPRCustom",
@@ -11833,7 +13392,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/m4spr_scout_rifle.yml",
     "fireRate": 1.8,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1.1,
     "falloffMult": 0.0,
     "rangeFlat": 0,
@@ -11888,7 +13447,7 @@ const GUNS = [
         "shotsToMaxScatter": 6
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.75,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -11937,7 +13496,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleM4SPR"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponRifleM5SPR",
@@ -12055,7 +13621,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleM5SPR"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponRifleM5SPR2",
@@ -12173,7 +13746,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponRifleM5SPR2"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponRifleMAR40",
@@ -12294,7 +13874,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponRifleXM88",
@@ -12303,7 +13890,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/xm88_rifle.yml",
     "fireRate": 1.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1.0,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -12365,7 +13952,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -12412,7 +13999,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponRifleXM88MaxStacks",
@@ -12421,7 +14015,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/xm88_rifle.yml",
     "fireRate": 1.4285,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1.2,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -12483,7 +14077,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -12530,7 +14124,14 @@ const GUNS = [
         ]
       }
     },
-    "tags": []
+    "tags": [],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponSMGMAC15",
@@ -12539,7 +14140,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/SMGs/mac15.yml",
     "fireRate": 10.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3.0,
+    "shotsPerBurst": 3,
     "damageMult": 0.9,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -12590,7 +14191,7 @@ const GUNS = [
         "shotsToMaxScatter": 70
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -12638,7 +14239,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponSMG"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponSMGMP5",
@@ -12765,7 +14373,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponSMG"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 20.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponShotgunCustomBuilt",
@@ -12845,7 +14460,14 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponShotgunM357",
@@ -12854,7 +14476,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/m357_shotgun.yml",
     "fireRate": 0.7,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -12913,7 +14535,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -12958,7 +14580,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponShotgunM357",
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponShotgunM357Sawn",
@@ -12967,7 +14596,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/m357_sawn_off_shotgun.yml",
     "fireRate": 0.7,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2.0,
+    "shotsPerBurst": 2,
     "damageMult": 0.8,
     "falloffMult": 2.0,
     "rangeFlat": 0,
@@ -13026,7 +14655,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "rail": {
         "locked": false,
@@ -13058,7 +14687,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponShotgunM357",
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponShotgunM42A1",
@@ -13067,7 +14703,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/m42a1_shotgun.yml",
     "fireRate": 0.5,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -13119,7 +14755,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -13172,7 +14808,14 @@ const GUNS = [
     "tags": [
       "RMCWeaponShotgunM42A1",
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   },
   {
     "id": "WeaponShotgunMOU53",
@@ -13181,7 +14824,7 @@ const GUNS = [
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/mou53_shotgun.yml",
     "fireRate": 4.0,
     "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 1.0,
+    "shotsPerBurst": 1,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
@@ -13231,7 +14874,7 @@ const GUNS = [
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": null,
+    "burstCooldown": 0.0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -13283,6 +14926,13 @@ const GUNS = [
     "tags": [
       "RMCWeaponShotgunMOU53",
       "RMCWeaponShotgun"
-    ]
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
   }
 ];

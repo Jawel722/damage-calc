@@ -1156,5 +1156,41 @@ const MAGAZINES = [
     "name": "горсть пуль .458 SOCOM (макс. стаки)",
     "projectile": "RMCBullet458SOCOMMaxStacks",
     "capacity": null
+  },
+  {
+    "id": "RMCMagazineSmartGunMode0",
+    "name": "боевой магазин M56B (10x30 мм) (высокоточный режим)",
+    "projectile": "CMBulletSmartGun10x30mmMode0",
+    "capacity": 500.0
+  },
+  {
+    "id": "RMCMagazineSmartGunHTMode0",
+    "name": "голотаргетинг магазин M56B (10x30mm) (высокоточный режим)",
+    "projectile": "RMCBulletSmartGun10x30mmHTMode0",
+    "capacity": 500.0
+  },
+  {
+    "id": "RMCMagazineSmartGunirradiatedMode0",
+    "name": "облученный магазин M56B (10x30 мм) (высокоточный режим)",
+    "projectile": "RMCBulletSmartGun10x30mmirradiatedMode0",
+    "capacity": 500.0
+  },
+  {
+    "id": "RMCMagazineSmartGunMode1",
+    "name": "боевой магазин M56B (10x30 мм) (бронебойный режим)",
+    "projectile": "CMBulletSmartGun10x30mmMode1",
+    "capacity": 500.0
+  },
+  {
+    "id": "RMCMagazineSmartGunHTMode1",
+    "name": "голотаргетинг магазин M56B (10x30mm) (бронебойный режим)",
+    "projectile": "RMCBulletSmartGun10x30mmHTMode1",
+    "capacity": 500.0
+  },
+  {
+    "id": "RMCMagazineSmartGunirradiatedMode1",
+    "name": "облученный магазин M56B (10x30 мм) (бронебойный режим)",
+    "projectile": "RMCBulletSmartGun10x30mmirradiatedMode1",
+    "capacity": 500.0
   }
 ];
