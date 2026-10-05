@@ -135,8 +135,8 @@ const GUNS = [
     },
     "magazines": [
       "CMMagazineSniperM96S",
-      "CMMagazineSniperM96SFlak",
-      "CMMagazineSniperM96SIncendiary"
+      "CMMagazineSniperM96SIncendiary",
+      "CMMagazineSniperM96SFlak"
     ],
     "accuracyMult": 3.0,
     "accuracyMultUnwielded": 0.65,
@@ -493,66 +493,6 @@ const GUNS = [
     "gunBurstFireRate": 8
   },
   {
-    "id": "RMCAttachmentL90GL",
-    "name": "L90U3 подствольный гранатомет",
-    "category": "Подствольные",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Attachments/under_attachments.yml",
-    "fireRate": 0.417,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {
-      "baseFireRate": 0.417
-    },
-    "magazines": [
-      "RMC40MMGrenadeM74AGMF",
-      "RMC40MMGrenadeM74AGMI",
-      "RMC40MMGrenadeM74AGMS",
-      "RMCHornetShellM74AGMS",
-      "RMCStarShellM74AGMS"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10.0,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
-    "fireModeMods": {
-      "Burst": {
-        "fireDelay": 0.1,
-        "maxScatterModifier": 10.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 6
-      },
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 26.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 4
-      }
-    },
-    "burstCooldown": 0.25,
-    "attachmentSlots": {},
-    "tags": [
-      "RMCAttachmentUnderbarrel",
-      "RMCAttachmentL90GL"
-    ],
-    "skillAccuracyPerLevel": 0,
-    "unskilledPenalty": null,
-    "gunBurstFireRate": 8
-  },
-  {
     "id": "RMCAttachmentL90UBS",
     "name": "L90U1 подствольный дробовик",
     "category": "Подствольные",
@@ -608,186 +548,6 @@ const GUNS = [
     "tags": [
       "RMCAttachmentUnderbarrel",
       "RMCAttachmentL90UBS"
-    ],
-    "skillAccuracyPerLevel": 0,
-    "unskilledPenalty": null,
-    "gunBurstFireRate": 8
-  },
-  {
-    "id": "RMCAttachmentM203GrenadeLauncher",
-    "name": "подствольный гранатомет M203",
-    "category": "Подствольные",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Attachments/under_attachments.yml",
-    "fireRate": 0.334,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {
-      "baseFireRate": 0.334
-    },
-    "magazines": [
-      "RMC40MMGrenadeM74AGMF",
-      "RMC40MMGrenadeM74AGMI",
-      "RMC40MMGrenadeM74AGMS",
-      "RMCHornetShellM74AGMS",
-      "RMCStarShellM74AGMS"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10.0,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
-    "fireModeMods": {
-      "Burst": {
-        "fireDelay": 0.1,
-        "maxScatterModifier": 10.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 6
-      },
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 26.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 4
-      }
-    },
-    "burstCooldown": 0.25,
-    "attachmentSlots": {},
-    "tags": [
-      "RMCAttachmentUnderbarrel",
-      "RMCAttachmentM203GrenadeLauncher"
-    ],
-    "skillAccuracyPerLevel": 0,
-    "unskilledPenalty": null,
-    "gunBurstFireRate": 8
-  },
-  {
-    "id": "RMCAttachmentMK1GrenadeLauncher",
-    "name": "подствольный гранатомет MK1",
-    "category": "Подствольные",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Attachments/under_attachments.yml",
-    "fireRate": 0.334,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {
-      "baseFireRate": 0.334
-    },
-    "magazines": [
-      "RMC40MMGrenadeM74AGMF",
-      "RMC40MMGrenadeM74AGMI",
-      "RMC40MMGrenadeM74AGMS",
-      "RMCHornetShellM74AGMS",
-      "RMCStarShellM74AGMS"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10.0,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
-    "fireModeMods": {
-      "Burst": {
-        "fireDelay": 0.1,
-        "maxScatterModifier": 10.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 6
-      },
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 26.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 4
-      }
-    },
-    "burstCooldown": 0.25,
-    "attachmentSlots": {},
-    "tags": [
-      "RMCAttachmentUnderbarrel",
-      "RMCAttachmentMK1GrenadeLauncher"
-    ],
-    "skillAccuracyPerLevel": 0,
-    "unskilledPenalty": null,
-    "gunBurstFireRate": 8
-  },
-  {
-    "id": "RMCAttachmentU1GrenadeLauncher",
-    "name": "подствольный гранатомет U1",
-    "category": "Подствольные",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Attachments/under_attachments.yml",
-    "fireRate": 0.417,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {
-      "baseFireRate": 0.417
-    },
-    "magazines": [
-      "RMC40MMGrenadeM74AGMF",
-      "RMC40MMGrenadeM74AGMI",
-      "RMC40MMGrenadeM74AGMS",
-      "RMCHornetShellM74AGMS",
-      "RMCStarShellM74AGMS"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10.0,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
-    "fireModeMods": {
-      "Burst": {
-        "fireDelay": 0.1,
-        "maxScatterModifier": 10.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 6
-      },
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 26.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 4
-      }
-    },
-    "burstCooldown": 0.25,
-    "attachmentSlots": {},
-    "tags": [
-      "RMCAttachmentUnderbarrel",
-      "RMCAttachmentU1GrenadeLauncher"
     ],
     "skillAccuracyPerLevel": 0,
     "unskilledPenalty": null,
@@ -939,11 +699,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "underbarrel": {
@@ -1114,8 +871,8 @@ const GUNS = [
     },
     "magazines": [
       "CMMagazineSniperM96S",
-      "CMMagazineSniperM96SFlak",
-      "CMMagazineSniperM96SIncendiary"
+      "CMMagazineSniperM96SIncendiary",
+      "CMMagazineSniperM96SFlak"
     ],
     "accuracyMult": 3.0,
     "accuracyMultUnwielded": 0.65,
@@ -1447,80 +1204,6 @@ const GUNS = [
       "minSkill": 0,
       "accuracyAddMult": 0.0,
       "scatterFlat": 0.0
-    },
-    "gunBurstFireRate": 8
-  },
-  {
-    "id": "RMCRoyalGrenadeLauncher",
-    "name": "L989A2 multiple grenade launcher",
-    "category": "Гранатомёты",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/l989a2_grenade_launcher.yml",
-    "fireRate": 1.43,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto"
-      ],
-      "recoilWielded": 2,
-      "baseFireRate": 1.43
-    },
-    "magazines": [
-      "RMC40MMGrenadeM74AGMF",
-      "RMC40MMGrenadeM74AGMI",
-      "RMC40MMGrenadeM74AGMS",
-      "RMCBatonSlugHIRR",
-      "RMCHornetShellM74AGMS",
-      "RMCStarShellM74AGMS"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10.0,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
-    "fireModeMods": {
-      "Burst": {
-        "fireDelay": 0.1,
-        "maxScatterModifier": 10.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 6
-      },
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 26.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 4
-      }
-    },
-    "burstCooldown": 0.0,
-    "attachmentSlots": {
-      "rail": {
-        "locked": true,
-        "starting": "RMCAttachmentScopeMGLIntegrated",
-        "allowed": [
-          "RMCAttachmentScopeMGLIntegrated"
-        ]
-      }
-    },
-    "tags": [],
-    "skillAccuracyPerLevel": 0.15,
-    "unskilledPenalty": {
-      "minSkill": 1,
-      "accuracyAddMult": -0.15,
-      "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8
   },
@@ -3216,11 +2899,8 @@ const GUNS = [
         "allowed": [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -3327,11 +3007,8 @@ const GUNS = [
         "allowed": [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -3531,223 +3208,6 @@ const GUNS = [
     },
     "tags": [
       "RMCWeaponLMGQYJ72"
-    ],
-    "skillAccuracyPerLevel": 0.15,
-    "unskilledPenalty": {
-      "minSkill": 1,
-      "accuracyAddMult": -0.15,
-      "scatterFlat": 75.0
-    },
-    "gunBurstFireRate": 8
-  },
-  {
-    "id": "RMCWeaponLauncherHJRA12",
-    "name": "ручной противотанковый гранатомет СРПГ-12",
-    "category": "Гранатомёты",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/hjra_12_rocket_launcher.yml",
-    "fireRate": 0.83,
-    "fireRateSource": "Gun",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {},
-    "magazines": [
-      "RMCRocketHJRA12AT",
-      "RMCRocketHJRA12HE",
-      "RMCRocketHJRA12Incen"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": null,
-    "scatterSource": "Gun",
-    "scatterWielded": 1.0,
-    "scatterUnwielded": 1.0,
-    "scatterMax": 2.0,
-    "scatterIncrease": 0.5,
-    "scatterDecay": 4.0,
-    "burstScatterMult": null,
-    "fireModeMods": {},
-    "burstCooldown": 0.0,
-    "attachmentSlots": {
-      "stock": {
-        "locked": true,
-        "starting": "RMCAttachmentHJRA12Back",
-        "allowed": [
-          "RMCAttachmentHJRA12Back"
-        ]
-      }
-    },
-    "tags": [],
-    "skillAccuracyPerLevel": 0.15,
-    "unskilledPenalty": {
-      "minSkill": 1,
-      "accuracyAddMult": -0.15,
-      "scatterFlat": 75.0
-    },
-    "gunBurstFireRate": 8
-  },
-  {
-    "id": "RMCWeaponLauncherM5ATL",
-    "name": "M5-ATL",
-    "category": "Гранатомёты",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/m5_atl_rocket_launcher.yml",
-    "fireRate": 0.83,
-    "fireRateSource": "Gun",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {},
-    "magazines": [
-      "RMCRocket84mm",
-      "RMCRocket84mmAntiArmor",
-      "RMCRocket84mmWhitePhosphorus"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": null,
-    "scatterSource": "Gun",
-    "scatterWielded": 1.0,
-    "scatterUnwielded": 1.0,
-    "scatterMax": 2.0,
-    "scatterIncrease": 0.5,
-    "scatterDecay": 4.0,
-    "burstScatterMult": null,
-    "fireModeMods": {},
-    "burstCooldown": 0.0,
-    "attachmentSlots": {},
-    "tags": [],
-    "skillAccuracyPerLevel": 0.15,
-    "unskilledPenalty": {
-      "minSkill": 1,
-      "accuracyAddMult": -0.15,
-      "scatterFlat": 75.0
-    },
-    "gunBurstFireRate": 8
-  },
-  {
-    "id": "RMCWeaponLauncherM6HBrute",
-    "name": "M6H-BRUTE",
-    "category": "Гранатомёты",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/m6h_brute_launcher.yml",
-    "fireRate": 0.83,
-    "fireRateSource": "Gun",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {},
-    "magazines": [
-      "RMCRocketM5510Brute"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": null,
-    "scatterSource": "Gun",
-    "scatterWielded": 1.0,
-    "scatterUnwielded": 1.0,
-    "scatterMax": 2.0,
-    "scatterIncrease": 0.5,
-    "scatterDecay": 4.0,
-    "burstScatterMult": null,
-    "fireModeMods": {},
-    "burstCooldown": 0.0,
-    "attachmentSlots": {},
-    "tags": [
-      "RMCWeaponLauncherM6HBrute"
-    ],
-    "skillAccuracyPerLevel": 0.15,
-    "unskilledPenalty": {
-      "minSkill": 1,
-      "accuracyAddMult": -0.15,
-      "scatterFlat": 75.0
-    },
-    "gunBurstFireRate": 8
-  },
-  {
-    "id": "RMCWeaponLauncherM85A1",
-    "name": "гранатомет M79",
-    "category": "Гранатомёты",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/m85a1_grenade_launcher.yml",
-    "fireRate": 0.3125,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto"
-      ],
-      "recoilWielded": 2,
-      "baseFireRate": 0.3125
-    },
-    "magazines": [
-      "RMC40MMGrenadeM74AGMF",
-      "RMC40MMGrenadeM74AGMI",
-      "RMC40MMGrenadeM74AGMS",
-      "RMCBatonSlugHIRR",
-      "RMCHornetShellM74AGMS",
-      "RMCStarShellM74AGMS"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10.0,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
-    "fireModeMods": {
-      "Burst": {
-        "fireDelay": 0.1,
-        "maxScatterModifier": 10.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 6
-      },
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 26.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 4
-      }
-    },
-    "burstCooldown": 0.0,
-    "attachmentSlots": {
-      "rail": {
-        "locked": false,
-        "starting": null,
-        "allowed": [
-          "RMCAttachmentRailFlashlight",
-          "RMCAttachmentMagneticHarness",
-          "RMCAttachmentTwoPointSling",
-          "RMCAttachmentS5RedDotSight",
-          "RMCAttachmentS6ReflexSight"
-        ]
-      }
-    },
-    "tags": [
-      "RMCWeaponLauncherM85A1"
     ],
     "skillAccuracyPerLevel": 0.15,
     "unskilledPenalty": {
@@ -4091,11 +3551,8 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -4199,11 +3656,8 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -5185,8 +4639,7 @@ const GUNS = [
           "RMCAttachmentSuppressorCompact",
           "RMCAttachmentExtendedBarrel",
           "RMCAttachmentExtendedCompensator",
-          "RMCAttachmentRecoilCompensatorM13",
-          "RMCAttachmentRecoilCompensatorM13Spiked"
+          "RMCAttachmentRecoilCompensatorM13"
         ]
       },
       "rail": {
@@ -5334,83 +4787,6 @@ const GUNS = [
     "gunBurstFireRate": 8
   },
   {
-    "id": "RMCWeaponPistolM82F",
-    "name": "сигнальный пистолет M82-F",
-    "category": "Пистолеты",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/m82f.yml",
-    "fireRate": 10.0,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {
-      "scatterWielded": 0,
-      "scatterUnwielded": 0,
-      "baseFireRate": 10,
-      "burstScatterMult": 0
-    },
-    "magazines": [
-      "CMFlare",
-      "RMCFlareC18",
-      "RMCFlareCAS",
-      "RMCFlareL96",
-      "RMCFlareR44",
-      "RMCStarShellAsh"
-    ],
-    "accuracyMult": 1.0,
-    "accuracyMultUnwielded": 0.5,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.0,
-    "scatterUnwielded": 0.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 0.0,
-    "fireModeMods": {
-      "Burst": {
-        "fireDelay": 0.1,
-        "maxScatterModifier": 10.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 6
-      },
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 26.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 4
-      }
-    },
-    "burstCooldown": 0.0,
-    "attachmentSlots": {
-      "rail": {
-        "locked": false,
-        "starting": "RMCAttachmentS42xTelescopicMiniscope",
-        "allowed": [
-          "RMCAttachmentS42xTelescopicMiniscope",
-          "RMCAttachmentFP9000Scope"
-        ]
-      }
-    },
-    "tags": [
-      "RMCFlareGun",
-      "Sidearm"
-    ],
-    "skillAccuracyPerLevel": 0.15,
-    "unskilledPenalty": {
-      "minSkill": 1,
-      "accuracyAddMult": -0.15,
-      "scatterFlat": 75.0
-    },
-    "gunBurstFireRate": 8
-  },
-  {
     "id": "RMCWeaponPistolMK45",
     "name": "MK-45 'мощный' автомагнум",
     "category": "Пистолеты",
@@ -5475,11 +4851,8 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -6148,11 +5521,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -6272,11 +5642,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -6406,11 +5773,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -6547,11 +5911,8 @@ const GUNS = [
         "allowed": [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -6675,11 +6036,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -6807,11 +6165,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -6937,11 +6292,8 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -7082,11 +6434,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
           "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB",
           "RMCAttachmentRecoilCompensator"
         ]
       },
@@ -7224,11 +6573,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
           "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB",
           "RMCAttachmentRecoilCompensator",
           "RMCAttachmentExtendedCompensator"
         ]
@@ -7348,11 +6694,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
           "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB",
           "RMCAttachmentRecoilCompensator",
           "RMCAttachmentExtendedCompensator"
         ]
@@ -7480,11 +6823,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
           "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB",
           "RMCAttachmentRecoilCompensator",
           "RMCAttachmentExtendedCompensator"
         ]
@@ -7598,11 +6938,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
           "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB",
           "RMCAttachmentRecoilCompensator",
           "RMCAttachmentExtendedCompensator"
         ]
@@ -7726,11 +7063,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
           "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB",
           "RMCAttachmentRecoilCompensator",
           "RMCAttachmentExtendedCompensator"
         ]
@@ -7856,11 +7190,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
           "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB",
           "RMCAttachmentRecoilCompensator",
           "RMCAttachmentExtendedCompensator"
         ]
@@ -8107,11 +7438,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -8256,11 +7584,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -8282,10 +7607,7 @@ const GUNS = [
         "starting": "RMCAttachmentM54CStockCollapsible",
         "allowed": [
           "RMCAttachmentM54CStockSolid",
-          "RMCAttachmentM54CStockCollapsible",
-          "RMCAttachmentM54CMK1StockCollapsible",
-          "RMCAttachmentM54C2StockCollapsible",
-          "RMCAttachmentM54CStockCollapsibleWhite"
+          "RMCAttachmentM54CStockCollapsible"
         ]
       },
       "underbarrel": {
@@ -8392,11 +7714,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -8415,9 +7734,9 @@ const GUNS = [
       },
       "stock": {
         "locked": false,
-        "starting": "RMCAttachmentM54C2StockCollapsible",
+        "starting": "RMCAttachmentM54CStockCollapsible",
         "allowed": [
-          "RMCAttachmentM54C2StockCollapsible"
+          "RMCAttachmentM54CStockCollapsible"
         ]
       },
       "underbarrel": {
@@ -8665,11 +7984,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -8685,12 +8001,9 @@ const GUNS = [
       },
       "stock": {
         "locked": false,
-        "starting": "RMCAttachmentM54CMK1StockCollapsible",
+        "starting": "RMCAttachmentM54CStockCollapsible",
         "allowed": [
-          "RMCAttachmentM54CStockCollapsible",
-          "RMCAttachmentM54CMK1StockCollapsible",
-          "RMCAttachmentM54C2StockCollapsible",
-          "RMCAttachmentM54CStockCollapsibleWhite"
+          "RMCAttachmentM54CStockCollapsible"
         ]
       },
       "underbarrel": {
@@ -8811,11 +8124,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -8836,10 +8146,7 @@ const GUNS = [
         "locked": true,
         "starting": "RMCAttachmentM54CStockCollapsible",
         "allowed": [
-          "RMCAttachmentM54CStockCollapsible",
-          "RMCAttachmentM54CMK1StockCollapsible",
-          "RMCAttachmentM54C2StockCollapsible",
-          "RMCAttachmentM54CStockCollapsibleWhite"
+          "RMCAttachmentM54CStockCollapsible"
         ]
       },
       "underbarrel": {
@@ -8955,11 +8262,8 @@ const GUNS = [
           "RMCAttachmentExtendedCompensator",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -9094,11 +8398,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -9214,11 +8515,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -9339,11 +8637,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -9464,11 +8759,8 @@ const GUNS = [
           "RMCAttachmentExtendedCompensator",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -9580,11 +8872,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -9819,11 +9108,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -10290,11 +9576,8 @@ const GUNS = [
           "RMCAttachmentSuppressorCompact",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -10436,11 +9719,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -10584,11 +9864,8 @@ const GUNS = [
           "RMCAttachmentSuppressorCompact",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -10729,11 +10006,8 @@ const GUNS = [
           "RMCAttachmentSuppressorCompact",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -10861,11 +10135,8 @@ const GUNS = [
           "RMCAttachmentSuppressorCompact",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -11003,11 +10274,8 @@ const GUNS = [
           "RMCAttachmentSuppressorCompact",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -11124,11 +10392,8 @@ const GUNS = [
           "RMCAttachmentSuppressorCompact",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -11364,11 +10629,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -11905,11 +11167,8 @@ const GUNS = [
           "RMCAttachmentShotgunChoke",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -12031,11 +11290,8 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -12053,8 +11309,7 @@ const GUNS = [
         "locked": false,
         "starting": "RMCAttachmentM890Stock",
         "allowed": [
-          "RMCAttachmentM890Stock",
-          "RMCAttachmentM890StockGuard"
+          "RMCAttachmentM890Stock"
         ]
       },
       "underbarrel": {
@@ -12147,11 +11402,8 @@ const GUNS = [
           "RMCAttachmentShotgunChoke",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -12266,11 +11518,8 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -12393,11 +11642,8 @@ const GUNS = [
           "RMCAttachmentExtendedBarrel",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -12503,11 +11749,8 @@ const GUNS = [
         "allowed": [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -12643,142 +11886,6 @@ const GUNS = [
     "tags": [
       "RMCXM43E1AntiMaterielRifle"
     ],
-    "skillAccuracyPerLevel": 0.15,
-    "unskilledPenalty": {
-      "minSkill": 1,
-      "accuracyAddMult": -0.15,
-      "scatterFlat": 75.0
-    },
-    "gunBurstFireRate": 8
-  },
-  {
-    "id": "STWeaponSharpRifle",
-    "name": "винтовка P9 SHARP",
-    "category": "SHARP",
-    "file": "_Stories/Entities/Objects/Weapons/Guns/Sharp/sharp_weapon.yml",
-    "fireRate": 0.3425,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto"
-      ],
-      "baseFireRate": 0.3425,
-      "recoilWielded": 0.1,
-      "scatterWielded": 0.1,
-      "burstScatterMult": 4
-    },
-    "magazines": [
-      "STMagazineSharpRifleExplosive",
-      "STMagazineSharpRifleFlechette",
-      "STMagazineSharpRifleIncendiary"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.1,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
-    "fireModeMods": {
-      "Burst": {
-        "fireDelay": 0.1,
-        "maxScatterModifier": 10.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 6
-      },
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 26.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 4
-      }
-    },
-    "burstCooldown": 0.25,
-    "attachmentSlots": {},
-    "tags": [],
-    "skillAccuracyPerLevel": 0,
-    "unskilledPenalty": null,
-    "gunBurstFireRate": 8
-  },
-  {
-    "id": "WeaponLauncherM83",
-    "name": "гранатомет M83",
-    "category": "Гранатомёты",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Launchers/m83_grenade_launcher.yml",
-    "fireRate": 0.675,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 3,
-    "damageMult": 1,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto"
-      ],
-      "recoilWielded": 2,
-      "baseFireRate": 0.675
-    },
-    "magazines": [
-      "RMC40MMGrenadeM74AGMF",
-      "RMC40MMGrenadeM74AGMI",
-      "RMC40MMGrenadeM74AGMS",
-      "RMCBatonSlugHIRR",
-      "RMCHornetShellM74AGMS",
-      "RMCStarShellM74AGMS"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 1,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto"
-    ],
-    "burstFireRateMult": 2.0,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10.0,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
-    "fireModeMods": {
-      "Burst": {
-        "fireDelay": 0.1,
-        "maxScatterModifier": 10.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 6
-      },
-      "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 26.0,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
-        "shotsToMaxScatter": 4
-      }
-    },
-    "burstCooldown": 0.0,
-    "attachmentSlots": {
-      "rail": {
-        "locked": false,
-        "starting": null,
-        "allowed": [
-          "RMCAttachmentMagneticHarness",
-          "RMCAttachmentTwoPointSling"
-        ]
-      }
-    },
-    "tags": [],
     "skillAccuracyPerLevel": 0.15,
     "unskilledPenalty": {
       "minSkill": 1,
@@ -12944,11 +12051,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -13059,11 +12163,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -13194,11 +12295,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -13338,11 +12436,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -13458,11 +12553,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -13583,11 +12675,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -13708,11 +12797,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -13841,11 +12927,8 @@ const GUNS = [
           "RMCAttachmentExtendedCompensator",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -13963,11 +13046,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
           "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB",
           "RMCAttachmentBarrelCharger"
         ]
       },
@@ -14088,11 +13168,8 @@ const GUNS = [
           "RMCAttachmentSuppressorXM40",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
           "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB",
           "RMCAttachmentBarrelCharger"
         ]
       },
@@ -14206,11 +13283,8 @@ const GUNS = [
           "RMCAttachmentSuppressorCompact",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -14336,11 +13410,8 @@ const GUNS = [
           "RMCAttachmentSuppressorCompact",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -14543,11 +13614,8 @@ const GUNS = [
         "allowed": [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -14767,11 +13835,8 @@ const GUNS = [
           "RMCAttachmentShotgunChoke",
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -14882,11 +13947,8 @@ const GUNS = [
         "allowed": [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
-          "RMCCombatUtilityKnifeB",
           "RMCTantoA",
-          "RMCTantoB",
-          "RMCSawtoothDaggerA",
-          "RMCSawtoothDaggerB"
+          "RMCSawtoothDaggerA"
         ]
       },
       "rail": {
@@ -14932,6 +13994,1338 @@ const GUNS = [
       "minSkill": 1,
       "accuracyAddMult": -0.15,
       "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverM44",
+    "name": "боевой револьвер M44",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/m44_revolver.yml",
+    "fireRate": 2.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireRate": 2,
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 1,
+      "recoilUnwielded": 3,
+      "scatterWielded": 6,
+      "scatterUnwielded": 14
+    },
+    "magazines": [
+      "RMCCartridgeRevolver44",
+      "RMCCartridgeRevolver44Marksman",
+      "RMCSpeedLoader44Marksman",
+      "RMCSpeedLoaderM44"
+    ],
+    "accuracyMult": 0.85,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 6.0,
+    "scatterUnwielded": 14.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCTantoA",
+          "RMCSawtoothDaggerA",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope",
+          "RMCAttachmentB8SmartScope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentM44MagnumSharpshooterStock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCWeaponRevolverM44"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverMkX",
+    "name": "Warwick MkX TBR",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/mkx.yml",
+    "fireRate": 1.5,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.1,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 4,
+      "recoilUnwielded": 4,
+      "scatterWielded": 4,
+      "scatterUnwielded": 16,
+      "baseFireRate": 1.5,
+      "burstScatterMult": 4
+    },
+    "magazines": [
+      "RMCCartridgeRevolverMateba",
+      "RMCCartridgeRevolverMatebaHE",
+      "RMCCartridgeRevolverMatebaHIAP",
+      "RMCCartridgeRevolverMatebaHighImpact",
+      "RMCSpeedLoaderMateba",
+      "RMCSpeedLoaderMatebaHE",
+      "RMCSpeedLoaderMatebaHIAP",
+      "RMCSpeedLoaderMatebaHighImpact"
+    ],
+    "accuracyMult": 1.5,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 4.0,
+    "scatterUnwielded": 16.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {},
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCWeaponRevolverMkX"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverRSh9",
+    "name": "штурмовой револьвер РШ-9",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/rs9.yml",
+    "fireRate": 1.2,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.1,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireRate": 1.2,
+      "scatterWielded": 8,
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 1,
+      "recoilUnwielded": 3,
+      "scatterUnwielded": 14
+    },
+    "magazines": [
+      "RMCCartridgeRevolverRsh9",
+      "RMCSpeedLoaderRsh9"
+    ],
+    "accuracyMult": 1.1,
+    "accuracyMultUnwielded": 0.75,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 8.0,
+    "scatterUnwielded": 14.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentBarrelCharger"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCWeaponRevolverRSh9"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverMateba",
+    "name": "пользовательский авторевольвер матеба",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/mateba.yml",
+    "fireRate": 1.111,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.5,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto",
+        "Burst"
+      ],
+      "recoilWielded": 4,
+      "recoilUnwielded": 4,
+      "baseFireRate": 1.111,
+      "scatterWielded": 8,
+      "scatterUnwielded": 20,
+      "burstScatterMult": 5,
+      "burstFireRateMultiplier": 3,
+      "modifiers": {
+        "Burst": {
+          "fireDelay": 0.1332,
+          "maxScatterModifier": 10,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 6
+        }
+      }
+    },
+    "magazines": [
+      "RMCCartridgeRevolverMateba",
+      "RMCCartridgeRevolverMatebaHE",
+      "RMCCartridgeRevolverMatebaHIAP",
+      "RMCCartridgeRevolverMatebaHighImpact",
+      "RMCSpeedLoaderMateba",
+      "RMCSpeedLoaderMatebaHE",
+      "RMCSpeedLoaderMatebaHIAP",
+      "RMCSpeedLoaderMatebaHighImpact"
+    ],
+    "accuracyMult": 1.1,
+    "accuracyMultUnwielded": 0.75,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto",
+      "Burst"
+    ],
+    "burstFireRateMult": 3.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 8.0,
+    "scatterUnwielded": 20.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 5.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1332,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentBarrelCharger"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCMateba"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverZHNK72",
+    "name": "револьвер ZHNK-72",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/zhnk72.yml",
+    "fireRate": 3.5,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.2,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 0,
+      "recoilUnwielded": 3,
+      "scatterWielded": 5,
+      "scatterUnwielded": 12,
+      "baseFireRate": 3.5,
+      "burstScatterMult": 4
+    },
+    "magazines": [
+      "RMCCartridgeRevolverZHNK72",
+      "RMCSpeedLoaderZHNK72"
+    ],
+    "accuracyMult": 0.85,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 5.0,
+    "scatterUnwielded": 12.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCTantoA",
+          "RMCSawtoothDaggerA",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCWeaponRevolverZHNK72"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolver38Empty",
+    "name": "револьвер .38 магнум",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/38magnum.yml",
+    "fireRate": 1.67,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 2.0,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 1,
+      "recoilUnwielded": 3,
+      "scatterWielded": 8,
+      "scatterUnwielded": 12,
+      "baseFireRate": 1.67,
+      "burstScatterMult": 4
+    },
+    "magazines": [
+      "RMCCartridgeRevolver38",
+      "RMCSpeedLoader38"
+    ],
+    "accuracyMult": 0.85,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 8.0,
+    "scatterUnwielded": 12.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": []
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCWeaponRevolver38Magnum"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverM44Custom",
+    "name": "пользовательский боевой револьвер M44",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/m44_custom_revolver.yml",
+    "fireRate": 2.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireRate": 2,
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 1,
+      "recoilUnwielded": 3,
+      "scatterWielded": 6,
+      "scatterUnwielded": 14
+    },
+    "magazines": [
+      "RMCCartridgeRevolver44",
+      "RMCCartridgeRevolver44Marksman",
+      "RMCSpeedLoader44Marksman",
+      "RMCSpeedLoaderM44"
+    ],
+    "accuracyMult": 0.85,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 6.0,
+    "scatterUnwielded": 14.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCTantoA",
+          "RMCSawtoothDaggerA",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope",
+          "RMCAttachmentB8SmartScope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentM44MagnumSharpshooterStock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCWeaponRevolverM44"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverSpearhead",
+    "name": "авторевольвер БКМ \"Острие Копья\"",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/spearhead.yml",
+    "fireRate": 1.67,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 1,
+      "recoilUnwielded": 3,
+      "scatterWielded": 8,
+      "scatterUnwielded": 12,
+      "baseFireRate": 1.67,
+      "burstScatterMult": 4
+    },
+    "magazines": [
+      "RMCCartridgeRevolver357",
+      "RMCCartridgeRevolver357Hollowpoint",
+      "RMCSpeedLoader357",
+      "RMCSpeedLoader357Hollowpoint"
+    ],
+    "accuracyMult": 0.85,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 8.0,
+    "scatterUnwielded": 12.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentM44MagnumSharpshooterStock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentGyroscopicStabilizer"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCWeaponRevolverSpearhead"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverMatebaGold",
+    "name": "позолоченный пользовательский авторевольвер Матеба",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/mateba.yml",
+    "fireRate": 1.111,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.5,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto",
+        "Burst"
+      ],
+      "recoilWielded": 4,
+      "recoilUnwielded": 4,
+      "baseFireRate": 1.111,
+      "scatterWielded": 8,
+      "scatterUnwielded": 20,
+      "burstScatterMult": 5,
+      "burstFireRateMultiplier": 3,
+      "modifiers": {
+        "Burst": {
+          "fireDelay": 0.1332,
+          "maxScatterModifier": 10,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 6
+        }
+      }
+    },
+    "magazines": [
+      "RMCCartridgeRevolverMateba",
+      "RMCCartridgeRevolverMatebaHE",
+      "RMCCartridgeRevolverMatebaHIAP",
+      "RMCCartridgeRevolverMatebaHighImpact",
+      "RMCSpeedLoaderMateba",
+      "RMCSpeedLoaderMatebaHE",
+      "RMCSpeedLoaderMatebaHIAP",
+      "RMCSpeedLoaderMatebaHighImpact"
+    ],
+    "accuracyMult": 1.1,
+    "accuracyMultUnwielded": 0.75,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto",
+      "Burst"
+    ],
+    "burstFireRateMult": 3.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 8.0,
+    "scatterUnwielded": 20.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 5.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1332,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentBarrelCharger"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCMateba"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverWarwickMkVII",
+    "name": "Warwick MkVII service revolver",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/warwick.yml",
+    "fireRate": 2.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.1,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireRate": 2,
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 1,
+      "recoilUnwielded": 3,
+      "scatterWielded": 6,
+      "scatterUnwielded": 14
+    },
+    "magazines": [
+      "RMCCartridgeRevolver44",
+      "RMCCartridgeRevolver44Marksman",
+      "RMCSpeedLoader44Marksman",
+      "RMCSpeedLoaderM44"
+    ],
+    "accuracyMult": 1.2,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 6.0,
+    "scatterUnwielded": 14.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCTantoA",
+          "RMCSawtoothDaggerA",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope",
+          "RMCAttachmentB8SmartScope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentM44MagnumSharpshooterStock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCWeaponRevolverWarwickMkVII"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverMatebaSpecial",
+    "name": "револьвер матеба специальный",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/mateba.yml",
+    "fireRate": 1.111,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.5,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto",
+        "Burst"
+      ],
+      "recoilWielded": 4,
+      "recoilUnwielded": 4,
+      "baseFireRate": 1.111,
+      "scatterWielded": 8,
+      "scatterUnwielded": 20,
+      "burstScatterMult": 5,
+      "burstFireRateMultiplier": 3,
+      "modifiers": {
+        "Burst": {
+          "fireDelay": 0.1332,
+          "maxScatterModifier": 10,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 6
+        }
+      }
+    },
+    "magazines": [
+      "RMCCartridgeRevolverMateba",
+      "RMCCartridgeRevolverMatebaHE",
+      "RMCCartridgeRevolverMatebaHIAP",
+      "RMCCartridgeRevolverMatebaHighImpact",
+      "RMCSpeedLoaderMateba",
+      "RMCSpeedLoaderMatebaHE",
+      "RMCSpeedLoaderMatebaHIAP",
+      "RMCSpeedLoaderMatebaHighImpact"
+    ],
+    "accuracyMult": 1.2,
+    "accuracyMultUnwielded": 0.75,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto",
+      "Burst"
+    ],
+    "burstFireRateMult": 3.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 8.0,
+    "scatterUnwielded": 20.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 5.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1332,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentBarrelCharger"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCMateba"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverSpearheadCustom",
+    "name": "авторевольвер БКМ \"Острие Копья\" (кастомная версия)",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/spearhead.yml",
+    "fireRate": 1.67,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 1,
+      "recoilUnwielded": 3,
+      "scatterWielded": 8,
+      "scatterUnwielded": 12,
+      "baseFireRate": 1.67,
+      "burstScatterMult": 4
+    },
+    "magazines": [
+      "RMCCartridgeRevolver357",
+      "RMCCartridgeRevolver357Hollowpoint",
+      "RMCSpeedLoader357",
+      "RMCSpeedLoader357Hollowpoint"
+    ],
+    "accuracyMult": 0.85,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 8.0,
+    "scatterUnwielded": 12.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentExtendedCompensator",
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentM44MagnumSharpshooterStock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight",
+          "RMCAttachmentGyroscopicStabilizer"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCWeaponRevolverSpearheadCustom"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8
+  },
+  {
+    "id": "RMCWeaponRevolverWarwickMkVIISnub",
+    "name": "Warwick MkVII snubnose revolver",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/warwick.yml",
+    "fireRate": 2.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.1,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireRate": 2,
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 1,
+      "recoilUnwielded": 3,
+      "scatterWielded": 6,
+      "scatterUnwielded": 14
+    },
+    "magazines": [
+      "RMCCartridgeRevolver44",
+      "RMCCartridgeRevolver44Marksman",
+      "RMCSpeedLoader44Marksman",
+      "RMCSpeedLoaderM44"
+    ],
+    "accuracyMult": 1.2,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 6.0,
+    "scatterUnwielded": 14.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCTantoA",
+          "RMCSawtoothDaggerA",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentExtendedCompensator"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS84xTelescopicScope",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope",
+          "RMCAttachmentB8SmartScope"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentM44MagnumSharpshooterStock"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCWeaponRevolverWarwickMkVII"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8
   }

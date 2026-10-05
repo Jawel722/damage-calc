@@ -1,11 +1,5 @@
 const MAGAZINES = [
   {
-    "id": "CMFlare",
-    "name": "фаер",
-    "projectile": "RMCFlareBullet",
-    "capacity": null
-  },
-  {
     "id": "CMMagazinePistolM1911",
     "name": "M1911 magazine (.45 ACP)",
     "projectile": "CMBulletPistol45ACP",
@@ -132,12 +126,6 @@ const MAGAZINES = [
     "capacity": 15.0
   },
   {
-    "id": "CMMagazineSniperM96SFlak",
-    "name": "магазин M96S противовоздушный (10x28 мм)",
-    "projectile": "CMBulletSniper10x28mmFlak",
-    "capacity": 15.0
-  },
-  {
     "id": "CMMagazineSniperM96SIncendiary",
     "name": "магазин M96S зажигательный (10x28 мм)",
     "projectile": "CMBulletSniper10x28mmIncendiary",
@@ -180,63 +168,9 @@ const MAGAZINES = [
     "capacity": null
   },
   {
-    "id": "RMC40MMGrenadeM74AGMF",
-    "name": "осколочная граната M74 БВГ-Ф 40мм",
-    "projectile": "RMCAirBurstProjectileFrag",
-    "capacity": null
-  },
-  {
-    "id": "RMC40MMGrenadeM74AGMI",
-    "name": "зажигательная граната M74 БВГ-З 40мм",
-    "projectile": "RMCAirBurstProjectileIncendiary",
-    "capacity": null
-  },
-  {
-    "id": "RMC40MMGrenadeM74AGMS",
-    "name": "дымовая граната M74 БВГ-Д 40мм",
-    "projectile": "RMCAirBurstProjectileSmoke",
-    "capacity": null
-  },
-  {
-    "id": "RMCBatonSlugHIRR",
-    "name": "картечь с резиновой пулей РПУВ 40мм",
-    "projectile": "RMCBatonSlugProjectile",
-    "capacity": null
-  },
-  {
     "id": "RMCCartridge458SOCOM",
     "name": "горсть пуль .458 SOCOM",
     "projectile": "RMCBullet458SOCOM",
-    "capacity": null
-  },
-  {
-    "id": "RMCFlareC18",
-    "name": "C18 flare",
-    "projectile": "RMCFlareC18Bullet",
-    "capacity": null
-  },
-  {
-    "id": "RMCFlareCAS",
-    "name": "сигнальная ракета",
-    "projectile": "RMCFlareCASBullet",
-    "capacity": null
-  },
-  {
-    "id": "RMCFlareL96",
-    "name": "сигнальная ракета L96",
-    "projectile": "RMCFlareL96Bullet",
-    "capacity": null
-  },
-  {
-    "id": "RMCFlareR44",
-    "name": "сигнальная ракета R44",
-    "projectile": "RMCFlareR44Bullet",
-    "capacity": null
-  },
-  {
-    "id": "RMCHornetShellM74AGMS",
-    "name": "шрапнель \"Шершень\" M74 БВГ-Ш 40мм",
-    "projectile": "RMCAirBurstProjectileHornet",
     "capacity": null
   },
   {
@@ -996,24 +930,6 @@ const MAGAZINES = [
     "capacity": 12.0
   },
   {
-    "id": "RMCMagazineSmartGun",
-    "name": "боевой магазин M56B (10x30 мм)",
-    "projectile": "CMBulletSmartGun10x30mm",
-    "capacity": 500.0
-  },
-  {
-    "id": "RMCMagazineSmartGunHT",
-    "name": "голотаргетинг магазин M56B (10x30mm)",
-    "projectile": "RMCBulletSmartGun10x30mmHT",
-    "capacity": 500.0
-  },
-  {
-    "id": "RMCMagazineSmartGunirradiated",
-    "name": "облученный магазин M56B (10x30 мм)",
-    "projectile": "RMCBulletSmartGun10x30mmirradiated",
-    "capacity": 500.0
-  },
-  {
     "id": "RMCMagazineSniperL112",
     "name": "L112 magazine (7.7x56mmR)",
     "projectile": "RMCBulletSniper77x56mmR",
@@ -1036,48 +952,6 @@ const MAGAZINES = [
     "name": "антиматериальный магазин XM43E1 (10x99 мм)",
     "projectile": "RMCBulletSniper10x99mmAntiMateriel",
     "capacity": 8.0
-  },
-  {
-    "id": "RMCRocket84mm",
-    "name": "84-мм фугасная ракета",
-    "projectile": "RMCProjectileRocket84mm",
-    "capacity": null
-  },
-  {
-    "id": "RMCRocket84mmAntiArmor",
-    "name": "84-мм бронебойная ракета",
-    "projectile": "RMCProjectileRocket84mmAntiArmor",
-    "capacity": null
-  },
-  {
-    "id": "RMCRocket84mmWhitePhosphorus",
-    "name": "84mm white phosphorus rocket",
-    "projectile": "RMCProjectileRocket84mmWhitePhosphorus",
-    "capacity": null
-  },
-  {
-    "id": "RMCRocketHJRA12AT",
-    "name": "Противотанковая ракета СРПГ-12",
-    "projectile": "RMCProjectileRocketHJRA12AT",
-    "capacity": null
-  },
-  {
-    "id": "RMCRocketHJRA12HE",
-    "name": "Осколочно-фугасная ракета СРПГ-12",
-    "projectile": "RMCProjectileRocketHJRA12HE",
-    "capacity": null
-  },
-  {
-    "id": "RMCRocketHJRA12Incen",
-    "name": "Зажигательная ракета СРПГ-12 высокой интенсивности",
-    "projectile": "RMCProjectileRocketHJRA12Incen",
-    "capacity": null
-  },
-  {
-    "id": "RMCRocketM5510Brute",
-    "name": "ракета M5510 с лазерным наведением",
-    "projectile": "RMCProjectileM5510Brute",
-    "capacity": null
   },
   {
     "id": "RMCShellShotgunBreaching",
@@ -1122,36 +996,6 @@ const MAGAZINES = [
     "capacity": null
   },
   {
-    "id": "RMCStarShellAsh",
-    "name": "горящий пепел от звездопад",
-    "projectile": "RMCFlareBullet",
-    "capacity": null
-  },
-  {
-    "id": "RMCStarShellM74AGMS",
-    "name": "осветительная граната M74 БВГ-Ш 40мм",
-    "projectile": "RMCAirBurstProjectileStarShell",
-    "capacity": null
-  },
-  {
-    "id": "STMagazineSharpRifleExplosive",
-    "name": "магазин 9X-E с липкими взрывными дротиками",
-    "projectile": "STBulletSharpStickyExplosive",
-    "capacity": 10.0
-  },
-  {
-    "id": "STMagazineSharpRifleFlechette",
-    "name": "магазин 9X-F с флешетт-дротиками",
-    "projectile": "STBulletSharpFlechette",
-    "capacity": 10.0
-  },
-  {
-    "id": "STMagazineSharpRifleIncendiary",
-    "name": "магазин 9X-T с липкими зажигательными дротиками",
-    "projectile": "STBulletSharpStickyIncendiary",
-    "capacity": 10.0
-  },
-  {
     "id": "RMCCartridge458SOCOMMaxStacks",
     "name": "горсть пуль .458 SOCOM (макс. стаки)",
     "projectile": "RMCBullet458SOCOMMaxStacks",
@@ -1192,5 +1036,143 @@ const MAGAZINES = [
     "name": "облученный магазин M56B (10x30 мм) (бронебойный режим)",
     "projectile": "RMCBulletSmartGun10x30mmirradiatedMode1",
     "capacity": 500.0
+  },
+  {
+    "id": "CMMagazineSniperM96SFlak",
+    "name": "магазин M96S противовоздушный (10x28 мм)",
+    "projectile": "CMBulletSniper10x28mmFlak",
+    "capacity": 15.0
+  },
+  {
+    "id": "RMCSpeedLoader38",
+    "name": "спидлоадер (.38)",
+    "projectile": "RMCBulletRevolver38",
+    "capacity": 6.0
+  },
+  {
+    "id": "RMCSpeedLoader357",
+    "name": "скоростной патрон (.357)",
+    "projectile": "RMCBulletRevolver357",
+    "capacity": 6.0
+  },
+  {
+    "id": "RMCSpeedLoaderM44",
+    "name": "спидлоадер M44 (.44)",
+    "projectile": "CMBulletRevolver44",
+    "capacity": 7.0
+  },
+  {
+    "id": "RMCSpeedLoaderRsh9",
+    "name": "спидлоадер РШ-9 (9x39)",
+    "projectile": "RMCBulletRsh9",
+    "capacity": 6.0
+  },
+  {
+    "id": "RMCSpeedLoaderMateba",
+    "name": "Mateba speed loader (.454)",
+    "projectile": "RMCBulletMateba",
+    "capacity": 6.0
+  },
+  {
+    "id": "RMCSpeedLoaderZHNK72",
+    "name": "спидлоадер ZHNK-72 (7,62 мм)",
+    "projectile": "RMCBulletRevolverZHNK72",
+    "capacity": 7.0
+  },
+  {
+    "id": "RMCCartridgeRevolver38",
+    "name": "патрон (.38)",
+    "projectile": "RMCBulletRevolver38",
+    "capacity": 0.0
+  },
+  {
+    "id": "RMCCartridgeRevolver44",
+    "name": "патрон (.44)",
+    "projectile": "CMBulletRevolver44",
+    "capacity": 0.0
+  },
+  {
+    "id": "RMCSpeedLoaderMatebaHE",
+    "name": "разрывной скоростной патрон Матебы (.454).",
+    "projectile": "RMCBulletMatebaHighExplosive",
+    "capacity": 6.0
+  },
+  {
+    "id": "RMCCartridgeRevolver357",
+    "name": "патрон (.357)",
+    "projectile": "RMCBulletRevolver357",
+    "capacity": 0.0
+  },
+  {
+    "id": "RMCCartridgeRevolverRsh9",
+    "name": "патрон (9x39)",
+    "projectile": "RMCBulletRsh9",
+    "capacity": 0.0
+  },
+  {
+    "id": "RMCSpeedLoader44Marksman",
+    "name": "спидлоадер M44 снайперский (.44)",
+    "projectile": "RMCBulletRevolver44Marksman",
+    "capacity": 7.0
+  },
+  {
+    "id": "RMCSpeedLoaderMatebaHIAP",
+    "name": "бронебойный скоростной патрон Матебы \"Ударная волна\" (.454).",
+    "projectile": "RMCBulletMatebaHighImpactArmorPiercing",
+    "capacity": 6.0
+  },
+  {
+    "id": "RMCCartridgeRevolverMateba",
+    "name": "патрон (.454)",
+    "projectile": "RMCBulletMateba",
+    "capacity": 0.0
+  },
+  {
+    "id": "RMCCartridgeRevolverZHNK72",
+    "name": "патрон (7,62 мм)",
+    "projectile": "RMCBulletRevolverZHNK72",
+    "capacity": 0.0
+  },
+  {
+    "id": "RMCCartridgeRevolverMatebaHE",
+    "name": "патрон (.454) РЗ",
+    "projectile": "RMCBulletMatebaHighExplosive",
+    "capacity": 0.0
+  },
+  {
+    "id": "RMCSpeedLoader357Hollowpoint",
+    "name": "скоростной патрон с экспансивными пулями (.357)",
+    "projectile": "RMCBulletRevolver357Hollowpoint",
+    "capacity": 6.0
+  },
+  {
+    "id": "RMCCartridgeRevolver44Marksman",
+    "name": "патрон (.44 снайперский)",
+    "projectile": "RMCBulletRevolver44Marksman",
+    "capacity": 0.0
+  },
+  {
+    "id": "RMCCartridgeRevolverMatebaHIAP",
+    "name": "патрон (.454) БП",
+    "projectile": "RMCBulletMatebaHighImpactArmorPiercing",
+    "capacity": 0.0
+  },
+  {
+    "id": "RMCSpeedLoaderMatebaHighImpact",
+    "name": "скоростной патрон Матебы \"Ударная волна\" (.454).",
+    "projectile": "RMCBulletMatebaHighImpact",
+    "capacity": 6.0
+  },
+  {
+    "id": "RMCCartridgeRevolver357Hollowpoint",
+    "name": "патрон (.357) экспансивный",
+    "projectile": "RMCBulletRevolver357Hollowpoint",
+    "capacity": 0.0
+  },
+  {
+    "id": "RMCCartridgeRevolverMatebaHighImpact",
+    "name": "патрон (.454) \"Ударная волна\"",
+    "projectile": "RMCBulletMatebaHighImpact",
+    "capacity": 0.0
   }
 ];

@@ -312,7 +312,8 @@ function recalc() {
     
     const realHitChance = sumHitChance/gunFire
     const realXenoArmor = Math.floor((xeno.xenoArmor+xenoAbilityArmor+ armorStack)*xenoGreenFire) + armorCheck
-    const falloffResult = applyFalloff(((projectile.falloffStart||0)+gun.rangeFlat+mods.rangeFlat)||0,dist,projectile.falloffPerTile||0,projectile.damage*(gun.damageMult+mods.damageAddMult),Math.max(gun.falloffMult+mods.damageFalloffAddMult,0),(projectile.cutRange||999) + gun.rangeFlat + mods.rangeFlat)
+    const falloffStepResult = applyFalloff(((projectile.falloffStart||0)+gun.rangeFlat+mods.rangeFlat)||0,dist,projectile.falloffPerTile||0,projectile.damage*(gun.damageMult+mods.damageAddMult),Math.max(gun.falloffMult+mods.damageFalloffAddMult,0),(projectile.cutRange||999) + gun.rangeFlat + mods.rangeFlat)
+    const falloffResult = Math.max(falloffStepResult,projectile.damage*(gun.damageMult+mods.damageAddMult)*0.05)
     const armorResult = applyArmor(falloffResult*(1+holotarget), projectile.ap,realXenoArmor)
     const damageResult = buckshotCheck(armorResult, projectile.pellets)
     const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xeno.evasionModified-evasionAdd, mods.rangeFlat,mods.accuracyAddMult)

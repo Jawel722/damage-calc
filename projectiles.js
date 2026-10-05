@@ -817,30 +817,6 @@ const PROJECTILES = [
     "forceHit": false
   },
   {
-    "id": "CMBulletSmartGun10x30mm",
-    "name": "пуля (10x30 мм)",
-    "damage": 30.0,
-    "damageTypes": {
-      "Piercing": 30.0
-    },
-    "ap": 0.0,
-    "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 12.0,
-    "minRemainingMult": 0.05,
-    "accuracy": 105.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
     "id": "CMBulletSniper10x28mm",
     "name": "пуля (10x28 мм)",
     "damage": 70.0,
@@ -848,35 +824,6 @@ const PROJECTILES = [
       "Piercing": 70.0
     },
     "ap": 50.0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": 32.0,
-    "minRemainingMult": 0.05,
-    "accuracy": 125.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 32.0,
-        "falloff": 10.0,
-        "buildup": false
-      },
-      {
-        "range": 4.0,
-        "falloff": 10.0,
-        "buildup": true
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "CMBulletSniper10x28mmFlak",
-    "name": "пуля \"воздушный удар\" (10x28 мм)",
-    "damage": 55.0,
-    "damageTypes": {
-      "Piercing": 55.0
-    },
-    "ap": 0.0,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
@@ -1117,150 +1064,6 @@ const PROJECTILES = [
     "accuracyThresholds": [
       {
         "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCAirBurstProjectileFrag",
-    "name": "осколочная граната M74 БВГ-Ф 40мм",
-    "damage": 100.0,
-    "damageTypes": {
-      "Piercing": 100.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 90,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCAirBurstProjectileHornet",
-    "name": "шрапнель \"Шершень\" M74 БВГ-Ш 40мм",
-    "damage": 100.0,
-    "damageTypes": {
-      "Piercing": 100.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 90,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCAirBurstProjectileIncendiary",
-    "name": "зажигательная граната M74 БВГ-З 40мм",
-    "damage": 100.0,
-    "damageTypes": {
-      "Piercing": 100.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 90,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCAirBurstProjectileSmoke",
-    "name": "дымовая граната M74 БВГ-Д 40мм",
-    "damage": 30.0,
-    "damageTypes": {
-      "Piercing": 30.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 90,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCAirBurstProjectileStarShell",
-    "name": "осветительная граната M74 БВГ-Ш 40мм",
-    "damage": 30.0,
-    "damageTypes": {
-      "Piercing": 30.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 90,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCBatonSlugProjectile",
-    "name": "РПУВ картечь с резиновой пулей",
-    "damage": 15.0,
-    "damageTypes": {
-      "Blunt": 15.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 100.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 7.0,
         "falloff": 10.0,
         "buildup": false
       }
@@ -2118,54 +1921,6 @@ const PROJECTILES = [
     "forceHit": false
   },
   {
-    "id": "RMCBulletSmartGun10x30mmHT",
-    "name": "ГТ пуля (10x30mm)",
-    "damage": 30.0,
-    "damageTypes": {
-      "Piercing": 30.0
-    },
-    "ap": 0.0,
-    "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 12.0,
-    "minRemainingMult": 0.05,
-    "accuracy": 105.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCBulletSmartGun10x30mmirradiated",
-    "name": "облученная пуля (10x30 мм)",
-    "damage": 40.0,
-    "damageTypes": {
-      "Piercing": 40.0
-    },
-    "ap": 0.0,
-    "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 12.0,
-    "minRemainingMult": 0.05,
-    "accuracy": 105.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
     "id": "RMCBulletSniper10x99mmAntiMateriel",
     "name": "антиматериальная пуля (10x99 мм)",
     "damage": 1400.0,
@@ -2314,126 +2069,6 @@ const PROJECTILES = [
     "accuracyThresholds": [
       {
         "range": 4.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCFlareBullet",
-    "name": "сигнальная ракета",
-    "damage": 2.5,
-    "damageTypes": {
-      "Piercing": 2.5
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 90,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCFlareC18Bullet",
-    "name": "C18 flare projectile",
-    "damage": 2.5,
-    "damageTypes": {
-      "Piercing": 2.5
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 90,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCFlareCASBullet",
-    "name": "сигнальная ракета осветительная",
-    "damage": 2.5,
-    "damageTypes": {
-      "Piercing": 2.5
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 90,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCFlareL96Bullet",
-    "name": "сигнальная ракета осветительная L96",
-    "damage": 2.5,
-    "damageTypes": {
-      "Piercing": 2.5
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 90,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCFlareR44Bullet",
-    "name": "R44 flare projectile",
-    "damage": 2.5,
-    "damageTypes": {
-      "Piercing": 2.5
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 90,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
         "falloff": 10.0,
         "buildup": false
       }
@@ -2632,230 +2267,6 @@ const PROJECTILES = [
     "forceHit": false
   },
   {
-    "id": "RMCProjectileM5510Brute",
-    "name": "ракета M5510 с лазерным наведением",
-    "damage": 15.0,
-    "damageTypes": {
-      "Blunt": 15.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 95.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 7.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCProjectileRocket84mm",
-    "name": "84-мм фугасная ракета",
-    "damage": 15.0,
-    "damageTypes": {
-      "Blunt": 15.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 95.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 7.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCProjectileRocket84mmAntiArmor",
-    "name": "84-мм бронебойная ракета",
-    "damage": 310.0,
-    "damageTypes": {
-      "Blunt": 160.0,
-      "Heat": 150.0
-    },
-    "ap": 100.0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 125.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 6.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCProjectileRocket84mmWhitePhosphorus",
-    "name": "84mm white phosphorus rocket",
-    "damage": 90.0,
-    "damageTypes": {
-      "Heat": 90.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 95.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 7.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCProjectileRocketHJRA12AT",
-    "name": "Противотанковая ракета СРПГ-12",
-    "damage": 310.0,
-    "damageTypes": {
-      "Blunt": 160.0,
-      "Heat": 150.0
-    },
-    "ap": 100.0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 125.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 6.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCProjectileRocketHJRA12HE",
-    "name": "Осколочно-фугасная ракета СРПГ-12",
-    "damage": 15.0,
-    "damageTypes": {
-      "Blunt": 15.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 95.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 7.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCProjectileRocketHJRA12Incen",
-    "name": "Зажигательная ракета СРПГ-12 высокой интенсивности",
-    "damage": 15.0,
-    "damageTypes": {
-      "Blunt": 15.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": 95.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 7.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "STBulletSharpFlechette",
-    "name": "флешетт-дротик",
-    "damage": 0.0,
-    "damageTypes": {
-      "Piercing": 0.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": null,
-    "minAccuracy": null,
-    "accuracyThresholds": [],
-    "forceHit": false
-  },
-  {
-    "id": "STBulletSharpStickyExplosive",
-    "name": "липкий взрывной дротик",
-    "damage": 35.0,
-    "damageTypes": {
-      "Piercing": 35.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": null,
-    "minAccuracy": null,
-    "accuracyThresholds": [],
-    "forceHit": false
-  },
-  {
-    "id": "STBulletSharpStickyIncendiary",
-    "name": "липкий зажигательный дротик",
-    "damage": 35.0,
-    "damageTypes": {
-      "Piercing": 35.0
-    },
-    "ap": 0,
-    "pellets": 1,
-    "falloffStart": null,
-    "falloffPerTile": null,
-    "cutRange": null,
-    "minRemainingMult": 0.05,
-    "accuracy": null,
-    "minAccuracy": null,
-    "accuracyThresholds": [],
-    "forceHit": false
-  },
-  {
     "id": "RMCBullet458SOCOMMaxStacks",
     "name": ".458 SOCOM (макс. стаки)",
     "damage": 80.0,
@@ -3013,6 +2424,299 @@ const PROJECTILES = [
     "cutRange": 12.0,
     "minRemainingMult": 0.05,
     "accuracy": 105.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "CMBulletSniper10x28mmFlak",
+    "name": "пуля \"воздушный удар\" (10x28 мм)",
+    "damage": 55.0,
+    "damageTypes": {
+      "Piercing": 55.0
+    },
+    "ap": 0.0,
+    "pellets": 1,
+    "falloffStart": null,
+    "falloffPerTile": null,
+    "cutRange": 32.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 125.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 32.0,
+        "falloff": 10.0,
+        "buildup": false
+      },
+      {
+        "range": 4.0,
+        "falloff": 10.0,
+        "buildup": true
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletRevolver38",
+    "name": "пуля (.38)",
+    "damage": 45.0,
+    "damageTypes": {
+      "Piercing": 45.0
+    },
+    "ap": 15.0,
+    "pellets": 1,
+    "falloffStart": 22.0,
+    "falloffPerTile": 1.0,
+    "cutRange": null,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "CMBulletRevolver44",
+    "name": "пуля (.44)",
+    "damage": 72.0,
+    "damageTypes": {
+      "Piercing": 72.0
+    },
+    "ap": 5.0,
+    "pellets": 1,
+    "falloffStart": 0.0,
+    "falloffPerTile": 1.0,
+    "cutRange": 22.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletRevolver44Marksman",
+    "name": "пуля (.44 снайперская)",
+    "damage": 55.0,
+    "damageTypes": {
+      "Piercing": 55.0
+    },
+    "ap": 35.0,
+    "pellets": 1,
+    "falloffStart": null,
+    "falloffPerTile": null,
+    "cutRange": 22.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 12.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletMateba",
+    "name": "пуля (.454)",
+    "damage": 60.0,
+    "damageTypes": {
+      "Piercing": 60.0
+    },
+    "ap": 20.0,
+    "pellets": 1,
+    "falloffStart": 0.0,
+    "falloffPerTile": 1.0,
+    "cutRange": 22.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletMatebaHighImpact",
+    "name": "пуля (.454) \"Ударная волна\"",
+    "damage": 60.0,
+    "damageTypes": {
+      "Piercing": 60.0
+    },
+    "ap": 5.0,
+    "pellets": 1,
+    "falloffStart": 0.0,
+    "falloffPerTile": 1.0,
+    "cutRange": 22.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletMatebaHighImpactArmorPiercing",
+    "name": "пуля (.454) БП",
+    "damage": 50.0,
+    "damageTypes": {
+      "Piercing": 50.0
+    },
+    "ap": 50.0,
+    "pellets": 1,
+    "falloffStart": 0.0,
+    "falloffPerTile": 1.0,
+    "cutRange": 22.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletMatebaHighExplosive",
+    "name": "пуля (.454) РЗ",
+    "damage": 100.0,
+    "damageTypes": {
+      "Piercing": 100.0
+    },
+    "ap": 50.0,
+    "pellets": 1,
+    "falloffStart": 0.0,
+    "falloffPerTile": 1.0,
+    "cutRange": 22.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletRsh9",
+    "name": "пуля (9x39)",
+    "damage": 65.0,
+    "damageTypes": {
+      "Piercing": 65.0
+    },
+    "ap": 35.0,
+    "pellets": 1,
+    "falloffStart": 0.0,
+    "falloffPerTile": 1.0,
+    "cutRange": 22.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletRevolver357",
+    "name": "пуля (.357)",
+    "damage": 69.0,
+    "damageTypes": {
+      "Piercing": 69.0
+    },
+    "ap": 15.0,
+    "pellets": 1,
+    "falloffStart": 22.0,
+    "falloffPerTile": 1.0,
+    "cutRange": null,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 5.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletRevolver357Hollowpoint",
+    "name": "пуля (.357) экспансивная",
+    "damage": 86.0,
+    "damageTypes": {
+      "Piercing": 86.0
+    },
+    "ap": 0.0,
+    "pellets": 1,
+    "falloffStart": 22.0,
+    "falloffPerTile": 5.0,
+    "cutRange": null,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 12.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBulletRevolverZHNK72",
+    "name": "пуля (7,62 мм)",
+    "damage": 70.0,
+    "damageTypes": {
+      "Piercing": 70.0
+    },
+    "ap": 20.0,
+    "pellets": 1,
+    "falloffStart": 22.0,
+    "falloffPerTile": 1.0,
+    "cutRange": null,
+    "minRemainingMult": 0.05,
+    "accuracy": 60.0,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
