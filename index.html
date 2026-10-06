@@ -43,6 +43,8 @@
 </div>
 <div id = 'fireMode'></div>
 <label>С двух рук: <input type="checkbox" id="bothArmCheck" checked></label>
+<label>Навык стрельбы: <input type= "number" id = "firearmsSkill" value = "1" min = "0" max = "10"></label>
+<label>Уровень приказа "Фокус": <input type = "number" id = "focusLevel" value = "0" min = "0" max = "3"></label>
 </div>
 <div class = "col">
 Ксеноморф: <select id = 'xeno'></select>
@@ -53,15 +55,21 @@
 <label>Бок:<input type='radio' id='armorCheckSide' name='armor'></label>
 <label>Спина:<input type='radio' id='armorCheckBack' name='armor'></label>
 </div>
-<label>Стаки голотаргета:<input type = "number" id= "holotarget" value = "0" min = "0" max = "100" step = "10"></label>
-<label>Отдых:<input type = "checkbox" id = "rest"></label>
-<label>Зелёный огонь:<input type = "checkbox" id = "greenfire"></label>
+<label>Стаки голотаргета: <input type = "number" id= "holotarget" value = "0" min = "0" max = "100" step = "10"></label>
+<label>Отдых: <input type = "checkbox" id = "rest"></label>
+<label>Зелёный огонь: <input type = "checkbox" id = "greenfire"></label>
+<label>Уровень фер щита: <input type = "number" id = "pheroShield" value = "0" max = "6" min = "0" step = "0.5"></label>
+<label>Фрукт щита: <input type = "checkbox" id = "fruitShield"></label>
+<label>Хп до крита: <span id= "hpCrit"></span></label>
+<label>Хп до смерти: <span id= "hpDead"></span></label>
 </div>
 <div class = "col">
 <label>Урон: <span id = 'damageOut'></span></label>
 <label>Шанс попадания: <span id = 'hitChance'></span>%</label>
 <label>УвС: <span id = 'out'></span></label>
 <label>Ожидаемый УвС: <span id = 'realOut'></span></label>
+<label>Время до крита: <span id = "timeCrit"></span></label>
+<label>Время до смерти: <span id = "timeDead"></span></label>
 </div>
 </div>
 <script src = 'guns.js'></script>
@@ -106,7 +114,7 @@ function buckshotCheck(applyArmor,pellets) {
     return newDamage
 }
 
-function accuracyCalc(projectile,gun,bothArmCheck,dist,evasion, rangeFlat, accuracyAddMult) {
+function accuracyCalc(projectile,gun,bothArmCheck,dist,evasion, rangeFlat, accuracyAddMult, focusAccMod) {
     if (projectile.accuracy === null) {
         return 1
     }
@@ -116,6 +124,7 @@ function accuracyCalc(projectile,gun,bothArmCheck,dist,evasion, rangeFlat, accur
     } else {
         acc *= Math.max(gun.accuracyMultUnwielded+accuracyAddMult, 0.1)
     }
+    acc += focusAccMod
     for (const threshold of projectile.accuracyThresholds) {
         const range = threshold.range + gun.accuracyRangeFlat + rangeFlat
         if (dist > range && threshold.buildup===false) {
@@ -223,6 +232,12 @@ function recalc() {
     const holotarget = (Math.min(Math.max(Number(document.getElementById("holotarget").value), 0),100))/1000
     const rest = document.getElementById("rest").checked
     const greenfire = document.getElementById("greenfire").checked
+    const firearmsSkill = Math.min(Math.max(Number(document.getElementById("firearmsSkill").value),0),10)
+    const focusLevel = Math.min(Math.max(Number(document.getElementById("focusLevel").value),0),3)
+    const xenoHpCritHTML = document.getElementById("hpCrit")
+    const xenoHpDeadHTML= document.getElementById("hpDead")
+    const pheroShieldLevel = Math.min(Math.max(Number(document.getElementById("pheroShield").value),0),6)
+    const fruitShield = document.getElementById("fruitShield").checked
     const gunId = gunSelect.value
     const magId = magazineSelect.value
     const xenoId = strainSelect.value
@@ -234,14 +249,21 @@ function recalc() {
     const magazine = findById(MAGAZINES, magId)
     const projectile = findById(PROJECTILES, magazine.projectile)
     const xeno = findById(XENOS, xenoId)
+    let xenoHpCrit = xeno.hpCrit
+    let xenoHpDead = xeno.hpDead
+    if (pheroShieldLevel !== 0) {
+        xenoHpDead += 1 + pheroShieldLevel * 20
+    }
+    if (fruitShield === true) {
+        xenoHpDead += Math.min(xeno.hpDead * 0.3,200)
+        if (xenoHpCrit!==null)
+            xenoHpCrit += Math.min(xeno.hpDead * 0.3,200)
+    }
+    xenoHpCritHTML.textContent = xenoHpCrit
+    xenoHpDeadHTML.textContent = xenoHpDead
     const fireMode = fireModeSelect.querySelector("input:checked").value
     const mods = attachmentsCalc(bothArmChecked,gun)
     let scatterW = gun.scatterWielded
-    if (bothArmChecked === true) {
-        scatterW = Math.max(gun.scatterWielded + mods.scatterFlat,0)
-    } else {
-        scatterW = Math.max(gun.scatterUnwielded + mods.scatterFlat,0)
-    }
     let evasionAdd = 0
     if (rest === true) {
         evasionAdd = 15
@@ -249,6 +271,25 @@ function recalc() {
     let xenoGreenFire = 1
     if (greenfire === true) {
         xenoGreenFire = xeno.greenFireArmorMult
+    }
+    let firearmAccMod = 0
+    let firearmScatterMod = 0
+    let focusAccMod = 1.5 * focusLevel
+    let focusAccPerTileMod = 0.35 * focusLevel * dist
+    let focusAccModSum = focusAccMod + focusAccPerTileMod
+    if (gun.unskilledPenalty!==null) {
+        if (firearmsSkill<gun.unskilledPenalty.minSkill) {
+        firearmAccMod = gun.unskilledPenalty.accuracyAddMult
+        firearmScatterMod = gun.unskilledPenalty.scatterFlat
+        }
+    }
+    if (firearmAccMod===0) {
+        firearmAccMod = gun.skillAccuracyPerLevel * firearmsSkill
+    }
+    if (bothArmChecked === true) {
+        scatterW = Math.max(gun.scatterWielded + mods.scatterFlat + firearmScatterMod,0)
+    } else {
+        scatterW = Math.max(gun.scatterUnwielded + mods.scatterFlat + firearmScatterMod,0)
     }
     let xenoAbilityArmor = 0
     let xenoAbilityFrontalArmor = 0
@@ -316,7 +357,7 @@ function recalc() {
     const falloffResult = Math.max(falloffStepResult,projectile.damage*(gun.damageMult+mods.damageAddMult)*0.05)
     const armorResult = applyArmor(falloffResult*(1+holotarget), projectile.ap,realXenoArmor)
     const damageResult = buckshotCheck(armorResult, projectile.pellets)
-    const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xeno.evasionModified-evasionAdd, mods.rangeFlat,mods.accuracyAddMult)
+    const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xeno.evasionModified-evasionAdd, mods.rangeFlat,mods.accuracyAddMult+firearmAccMod, focusAccModSum)
     const hitChance = acc*realHitChance*100
     const realFireRate = fireRateCalc(fireMode,gun,mods.shotsPerBurstFlat,mods.fireDelayFlat)
     const dpsResult = dps(damageResult,realFireRate)
@@ -325,6 +366,18 @@ function recalc() {
     document.getElementById("damageOut").textContent = damageResult.toFixed(1)
     document.getElementById("realOut").textContent = dpsRealResult.toFixed(1)
     document.getElementById("hitChance").textContent = hitChance.toFixed(1)
+    if (xenoHpCrit === null) {
+        document.getElementById("timeCrit").textContent = "-"
+    } else {
+        document.getElementById("timeCrit").textContent = (xenoHpCrit/dpsRealResult).toFixed(1)+'с'
+        if (xenoHpCrit/dpsRealResult===Infinity) {
+            document.getElementById("timeCrit").textContent = "Никогда"
+        }
+    }
+    document.getElementById("timeDead").textContent = (xenoHpDead/dpsRealResult).toFixed(1)+'с'
+    if  (xenoHpDead/dpsRealResult===Infinity) {
+        document.getElementById("timeDead").textContent = "Никогда"
+    }
 }
 
 const gunTypeSelect = document.getElementById("gunType");
@@ -557,6 +610,10 @@ holotarget.addEventListener("input",recalc)
 dist.addEventListener("input",recalc)
 rest.addEventListener("input",recalc)
 greenfire.addEventListener("input",recalc)
+firearmsSkill.addEventListener("input",recalc)
+focusLevel.addEventListener("input",recalc)
+pheroShield.addEventListener("input",recalc)
+fruitShield.addEventListener("input",recalc)
 barrel.addEventListener("change",recalc)
 underbarrel.addEventListener("change",recalc)
 rail.addEventListener("change",recalc)
