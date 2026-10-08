@@ -386,9 +386,21 @@ function recalc() {
     }
     document.getElementById("magDamage").textContent = projectile.damage * projectile.pellets
     document.getElementById("magAP").textContent = projectile.ap
-    document.getElementById("bulletsDead").textContent = Math.ceil(xenoHpDead/damageResult)
-    document.getElementById("magBullets").textContent = magBullets
-    document.getElementById("magazinesDead").textContent = Math.ceil(Math.ceil(xenoHpDead/damageResult)/magBullets)
+    if (Math.ceil(xenoHpDead/damageResult)===Infinity) {
+        document.getElementById("bulletsDead").textContent = "Бесконечно"
+    } else {
+        document.getElementById("bulletsDead").textContent = Math.ceil(xenoHpDead/damageResult)
+    }
+    if (magBullets === null) {
+        document.getElementById("magBullets").textContent = gun.internalCapacity
+    } else {
+        document.getElementById("magBullets").textContent = magBullets
+    }
+    if (Math.ceil(Math.ceil(xenoHpDead/damageResult)/magBullets)===Infinity) {
+        document.getElementById("magazinesDead").textContent = "Бесконечно"
+    } else {
+        document.getElementById("magazinesDead").textContent = Math.ceil(Math.ceil(xenoHpDead/damageResult)/magBullets)
+    }
 }
 
 const gunTypeSelect = document.getElementById("gunType");

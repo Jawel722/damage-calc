@@ -1080,34 +1080,10 @@ const MAGAZINES = [
     "capacity": 7.0
   },
   {
-    "id": "RMCCartridgeRevolver38",
-    "name": "патрон (.38)",
-    "projectile": "RMCBulletRevolver38",
-    "capacity": 0.0
-  },
-  {
-    "id": "RMCCartridgeRevolver44",
-    "name": "патрон (.44)",
-    "projectile": "CMBulletRevolver44",
-    "capacity": 0.0
-  },
-  {
     "id": "RMCSpeedLoaderMatebaHE",
     "name": "разрывной скоростной патрон Матебы (.454).",
     "projectile": "RMCBulletMatebaHighExplosive",
     "capacity": 6.0
-  },
-  {
-    "id": "RMCCartridgeRevolver357",
-    "name": "патрон (.357)",
-    "projectile": "RMCBulletRevolver357",
-    "capacity": 0.0
-  },
-  {
-    "id": "RMCCartridgeRevolverRsh9",
-    "name": "патрон (9x39)",
-    "projectile": "RMCBulletRsh9",
-    "capacity": 0.0
   },
   {
     "id": "RMCSpeedLoader44Marksman",
@@ -1122,57 +1098,15 @@ const MAGAZINES = [
     "capacity": 6.0
   },
   {
-    "id": "RMCCartridgeRevolverMateba",
-    "name": "патрон (.454)",
-    "projectile": "RMCBulletMateba",
-    "capacity": 0.0
-  },
-  {
-    "id": "RMCCartridgeRevolverZHNK72",
-    "name": "патрон (7,62 мм)",
-    "projectile": "RMCBulletRevolverZHNK72",
-    "capacity": 0.0
-  },
-  {
-    "id": "RMCCartridgeRevolverMatebaHE",
-    "name": "патрон (.454) РЗ",
-    "projectile": "RMCBulletMatebaHighExplosive",
-    "capacity": 0.0
-  },
-  {
     "id": "RMCSpeedLoader357Hollowpoint",
     "name": "скоростной патрон с экспансивными пулями (.357)",
     "projectile": "RMCBulletRevolver357Hollowpoint",
     "capacity": 6.0
   },
   {
-    "id": "RMCCartridgeRevolver44Marksman",
-    "name": "патрон (.44 снайперский)",
-    "projectile": "RMCBulletRevolver44Marksman",
-    "capacity": 0.0
-  },
-  {
-    "id": "RMCCartridgeRevolverMatebaHIAP",
-    "name": "патрон (.454) БП",
-    "projectile": "RMCBulletMatebaHighImpactArmorPiercing",
-    "capacity": 0.0
-  },
-  {
     "id": "RMCSpeedLoaderMatebaHighImpact",
     "name": "скоростной патрон Матебы \"Ударная волна\" (.454).",
     "projectile": "RMCBulletMatebaHighImpact",
     "capacity": 6.0
-  },
-  {
-    "id": "RMCCartridgeRevolver357Hollowpoint",
-    "name": "патрон (.357) экспансивный",
-    "projectile": "RMCBulletRevolver357Hollowpoint",
-    "capacity": 0.0
-  },
-  {
-    "id": "RMCCartridgeRevolverMatebaHighImpact",
-    "name": "патрон (.454) \"Ударная волна\"",
-    "projectile": "RMCBulletMatebaHighImpact",
-    "capacity": 0.0
   }
 ];
