@@ -347,7 +347,7 @@ const XENOS = [
     "greenFireArmorMult": 0.7,
     "hpCrit": 500.0,
     "hpDead": 600.0,
-    "tier": 0
+    "tier": 4
   },
   {
     "id": "CMXenoRavager",
@@ -565,7 +565,7 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 1500.0,
     "hpDead": 1600.0,
-    "tier": 0
+    "tier": 4
   },
   {
     "id": "RMCXenoLurkerVampire",

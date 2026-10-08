@@ -22,6 +22,9 @@
 Тип Оружия: <select id = 'gunType'></select>
 Оружие: <select id = 'gun'></select>
 Магазин: <select id = 'magazine'></select>
+<label>Боезапас: <span id = magBullets></span> патронов</label>
+<label>Урон: <span id = magDamage></span></label>
+<label>Бронебойность: <span id = magAP></span></label>
 <label>Дистанция: <input type="number" id="dist" value="0" min="0"></label>
 <div class = "col">
 <div class = "megacol">
@@ -47,6 +50,7 @@
 <label>Уровень приказа "Фокус": <input type = "number" id = "focusLevel" value = "0" min = "0" max = "3"></label>
 </div>
 <div class = "col">
+Тир: <select id = 'tier'></select>
 Ксеноморф: <select id = 'xeno'></select>
 Стрейн: <select id = 'strain'></select>
 <div id="abilityArmor"></div>
@@ -70,6 +74,7 @@
 <label>Ожидаемый УвС: <span id = 'realOut'></span></label>
 <label>Время до крита: <span id = "timeCrit"></span></label>
 <label>Время до смерти: <span id = "timeDead"></span></label>
+<label>Пуль до смерти: <span id = 'bulletsDead'></span> | <span id = 'magazinesDead'></span> магазин(-а/ов)</label>
 </div>
 </div>
 <script src = 'guns.js'></script>
@@ -249,6 +254,7 @@ function recalc() {
     const magazine = findById(MAGAZINES, magId)
     const projectile = findById(PROJECTILES, magazine.projectile)
     const xeno = findById(XENOS, xenoId)
+    const magBullets = magazine.capacity
     let xenoHpCrit = xeno.hpCrit
     let xenoHpDead = xeno.hpDead
     if (pheroShieldLevel !== 0) {
@@ -378,6 +384,11 @@ function recalc() {
     if  (xenoHpDead/dpsRealResult===Infinity) {
         document.getElementById("timeDead").textContent = "Никогда"
     }
+    document.getElementById("magDamage").textContent = projectile.damage * projectile.pellets
+    document.getElementById("magAP").textContent = projectile.ap
+    document.getElementById("bulletsDead").textContent = Math.ceil(xenoHpDead/damageResult)
+    document.getElementById("magBullets").textContent = magBullets
+    document.getElementById("magazinesDead").textContent = Math.ceil(Math.ceil(xenoHpDead/damageResult)/magBullets)
 }
 
 const gunTypeSelect = document.getElementById("gunType");
@@ -518,13 +529,28 @@ function fireRateCalc (fireMode,gun,shotsPerBurstFlat,fireDelayFlat) {
     return fireRate
 }
 
+const tierSelect = document.getElementById("tier");
+function selectXenoTier() {
+    tierSelect.innerHTML = ""
+    for (const tier of [0,1,2,3,4]) {
+        const tierOption = document.createElement("option")
+        tierOption.value = tier
+        tierOption.textContent = tier
+        tierSelect.appendChild(tierOption)
+    }
+}
+
 const xenoSelect = document.getElementById("xeno");
-for (const xeno of XENOS) {
-    const xenoOption = document.createElement("option");
-    xenoOption.value = xeno.name;
-    xenoOption.textContent = xeno.name;
-    if (xeno.strain === null) { 
-        xenoSelect.appendChild(xenoOption);
+function selectXeno () {
+    xenoSelect.innerHTML = ""
+    for (const xeno of XENOS) {
+        const xenoOption = document.createElement("option");
+        xenoOption.value = xeno.name;
+        xenoOption.textContent = xeno.name;
+    const selectedTier = Number(tierSelect.value)
+        if (xeno.strain === null && xeno.tier === selectedTier) { 
+            xenoSelect.appendChild(xenoOption);
+        }
     }
 }
 
@@ -573,6 +599,8 @@ selectGunType();
 selectGun();
 selectGunMagazine();
 selectFireMods();
+selectXenoTier();
+selectXeno();
 selectXenoStrain();
 selectXenoAbility();
 function setAllAttachments(){
@@ -584,6 +612,9 @@ function setAllAttachments(){
     attachmentsToggleableCheck ()
 }
 setAllAttachments();
+tierSelect.addEventListener("change", selectXeno);
+tierSelect.addEventListener("change", selectXenoStrain);
+tierSelect.addEventListener("change", selectXenoAbility);
 xenoSelect.addEventListener("change", selectXenoStrain);
 xenoSelect.addEventListener("change", selectXenoAbility);
 strainSelect.addEventListener("change", selectXenoAbility);
@@ -600,6 +631,7 @@ abilitySelect.addEventListener("input",recalc)
 abilitySelect.addEventListener("change",recalc)
 gunSelect.addEventListener("change", recalc)
 magazineSelect.addEventListener("change", recalc)
+tierSelect.addEventListener("change",recalc)
 xenoSelect.addEventListener("change",recalc)
 strainSelect.addEventListener("change", recalc)
 gunTypeSelect.addEventListener("change", recalc)
