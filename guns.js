@@ -95,7 +95,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "CMM96SSniperRifle",
@@ -195,7 +196,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "CMWeaponPistolM1911",
@@ -293,7 +295,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "CMWeaponPistolM1984",
@@ -394,7 +397,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "CMWeaponPistolM1984Custom",
@@ -495,7 +499,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCAttachmentL90UBS",
@@ -557,7 +562,8 @@ const GUNS = [
     "skillAccuracyPerLevel": 0,
     "unskilledPenalty": null,
     "gunBurstFireRate": 8,
-    "internalCapacity": 5
+    "internalCapacity": 5,
+    "wieldable": false
   },
   {
     "id": "RMCAttachmentU7UnderbarrelShotgun",
@@ -614,7 +620,8 @@ const GUNS = [
     "skillAccuracyPerLevel": 0,
     "unskilledPenalty": null,
     "gunBurstFireRate": 8,
-    "internalCapacity": 5
+    "internalCapacity": 5,
+    "wieldable": false
   },
   {
     "id": "RMCL112SniperRifle",
@@ -732,7 +739,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCL112SniperRifleSuppressed",
@@ -839,7 +847,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCM96SBSniperRifle",
@@ -946,7 +955,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCMK80",
@@ -1049,7 +1059,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCMK80RCM",
@@ -1152,7 +1163,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCMachineGunM2C",
@@ -1218,7 +1230,8 @@ const GUNS = [
       "scatterFlat": 0.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": false
   },
   {
     "id": "RMCSmartGunMode0",
@@ -1293,7 +1306,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunMode1",
@@ -1368,7 +1382,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunCLFMode0",
@@ -1443,7 +1458,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunCLFMode1",
@@ -1518,7 +1534,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunCOMode0",
@@ -1593,7 +1610,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunCOMode1",
@@ -1668,7 +1686,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunMounted",
@@ -1737,7 +1756,8 @@ const GUNS = [
       "scatterFlat": 0.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": false
   },
   {
     "id": "RMCSmartGunMountedStatic",
@@ -1805,7 +1825,8 @@ const GUNS = [
       "scatterFlat": 0.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": false
   },
   {
     "id": "RMCSmartGunOvertunedPVEMode0",
@@ -1880,7 +1901,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunOvertunedPVEMode1",
@@ -1955,7 +1977,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunPMCMode0",
@@ -2030,7 +2053,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunPMCMode1",
@@ -2105,7 +2129,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunPMCPVEMode0",
@@ -2180,7 +2205,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunPMCPVEMode1",
@@ -2255,7 +2281,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunPVEMode0",
@@ -2330,7 +2357,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunPVEMode1",
@@ -2405,7 +2433,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunRCMPVEMode0",
@@ -2480,7 +2509,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunRCMPVEMode1",
@@ -2555,7 +2585,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunRoyalMode0",
@@ -2630,7 +2661,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunRoyalMode1",
@@ -2705,7 +2737,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunWhiteOutMode0",
@@ -2780,7 +2813,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCSmartGunWhiteOutMode1",
@@ -2855,7 +2889,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCType88SniperRifle",
@@ -2964,7 +2999,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponBoltActionRifle",
@@ -3072,7 +3108,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponLMGM60",
@@ -3166,7 +3203,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponLMGQYJ72",
@@ -3254,7 +3292,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponMar50LMG",
@@ -3345,7 +3384,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolB92FS",
@@ -3440,7 +3480,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolD18",
@@ -3526,7 +3567,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolHG45Aguila",
@@ -3632,7 +3674,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolHG45Marina",
@@ -3738,7 +3781,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolHandcannon",
@@ -3836,7 +3880,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolHandcannonGold",
@@ -3936,7 +3981,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolHandcannonWinterWyvern",
@@ -4036,7 +4082,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": false
   },
   {
     "id": "RMCWeaponPistolHoldout",
@@ -4127,7 +4174,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolKT42",
@@ -4222,7 +4270,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolL14",
@@ -4323,7 +4372,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolL14Custom",
@@ -4424,7 +4474,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolL54",
@@ -4522,7 +4573,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolL54Custom",
@@ -4620,7 +4672,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolM13",
@@ -4733,7 +4786,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolM77",
@@ -4839,7 +4893,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolMK45",
@@ -4945,7 +5000,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolNP92",
@@ -5037,7 +5093,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolNPZ92",
@@ -5126,7 +5183,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolPK7",
@@ -5212,7 +5270,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolSU6",
@@ -5314,7 +5373,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolT73",
@@ -5412,7 +5472,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponPistolT74",
@@ -5500,7 +5561,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleABR40",
@@ -5622,7 +5684,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleABR40Tactical",
@@ -5744,7 +5807,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL24",
@@ -5888,7 +5952,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL24B",
@@ -6014,7 +6079,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL42A",
@@ -6142,7 +6208,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL83A2",
@@ -6285,7 +6352,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL83A3",
@@ -6413,7 +6481,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponRifleL83A3F",
@@ -6557,7 +6626,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL88A1",
@@ -6679,7 +6749,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL88A2",
@@ -6811,7 +6882,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL89A1",
@@ -6927,7 +6999,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL89A2",
@@ -7047,7 +7120,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL90A1",
@@ -7173,7 +7247,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL90A2",
@@ -7314,7 +7389,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleL91SWS",
@@ -7428,7 +7504,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleM16A5",
@@ -7568,7 +7645,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleM54C",
@@ -7716,7 +7794,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleM54C2",
@@ -7846,7 +7925,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleM54CE2",
@@ -7974,7 +8054,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleM54CMK1",
@@ -8108,7 +8189,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleM59A",
@@ -8257,7 +8339,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleMAR30",
@@ -8389,7 +8472,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleSSG45",
@@ -8526,7 +8610,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleType71",
@@ -8649,7 +8734,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleType71PVE",
@@ -8772,7 +8858,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleType71C",
@@ -8886,7 +8973,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleType71Flamer",
@@ -9003,7 +9091,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleType73",
@@ -9106,7 +9195,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleType77",
@@ -9251,7 +9341,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRifleXM40",
@@ -9352,7 +9443,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponSMGFP9000",
@@ -9464,7 +9556,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponSMGFP9000PMC",
@@ -9580,7 +9673,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponSMGL7A3",
@@ -9720,7 +9814,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponSMGM63B2",
@@ -9864,7 +9959,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponSMGM63",
@@ -10012,7 +10108,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponSMGMP27",
@@ -10143,7 +10240,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponSMGMP5Alt",
@@ -10282,7 +10380,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponSMGPDW90",
@@ -10401,7 +10500,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponSMGPDW90TSE",
@@ -10520,7 +10620,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponSMGType19",
@@ -10642,7 +10743,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponSMGType64",
@@ -10771,7 +10873,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponSMGUZI",
@@ -10878,7 +10981,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponShotgunL49",
@@ -10990,7 +11094,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 5
+    "internalCapacity": 5,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponShotgunM12",
@@ -11099,7 +11204,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 8
+    "internalCapacity": 8,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponShotgunM3717",
@@ -11201,7 +11307,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 10
+    "internalCapacity": 10,
+    "wieldable": true
   },
   {
     "id": "WeaponShotgunM42A2",
@@ -11320,7 +11427,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 10
+    "internalCapacity": 10,
+    "wieldable": true
   },
   {
     "id": "WeaponShotgunM890",
@@ -11438,7 +11546,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 8
+    "internalCapacity": 8,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponShotgunSyracuse",
@@ -11557,7 +11666,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 5
+    "internalCapacity": 5,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponShotgunType23",
@@ -11673,7 +11783,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 5
+    "internalCapacity": 5,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponShotgunXM38",
@@ -11794,7 +11905,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 10
+    "internalCapacity": 10,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponShotgunXM51",
@@ -11908,7 +12020,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "RMCXM43E1AntiMaterielRifle",
@@ -12006,7 +12119,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponNailgun",
@@ -12093,7 +12207,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponRifleAR10",
@@ -12205,7 +12320,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponRifleL83A3M",
@@ -12325,7 +12441,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponRifleM16",
@@ -12465,7 +12582,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponRifleM4SPR",
@@ -12597,7 +12715,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponRifleM4SPRCustom",
@@ -12715,7 +12834,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponRifleM5SPR",
@@ -12838,7 +12958,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponRifleM5SPR2",
@@ -12961,7 +13082,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponRifleMAR40",
@@ -13087,7 +13209,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponRifleXM88",
@@ -13210,7 +13333,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 9
+    "internalCapacity": 9,
+    "wieldable": true
   },
   {
     "id": "WeaponRifleXM88MaxStacks",
@@ -13333,7 +13457,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 9
+    "internalCapacity": 9,
+    "wieldable": true
   },
   {
     "id": "WeaponSMGMAC15",
@@ -13446,7 +13571,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponSMGMP5",
@@ -13578,7 +13704,8 @@ const GUNS = [
       "scatterFlat": 20.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": null
+    "internalCapacity": null,
+    "wieldable": true
   },
   {
     "id": "WeaponShotgunCustomBuilt",
@@ -13666,7 +13793,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 6
+    "internalCapacity": 6,
+    "wieldable": true
   },
   {
     "id": "WeaponShotgunM357",
@@ -13784,7 +13912,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 2
+    "internalCapacity": 2,
+    "wieldable": true
   },
   {
     "id": "WeaponShotgunM357Sawn",
@@ -13892,7 +14021,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 2
+    "internalCapacity": 2,
+    "wieldable": true
   },
   {
     "id": "WeaponShotgunM42A1",
@@ -14011,7 +14141,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 10
+    "internalCapacity": 10,
+    "wieldable": true
   },
   {
     "id": "WeaponShotgunMOU53",
@@ -14127,7 +14258,8 @@ const GUNS = [
       "scatterFlat": 75.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 3
+    "internalCapacity": 3,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverM44",
@@ -14240,7 +14372,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 7
+    "internalCapacity": 7,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverMkX",
@@ -14313,7 +14446,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 6
+    "internalCapacity": 6,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverRSh9",
@@ -14407,7 +14541,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 6
+    "internalCapacity": 6,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverMateba",
@@ -14504,7 +14639,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 6
+    "internalCapacity": 6,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverZHNK72",
@@ -14608,7 +14744,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 7
+    "internalCapacity": 7,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolver38Empty",
@@ -14684,7 +14821,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 6
+    "internalCapacity": 6,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverM44Custom",
@@ -14797,7 +14935,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 7
+    "internalCapacity": 7,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverSpearhead",
@@ -14909,7 +15048,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 6
+    "internalCapacity": 6,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverMatebaGold",
@@ -15006,7 +15146,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 6
+    "internalCapacity": 6,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverWarwickMkVII",
@@ -15119,7 +15260,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 7
+    "internalCapacity": 7,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverMatebaSpecial",
@@ -15216,7 +15358,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 6
+    "internalCapacity": 6,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverSpearheadCustom",
@@ -15328,7 +15471,8 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 6
+    "internalCapacity": 6,
+    "wieldable": true
   },
   {
     "id": "RMCWeaponRevolverWarwickMkVIISnub",
@@ -15441,6 +15585,7 @@ const GUNS = [
       "scatterFlat": 5.0
     },
     "gunBurstFireRate": 8,
-    "internalCapacity": 7
+    "internalCapacity": 7,
+    "wieldable": true
   }
 ];

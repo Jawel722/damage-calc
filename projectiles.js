@@ -1923,7 +1923,7 @@ const PROJECTILES = [
   {
     "id": "RMCBulletSniper10x99mmAntiMateriel",
     "name": "антиматериальная пуля (10x99 мм)",
-    "damage": 1400.0,
+    "damage": 125.0,
     "damageTypes": {
       "Piercing": 125.0,
       "Structural": 1275.0
@@ -2244,7 +2244,7 @@ const PROJECTILES = [
   {
     "id": "RMCPelletShotgunL49B",
     "name": "L49B pellets",
-    "damage": 250.0,
+    "damage": 5.0,
     "damageTypes": {
       "Blunt": 5.0,
       "Structural": 245.0

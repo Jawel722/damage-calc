@@ -6,25 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damage Calculator</title>
 <style>
+:root {
+    color-scheme: light dark;
+    --bg: #f3f4f6;
+    --panel: #ffffff;
+    --text: #1d2129;
+    --muted: #6b7280;
+    --accent: #2f6fde;
+    --border: #d8dbe0;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #14161b;
+        --panel: #1d2027;
+        --text: #e6e8eb;
+        --muted: #9aa1ab;
+        --accent: #6ea0ff;
+        --border: #2e323b;
+    }
+}
+body {
+    margin: 0;
+    padding: 16px;
+    background: var(--bg);
+    color: var(--text);
+    font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
 .megacol {
-  display: flex;
-  gap: 24px
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .col {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    gap: 6px;
+}
+body > .megacol {
+    gap: 16px;
+    align-items: flex-start;
+}
+body > .megacol > .col {
+    flex: 1 1 280px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+}
+label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+select, input[type="number"], input[type="search"] {
+    font: inherit;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 6px;
+    max-width: 100%;
+}
+select:focus, input:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+}
+input[type="number"] {
+    width: 70px;
+}
+input[type="checkbox"], input[type="radio"] {
+    accent-color: var(--accent);
+}
+#fireMode {
+    display: flex;
+    gap: 14px;
+}
+#armor {
+    display: flex;
+    gap: 14px;
+}
+[hidden] {
+    display: none !important;
+}
+details {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+details[open] {
+    padding-bottom: 10px;
+}
+summary {
+    cursor: pointer;
+    color: var(--muted);
+    font-weight: 600;
+}
+details[open] > summary {
+    margin-bottom: 8px;
+}
+#abilityArmor {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+body > .megacol > .col:last-child label {
+    gap: 4px;
+    border-bottom: 1px solid var(--border);
+    padding: 5px 0;
+}
+body > .megacol > .col:last-child span {
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+#realOut, #timeDead {
+    color: var(--accent);
+    font-size: 1.15em;
 }
 </style>
 </head>
 <body>
 <div class = "megacol">
 <div class = "col">
+Поиск оружия: <input id='searchGun' type="search" list="gunList" placeholder="например, m41">
+<datalist id="gunList"></datalist>
 Тип Оружия: <select id = 'gunType'></select>
 Оружие: <select id = 'gun'></select>
 Магазин: <select id = 'magazine'></select>
-<label>Боезапас: <span id = magBullets></span> патронов</label>
-<label>Урон: <span id = magDamage></span></label>
-<label>Бронебойность: <span id = magAP></span></label>
 <label>Дистанция: <input type="number" id="dist" value="0" min="0"></label>
 <div class = "col">
 <div class = "megacol">
@@ -46,26 +155,71 @@
 </div>
 <div id = 'fireMode'></div>
 <label>С двух рук: <input type="checkbox" id="bothArmCheck" checked></label>
+<details>
+<summary>Дополнительные модификаторы</summary>
+<div class = "col">
 <label>Навык стрельбы: <input type= "number" id = "firearmsSkill" value = "1" min = "0" max = "10"></label>
 <label>Уровень приказа "Фокус": <input type = "number" id = "focusLevel" value = "0" min = "0" max = "3"></label>
 </div>
+</details>
+<details>
+<summary>Характеристики</summary>
 <div class = "col">
+<label>Боезапас: <span id = magBullets></span> патронов</label>
+<label>Урон пули: <span id = magDamage></span></label>
+<label>Бронебойность: <span id = magAP></span></label>
+<label>Множитель урона: <span id = "statDamageMult"></span></label>
+<label>Падение урона: <span id = "statFalloff"></span></label>
+<label>Обрыв дальности: <span id = "statCut"></span></label>
+<label>Урон на дистанции (до брони): <span id = "statDamageAtDist"></span></label>
+<label>Точность пули: <span id = "statAccBase"></span></label>
+<label>Множитель точности: <span id = "statAccMult"></span></label>
+<label>Итоговая точность: <span id = "statAcc"></span></label>
+<label>Конус разброса: <span id = "statCone"></span></label>
+<label>Шанс по разбросу: <span id = "statScatterChance"></span></label>
+<label>Серия: <span id = "statSeries"></span></label>
+<label>Темп: <span id = "statFireRate"></span></label>
+</div>
+</details>
+</div>
+<div class = "col">
+Поиск ксено: <input id='searchXeno' type="search" list="xenoList" placeholder="например, воин">
+<datalist id="xenoList"></datalist>
 Тир: <select id = 'tier'></select>
 Ксеноморф: <select id = 'xeno'></select>
 Стрейн: <select id = 'strain'></select>
-<div id="abilityArmor"></div>
 <div hidden id="armor">
 <label>Лоб:<input type='radio' id='armorCheckFront' name='armor' checked></label>
 <label>Бок:<input type='radio' id='armorCheckSide' name='armor'></label>
 <label>Спина:<input type='radio' id='armorCheckBack' name='armor'></label>
 </div>
+<details>
+<summary>Дополнительные модификаторы</summary>
+<div class = "col">
+<div id="abilityArmor"></div>
 <label>Стаки голотаргета: <input type = "number" id= "holotarget" value = "0" min = "0" max = "100" step = "10"></label>
-<label>Отдых: <input type = "checkbox" id = "rest"></label>
-<label>Зелёный огонь: <input type = "checkbox" id = "greenfire"></label>
 <label>Уровень фер щита: <input type = "number" id = "pheroShield" value = "0" max = "6" min = "0" step = "0.5"></label>
 <label>Фрукт щита: <input type = "checkbox" id = "fruitShield"></label>
+<label>Зелёный огонь: <input type = "checkbox" id = "greenfire"></label>
+<label>Бафф Валькирии: <input type = "checkbox" id = "valkyrieBuff"></label>
+<label>Отдых: <input type = "checkbox" id = "rest"></label>
+</div>
+</details>
+<details>
+<summary>Характеристики</summary>
+<div class = "col">
 <label>Хп до крита: <span id= "hpCrit"></span></label>
 <label>Хп до смерти: <span id= "hpDead"></span></label>
+<label>Базовая броня: <span id = "statArmorBase"></span></label>
+<label>Броня от способностей и баффов: <span id = "statArmorAbility"></span></label>
+<label>Общая броня (с огнём): <span id = "statArmorGeneral"></span></label>
+<label>Броня по направлению: <span id = "statArmorDir"></span></label>
+<label>Итоговая броня: <span id = "statArmorTotal"></span></label>
+<label>Броня после бронебойности: <span id = "statArmorEffective"></span></label>
+<label>Уклонение: <span id = "statEvasion"></span></label>
+<label>Радиус хитбокса: <span id = "statHitbox"></span></label>
+</div>
+</details>
 </div>
 <div class = "col">
 <label>Урон: <span id = 'damageOut'></span></label>
@@ -119,6 +273,7 @@ function buckshotCheck(applyArmor,pellets) {
     return newDamage
 }
 
+let lastAccuracyPoints = null
 function accuracyCalc(projectile,gun,bothArmCheck,dist,evasion, rangeFlat, accuracyAddMult, focusAccMod) {
     if (projectile.accuracy === null) {
         return 1
@@ -139,6 +294,7 @@ function accuracyCalc(projectile,gun,bothArmCheck,dist,evasion, rangeFlat, accur
         }
     }
     acc = Math.max(acc - evasion, projectile.minAccuracy)
+    lastAccuracyPoints = acc
     const accChance = Math.min(acc/100, 1)
     return accChance
 }
@@ -243,14 +399,16 @@ function recalc() {
     const xenoHpDeadHTML= document.getElementById("hpDead")
     const pheroShieldLevel = Math.min(Math.max(Number(document.getElementById("pheroShield").value),0),6)
     const fruitShield = document.getElementById("fruitShield").checked
+    const valkyrieBuff = document.getElementById("valkyrieBuff").checked
     const gunId = gunSelect.value
     const magId = magazineSelect.value
     const xenoId = strainSelect.value
     const armorCheckFront = document.getElementById("armorCheckFront").checked
     const armorCheckSide = document.getElementById("armorCheckSide").checked
     const armorCheckBack = document.getElementById("armorCheckBack").checked
-    const bothArmChecked = bothArmCheck.checked
     const gun = findById(GUNS, gunId)
+    bothArmCheck.disabled = gun.wieldable === false
+    const bothArmChecked = bothArmCheck.checked && gun.wieldable !== false
     const magazine = findById(MAGAZINES, magId)
     const projectile = findById(PROJECTILES, magazine.projectile)
     const xeno = findById(XENOS, xenoId)
@@ -358,12 +516,22 @@ function recalc() {
     }
     
     const realHitChance = sumHitChance/gunFire
-    const realXenoArmor = Math.floor((xeno.xenoArmor+xenoAbilityArmor+ armorStack)*xenoGreenFire) + armorCheck
-    const falloffStepResult = applyFalloff(((projectile.falloffStart||0)+gun.rangeFlat+mods.rangeFlat)||0,dist,projectile.falloffPerTile||0,projectile.damage*(gun.damageMult+mods.damageAddMult),Math.max(gun.falloffMult+mods.damageFalloffAddMult,0),(projectile.cutRange||999) + gun.rangeFlat + mods.rangeFlat)
-    const falloffResult = Math.max(falloffStepResult,projectile.damage*(gun.damageMult+mods.damageAddMult)*0.05)
+    let valkyrieArmor = 0
+    if (valkyrieBuff === true) {
+        valkyrieArmor = 15
+    }
+    const xenoGeneralArmor = Math.floor((xeno.xenoArmor+xenoAbilityArmor+ armorStack + valkyrieArmor)*xenoGreenFire)
+    const realXenoArmor = xenoGeneralArmor + armorCheck
+    const falloffStart = (projectile.falloffStart||0)+gun.rangeFlat+mods.rangeFlat
+    const cutRange = (projectile.cutRange||999) + gun.rangeFlat + mods.rangeFlat
+    const damageMult = gun.damageMult+mods.damageAddMult
+    const falloffMult = Math.max(gun.falloffMult+mods.damageFalloffAddMult,0)
+    const falloffStepResult = applyFalloff(falloffStart||0,dist,projectile.falloffPerTile||0,projectile.damage*damageMult,falloffMult,cutRange)
+    const falloffResult = Math.max(falloffStepResult,projectile.damage*damageMult*0.05)
     const armorResult = applyArmor(falloffResult*(1+holotarget), projectile.ap,realXenoArmor)
     const damageResult = buckshotCheck(armorResult, projectile.pellets)
-    const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xeno.evasionModified-evasionAdd, mods.rangeFlat,mods.accuracyAddMult+firearmAccMod, focusAccModSum)
+    const xenoEvasion = xeno.evasionModified-evasionAdd
+    const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xenoEvasion, mods.rangeFlat,mods.accuracyAddMult+firearmAccMod, focusAccModSum)
     const hitChance = acc*realHitChance*100
     const realFireRate = fireRateCalc(fireMode,gun,mods.shotsPerBurstFlat,mods.fireDelayFlat)
     const dpsResult = dps(damageResult,realFireRate)
@@ -396,10 +564,59 @@ function recalc() {
     } else {
         document.getElementById("magBullets").textContent = magBullets
     }
-    if (Math.ceil(Math.ceil(xenoHpDead/damageResult)/magBullets)===Infinity) {
+    let accMultBase = gun.accuracyMultUnwielded
+    if (bothArmChecked === true) {
+        accMultBase = gun.accuracyMult
+    }
+    const accMult = Math.max(accMultBase + mods.accuracyAddMult + firearmAccMod, 0.1)
+    const round2 = function (x) { return Math.round(x * 100) / 100 }
+    document.getElementById("statDamageMult").textContent = "×" + round2(damageMult)
+    if (projectile.falloffPerTile) {
+        document.getElementById("statFalloff").textContent = "после " + round2(falloffStart) + " т. −" + round2(projectile.falloffPerTile * falloffMult) + " за тайл"
+    } else {
+        document.getElementById("statFalloff").textContent = "нет"
+    }
+    if (projectile.cutRange) {
+        document.getElementById("statCut").textContent = round2(cutRange) + " т. (дальше 5%)"
+    } else {
+        document.getElementById("statCut").textContent = "нет"
+    }
+    document.getElementById("statDamageAtDist").textContent = round2(falloffResult * (1 + holotarget))
+    if (projectile.accuracy === null) {
+        document.getElementById("statAccBase").textContent = "не промахивается"
+    } else {
+        document.getElementById("statAccBase").textContent = projectile.accuracy
+    }
+    document.getElementById("statAccMult").textContent = "×" + round2(accMult)
+    if (projectile.accuracy === null) {
+        document.getElementById("statAcc").textContent = "100%"
+    } else {
+        document.getElementById("statAcc").textContent = round2(lastAccuracyPoints) + " очк. → шанс " + (acc * 100).toFixed(1) + "%"
+    }
+    if (step > 0) {
+        document.getElementById("statCone").textContent = round2(scatterW) + "° → " + round2(max) + "° (+" + round2(step) + "° за выстрел)"
+    } else {
+        document.getElementById("statCone").textContent = round2(scatterW) + "°"
+    }
+    document.getElementById("statScatterChance").textContent = (realHitChance * 100).toFixed(1) + "%"
+    document.getElementById("statSeries").textContent = gunFire + " выстр."
+    document.getElementById("statFireRate").textContent = round2(realFireRate) + " выстр./с"
+    document.getElementById("statArmorBase").textContent = xeno.xenoArmor
+    document.getElementById("statArmorAbility").textContent = xenoAbilityArmor + armorStack + valkyrieArmor
+    document.getElementById("statArmorGeneral").textContent = xenoGeneralArmor
+    document.getElementById("statArmorDir").textContent = armorCheck
+    document.getElementById("statArmorTotal").textContent = realXenoArmor
+    document.getElementById("statArmorEffective").textContent = Math.max(realXenoArmor - projectile.ap, 0)
+    document.getElementById("statEvasion").textContent = xenoEvasion
+    document.getElementById("statHitbox").textContent = xeno.hitboxRadius
+    let shotsPerMag = magBullets
+    if (magBullets === null) {
+        shotsPerMag = gun.internalCapacity
+    }
+    if (Math.ceil(Math.ceil(xenoHpDead/damageResult)/shotsPerMag)===Infinity) {
         document.getElementById("magazinesDead").textContent = "Бесконечно"
     } else {
-        document.getElementById("magazinesDead").textContent = Math.ceil(Math.ceil(xenoHpDead/damageResult)/magBullets)
+        document.getElementById("magazinesDead").textContent = Math.ceil(Math.ceil(xenoHpDead/damageResult)/shotsPerMag)
     }
 }
 
@@ -439,21 +656,82 @@ function selectGunMagazine() {
             }
         }
     magazineSelect.innerHTML = ""
-    for (const magazine of MAGAZINES) {
-        const magazineOption = document.createElement("option");
-        magazineOption.value = magazine.id;
-        magazineOption.textContent = magazine.name;
-        if (foundGun.magazines.includes(magazine.id)) {
+    for (const lethalPass of [true, false]) {
+        for (const magazine of MAGAZINES) {
+            if (!foundGun.magazines.includes(magazine.id)) {
+                continue
+            }
+            const projectile = findById(PROJECTILES, magazine.projectile)
+            const lethal = projectile !== null && projectile.damage > 0
+            if (lethal !== lethalPass) {
+                continue
+            }
+            const magazineOption = document.createElement("option");
+            magazineOption.value = magazine.id;
+            magazineOption.textContent = magazine.name;
             magazineSelect.appendChild(magazineOption);
         }
     }
 }
 
 let fireModeSelect = document.getElementById("fireMode")
+function attachmentConditionsOk(cond, gun, bothArmChecked, attachmentActive) {
+    if (cond.wieldedOnly === true && bothArmChecked === false) return false
+    if (cond.unwieldedOnly === true && bothArmChecked === true) return false
+    if (cond.activeOnly === true && attachmentActive === false) return false
+    if (cond.inactiveOnly === true && attachmentActive === true) return false
+    if (cond.whitelistTags !== null) {
+        let found = false
+        for (const tag of cond.whitelistTags) {
+            if (gun.tags.includes(tag)) found = true
+        }
+        if (found === false) return false
+    }
+    if (cond.blacklistTags !== null) {
+        for (const tag of cond.blacklistTags) {
+            if (gun.tags.includes(tag)) return false
+        }
+    }
+    return true
+}
+
+function availableFireModes(gun) {
+    const modes = gun.fireModes.slice()
+    let forced = null
+    const selects = [selectBarrel, selectRail, selectUnderbarrel, selectStock]
+    const actives = [barrelActive, railActive, underbarrelActive, stockActive]
+    for (let i = 0; i < selects.length; i++) {
+        if (selects[i].value === '' || selects[i].parentElement.hidden === true) {
+            continue
+        }
+        const attachment = findById(ATTACHMENTS, selects[i].value)
+        const attachmentActive = actives[i].checked === true && attachment.toggleable === true
+        for (const fm of attachment.fireModeMods) {
+            if (!attachmentConditionsOk(fm.conditions, gun, bothArmCheck.checked && gun.wieldable !== false, attachmentActive)) {
+                continue
+            }
+            for (const mode of fm.extraFireModes) {
+                if (!modes.includes(mode)) modes.push(mode)
+            }
+            if (fm.setFireMode) forced = fm.setFireMode
+        }
+    }
+    return { modes: modes, forced: forced }
+}
+
 function selectFireMods () {
     const gun = findById(GUNS, gunSelect.value)
+    const previous = fireModeSelect.querySelector("input:checked")
+    const previousMode = previous ? previous.value : null
+    const available = availableFireModes(gun)
+    let chosen = available.modes[0]
+    if (available.forced !== null && available.modes.includes(available.forced)) {
+        chosen = available.forced
+    } else if (previousMode !== null && available.modes.includes(previousMode)) {
+        chosen = previousMode
+    }
     fireModeSelect.innerHTML=""
-    for (const fireMode of gun.fireModes) {
+    for (const fireMode of available.modes) {
         let baseLabel = document.createElement("label")
         let baseInput = document.createElement("input")
         baseInput.type = "radio"
@@ -466,7 +744,7 @@ function selectFireMods () {
         } else if (baseInput.value === "Burst") {
             baseLabel.textContent = "Очередь"
         }
-        if (baseInput.value === gun.fireModes[0])
+        if (baseInput.value === chosen)
             baseInput.checked = true
         baseLabel.appendChild(baseInput)
         fireModeSelect.appendChild(baseLabel)
@@ -479,10 +757,14 @@ function selectAttachments(slot, idLabel,idSelect) {
     } else {
         idSelect.innerHTML=""
         idLabel.hidden = false
-        let attachmentOption = document.createElement("option")
-        attachmentOption.value = ''
-        attachmentOption.textContent = "Нет"
-        idSelect.appendChild(attachmentOption)
+        let attachmentOption = null
+        if (slot.locked !== true) {
+            attachmentOption = document.createElement("option")
+            attachmentOption.value = ''
+            attachmentOption.textContent = "Нет"
+            idSelect.appendChild(attachmentOption)
+        }
+        idSelect.disabled = slot.locked === true && slot.allowed.length <= 1
         for (const attachment of slot.allowed) {
             attachmentOption = document.createElement("option")
             attachmentOption.textContent = findById(ATTACHMENTS, attachment).name
@@ -536,7 +818,12 @@ function fireRateCalc (fireMode,gun,shotsPerBurstFlat,fireDelayFlat) {
         fireRate = 1/(1/gun.fireRate + fireDelay)
         fireRate = 1/(1/fireRate + fireDelayFlat)
     } else if (fireMode === 'Burst') {
-        fireRate = (Math.max(gun.shotsPerBurst+shotsPerBurstFlat,1))/((Math.max(gun.shotsPerBurst+shotsPerBurstFlat,1))*(1/(gun.fireRate * gun.burstFireRateMult) + gun.fireModeMods.Burst.fireDelay)+gun.burstCooldown)
+        const shots = Math.max(gun.shotsPerBurst+shotsPerBurstFlat,1)
+        let interval = 1/gun.gunBurstFireRate
+        if (gun.fireModeMods.Burst !== undefined) {
+            interval = 1/(gun.fireRate * gun.burstFireRateMult) + gun.fireModeMods.Burst.fireDelay
+        }
+        fireRate = shots/(shots*interval+gun.burstCooldown)
     }
     return fireRate
 }
@@ -622,8 +909,121 @@ function setAllAttachments(){
     selectAttachments(gunSlots.underbarrel,labelUnderbarrel,selectUnderbarrel)
     selectAttachments(gunSlots.stock,labelStock,selectStock)
     attachmentsToggleableCheck ()
+    selectFireMods()
 }
 setAllAttachments();
+
+function onAttachmentChange() {
+    attachmentsToggleableCheck()
+    selectFireMods()
+    recalc()
+}
+for (const el of [barrel, rail, underbarrel, stock]) {
+    el.addEventListener("change", onAttachmentChange)
+}
+for (const el of [barrelActive, railActive, underbarrelActive, stockActive, bothArmCheck]) {
+    el.addEventListener("input", onAttachmentChange)
+}
+
+const searchGun = document.getElementById("searchGun")
+const gunList = document.getElementById("gunList")
+const searchXeno = document.getElementById("searchXeno")
+const xenoList = document.getElementById("xenoList")
+
+function xenoLabel(xeno) {
+    if (xeno.strain === null) {
+        return xeno.name
+    }
+    return xeno.name + " — " + xeno.strain
+}
+
+function fillSearchLists() {
+    for (const gun of GUNS) {
+        const option = document.createElement("option")
+        option.value = gun.name
+        gunList.appendChild(option)
+    }
+    for (const xeno of XENOS) {
+        const option = document.createElement("option")
+        option.value = xenoLabel(xeno)
+        xenoList.appendChild(option)
+    }
+}
+
+function findByText(array, text, getText) {
+    for (const item of array) {
+        if (getText(item).toLowerCase() === text) {
+            return item
+        }
+    }
+    for (const item of array) {
+        if (getText(item).toLowerCase().includes(text)) {
+            return item
+        }
+    }
+    return null
+}
+
+function onGunSearch() {
+    const text = searchGun.value.trim().toLowerCase()
+    if (text === "") {
+        return
+    }
+    const gun = findByText(GUNS, text, function (g) { return g.name })
+    if (gun === null) {
+        return
+    }
+    gunTypeSelect.value = gun.category
+    selectGun()
+    gunSelect.value = gun.id
+    selectGunMagazine()
+    selectFireMods()
+    setAllAttachments()
+    recalc()
+    searchGun.value = gun.name
+}
+
+function onXenoSearch() {
+    const text = searchXeno.value.trim().toLowerCase()
+    if (text === "") {
+        return
+    }
+    const xeno = findByText(XENOS, text, xenoLabel)
+    if (xeno === null) {
+        return
+    }
+    tierSelect.value = xeno.tier
+    selectXeno()
+    xenoSelect.value = xeno.name
+    selectXenoStrain()
+    strainSelect.value = xeno.id
+    selectXenoAbility()
+    recalc()
+    searchXeno.value = xenoLabel(xeno)
+}
+
+function abilityExclusive(event) {
+    const input = event.target
+    if (input.type !== "checkbox" || input.checked !== true) {
+        return
+    }
+    const xeno = findById(XENOS, strainSelect.value)
+    for (const ability of xeno.armorAbilities) {
+        if ("ability-" + ability.id === input.id && ability.exclusiveWith) {
+            for (const otherId of ability.exclusiveWith) {
+                const other = document.getElementById("ability-" + otherId)
+                if (other !== null) {
+                    other.checked = false
+                }
+            }
+        }
+    }
+}
+
+fillSearchLists();
+abilitySelect.addEventListener("change", abilityExclusive);
+searchGun.addEventListener("change", onGunSearch);
+searchXeno.addEventListener("change", onXenoSearch);
 tierSelect.addEventListener("change", selectXeno);
 tierSelect.addEventListener("change", selectXenoStrain);
 tierSelect.addEventListener("change", selectXenoAbility);
@@ -658,6 +1058,7 @@ firearmsSkill.addEventListener("input",recalc)
 focusLevel.addEventListener("input",recalc)
 pheroShield.addEventListener("input",recalc)
 fruitShield.addEventListener("input",recalc)
+valkyrieBuff.addEventListener("input",recalc)
 barrel.addEventListener("change",recalc)
 underbarrel.addEventListener("change",recalc)
 rail.addEventListener("change",recalc)
