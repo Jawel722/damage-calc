@@ -273,7 +273,7 @@ const ATTACHMENTS = [
   },
   {
     "id": "RMCAttachmentL49Barrel",
-    "name": "L49 standoff device",
+    "name": "дульная насадка-упор L49",
     "tags": [
       "RMCAttachmentBarrel",
       "RMCAttachmentL49Barrel"
@@ -303,7 +303,7 @@ const ATTACHMENTS = [
   },
   {
     "id": "RMCAttachmentL49Stock",
-    "name": "L49 stock",
+    "name": "приклад L49",
     "tags": [
       "RMCAttachmentStock",
       "RMCAttachmentL49Stock"
@@ -351,7 +351,7 @@ const ATTACHMENTS = [
   },
   {
     "id": "RMCAttachmentL88Grip",
-    "name": "L88 integrated foregrip",
+    "name": "встроенная передняя рукоять L88",
     "tags": [
       "RMCAttachmentUnderbarrel",
       "RMCAttachmentL88Grip"
@@ -362,7 +362,7 @@ const ATTACHMENTS = [
   },
   {
     "id": "RMCAttachmentL89Scope",
-    "name": "L89 integrated optic",
+    "name": "встроенная оптика L89",
     "tags": [
       "RMCAttachmentRail",
       "RMCAttachmentL89Scope"
@@ -421,7 +421,7 @@ const ATTACHMENTS = [
   },
   {
     "id": "RMCAttachmentL90UBF",
-    "name": "L90U2 underbarrel flamethrower",
+    "name": "подствольный огнемёт L90U2",
     "tags": [
       "RMCAttachmentUnderbarrel",
       "RMCAttachmentL90UBF"
@@ -587,7 +587,7 @@ const ATTACHMENTS = [
   },
   {
     "id": "RMCAttachmentM16A5Stock",
-    "name": "M16A5 bump stock",
+    "name": "бамп-сток M16A5",
     "tags": [
       "RMCAttachmentStock",
       "RMCAttachmentM16A5Stock"
@@ -725,7 +725,7 @@ const ATTACHMENTS = [
   },
   {
     "id": "RMCAttachmentModel12Stock",
-    "name": "Model 12 stock",
+    "name": "приклад дробовика Модель 12",
     "tags": [
       "RMCAttachmentStock",
       "RMCAttachmentModel12Stock"
@@ -736,7 +736,7 @@ const ATTACHMENTS = [
   },
   {
     "id": "RMCAttachmentBipodQYJ",
-    "name": "QYJ-72 bipod",
+    "name": "сошки QYJ-72",
     "tags": [
       "RMCAttachmentUnderbarrel",
       "RMCAttachmentBipodQYJ"
@@ -945,7 +945,7 @@ const ATTACHMENTS = [
   },
   {
     "id": "RMCAttachmentXS-9",
-    "name": "XS-9 targeting relay",
+    "name": "реле целеуказания XS-9",
     "tags": [
       "RMCAttachmentRail",
       "RMCAttachmentXS-9"

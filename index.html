@@ -134,6 +134,7 @@ body > .megacol > .col:last-child span {
 Тип Оружия: <select id = 'gunType'></select>
 Оружие: <select id = 'gun'></select>
 Магазин: <select id = 'magazine'></select>
+<label id="labelAmmoMode">Режим патронов: <select id = 'ammoMode'></select></label>
 <label>Дистанция: <input type="number" id="dist" value="0" min="0"></label>
 <div class = "col">
 <div class = "megacol">
@@ -222,7 +223,7 @@ body > .megacol > .col:last-child span {
 </details>
 </div>
 <div class = "col">
-<label>Урон: <span id = 'damageOut'></span></label>
+<label>Урон выстрела: <span id = 'damageOut'></span></label>
 <label>Шанс попадания: <span id = 'hitChance'></span>%</label>
 <label>УвС: <span id = 'out'></span></label>
 <label>Ожидаемый УвС: <span id = 'realOut'></span></label>
@@ -410,7 +411,11 @@ function recalc() {
     bothArmCheck.disabled = gun.wieldable === false
     const bothArmChecked = bothArmCheck.checked && gun.wieldable !== false
     const magazine = findById(MAGAZINES, magId)
-    const projectile = findById(PROJECTILES, magazine.projectile)
+    let projectile = findById(PROJECTILES, magazine.projectile)
+    if (gun.ammoModes) {
+        const ammoMode = gun.ammoModes[ammoModeSelect.value]
+        projectile = Object.assign({}, projectile, {damage: ammoMode.damage, ap: ammoMode.ap})
+    }
     const xeno = findById(XENOS, xenoId)
     const magBullets = magazine.capacity
     let xenoHpCrit = xeno.hpCrit
@@ -671,6 +676,26 @@ function selectGunMagazine() {
             magazineOption.textContent = magazine.name;
             magazineSelect.appendChild(magazineOption);
         }
+    }
+    selectAmmoMode(foundGun)
+}
+const ammoModeSelect = document.getElementById("ammoMode");
+const labelAmmoMode = document.getElementById("labelAmmoMode");
+function selectAmmoMode(gun) {
+    const previous = ammoModeSelect.value
+    ammoModeSelect.innerHTML = ""
+    labelAmmoMode.hidden = !gun.ammoModes
+    if (!gun.ammoModes) {
+        return
+    }
+    gun.ammoModes.forEach(function (mode, i) {
+        const option = document.createElement("option")
+        option.value = i
+        option.textContent = mode.name + " (урон " + mode.damage + ", ББ " + mode.ap + ")"
+        ammoModeSelect.appendChild(option)
+    })
+    if (previous !== "" && previous < gun.ammoModes.length) {
+        ammoModeSelect.value = previous
     }
 }
 
@@ -1043,6 +1068,7 @@ abilitySelect.addEventListener("input",recalc)
 abilitySelect.addEventListener("change",recalc)
 gunSelect.addEventListener("change", recalc)
 magazineSelect.addEventListener("change", recalc)
+ammoModeSelect.addEventListener("change", recalc)
 tierSelect.addEventListener("change",recalc)
 xenoSelect.addEventListener("change",recalc)
 strainSelect.addEventListener("change", recalc)

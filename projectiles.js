@@ -2,22 +2,22 @@ const PROJECTILES = [
   {
     "id": "Bullet10x20mm",
     "name": "BaseBullet",
-    "damage": 34.0,
+    "damage": 34,
     "damageTypes": {
-      "Piercing": 34.0
+      "Piercing": 34
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 4.0,
-    "falloffPerTile": 6.0,
-    "cutRange": 22.0,
+    "falloffStart": 4,
+    "falloffPerTile": 6,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -26,22 +26,22 @@ const PROJECTILES = [
   {
     "id": "Bullet10x20mmAP",
     "name": "BaseBullet",
-    "damage": 26.0,
+    "damage": 26,
     "damageTypes": {
-      "Piercing": 26.0
+      "Piercing": 26
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
-    "falloffStart": 4.0,
-    "falloffPerTile": 6.0,
-    "cutRange": 22.0,
+    "falloffStart": 4,
+    "falloffPerTile": 6,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -50,22 +50,22 @@ const PROJECTILES = [
   {
     "id": "Bullet10x20mmRubber",
     "name": "BaseBullet",
-    "damage": 3.0,
+    "damage": 3,
     "damageTypes": {
-      "Blunt": 3.0
+      "Blunt": 3
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
     "cutRange": null,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -74,22 +74,22 @@ const PROJECTILES = [
   {
     "id": "Bullet9x21mmUZI",
     "name": "BaseBullet",
-    "damage": 35.0,
+    "damage": 35,
     "damageTypes": {
-      "Piercing": 35.0
+      "Piercing": 35
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 4.0,
-    "falloffPerTile": 6.0,
-    "cutRange": 22.0,
+    "falloffStart": 4,
+    "falloffPerTile": 6,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -98,22 +98,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle10x24mm",
     "name": "BaseBullet",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -122,22 +122,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle10x24mmAP",
     "name": "BaseBullet",
-    "damage": 30.0,
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 40.0,
+    "ap": 40,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -146,22 +146,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle10x24mmHT",
     "name": "BaseBullet",
-    "damage": 30.0,
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -170,22 +170,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle10x24mmRubber",
     "name": "BaseBullet",
-    "damage": 3.0,
+    "damage": 3,
     "damageTypes": {
-      "Blunt": 3.0
+      "Blunt": 3
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
     "cutRange": null,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -194,22 +194,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle556x45mm",
     "name": "BaseBullet",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -218,22 +218,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle556x45mmAP",
     "name": "BaseBullet",
-    "damage": 30.0,
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 40.0,
+    "ap": 40,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -242,22 +242,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle556x45mmHEAP",
     "name": "BaseBullet",
-    "damage": 65.0,
+    "damage": 65,
     "damageTypes": {
-      "Piercing": 65.0
+      "Piercing": 65
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -266,22 +266,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle556x45mmIncendiary",
     "name": "BaseBullet",
-    "damage": 30.0,
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -290,22 +290,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle7x43mm",
     "name": "BaseBullet",
-    "damage": 50.0,
+    "damage": 50,
     "damageTypes": {
-      "Piercing": 50.0
+      "Piercing": 50
     },
-    "ap": 10.0,
+    "ap": 10,
     "pellets": 1,
-    "falloffStart": 10.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 30.0,
+    "falloffStart": 10,
+    "falloffPerTile": 4,
+    "cutRange": 30,
     "minRemainingMult": 0.05,
-    "accuracy": 120.0,
+    "accuracy": 120,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 20.0,
-        "falloff": 10.0,
+        "range": 20,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -314,22 +314,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle7x43mmAP",
     "name": "BaseBullet",
-    "damage": 35.0,
+    "damage": 35,
     "damageTypes": {
-      "Piercing": 35.0
+      "Piercing": 35
     },
-    "ap": 40.0,
+    "ap": 40,
     "pellets": 1,
-    "falloffStart": 10.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 30.0,
+    "falloffStart": 10,
+    "falloffPerTile": 4,
+    "cutRange": 30,
     "minRemainingMult": 0.05,
-    "accuracy": 120.0,
+    "accuracy": 120,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 20.0,
-        "falloff": 10.0,
+        "range": 20,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -338,22 +338,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle7x43mmHEAP",
     "name": "BaseBullet",
-    "damage": 70.0,
+    "damage": 70,
     "damageTypes": {
-      "Piercing": 70.0
+      "Piercing": 70
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
-    "falloffStart": 10.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 30.0,
+    "falloffStart": 10,
+    "falloffPerTile": 4,
+    "cutRange": 30,
     "minRemainingMult": 0.05,
-    "accuracy": 120.0,
+    "accuracy": 120,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 20.0,
-        "falloff": 10.0,
+        "range": 20,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -362,22 +362,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle7x43mmIncendiary",
     "name": "BaseBullet",
-    "damage": 30.0,
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 10.0,
+    "ap": 10,
     "pellets": 1,
-    "falloffStart": 10.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 30.0,
+    "falloffStart": 10,
+    "falloffPerTile": 4,
+    "cutRange": 30,
     "minRemainingMult": 0.05,
-    "accuracy": 120.0,
+    "accuracy": 120,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 20.0,
-        "falloff": 10.0,
+        "range": 20,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -386,22 +386,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle888x51mm",
     "name": "BaseBullet",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 10.0,
+    "ap": 10,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -410,22 +410,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle888x51mmAP",
     "name": "BaseBullet",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -434,22 +434,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle888x51mmHEAP",
     "name": "BaseBullet",
-    "damage": 65.0,
+    "damage": 65,
     "damageTypes": {
-      "Piercing": 65.0
+      "Piercing": 65
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -458,22 +458,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifle888x51mmIncendiary",
     "name": "BaseBullet",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 10.0,
+    "ap": 10,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -482,22 +482,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifleAR10",
     "name": "BaseBullet",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -506,27 +506,27 @@ const PROJECTILES = [
   {
     "id": "BulletRifleM4SPRA19",
     "name": "BaseBullet",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
-    "ap": 35.0,
+    "ap": 35,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 24.0,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       },
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": true
       }
     ],
@@ -535,27 +535,27 @@ const PROJECTILES = [
   {
     "id": "BulletRifleM4SPRA19Impact",
     "name": "BaseBullet",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 24.0,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 75.0,
+    "accuracy": 75,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       },
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": true
       }
     ],
@@ -564,27 +564,27 @@ const PROJECTILES = [
   {
     "id": "BulletRifleM4SPRA19Incendiary",
     "name": "BaseBullet",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 25.0,
+    "ap": 25,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 24.0,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       },
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": true
       }
     ],
@@ -593,27 +593,27 @@ const PROJECTILES = [
   {
     "id": "BulletRifleM5SPRHVHIP",
     "name": "BaseBullet",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
-    "ap": 35.0,
+    "ap": 35,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 24.0,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       },
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": true
       }
     ],
@@ -622,27 +622,27 @@ const PROJECTILES = [
   {
     "id": "BulletRifleM5SPRHVP",
     "name": "BaseBullet",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
-    "ap": 35.0,
+    "ap": 35,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 24.0,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       },
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": true
       }
     ],
@@ -651,22 +651,22 @@ const PROJECTILES = [
   {
     "id": "BulletRifleMAR40",
     "name": "BaseBullet",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -675,22 +675,22 @@ const PROJECTILES = [
   {
     "id": "CMBullet9mmSMG",
     "name": "BaseBullet",
-    "damage": 34.0,
+    "damage": 34,
     "damageTypes": {
-      "Piercing": 34.0
+      "Piercing": 34
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 4.0,
-    "falloffPerTile": 6.0,
-    "cutRange": 22.0,
+    "falloffStart": 4,
+    "falloffPerTile": 6,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -699,22 +699,22 @@ const PROJECTILES = [
   {
     "id": "CMBulletPistol22mm",
     "name": "пуля (.22)",
-    "damage": 20.0,
+    "damage": 20,
     "damageTypes": {
-      "Piercing": 20.0
+      "Piercing": 20
     },
-    "ap": 10.0,
+    "ap": 10,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -722,23 +722,23 @@ const PROJECTILES = [
   },
   {
     "id": "CMBulletPistol45ACP",
-    "name": "bullet (.45 ACP)",
-    "damage": 55.0,
+    "name": "пуля (.45 ACP)",
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
-    "ap": 15.0,
+    "ap": 15,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -747,22 +747,22 @@ const PROJECTILES = [
   {
     "id": "CMBulletPistol9mm",
     "name": "пуля (9 мм)",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 10.0,
+    "ap": 10,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -771,22 +771,22 @@ const PROJECTILES = [
   {
     "id": "CMBulletPistolM77AP",
     "name": "пуля (9 мм ББ)",
-    "damage": 25.0,
+    "damage": 25,
     "damageTypes": {
-      "Piercing": 25.0
+      "Piercing": 25
     },
-    "ap": 40.0,
+    "ap": 40,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -795,22 +795,22 @@ const PROJECTILES = [
   {
     "id": "CMBulletPistolMK45",
     "name": "мощная пистолетная пуля (.45)",
-    "damage": 36.0,
+    "damage": 36,
     "damageTypes": {
-      "Piercing": 36.0
+      "Piercing": 36
     },
-    "ap": 25.0,
+    "ap": 25,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -819,27 +819,27 @@ const PROJECTILES = [
   {
     "id": "CMBulletSniper10x28mm",
     "name": "пуля (10x28 мм)",
-    "damage": 70.0,
+    "damage": 70,
     "damageTypes": {
-      "Piercing": 70.0
+      "Piercing": 70
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 32.0,
+    "cutRange": 32,
     "minRemainingMult": 0.05,
-    "accuracy": 125.0,
+    "accuracy": 125,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 32.0,
-        "falloff": 10.0,
+        "range": 32,
+        "falloff": 10,
         "buildup": false
       },
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": true
       }
     ],
@@ -848,28 +848,28 @@ const PROJECTILES = [
   {
     "id": "CMBulletSniper10x28mmIncendiary",
     "name": "зажигательная пуля (10x28 мм)",
-    "damage": 60.0,
+    "damage": 60,
     "damageTypes": {
-      "Piercing": 50.0,
-      "Heat": 10.0
+      "Piercing": 50,
+      "Heat": 10
     },
-    "ap": 20.0,
+    "ap": 20,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 32.0,
+    "cutRange": 32,
     "minRemainingMult": 0.05,
-    "accuracy": 125.0,
+    "accuracy": 125,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 32.0,
-        "falloff": 10.0,
+        "range": 32,
+        "falloff": 10,
         "buildup": false
       },
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": true
       }
     ],
@@ -878,27 +878,27 @@ const PROJECTILES = [
   {
     "id": "CMBulletSniper10x99mm",
     "name": "сверхзвуковая снайперская пуля (10x99мм)",
-    "damage": 300.0,
+    "damage": 300,
     "damageTypes": {
-      "Piercing": 300.0
+      "Piercing": 300
     },
-    "ap": 75.0,
+    "ap": 75,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 32.0,
+    "cutRange": 32,
     "minRemainingMult": 0.05,
-    "accuracy": 125.0,
+    "accuracy": 125,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 32.0,
-        "falloff": 10.0,
+        "range": 32,
+        "falloff": 10,
         "buildup": false
       },
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": true
       }
     ],
@@ -911,16 +911,16 @@ const PROJECTILES = [
     "damageTypes": {},
     "ap": 0,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 12.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 12,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -929,22 +929,22 @@ const PROJECTILES = [
   {
     "id": "CMPelletShotgunBuckshot",
     "name": "дробь",
-    "damage": 65.0,
+    "damage": 65,
     "damageTypes": {
-      "Piercing": 65.0
+      "Piercing": 65
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 4,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 4.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 4,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -953,22 +953,22 @@ const PROJECTILES = [
   {
     "id": "CMPelletShotgunFlechette",
     "name": "дротик",
-    "damage": 30.0,
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 35.0,
+    "ap": 35,
     "pellets": 4,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 12.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 12,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -977,22 +977,22 @@ const PROJECTILES = [
   {
     "id": "CMPelletShotgunIncendiary",
     "name": "зажигательная дробовая пуля",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Heat": 55.0
+      "Heat": 55
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 12.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 12,
     "minRemainingMult": 0.05,
-    "accuracy": 95.0,
+    "accuracy": 95,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 8.0,
-        "falloff": 10.0,
+        "range": 8,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1001,22 +1001,22 @@ const PROJECTILES = [
   {
     "id": "CMPelletShotgunIncendiaryBuckshot",
     "name": "зажигательная дробь",
-    "damage": 65.0,
+    "damage": 65,
     "damageTypes": {
-      "Piercing": 65.0
+      "Piercing": 65
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 4,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 4.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 4,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1025,22 +1025,22 @@ const PROJECTILES = [
   {
     "id": "CMPelletShotgunSlug",
     "name": "дробовая пуля",
-    "damage": 70.0,
+    "damage": 70,
     "damageTypes": {
-      "Piercing": 70.0
+      "Piercing": 70
     },
-    "ap": 20.0,
+    "ap": 20,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 8.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 8,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 8.0,
-        "falloff": 10.0,
+        "range": 8,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1049,22 +1049,22 @@ const PROJECTILES = [
   {
     "id": "RCMBulletPistol9mmSquashHead",
     "name": "пуля (9 мм Squash-Head)",
-    "damage": 45.0,
+    "damage": 45,
     "damageTypes": {
-      "Piercing": 45.0
+      "Piercing": 45
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
-    "falloffStart": 6.0,
-    "falloffPerTile": 5.0,
-    "cutRange": 22.0,
+    "falloffStart": 6,
+    "falloffPerTile": 5,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1073,22 +1073,22 @@ const PROJECTILES = [
   {
     "id": "RMCBullet10x20mmHEAP",
     "name": "BaseBullet",
-    "damage": 45.0,
+    "damage": 45,
     "damageTypes": {
-      "Piercing": 45.0
+      "Piercing": 45
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
-    "falloffStart": 4.0,
-    "falloffPerTile": 6.0,
-    "cutRange": 22.0,
+    "falloffStart": 4,
+    "falloffPerTile": 6,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1097,22 +1097,22 @@ const PROJECTILES = [
   {
     "id": "RMCBullet10x20mmIncendiary",
     "name": "BaseBullet",
-    "damage": 30.0,
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 4.0,
-    "falloffPerTile": 6.0,
-    "cutRange": 22.0,
+    "falloffStart": 4,
+    "falloffPerTile": 6,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1121,22 +1121,22 @@ const PROJECTILES = [
   {
     "id": "RMCBullet10x20mmWP",
     "name": "BaseBullet",
-    "damage": 30.0,
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
-    "falloffStart": 4.0,
-    "falloffPerTile": 6.0,
-    "cutRange": 22.0,
+    "falloffStart": 4,
+    "falloffPerTile": 6,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1145,22 +1145,22 @@ const PROJECTILES = [
   {
     "id": "RMCBullet458SOCOM",
     "name": "BaseBullet",
-    "damage": 80.0,
+    "damage": 80,
     "damageTypes": {
-      "Piercing": 80.0
+      "Piercing": 80
     },
-    "ap": 10.0,
+    "ap": 10,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 7,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 14.0,
-        "falloff": 10.0,
+        "range": 14,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1169,22 +1169,22 @@ const PROJECTILES = [
   {
     "id": "RMCBullet46x30mm",
     "name": "BaseBullet",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 0.0,
+    "ap": 0,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 5.0,
-    "cutRange": 22.0,
+    "falloffStart": 7,
+    "falloffPerTile": 5,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1193,22 +1193,22 @@ const PROJECTILES = [
   {
     "id": "RMCBullet57x28mm",
     "name": "BaseBullet",
-    "damage": 26.0,
+    "damage": 26,
     "damageTypes": {
-      "Piercing": 26.0
+      "Piercing": 26
     },
-    "ap": 10.0,
+    "ap": 10,
     "pellets": 1,
-    "falloffStart": 8.0,
-    "falloffPerTile": 5.0,
-    "cutRange": 22.0,
+    "falloffStart": 8,
+    "falloffPerTile": 5,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1217,22 +1217,22 @@ const PROJECTILES = [
   {
     "id": "RMCBullet57x28mmAP",
     "name": "BaseBullet",
-    "damage": 20.0,
+    "damage": 20,
     "damageTypes": {
-      "Piercing": 20.0
+      "Piercing": 20
     },
-    "ap": 20.0,
+    "ap": 20,
     "pellets": 1,
-    "falloffStart": 8.0,
-    "falloffPerTile": 5.0,
-    "cutRange": 22.0,
+    "falloffStart": 8,
+    "falloffPerTile": 5,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1241,22 +1241,22 @@ const PROJECTILES = [
   {
     "id": "RMCBullet57x28mmFP9000",
     "name": "BaseBullet",
-    "damage": 26.0,
+    "damage": 26,
     "damageTypes": {
-      "Piercing": 26.0
+      "Piercing": 26
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
-    "falloffStart": 4.0,
-    "falloffPerTile": 6.0,
-    "cutRange": 22.0,
+    "falloffStart": 4,
+    "falloffPerTile": 6,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1265,22 +1265,22 @@ const PROJECTILES = [
   {
     "id": "RMCBullet762x25mm",
     "name": "BaseBullet",
-    "damage": 35.0,
+    "damage": 35,
     "damageTypes": {
-      "Piercing": 35.0
+      "Piercing": 35
     },
-    "ap": 20.0,
+    "ap": 20,
     "pellets": 1,
-    "falloffStart": 10.0,
-    "falloffPerTile": 5.0,
-    "cutRange": 20.0,
+    "falloffStart": 10,
+    "falloffPerTile": 5,
+    "cutRange": 20,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1289,22 +1289,22 @@ const PROJECTILES = [
   {
     "id": "RMCBullet9x20mm",
     "name": "пуля (9 мм)",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 15.0,
+    "ap": 15,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1313,22 +1313,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletAutoPistol",
     "name": "BaseBullet",
-    "damage": 24.0,
+    "damage": 24,
     "damageTypes": {
-      "Piercing": 24.0
+      "Piercing": 24
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 3.0,
-    "falloffPerTile": 7.0,
-    "cutRange": 22.0,
+    "falloffStart": 3,
+    "falloffPerTile": 7,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 115.0,
+    "accuracy": 115,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 2.0,
-        "falloff": 10.0,
+        "range": 2,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1337,22 +1337,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletAutoPistolAP",
     "name": "BaseBullet",
-    "damage": 18.0,
+    "damage": 18,
     "damageTypes": {
-      "Piercing": 18.0
+      "Piercing": 18
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
-    "falloffStart": 3.0,
-    "falloffPerTile": 7.0,
-    "cutRange": 22.0,
+    "falloffStart": 3,
+    "falloffPerTile": 7,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 115.0,
+    "accuracy": 115,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 2.0,
-        "falloff": 10.0,
+        "range": 2,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1361,22 +1361,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletHMG10x28mm",
     "name": "пуля (10x28мм)",
-    "damage": 36.0,
+    "damage": 36,
     "damageTypes": {
-      "Piercing": 36.0
+      "Piercing": 36
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
-    "falloffStart": 1.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 1,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 8.0,
-        "falloff": 10.0,
+        "range": 8,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1385,32 +1385,32 @@ const PROJECTILES = [
   {
     "id": "RMCBulletHMG10x28mmTungsten",
     "name": "пуля (10x28 мм, вольфрам)",
-    "damage": 50.0,
+    "damage": 50,
     "damageTypes": {
-      "Piercing": 50.0
+      "Piercing": 50
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
-    "falloffStart": 1.0,
-    "falloffPerTile": 3.0,
-    "cutRange": 15.0,
+    "falloffStart": 1,
+    "falloffPerTile": 3,
+    "cutRange": 15,
     "minRemainingMult": 0.05,
-    "accuracy": 75.0,
+    "accuracy": 75,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 6.0,
-        "falloff": 15.0,
+        "range": 6,
+        "falloff": 15,
         "buildup": false
       },
       {
-        "range": 7.0,
-        "falloff": -15.0,
+        "range": 7,
+        "falloff": -15,
         "buildup": false
       },
       {
-        "range": 10.0,
-        "falloff": 10.0,
+        "range": 10,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1419,22 +1419,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletLMGM60",
     "name": "BaseBullet",
-    "damage": 45.0,
+    "damage": 45,
     "damageTypes": {
-      "Piercing": 45.0
+      "Piercing": 45
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 22.0,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 95.0,
+    "accuracy": 95,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 12.0,
-        "falloff": 10.0,
+        "range": 12,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1443,22 +1443,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletLMGQYJ72",
     "name": "BaseBullet",
-    "damage": 35.0,
+    "damage": 35,
     "damageTypes": {
-      "Piercing": 35.0
+      "Piercing": 35
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 22.0,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 95.0,
+    "accuracy": 95,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 14.0,
-        "falloff": 10.0,
+        "range": 14,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1467,22 +1467,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletPistol45ACP",
     "name": "пуля (.45 ACP)",
-    "damage": 30.0,
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 20.0,
+    "ap": 20,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 125.0,
+    "accuracy": 125,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1490,10 +1490,10 @@ const PROJECTILES = [
   },
   {
     "id": "RMCBulletPistol9mmElectrostatic",
-    "name": "electrostatic bullet (9mm)",
-    "damage": 0.0,
+    "name": "электростатическая пуля (9 мм)",
+    "damage": 0,
     "damageTypes": {
-      "Blunt": 0.0
+      "Blunt": 0
     },
     "ap": 0,
     "pellets": 1,
@@ -1501,12 +1501,12 @@ const PROJECTILES = [
     "falloffPerTile": null,
     "cutRange": null,
     "minRemainingMult": 0.05,
-    "accuracy": 125.0,
+    "accuracy": 125,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1515,22 +1515,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletPistol9mmHP",
     "name": "пуля (9 мм с полой головной частью)",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
     "ap": 0,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1539,22 +1539,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletPistol9mmRubber",
     "name": "резиновая пуля (9 мм)",
-    "damage": 3.0,
+    "damage": 3,
     "damageTypes": {
-      "Blunt": 3.0
+      "Blunt": 3
     },
     "ap": 0,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1563,22 +1563,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletPistolHandcannon",
     "name": "пуля ( .50 )",
-    "damage": 45.0,
+    "damage": 45,
     "damageTypes": {
-      "Piercing": 45.0
+      "Piercing": 45
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 85.0,
+    "accuracy": 85,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1587,22 +1587,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletPistolHandcannonHI",
     "name": "пуля ( Повышенной мощности .50 )",
-    "damage": 45.0,
+    "damage": 45,
     "damageTypes": {
-      "Piercing": 45.0
+      "Piercing": 45
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 70.0,
+    "accuracy": 70,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1611,22 +1611,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletPistolHandcannonHIAP",
     "name": "пуля ( Бронебойная повышенной мощности .50 )",
-    "damage": 45.0,
+    "damage": 45,
     "damageTypes": {
-      "Piercing": 45.0
+      "Piercing": 45
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 70.0,
+    "accuracy": 70,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1635,22 +1635,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletPistolNP92",
     "name": "пуля (9 мм)",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
     "ap": 0,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1659,22 +1659,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletPistolT73",
     "name": "пуля (7,62x25 мм)",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
     "ap": 0,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1683,22 +1683,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletPistolT74Impact",
     "name": "пуля (7,62x25 мм, ударная)",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
     "ap": 0,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1707,22 +1707,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRifle10x24mmHEAP",
     "name": "BaseBullet",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
-    "ap": 40.0,
+    "ap": 40,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1731,22 +1731,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRifle10x24mmIncendiary",
     "name": "BaseBullet",
-    "damage": 33.0,
+    "damage": 33,
     "damageTypes": {
-      "Piercing": 33.0
+      "Piercing": 33
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1755,22 +1755,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRifle10x24mmWP",
     "name": "BaseBullet",
-    "damage": 30.0,
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 40.0,
+    "ap": 40,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1779,22 +1779,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRifle545x39mm",
     "name": "BaseBullet",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
-    "ap": 15.0,
+    "ap": 15,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1803,22 +1803,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRifle545x39mmAP",
     "name": "BaseBullet",
-    "damage": 40.0,
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1827,22 +1827,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRifle545x39mmHEAP",
     "name": "BaseBullet",
-    "damage": 65.0,
+    "damage": 65,
     "damageTypes": {
-      "Piercing": 65.0
+      "Piercing": 65
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1851,22 +1851,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRifle545x39mmRubber",
     "name": "BaseBullet",
-    "damage": 3.0,
+    "damage": 3,
     "damageTypes": {
-      "Blunt": 3.0
+      "Blunt": 3
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
     "cutRange": null,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1875,22 +1875,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRifleHunting",
     "name": "BaseBullet",
-    "damage": 42.0,
+    "damage": 42,
     "damageTypes": {
-      "Piercing": 42.0
+      "Piercing": 42
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 24.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 16.0,
-        "falloff": 10.0,
+        "range": 16,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1898,23 +1898,23 @@ const PROJECTILES = [
   },
   {
     "id": "RMCBulletSMG9mmSquashHead",
-    "name": "9mmSquash-HeadBullet",
-    "damage": 30.0,
+    "name": "пуля (9 мм Squash-Head)",
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 15.0,
+    "ap": 15,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 8.0,
-    "cutRange": 14.0,
+    "falloffStart": 7,
+    "falloffPerTile": 8,
+    "cutRange": 14,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1923,28 +1923,28 @@ const PROJECTILES = [
   {
     "id": "RMCBulletSniper10x99mmAntiMateriel",
     "name": "антиматериальная пуля (10x99 мм)",
-    "damage": 125.0,
+    "damage": 125,
     "damageTypes": {
-      "Piercing": 125.0,
-      "Structural": 1275.0
+      "Piercing": 125,
+      "Structural": 1275
     },
-    "ap": 75.0,
+    "ap": 75,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 32.0,
+    "cutRange": 32,
     "minRemainingMult": 0.05,
-    "accuracy": 125.0,
+    "accuracy": 125,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 32.0,
-        "falloff": 10.0,
+        "range": 32,
+        "falloff": 10,
         "buildup": false
       },
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": true
       }
     ],
@@ -1952,23 +1952,23 @@ const PROJECTILES = [
   },
   {
     "id": "RMCBulletSniper77x56mmR",
-    "name": "bullet (7.7x56mmR)",
-    "damage": 40.0,
+    "name": "пуля (7.7x56mmR)",
+    "damage": 40,
     "damageTypes": {
-      "Piercing": 40.0
+      "Piercing": 40
     },
-    "ap": 10.0,
+    "ap": 10,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 24.0,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
     "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -1976,23 +1976,23 @@ const PROJECTILES = [
   },
   {
     "id": "RMCBulletSniper77x56mmRSH",
-    "name": "squash-head bullet (7.7x56mmR)",
-    "damage": 60.0,
+    "name": "пуля Squash-Head (7.7x56mmR)",
+    "damage": 60,
     "damageTypes": {
-      "Piercing": 60.0
+      "Piercing": 60
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 24.0,
+    "cutRange": 24,
     "minRemainingMult": 0.05,
     "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2001,27 +2001,27 @@ const PROJECTILES = [
   {
     "id": "RMCBulletSniperType88",
     "name": "пуля (7,62x54 мм R)",
-    "damage": 80.0,
+    "damage": 80,
     "damageTypes": {
-      "Piercing": 80.0
+      "Piercing": 80
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 32.0,
+    "cutRange": 32,
     "minRemainingMult": 0.05,
-    "accuracy": 125.0,
+    "accuracy": 125,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 32.0,
-        "falloff": 10.0,
+        "range": 32,
+        "falloff": 10,
         "buildup": false
       },
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": true
       }
     ],
@@ -2030,22 +2030,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletType64",
     "name": "BaseBullet",
-    "damage": 34.0,
+    "damage": 34,
     "damageTypes": {
-      "Piercing": 34.0
+      "Piercing": 34
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 4.0,
-    "falloffPerTile": 6.0,
-    "cutRange": 22.0,
+    "falloffStart": 4,
+    "falloffPerTile": 6,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2054,22 +2054,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletType64Rubber",
     "name": "BaseBullet",
-    "damage": 3.0,
+    "damage": 3,
     "damageTypes": {
-      "Blunt": 3.0
+      "Blunt": 3
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
     "cutRange": null,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2078,22 +2078,22 @@ const PROJECTILES = [
   {
     "id": "RMCNail7x45mm",
     "name": "BaseBullet",
-    "damage": 25.0,
+    "damage": 25,
     "damageTypes": {
-      "Piercing": 25.0
+      "Piercing": 25
     },
-    "ap": 25.0,
+    "ap": 25,
     "pellets": 1,
-    "falloffStart": 4.0,
-    "falloffPerTile": 6.0,
-    "cutRange": 22.0,
+    "falloffStart": 4,
+    "falloffPerTile": 6,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2106,16 +2106,16 @@ const PROJECTILES = [
     "damageTypes": {},
     "ap": 0,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 12.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 12,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2124,22 +2124,22 @@ const PROJECTILES = [
   {
     "id": "RMCPelletHeavyShotgunBuckshot",
     "name": "тяжелая картечь",
-    "damage": 75.0,
+    "damage": 75,
     "damageTypes": {
-      "Piercing": 75.0
+      "Piercing": 75
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 4,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 3.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 3,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 3.0,
-        "falloff": 10.0,
+        "range": 3,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2148,22 +2148,22 @@ const PROJECTILES = [
   {
     "id": "RMCPelletHeavyShotgunFlechette",
     "name": "тяжелый снаряд для ружья",
-    "damage": 45.0,
+    "damage": 45,
     "damageTypes": {
-      "Piercing": 45.0
+      "Piercing": 45
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 3,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 12.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 12,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2172,22 +2172,22 @@ const PROJECTILES = [
   {
     "id": "RMCPelletHeavyShotgunIncendiaryBuckshot",
     "name": "снаряд картечи \"дыхание дракона\"",
-    "damage": 60.0,
+    "damage": 60,
     "damageTypes": {
-      "Piercing": 60.0
+      "Piercing": 60
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 3,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 3.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 3,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 3.0,
-        "falloff": 10.0,
+        "range": 3,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2196,22 +2196,22 @@ const PROJECTILES = [
   {
     "id": "RMCPelletHeavyShotgunSlug",
     "name": "Тяжелая пуля",
-    "damage": 90.0,
+    "damage": 90,
     "damageTypes": {
-      "Piercing": 90.0
+      "Piercing": 90
     },
-    "ap": 30.0,
+    "ap": 30,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 8.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 8,
     "minRemainingMult": 0.05,
-    "accuracy": 100.0,
+    "accuracy": 100,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 7.0,
-        "falloff": 10.0,
+        "range": 7,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2220,22 +2220,22 @@ const PROJECTILES = [
   {
     "id": "RMCPelletShotgunBreaching",
     "name": "легкий разрывной снаряд",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Blunt": 55.0
+      "Blunt": 55
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 4,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2243,24 +2243,24 @@ const PROJECTILES = [
   },
   {
     "id": "RMCPelletShotgunL49B",
-    "name": "L49B pellets",
-    "damage": 5.0,
+    "name": "дробь L49B",
+    "damage": 5,
     "damageTypes": {
-      "Blunt": 5.0,
-      "Structural": 245.0
+      "Blunt": 5,
+      "Structural": 245
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 4,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 4.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 4,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2269,166 +2269,94 @@ const PROJECTILES = [
   {
     "id": "RMCBullet458SOCOMMaxStacks",
     "name": ".458 SOCOM (макс. стаки)",
-    "damage": 80.0,
+    "damage": 80,
     "damageTypes": {
-      "Piercing": 80.0
+      "Piercing": 80
     },
     "ap": 50,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 7,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 14.0,
-        "falloff": 10.0,
+        "range": 14,
+        "falloff": 10,
         "buildup": false
       }
     ],
     "forceHit": false
   },
   {
-    "id": "CMBulletSmartGun10x30mmMode0",
-    "name": "пуля (10x30 мм) (высокоточный режим)",
-    "damage": 30.0,
+    "id": "CMBulletSmartGun10x30mm",
+    "name": "пуля (10x30 мм)",
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 0.0,
+    "ap": 0,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 12.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 12,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
     "forceHit": false
   },
   {
-    "id": "RMCBulletSmartGun10x30mmHTMode0",
-    "name": "ГТ пуля (10x30mm) (высокоточный режим)",
-    "damage": 30.0,
+    "id": "RMCBulletSmartGun10x30mmHT",
+    "name": "ГТ пуля (10x30mm)",
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 0.0,
+    "ap": 0,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 12.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 12,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
     "forceHit": false
   },
   {
-    "id": "RMCBulletSmartGun10x30mmirradiatedMode0",
-    "name": "облученная пуля (10x30 мм) (высокоточный режим)",
-    "damage": 30.0,
+    "id": "RMCBulletSmartGun10x30mmirradiated",
+    "name": "облученная пуля (10x30 мм)",
+    "damage": 30,
     "damageTypes": {
-      "Piercing": 30.0
+      "Piercing": 30
     },
-    "ap": 0.0,
+    "ap": 0,
     "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 12.0,
+    "falloffStart": 7,
+    "falloffPerTile": 4,
+    "cutRange": 12,
     "minRemainingMult": 0.05,
-    "accuracy": 105.0,
+    "accuracy": 105,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "CMBulletSmartGun10x30mmMode1",
-    "name": "пуля (10x30 мм) (бронебойный режим)",
-    "damage": 20.0,
-    "damageTypes": {
-      "Piercing": 20.0
-    },
-    "ap": 40.0,
-    "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 12.0,
-    "minRemainingMult": 0.05,
-    "accuracy": 105.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCBulletSmartGun10x30mmHTMode1",
-    "name": "ГТ пуля (10x30mm) (бронебойный режим)",
-    "damage": 20.0,
-    "damageTypes": {
-      "Piercing": 20.0
-    },
-    "ap": 40.0,
-    "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 12.0,
-    "minRemainingMult": 0.05,
-    "accuracy": 105.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
-        "buildup": false
-      }
-    ],
-    "forceHit": false
-  },
-  {
-    "id": "RMCBulletSmartGun10x30mmirradiatedMode1",
-    "name": "облученная пуля (10x30 мм) (бронебойный режим)",
-    "damage": 20.0,
-    "damageTypes": {
-      "Piercing": 20.0
-    },
-    "ap": 40.0,
-    "pellets": 1,
-    "falloffStart": 7.0,
-    "falloffPerTile": 4.0,
-    "cutRange": 12.0,
-    "minRemainingMult": 0.05,
-    "accuracy": 105.0,
-    "minAccuracy": 5,
-    "accuracyThresholds": [
-      {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2437,27 +2365,27 @@ const PROJECTILES = [
   {
     "id": "CMBulletSniper10x28mmFlak",
     "name": "пуля \"воздушный удар\" (10x28 мм)",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
-    "ap": 0.0,
+    "ap": 0,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 32.0,
+    "cutRange": 32,
     "minRemainingMult": 0.05,
-    "accuracy": 125.0,
+    "accuracy": 125,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 32.0,
-        "falloff": 10.0,
+        "range": 32,
+        "falloff": 10,
         "buildup": false
       },
       {
-        "range": 4.0,
-        "falloff": 10.0,
+        "range": 4,
+        "falloff": 10,
         "buildup": true
       }
     ],
@@ -2466,22 +2394,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRevolver38",
     "name": "пуля (.38)",
-    "damage": 45.0,
+    "damage": 45,
     "damageTypes": {
-      "Piercing": 45.0
+      "Piercing": 45
     },
-    "ap": 15.0,
+    "ap": 15,
     "pellets": 1,
-    "falloffStart": 22.0,
-    "falloffPerTile": 1.0,
+    "falloffStart": 22,
+    "falloffPerTile": 1,
     "cutRange": null,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2490,22 +2418,22 @@ const PROJECTILES = [
   {
     "id": "CMBulletRevolver44",
     "name": "пуля (.44)",
-    "damage": 72.0,
+    "damage": 72,
     "damageTypes": {
-      "Piercing": 72.0
+      "Piercing": 72
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2514,22 +2442,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRevolver44Marksman",
     "name": "пуля (.44 снайперская)",
-    "damage": 55.0,
+    "damage": 55,
     "damageTypes": {
-      "Piercing": 55.0
+      "Piercing": 55
     },
-    "ap": 35.0,
+    "ap": 35,
     "pellets": 1,
     "falloffStart": null,
     "falloffPerTile": null,
-    "cutRange": 22.0,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 12.0,
-        "falloff": 10.0,
+        "range": 12,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2538,22 +2466,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletMateba",
     "name": "пуля (.454)",
-    "damage": 60.0,
+    "damage": 60,
     "damageTypes": {
-      "Piercing": 60.0
+      "Piercing": 60
     },
-    "ap": 20.0,
+    "ap": 20,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2562,22 +2490,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletMatebaHighImpact",
     "name": "пуля (.454) \"Ударная волна\"",
-    "damage": 60.0,
+    "damage": 60,
     "damageTypes": {
-      "Piercing": 60.0
+      "Piercing": 60
     },
-    "ap": 5.0,
+    "ap": 5,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2586,22 +2514,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletMatebaHighImpactArmorPiercing",
     "name": "пуля (.454) БП",
-    "damage": 50.0,
+    "damage": 50,
     "damageTypes": {
-      "Piercing": 50.0
+      "Piercing": 50
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2610,22 +2538,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletMatebaHighExplosive",
     "name": "пуля (.454) РЗ",
-    "damage": 100.0,
+    "damage": 100,
     "damageTypes": {
-      "Piercing": 100.0
+      "Piercing": 100
     },
-    "ap": 50.0,
+    "ap": 50,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2634,22 +2562,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRsh9",
     "name": "пуля (9x39)",
-    "damage": 65.0,
+    "damage": 65,
     "damageTypes": {
-      "Piercing": 65.0
+      "Piercing": 65
     },
-    "ap": 35.0,
+    "ap": 35,
     "pellets": 1,
-    "falloffStart": 0.0,
-    "falloffPerTile": 1.0,
-    "cutRange": 22.0,
+    "falloffStart": 0,
+    "falloffPerTile": 1,
+    "cutRange": 22,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2658,22 +2586,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRevolver357",
     "name": "пуля (.357)",
-    "damage": 69.0,
+    "damage": 69,
     "damageTypes": {
-      "Piercing": 69.0
+      "Piercing": 69
     },
-    "ap": 15.0,
+    "ap": 15,
     "pellets": 1,
-    "falloffStart": 22.0,
-    "falloffPerTile": 1.0,
+    "falloffStart": 22,
+    "falloffPerTile": 1,
     "cutRange": null,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2682,22 +2610,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRevolver357Hollowpoint",
     "name": "пуля (.357) экспансивная",
-    "damage": 86.0,
+    "damage": 86,
     "damageTypes": {
-      "Piercing": 86.0
+      "Piercing": 86
     },
-    "ap": 0.0,
+    "ap": 0,
     "pellets": 1,
-    "falloffStart": 22.0,
-    "falloffPerTile": 5.0,
+    "falloffStart": 22,
+    "falloffPerTile": 5,
     "cutRange": null,
     "minRemainingMult": 0.05,
-    "accuracy": 90.0,
+    "accuracy": 90,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 12.0,
-        "falloff": 10.0,
+        "range": 12,
+        "falloff": 10,
         "buildup": false
       }
     ],
@@ -2706,22 +2634,22 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRevolverZHNK72",
     "name": "пуля (7,62 мм)",
-    "damage": 70.0,
+    "damage": 70,
     "damageTypes": {
-      "Piercing": 70.0
+      "Piercing": 70
     },
-    "ap": 20.0,
+    "ap": 20,
     "pellets": 1,
-    "falloffStart": 22.0,
-    "falloffPerTile": 1.0,
+    "falloffStart": 22,
+    "falloffPerTile": 1,
     "cutRange": null,
     "minRemainingMult": 0.05,
-    "accuracy": 60.0,
+    "accuracy": 60,
     "minAccuracy": 5,
     "accuracyThresholds": [
       {
-        "range": 5.0,
-        "falloff": 10.0,
+        "range": 5,
+        "falloff": 10,
         "buildup": false
       }
     ],
