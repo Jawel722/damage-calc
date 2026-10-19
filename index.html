@@ -156,6 +156,7 @@ body > .megacol > .col:last-child span {
 </div>
 <div id = 'fireMode'></div>
 <label>С двух рук: <input type="checkbox" id="bothArmCheck" checked></label>
+<label id="labelAkimbo">Акимбо (по пушке в каждой руке): <input type="checkbox" id="akimboCheck"></label>
 <details>
 <summary>Дополнительные модификаторы</summary>
 <div class = "col">
@@ -275,15 +276,15 @@ function buckshotCheck(applyArmor,pellets) {
 }
 
 let lastAccuracyPoints = null
-function accuracyCalc(projectile,gun,bothArmCheck,dist,evasion, rangeFlat, accuracyAddMult, focusAccMod) {
+function accuracyCalc(projectile,gun,bothArmCheck,dist,evasion, rangeFlat, accuracyAddMult, focusAccMod, accuracyMultFactor) {
     if (projectile.accuracy === null) {
         return 1
     }
     let acc = projectile.accuracy
     if (bothArmCheck === true) {
-        acc *= Math.max(gun.accuracyMult+accuracyAddMult, 0.1)
+        acc *= Math.max((gun.accuracyMult+accuracyAddMult) * accuracyMultFactor, 0.1)
     } else {
-        acc *= Math.max(gun.accuracyMultUnwielded+accuracyAddMult, 0.1)
+        acc *= Math.max((gun.accuracyMultUnwielded+accuracyAddMult) * accuracyMultFactor, 0.1)
     }
     acc += focusAccMod
     for (const threshold of projectile.accuracyThresholds) {
@@ -408,8 +409,10 @@ function recalc() {
     const armorCheckSide = document.getElementById("armorCheckSide").checked
     const armorCheckBack = document.getElementById("armorCheckBack").checked
     const gun = findById(GUNS, gunId)
-    bothArmCheck.disabled = gun.wieldable === false
-    const bothArmChecked = bothArmCheck.checked && gun.wieldable !== false
+    labelAkimbo.hidden = !gun.akimbo
+    const akimbo = gun.akimbo && akimboCheck.checked ? gun.akimbo : null
+    bothArmCheck.disabled = gun.wieldable === false || akimbo !== null
+    const bothArmChecked = bothArmCheck.checked && gun.wieldable !== false && akimbo === null
     const magazine = findById(MAGAZINES, magId)
     let projectile = findById(PROJECTILES, magazine.projectile)
     if (gun.ammoModes) {
@@ -432,6 +435,12 @@ function recalc() {
     xenoHpDeadHTML.textContent = xenoHpDead
     const fireMode = fireModeSelect.querySelector("input:checked").value
     const mods = attachmentsCalc(bothArmChecked,gun)
+    let dualAccMod = 0
+    let dualScatterMod = 0
+    if (akimbo !== null && gun.dualWield !== null) {
+        dualAccMod = gun.dualWield.accuracyAddMult
+        dualScatterMod = gun.dualWield.scatterFlat
+    }
     let scatterW = gun.scatterWielded
     let evasionAdd = 0
     if (rest === true) {
@@ -458,7 +467,7 @@ function recalc() {
     if (bothArmChecked === true) {
         scatterW = Math.max(gun.scatterWielded + mods.scatterFlat + firearmScatterMod,0)
     } else {
-        scatterW = Math.max(gun.scatterUnwielded + mods.scatterFlat + firearmScatterMod,0)
+        scatterW = Math.max(gun.scatterUnwielded + mods.scatterFlat + firearmScatterMod + dualScatterMod,0)
     }
     let xenoAbilityArmor = 0
     let xenoAbilityFrontalArmor = 0
@@ -506,6 +515,11 @@ function recalc() {
         step = (max - scatterW)/fireModeMods.shotsToMaxScatter
         }
     }
+    if (akimbo !== null) {
+        scatterW *= akimbo.scatterMult
+        max *= akimbo.scatterMult
+        step *= akimbo.scatterMult
+    }
     let gunFire = 1
     if (fireMode==="Burst") {
         gunFire = Math.max(gun.shotsPerBurst + mods.shotsPerBurstFlat,1)
@@ -513,14 +527,15 @@ function recalc() {
     if (fireMode==="FullAuto" && magazine.capacity!==null) {
         gunFire = magazine.capacity
     }
-    let sumHitChance = 0 
-    for (let k = 1; k <= gunFire; k++) {
-        const boba = Math.min(scatterW + k * step, max)
-        const biba = scatterCalc(boba,dist,xeno.hitboxRadius)
-        sumHitChance += biba
+    const seriesHitChance = function (shots) {
+        let sumHitChance = 0
+        for (let k = 1; k <= shots; k++) {
+            const boba = Math.min(scatterW + k * step, max)
+            const biba = scatterCalc(boba,dist,xeno.hitboxRadius)
+            sumHitChance += biba
+        }
+        return sumHitChance/shots
     }
-    
-    const realHitChance = sumHitChance/gunFire
     let valkyrieArmor = 0
     if (valkyrieBuff === true) {
         valkyrieArmor = 15
@@ -536,9 +551,28 @@ function recalc() {
     const armorResult = applyArmor(falloffResult*(1+holotarget), projectile.ap,realXenoArmor)
     const damageResult = buckshotCheck(armorResult, projectile.pellets)
     const xenoEvasion = xeno.evasionModified-evasionAdd
-    const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xenoEvasion, mods.rangeFlat,mods.accuracyAddMult+firearmAccMod, focusAccModSum)
+    let accuracyMultFactor = 1
+    if (akimbo !== null) {
+        accuracyMultFactor = akimbo.accuracyMult
+    }
+    const acc = accuracyCalc(projectile, gun, bothArmChecked, dist, xenoEvasion, mods.rangeFlat,mods.accuracyAddMult+firearmAccMod+dualAccMod, focusAccModSum, accuracyMultFactor)
+    let realHitChance = seriesHitChance(gunFire)
+    if (fireMode==="FullAuto" && damageResult > 0) {
+        for (let i = 0; i < 20; i++) {
+            const shotsToKill = Math.ceil(xenoHpDead / (damageResult * Math.max(acc * realHitChance, 0.001)))
+            const newGunFire = Math.max(Math.min(gunFire, shotsToKill), 1)
+            if (newGunFire === gunFire) {
+                break
+            }
+            gunFire = newGunFire
+            realHitChance = seriesHitChance(gunFire)
+        }
+    }
     const hitChance = acc*realHitChance*100
-    const realFireRate = fireRateCalc(fireMode,gun,mods.shotsPerBurstFlat,mods.fireDelayFlat)
+    let realFireRate = fireRateCalc(fireMode,gun,mods.shotsPerBurstFlat,mods.fireDelayFlat)
+    if (akimbo !== null) {
+        realFireRate = akimboFireRate(fireMode,gun,mods.fireDelayFlat,akimbo)
+    }
     const dpsResult = dps(damageResult,realFireRate)
     const dpsRealResult = dpsResult*hitChance/100
     document.getElementById("out").textContent = dpsResult.toFixed(1)
@@ -573,7 +607,7 @@ function recalc() {
     if (bothArmChecked === true) {
         accMultBase = gun.accuracyMult
     }
-    const accMult = Math.max(accMultBase + mods.accuracyAddMult + firearmAccMod, 0.1)
+    const accMult = Math.max((accMultBase + mods.accuracyAddMult + firearmAccMod + dualAccMod) * accuracyMultFactor, 0.1)
     const round2 = function (x) { return Math.round(x * 100) / 100 }
     document.getElementById("statDamageMult").textContent = "×" + round2(damageMult)
     if (projectile.falloffPerTile) {
@@ -732,7 +766,7 @@ function availableFireModes(gun) {
         const attachment = findById(ATTACHMENTS, selects[i].value)
         const attachmentActive = actives[i].checked === true && attachment.toggleable === true
         for (const fm of attachment.fireModeMods) {
-            if (!attachmentConditionsOk(fm.conditions, gun, bothArmCheck.checked && gun.wieldable !== false, attachmentActive)) {
+            if (!attachmentConditionsOk(fm.conditions, gun, bothArmCheck.checked && gun.wieldable !== false && !(gun.akimbo && akimboCheck.checked), attachmentActive)) {
                 continue
             }
             for (const mode of fm.extraFireModes) {
@@ -851,6 +885,17 @@ function fireRateCalc (fireMode,gun,shotsPerBurstFlat,fireDelayFlat) {
         fireRate = shots/(shots*interval+gun.burstCooldown)
     }
     return fireRate
+}
+
+function akimboFireRate (fireMode,gun,fireDelayFlat,akimbo) {
+    let gunRate = gun.fireRate
+    if (fireMode === 'FullAuto' && gun.fireModeMods.FullAuto !== undefined) {
+        gunRate = 1/(1/gunRate + gun.fireModeMods.FullAuto.fireDelay)
+    } else if (fireMode === 'Burst' && gun.burstFireRateMult !== null) {
+        gunRate = gunRate * gun.burstFireRateMult
+    }
+    gunRate = 1/(1/gunRate + fireDelayFlat)
+    return gunRate * Math.min(akimbo.totalFireRateMult, 2 * akimbo.individualFireRateMult)
 }
 
 const tierSelect = document.getElementById("tier");
@@ -1064,6 +1109,7 @@ gunTypeSelect.addEventListener("change", selectFireMods);
 gunTypeSelect.addEventListener("change", setAllAttachments);
 fireModeSelect.addEventListener("change",recalc)
 bothArmCheck.addEventListener("input",recalc)
+akimboCheck.addEventListener("input", onAttachmentChange)
 abilitySelect.addEventListener("input",recalc)
 abilitySelect.addEventListener("change",recalc)
 gunSelect.addEventListener("change", recalc)

@@ -1090,5 +1090,23 @@ const MAGAZINES = [
     "name": "скоростной патрон Матебы \"Ударная волна\" (.454).",
     "projectile": "RMCBulletMatebaHighImpact",
     "capacity": 6
+  },
+  {
+    "id": "RMCSpeedLoaderM37",
+    "name": "спидлоадер M37 (.38)",
+    "projectile": "RMCBulletRevolver38",
+    "capacity": 6.0
+  },
+  {
+    "id": "RMCCartridge4570",
+    "name": "горсть патронов .45-70",
+    "projectile": "RMCBullet4570",
+    "capacity": null
+  },
+  {
+    "id": "RMCCartridge4570MaxStacks",
+    "name": "горсть патронов .45-70 (макс. стаки)",
+    "projectile": "RMCBullet4570MaxStacks",
+    "capacity": null
   }
 ];

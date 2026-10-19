@@ -50,10 +50,8 @@ const PROJECTILES = [
   {
     "id": "Bullet10x20mmRubber",
     "name": "BaseBullet",
-    "damage": 3,
-    "damageTypes": {
-      "Blunt": 3
-    },
+    "damage": 0,
+    "damageTypes": {},
     "ap": 5,
     "pellets": 1,
     "falloffStart": null,
@@ -170,10 +168,8 @@ const PROJECTILES = [
   {
     "id": "BulletRifle10x24mmRubber",
     "name": "BaseBullet",
-    "damage": 3,
-    "damageTypes": {
-      "Blunt": 3
-    },
+    "damage": 0,
+    "damageTypes": {},
     "ap": 5,
     "pellets": 1,
     "falloffStart": null,
@@ -1539,10 +1535,8 @@ const PROJECTILES = [
   {
     "id": "RMCBulletPistol9mmRubber",
     "name": "резиновая пуля (9 мм)",
-    "damage": 3,
-    "damageTypes": {
-      "Blunt": 3
-    },
+    "damage": 0,
+    "damageTypes": {},
     "ap": 0,
     "pellets": 1,
     "falloffStart": 0,
@@ -1851,10 +1845,8 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRifle545x39mmRubber",
     "name": "BaseBullet",
-    "damage": 3,
-    "damageTypes": {
-      "Blunt": 3
-    },
+    "damage": 0,
+    "damageTypes": {},
     "ap": 5,
     "pellets": 1,
     "falloffStart": null,
@@ -2054,10 +2046,8 @@ const PROJECTILES = [
   {
     "id": "RMCBulletType64Rubber",
     "name": "BaseBullet",
-    "damage": 3,
-    "damageTypes": {
-      "Blunt": 3
-    },
+    "damage": 0,
+    "damageTypes": {},
     "ap": 5,
     "pellets": 1,
     "falloffStart": null,
@@ -2586,9 +2576,9 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRevolver357",
     "name": "пуля (.357)",
-    "damage": 69,
+    "damage": 60.0,
     "damageTypes": {
-      "Piercing": 69
+      "Piercing": 60.0
     },
     "ap": 15,
     "pellets": 1,
@@ -2610,9 +2600,9 @@ const PROJECTILES = [
   {
     "id": "RMCBulletRevolver357Hollowpoint",
     "name": "пуля (.357) экспансивная",
-    "damage": 86,
+    "damage": 75.0,
     "damageTypes": {
-      "Piercing": 86
+      "Piercing": 75.0
     },
     "ap": 0,
     "pellets": 1,
@@ -2650,6 +2640,54 @@ const PROJECTILES = [
       {
         "range": 5,
         "falloff": 10,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBullet4570",
+    "name": "пуля .45-70",
+    "damage": 80.0,
+    "damageTypes": {
+      "Piercing": 80.0
+    },
+    "ap": 5.0,
+    "pellets": 1,
+    "falloffStart": 7.0,
+    "falloffPerTile": 1.0,
+    "cutRange": 22.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 14.0,
+        "falloff": 10.0,
+        "buildup": false
+      }
+    ],
+    "forceHit": false
+  },
+  {
+    "id": "RMCBullet4570MaxStacks",
+    "name": "пуля .45-70 (макс. стаки)",
+    "damage": 80.0,
+    "damageTypes": {
+      "Piercing": 80.0
+    },
+    "ap": 50,
+    "pellets": 1,
+    "falloffStart": 7.0,
+    "falloffPerTile": 1.0,
+    "cutRange": 22.0,
+    "minRemainingMult": 0.05,
+    "accuracy": 90.0,
+    "minAccuracy": 5,
+    "accuracyThresholds": [
+      {
+        "range": 14.0,
+        "falloff": 10.0,
         "buildup": false
       }
     ],

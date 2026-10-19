@@ -96,7 +96,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "CMM96SSniperRifle",
@@ -197,7 +203,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "CMWeaponPistolM1911",
@@ -296,7 +308,129 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
+  },
+  {
+    "id": "RMCWeaponPistolM1911SOCOM",
+    "name": "служебный пистолет M48A4",
+    "category": "Пистолеты",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/m1911_pistol.yml",
+    "fireRate": 4.4,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 1.25,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "scatterWielded": 10,
+      "scatterUnwielded": 10,
+      "baseFireRate": 4.4,
+      "burstScatterMult": 3,
+      "baseFireModes": [
+        "SemiAuto"
+      ]
+    },
+    "magazines": [
+      "CMMagazinePistolM1911"
+    ],
+    "accuracyMult": 1.2,
+    "accuracyMultUnwielded": 1.1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 10.0,
+    "scatterUnwielded": 10.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 3.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBarrelCharger",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentSuppressorCompact"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS5MicroRedDotSight",
+          "RMCAttachmentS6ReflexSight"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentBurstFireAssembly",
+          "RMCAttachmentLaserSight"
+        ]
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "CMWeaponPistolM1911",
+      "RMCWeaponPistolM1911SOCOM"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8,
+    "internalCapacity": null,
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "CMWeaponPistolM1984",
@@ -398,7 +532,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "CMWeaponPistolM1984Custom",
@@ -500,7 +645,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCAttachmentL90UBS",
@@ -563,7 +719,9 @@ const GUNS = [
     "unskilledPenalty": null,
     "gunBurstFireRate": 8,
     "internalCapacity": 5,
-    "wieldable": false
+    "wieldable": false,
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCAttachmentU7UnderbarrelShotgun",
@@ -621,7 +779,9 @@ const GUNS = [
     "unskilledPenalty": null,
     "gunBurstFireRate": 8,
     "internalCapacity": 5,
-    "wieldable": false
+    "wieldable": false,
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCL112SniperRifle",
@@ -714,7 +874,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "underbarrel": {
@@ -740,7 +904,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCL112SniperRifleSuppressed",
@@ -848,7 +1018,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCM96SBSniperRifle",
@@ -956,7 +1132,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCMK80",
@@ -1060,7 +1242,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCMK80RCM",
@@ -1164,7 +1357,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCMachineGunM2C",
@@ -1231,7 +1435,9 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": false
+    "wieldable": false,
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGun",
@@ -1248,8 +1454,8 @@ const GUNS = [
       "baseFireModes": [
         "FullAuto"
       ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
+      "recoilWielded": 0,
+      "scatterWielded": 2,
       "baseFireRate": 5,
       "burstScatterMult": 4,
       "modifiers": {
@@ -1266,7 +1472,7 @@ const GUNS = [
       "RMCMagazineSmartGunHT",
       "RMCMagazineSmartGunirradiated"
     ],
-    "accuracyMult": 1.05,
+    "accuracyMult": 1.15,
     "accuracyMultUnwielded": 1,
     "accuracyRangeFlat": 0,
     "fireModes": [
@@ -1274,7 +1480,7 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10,
+    "scatterWielded": 2.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
@@ -1319,7 +1525,9 @@ const GUNS = [
         "damage": 20,
         "ap": 40
       }
-    ]
+    ],
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGunCLF",
@@ -1336,8 +1544,8 @@ const GUNS = [
       "baseFireModes": [
         "FullAuto"
       ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
+      "recoilWielded": 0,
+      "scatterWielded": 2,
       "baseFireRate": 5,
       "burstScatterMult": 4,
       "modifiers": {
@@ -1354,7 +1562,7 @@ const GUNS = [
       "RMCMagazineSmartGunHT",
       "RMCMagazineSmartGunirradiated"
     ],
-    "accuracyMult": 1.05,
+    "accuracyMult": 1.15,
     "accuracyMultUnwielded": 1,
     "accuracyRangeFlat": 0,
     "fireModes": [
@@ -1362,7 +1570,7 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10,
+    "scatterWielded": 2.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
@@ -1407,7 +1615,9 @@ const GUNS = [
         "damage": 20,
         "ap": 40
       }
-    ]
+    ],
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGunCO",
@@ -1424,8 +1634,8 @@ const GUNS = [
       "baseFireModes": [
         "FullAuto"
       ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
+      "recoilWielded": 0,
+      "scatterWielded": 2,
       "baseFireRate": 5,
       "burstScatterMult": 4,
       "modifiers": {
@@ -1442,7 +1652,7 @@ const GUNS = [
       "RMCMagazineSmartGunHT",
       "RMCMagazineSmartGunirradiated"
     ],
-    "accuracyMult": 1.05,
+    "accuracyMult": 1.15,
     "accuracyMultUnwielded": 1,
     "accuracyRangeFlat": 0,
     "fireModes": [
@@ -1450,7 +1660,7 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10,
+    "scatterWielded": 2.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
@@ -1495,7 +1705,9 @@ const GUNS = [
         "damage": 20,
         "ap": 40
       }
-    ]
+    ],
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGunMounted",
@@ -1565,7 +1777,9 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": false
+    "wieldable": false,
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGunMountedStatic",
@@ -1634,7 +1848,9 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": false
+    "wieldable": false,
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGunOvertunedPVE",
@@ -1651,8 +1867,8 @@ const GUNS = [
       "baseFireModes": [
         "FullAuto"
       ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
+      "recoilWielded": 0,
+      "scatterWielded": 2,
       "baseFireRate": 6,
       "burstScatterMult": 4,
       "modifiers": {
@@ -1669,7 +1885,7 @@ const GUNS = [
       "RMCMagazineSmartGunHT",
       "RMCMagazineSmartGunirradiated"
     ],
-    "accuracyMult": 1.05,
+    "accuracyMult": 1.15,
     "accuracyMultUnwielded": 1,
     "accuracyRangeFlat": 0,
     "fireModes": [
@@ -1677,7 +1893,7 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10,
+    "scatterWielded": 2.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
@@ -1722,7 +1938,9 @@ const GUNS = [
         "damage": 20,
         "ap": 40
       }
-    ]
+    ],
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGunPMC",
@@ -1739,8 +1957,8 @@ const GUNS = [
       "baseFireModes": [
         "FullAuto"
       ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
+      "recoilWielded": 0,
+      "scatterWielded": 2,
       "baseFireRate": 5,
       "burstScatterMult": 4,
       "modifiers": {
@@ -1757,7 +1975,7 @@ const GUNS = [
       "RMCMagazineSmartGunHT",
       "RMCMagazineSmartGunirradiated"
     ],
-    "accuracyMult": 1.05,
+    "accuracyMult": 1.15,
     "accuracyMultUnwielded": 1,
     "accuracyRangeFlat": 0,
     "fireModes": [
@@ -1765,7 +1983,7 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10,
+    "scatterWielded": 2.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
@@ -1810,7 +2028,9 @@ const GUNS = [
         "damage": 20,
         "ap": 40
       }
-    ]
+    ],
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGunPMCPVE",
@@ -1827,8 +2047,8 @@ const GUNS = [
       "baseFireModes": [
         "FullAuto"
       ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
+      "recoilWielded": 0,
+      "scatterWielded": 2,
       "baseFireRate": 6,
       "burstScatterMult": 4,
       "modifiers": {
@@ -1845,7 +2065,7 @@ const GUNS = [
       "RMCMagazineSmartGunHT",
       "RMCMagazineSmartGunirradiated"
     ],
-    "accuracyMult": 1.05,
+    "accuracyMult": 1.15,
     "accuracyMultUnwielded": 1,
     "accuracyRangeFlat": 0,
     "fireModes": [
@@ -1853,7 +2073,7 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10,
+    "scatterWielded": 2.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
@@ -1898,7 +2118,9 @@ const GUNS = [
         "damage": 20,
         "ap": 40
       }
-    ]
+    ],
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGunPVE",
@@ -1915,8 +2137,8 @@ const GUNS = [
       "baseFireModes": [
         "FullAuto"
       ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
+      "recoilWielded": 0,
+      "scatterWielded": 2,
       "baseFireRate": 6,
       "burstScatterMult": 4,
       "modifiers": {
@@ -1933,7 +2155,7 @@ const GUNS = [
       "RMCMagazineSmartGunHT",
       "RMCMagazineSmartGunirradiated"
     ],
-    "accuracyMult": 1.05,
+    "accuracyMult": 1.15,
     "accuracyMultUnwielded": 1,
     "accuracyRangeFlat": 0,
     "fireModes": [
@@ -1941,7 +2163,7 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10,
+    "scatterWielded": 2.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
@@ -1986,7 +2208,9 @@ const GUNS = [
         "damage": 20,
         "ap": 40
       }
-    ]
+    ],
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGunRCMPVE",
@@ -2003,8 +2227,8 @@ const GUNS = [
       "baseFireModes": [
         "FullAuto"
       ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
+      "recoilWielded": 0,
+      "scatterWielded": 2,
       "baseFireRate": 6,
       "burstScatterMult": 4,
       "modifiers": {
@@ -2021,7 +2245,7 @@ const GUNS = [
       "RMCMagazineSmartGunHT",
       "RMCMagazineSmartGunirradiated"
     ],
-    "accuracyMult": 1.05,
+    "accuracyMult": 1.15,
     "accuracyMultUnwielded": 1,
     "accuracyRangeFlat": 0,
     "fireModes": [
@@ -2029,7 +2253,7 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10,
+    "scatterWielded": 2.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
@@ -2074,7 +2298,9 @@ const GUNS = [
         "damage": 20,
         "ap": 40
       }
-    ]
+    ],
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGunRoyal",
@@ -2091,8 +2317,8 @@ const GUNS = [
       "baseFireModes": [
         "FullAuto"
       ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
+      "recoilWielded": 0,
+      "scatterWielded": 2,
       "baseFireRate": 5,
       "burstScatterMult": 4,
       "modifiers": {
@@ -2109,7 +2335,7 @@ const GUNS = [
       "RMCMagazineSmartGunHT",
       "RMCMagazineSmartGunirradiated"
     ],
-    "accuracyMult": 1.05,
+    "accuracyMult": 1.15,
     "accuracyMultUnwielded": 1,
     "accuracyRangeFlat": 0,
     "fireModes": [
@@ -2117,7 +2343,7 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10,
+    "scatterWielded": 2.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
@@ -2162,7 +2388,9 @@ const GUNS = [
         "damage": 20,
         "ap": 40
       }
-    ]
+    ],
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCSmartGunWhiteOut",
@@ -2176,11 +2404,8 @@ const GUNS = [
     "falloffMult": 1,
     "rangeFlat": 0,
     "selectiveFire": {
-      "baseFireModes": [
-        "FullAuto"
-      ],
-      "recoilWielded": 3,
-      "scatterWielded": 10,
+      "recoilWielded": 0,
+      "scatterWielded": 2,
       "baseFireRate": 10,
       "burstScatterMult": 1,
       "modifiers": {
@@ -2190,14 +2415,17 @@ const GUNS = [
           "unwieldedScatterMultiplier": 2,
           "shotsToMaxScatter": 80
         }
-      }
+      },
+      "baseFireModes": [
+        "FullAuto"
+      ]
     },
     "magazines": [
       "RMCMagazineSmartGun",
       "RMCMagazineSmartGunHT",
       "RMCMagazineSmartGunirradiated"
     ],
-    "accuracyMult": 1.05,
+    "accuracyMult": 1.15,
     "accuracyMultUnwielded": 1,
     "accuracyRangeFlat": 0,
     "fireModes": [
@@ -2205,7 +2433,7 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10,
+    "scatterWielded": 2.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
@@ -2250,7 +2478,9 @@ const GUNS = [
         "damage": 20,
         "ap": 40
       }
-    ]
+    ],
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCType88SniperRifle",
@@ -2330,7 +2560,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -2360,7 +2594,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponBoltActionRifle",
@@ -2440,7 +2680,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -2469,7 +2713,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponLMGM60",
@@ -2564,7 +2814,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Heavy",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponLMGQYJ72",
@@ -2653,7 +2909,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Heavy",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponMar50LMG",
@@ -2745,7 +3007,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolB92FS",
@@ -2841,7 +3109,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolD18",
@@ -2928,7 +3207,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolHG45Aguila",
@@ -2996,7 +3286,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -3035,7 +3329,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolHG45Marina",
@@ -3103,7 +3408,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -3142,7 +3451,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolHandcannon",
@@ -3241,7 +3561,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolHandcannonGold",
@@ -3342,108 +3673,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
-  },
-  {
-    "id": "RMCWeaponPistolHandcannonWinterWyvern",
-    "name": "пистолет-пушка \"Зимний виверн\"",
-    "category": "Пистолеты",
-    "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/peregrine_handcannon.yml",
-    "fireRate": 1.43,
-    "fireRateSource": "RMCSelectiveFire",
-    "shotsPerBurst": 2,
-    "damageMult": 1.4,
-    "falloffMult": 1,
-    "rangeFlat": 0,
-    "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto",
-        "Burst"
-      ],
-      "scatterWielded": 5,
-      "scatterUnwielded": 8,
-      "baseFireRate": 1.43,
-      "burstScatterMult": 5,
-      "modifiers": {
-        "Burst": {
-          "fireDelay": 0.2,
-          "maxScatterModifier": 7,
-          "useBurstScatterMult": true,
-          "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 6
-        }
-      }
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
     },
-    "magazines": [
-      "RMCMagazinePistolHandcannon",
-      "RMCMagazinePistolHandcannonHI",
-      "RMCMagazinePistolHandcannonHIAP"
-    ],
-    "accuracyMult": 1,
-    "accuracyMultUnwielded": 0.75,
-    "accuracyRangeFlat": 0,
-    "fireModes": [
-      "SemiAuto",
-      "Burst"
-    ],
-    "burstFireRateMult": 2,
-    "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 5,
-    "scatterUnwielded": 8,
-    "scatterIncrease": 0,
-    "scatterDecay": 0,
-    "burstScatterMult": 5,
-    "fireModeMods": {
-      "Burst": {
-        "fireDelay": 0.2,
-        "maxScatterModifier": 7,
-        "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2,
-        "shotsToMaxScatter": 6
-      }
-    },
-    "burstCooldown": 0,
-    "attachmentSlots": {
-      "barrel": {
-        "locked": false,
-        "starting": null,
-        "allowed": [
-          "RMCAttachmentBarrelCharger",
-          "RMCAttachmentExtendedBarrel",
-          "RMCAttachmentRecoilCompensator"
-        ]
-      },
-      "rail": {
-        "locked": false,
-        "starting": null,
-        "allowed": [
-          "RMCAttachmentRailFlashlight",
-          "RMCAttachmentS5RedDotSight",
-          "RMCAttachmentS5MicroRedDotSight",
-          "RMCAttachmentS6ReflexSight"
-        ]
-      },
-      "underbarrel": {
-        "locked": false,
-        "starting": null,
-        "allowed": [
-          "RMCAttachmentLaserSight"
-        ]
-      }
-    },
-    "tags": [
-      "Sidearm",
-      "RMCWeaponPistolHandcannonWyvern"
-    ],
-    "skillAccuracyPerLevel": 0.15,
-    "unskilledPenalty": {
-      "minSkill": 1,
-      "accuracyAddMult": -0.15,
-      "scatterFlat": 5
-    },
-    "gunBurstFireRate": 8,
-    "internalCapacity": null,
-    "wieldable": false
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolHoldout",
@@ -3535,7 +3776,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolKT42",
@@ -3631,7 +3883,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolL14",
@@ -3733,7 +3996,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolL14Custom",
@@ -3835,7 +4109,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolL54",
@@ -3934,7 +4219,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolL54Custom",
@@ -4033,7 +4329,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolM13",
@@ -4105,7 +4412,8 @@ const GUNS = [
           "RMCAttachmentSuppressorCompact",
           "RMCAttachmentExtendedBarrel",
           "RMCAttachmentExtendedCompensator",
-          "RMCAttachmentRecoilCompensatorM13"
+          "RMCAttachmentRecoilCompensatorM13",
+          "RMCAttachmentRecoilCompensatorM13Spiked"
         ]
       },
       "rail": {
@@ -4147,7 +4455,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolM77",
@@ -4254,7 +4573,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolMK45",
@@ -4322,7 +4652,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -4361,7 +4695,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolNP92",
@@ -4454,7 +4799,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolNPZ92",
@@ -4544,7 +4900,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolPK7",
@@ -4631,7 +4998,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolSU6",
@@ -4734,7 +5112,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolT73",
@@ -4833,7 +5222,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponPistolT74",
@@ -4922,7 +5322,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleABR40",
@@ -5006,7 +5417,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -5045,7 +5460,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleABR40Tactical",
@@ -5129,7 +5550,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -5168,7 +5593,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL24",
@@ -5262,7 +5693,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -5313,7 +5748,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL24B",
@@ -5402,7 +5843,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -5440,7 +5885,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL42A",
@@ -5529,7 +5980,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -5569,7 +6024,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL83A2",
@@ -5660,7 +6121,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -5713,7 +6178,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL83A3",
@@ -5789,7 +6260,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -5842,7 +6317,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponRifleL83A3F",
@@ -5934,7 +6415,11 @@ const GUNS = [
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
           "RMCSawtoothDaggerA",
-          "RMCAttachmentRecoilCompensator"
+          "RMCAttachmentRecoilCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -5987,7 +6472,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL88A1",
@@ -6076,7 +6567,11 @@ const GUNS = [
           "RMCTantoA",
           "RMCSawtoothDaggerA",
           "RMCAttachmentRecoilCompensator",
-          "RMCAttachmentExtendedCompensator"
+          "RMCAttachmentExtendedCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -6110,7 +6605,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL88A2",
@@ -6199,7 +6700,11 @@ const GUNS = [
           "RMCTantoA",
           "RMCSawtoothDaggerA",
           "RMCAttachmentRecoilCompensator",
-          "RMCAttachmentExtendedCompensator"
+          "RMCAttachmentExtendedCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -6243,7 +6748,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL89A1",
@@ -6330,7 +6841,11 @@ const GUNS = [
           "RMCTantoA",
           "RMCSawtoothDaggerA",
           "RMCAttachmentRecoilCompensator",
-          "RMCAttachmentExtendedCompensator"
+          "RMCAttachmentExtendedCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -6360,7 +6875,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL89A2",
@@ -6447,7 +6968,11 @@ const GUNS = [
           "RMCTantoA",
           "RMCSawtoothDaggerA",
           "RMCAttachmentRecoilCompensator",
-          "RMCAttachmentExtendedCompensator"
+          "RMCAttachmentExtendedCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -6481,7 +7006,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL90A1",
@@ -6574,7 +7105,11 @@ const GUNS = [
           "RMCTantoA",
           "RMCSawtoothDaggerA",
           "RMCAttachmentRecoilCompensator",
-          "RMCAttachmentExtendedCompensator"
+          "RMCAttachmentExtendedCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -6608,7 +7143,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL90A2",
@@ -6703,7 +7244,11 @@ const GUNS = [
           "RMCTantoA",
           "RMCSawtoothDaggerA",
           "RMCAttachmentRecoilCompensator",
-          "RMCAttachmentExtendedCompensator"
+          "RMCAttachmentExtendedCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -6750,7 +7295,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleL91SWS",
@@ -6865,7 +7416,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleM16A5",
@@ -6953,7 +7510,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -7006,7 +7567,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleM54C",
@@ -7101,7 +7668,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -7155,7 +7726,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleM54C2",
@@ -7233,7 +7810,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -7286,7 +7867,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleM54CE2",
@@ -7415,7 +8002,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleM54CMK1",
@@ -7507,7 +8100,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -7550,7 +8147,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleM59A",
@@ -7649,7 +8252,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -7700,7 +8307,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleMAR30",
@@ -7789,7 +8402,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -7833,7 +8450,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleSSG45",
@@ -7927,7 +8550,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -7971,7 +8598,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleType71",
@@ -8046,7 +8679,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -8095,7 +8732,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleType71PVE",
@@ -8170,7 +8813,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -8219,7 +8866,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleType71C",
@@ -8294,7 +8947,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -8334,7 +8991,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleType71Flamer",
@@ -8409,7 +9072,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -8452,7 +9119,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleType73",
@@ -8556,7 +9229,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleType77",
@@ -8649,7 +9328,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -8702,7 +9385,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRifleXM40",
@@ -8804,7 +9493,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponSMGFP9000",
@@ -8917,7 +9612,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponSMGFP9000PMC",
@@ -9034,7 +9735,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponSMGL7A3",
@@ -9125,7 +9832,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -9175,7 +9886,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponSMGM63B2",
@@ -9270,7 +9987,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -9320,7 +10041,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponSMGM63",
@@ -9417,7 +10144,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -9469,7 +10200,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponSMGMP27",
@@ -9561,7 +10298,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -9601,7 +10342,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponSMGMP5Alt",
@@ -9692,7 +10439,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -9741,7 +10492,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponSMGPDW90",
@@ -9833,7 +10590,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -9861,7 +10622,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponSMGPDW90TSE",
@@ -9953,7 +10720,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -9981,7 +10752,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponSMGType19",
@@ -10104,7 +10881,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponSMGType64",
@@ -10194,7 +10977,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -10234,7 +11021,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponSMGUZI",
@@ -10342,7 +11135,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponShotgunL49",
@@ -10455,7 +11254,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 5,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponShotgunM12",
@@ -10565,7 +11370,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 8,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponShotgunM3717",
@@ -10668,7 +11479,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 10,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponShotgunM42A2",
@@ -10742,7 +11559,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -10788,7 +11609,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 10,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponShotgunM890",
@@ -10867,7 +11694,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -10907,7 +11738,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 8,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponShotgunSyracuse",
@@ -10981,7 +11818,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -11027,7 +11868,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 5,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponShotgunType23",
@@ -11099,7 +11946,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -11144,7 +11995,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 5,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponShotgunXM38",
@@ -11225,7 +12082,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -11266,7 +12127,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 10,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponShotgunXM51",
@@ -11334,7 +12201,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -11381,7 +12252,9 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": null
   },
   {
     "id": "RMCXM43E1AntiMaterielRifle",
@@ -11480,7 +12353,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponNailgun",
@@ -11568,7 +12447,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponRifleAR10",
@@ -11642,7 +12527,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -11681,7 +12570,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponRifleL83A3M",
@@ -11756,7 +12651,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -11802,7 +12701,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponRifleM16",
@@ -11890,7 +12795,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -11943,7 +12852,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponRifleM4SPR",
@@ -12033,7 +12948,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -12076,7 +12995,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponRifleM4SPRCustom",
@@ -12152,7 +13077,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -12195,7 +13124,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponRifleM5SPR",
@@ -12276,7 +13211,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -12319,7 +13258,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponRifleM5SPR2",
@@ -12400,7 +13345,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -12443,7 +13392,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponRifleMAR40",
@@ -12532,7 +13487,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -12570,7 +13529,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponRifleXM88",
@@ -12654,7 +13619,11 @@ const GUNS = [
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
           "RMCSawtoothDaggerA",
-          "RMCAttachmentBarrelCharger"
+          "RMCAttachmentBarrelCharger",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -12694,7 +13663,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 9,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponRifleXM88MaxStacks",
@@ -12778,7 +13753,11 @@ const GUNS = [
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
           "RMCSawtoothDaggerA",
-          "RMCAttachmentBarrelCharger"
+          "RMCAttachmentBarrelCharger",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -12818,7 +13797,289 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 9,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
+  },
+  {
+    "id": "RMCWeaponRifleR4T",
+    "name": "рычажная винтовка R4T",
+    "category": "Винтовки",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/r4t_lever_action.yml",
+    "fireRate": 1.0,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 1,
+    "damageMult": 1.0,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 2,
+      "recoilUnwielded": 5,
+      "scatterWielded": 5,
+      "scatterUnwielded": 16,
+      "baseFireRate": 1,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "Burst": {
+          "fireDelay": 0.1665,
+          "maxScatterModifier": 10,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 6
+        },
+        "FullAuto": {
+          "maxScatterModifier": 13,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 4
+        }
+      }
+    },
+    "magazines": [
+      "RMCCartridge4570"
+    ],
+    "accuracyMult": 1.1,
+    "accuracyMultUnwielded": 0.65,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 5.0,
+    "scatterUnwielded": 16.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1665,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 13.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentBarrelCharger"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentR4TStock"
+        ]
+      }
+    },
+    "tags": [
+      "RMCWeaponRifleR4T"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8,
+    "internalCapacity": 9,
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
+  },
+  {
+    "id": "RMCWeaponRifleR4TMaxStacks",
+    "name": "рычажная винтовка R4T (макс. стаки)",
+    "category": "Винтовки",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/r4t_lever_action.yml",
+    "fireRate": 1.4285,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 1,
+    "damageMult": 1.2,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 2,
+      "recoilUnwielded": 5,
+      "scatterWielded": 5,
+      "scatterUnwielded": 16,
+      "baseFireRate": 1,
+      "burstScatterMult": 4,
+      "modifiers": {
+        "Burst": {
+          "fireDelay": 0.1665,
+          "maxScatterModifier": 10,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 6
+        },
+        "FullAuto": {
+          "maxScatterModifier": 13,
+          "useBurstScatterMult": true,
+          "unwieldedScatterMultiplier": 2,
+          "shotsToMaxScatter": 4
+        }
+      }
+    },
+    "magazines": [
+      "RMCCartridge4570MaxStacks"
+    ],
+    "accuracyMult": 1.1,
+    "accuracyMultUnwielded": 0.65,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 5.0,
+    "scatterUnwielded": 16.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1665,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 13.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCM5Bayonet",
+          "RMCCombatUtilityKnifeA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoA",
+          "RMCTantoB",
+          "RMCSawtoothDaggerA",
+          "RMCSawtoothDaggerB",
+          "RMCAttachmentExtendedBarrel",
+          "RMCAttachmentSuppressor",
+          "RMCAttachmentSuppressorXM40",
+          "RMCAttachmentRecoilCompensator",
+          "RMCAttachmentBarrelCharger"
+        ]
+      },
+      "rail": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentMagneticHarness",
+          "RMCAttachmentTwoPointSling",
+          "RMCAttachmentRailFlashlight",
+          "RMCAttachmentS5RedDotSight",
+          "RMCAttachmentS6ReflexSight",
+          "RMCAttachmentS42xTelescopicMiniscope",
+          "RMCAttachmentFP9000Scope"
+        ]
+      },
+      "underbarrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentGyroscopicStabilizer",
+          "RMCAttachmentLaserSight"
+        ]
+      },
+      "stock": {
+        "locked": false,
+        "starting": null,
+        "allowed": [
+          "RMCAttachmentR4TStock"
+        ]
+      }
+    },
+    "tags": [
+      "RMCWeaponRifleR4T"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 75.0
+    },
+    "gunBurstFireRate": 8,
+    "internalCapacity": 9,
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Rifle",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponSMGMAC15",
@@ -12894,7 +14155,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -12932,7 +14197,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponSMGMP5",
@@ -13023,7 +14294,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -13065,14 +14340,20 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Submachinegun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponShotgunCustomBuilt",
     "name": "изготовленное на заказ ружье",
     "category": "Дробовики",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Shotguns/custombuilt.yml",
-    "fireRate": 0.85,
+    "fireRate": 0.714,
     "fireRateSource": "RMCSelectiveFire",
     "shotsPerBurst": 2,
     "damageMult": 1,
@@ -13087,11 +14368,11 @@ const GUNS = [
       "recoilUnwielded": 4,
       "scatterWielded": 10,
       "scatterUnwielded": 20,
-      "baseFireRate": 0.85,
-      "burstScatterMult": 4,
+      "baseFireRate": 0.714,
+      "burstScatterMult": 7,
       "modifiers": {
         "Burst": {
-          "fireDelay": 0.1665
+          "fireDelay": 0.25
         }
       }
     },
@@ -13123,13 +14404,13 @@ const GUNS = [
     "scatterUnwielded": 20,
     "scatterIncrease": 0,
     "scatterDecay": 0,
-    "burstScatterMult": 4,
+    "burstScatterMult": 7.0,
     "fireModeMods": {
       "Burst": {
-        "fireDelay": 0.1665,
-        "maxScatterModifier": 0,
+        "fireDelay": 0.25,
+        "maxScatterModifier": 0.0,
         "useBurstScatterMult": false,
-        "unwieldedScatterMultiplier": 0,
+        "unwieldedScatterMultiplier": 0.0,
         "shotsToMaxScatter": null
       }
     },
@@ -13154,7 +14435,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 6,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponShotgunM357",
@@ -13231,7 +14518,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -13273,7 +14564,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 2,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponShotgunM357Sawn",
@@ -13382,7 +14679,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 2,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponShotgunM42A1",
@@ -13456,7 +14759,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -13502,7 +14809,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 10,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "WeaponShotgunMOU53",
@@ -13570,7 +14883,11 @@ const GUNS = [
           "RMCM5Bayonet",
           "RMCCombatUtilityKnifeA",
           "RMCTantoA",
-          "RMCSawtoothDaggerA"
+          "RMCSawtoothDaggerA",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -13619,7 +14936,13 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 3,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": null,
+    "dualWield": {
+      "group": "Shotgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverM44",
@@ -13688,7 +15011,11 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator",
           "RMCAttachmentBarrelCharger",
           "RMCAttachmentExtendedBarrel",
-          "RMCAttachmentExtendedCompensator"
+          "RMCAttachmentExtendedCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -13733,7 +15060,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 7,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverMkX",
@@ -13807,7 +15145,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 6,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverRSh9",
@@ -13902,7 +15251,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 6,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverMateba",
@@ -14000,7 +15360,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 6,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverZHNK72",
@@ -14069,7 +15440,11 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator",
           "RMCAttachmentBarrelCharger",
           "RMCAttachmentExtendedBarrel",
-          "RMCAttachmentExtendedCompensator"
+          "RMCAttachmentExtendedCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -14105,7 +15480,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 7,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolver38Empty",
@@ -14182,7 +15568,107 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 6,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
+  },
+  {
+    "id": "RMCWeaponRevolverM37",
+    "name": "револьвер M37 .38",
+    "category": "Револьверы",
+    "file": "_RMC14/Entities/Objects/Weapons/Guns/Revolvers/38magnum.yml",
+    "fireRate": 1.67,
+    "fireRateSource": "RMCSelectiveFire",
+    "shotsPerBurst": 3,
+    "damageMult": 2.0,
+    "falloffMult": 1,
+    "rangeFlat": 0,
+    "selectiveFire": {
+      "baseFireModes": [
+        "SemiAuto"
+      ],
+      "recoilWielded": 1,
+      "recoilUnwielded": 3,
+      "scatterWielded": 8,
+      "scatterUnwielded": 12,
+      "baseFireRate": 1.67,
+      "burstScatterMult": 4
+    },
+    "magazines": [
+      "RMCSpeedLoaderM37"
+    ],
+    "accuracyMult": 0.85,
+    "accuracyMultUnwielded": 1,
+    "accuracyRangeFlat": 0,
+    "fireModes": [
+      "SemiAuto"
+    ],
+    "burstFireRateMult": 2.0,
+    "scatterSource": "RMCSelectiveFire",
+    "scatterWielded": 8.0,
+    "scatterUnwielded": 12.0,
+    "scatterIncrease": 0.0,
+    "scatterDecay": 0.0,
+    "burstScatterMult": 4.0,
+    "fireModeMods": {
+      "Burst": {
+        "fireDelay": 0.1,
+        "maxScatterModifier": 10.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 6
+      },
+      "FullAuto": {
+        "fireDelay": 0.0,
+        "maxScatterModifier": 26.0,
+        "useBurstScatterMult": true,
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": 4
+      }
+    },
+    "burstCooldown": 0.0,
+    "attachmentSlots": {
+      "barrel": {
+        "locked": false,
+        "starting": null,
+        "allowed": []
+      }
+    },
+    "tags": [
+      "Sidearm",
+      "RMCRevolver",
+      "RMCWeaponRevolver38Magnum",
+      "RMCWeaponRevolverM37"
+    ],
+    "skillAccuracyPerLevel": 0.15,
+    "unskilledPenalty": {
+      "minSkill": 1,
+      "accuracyAddMult": -0.15,
+      "scatterFlat": 5.0
+    },
+    "gunBurstFireRate": 8,
+    "internalCapacity": 6,
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverM44Custom",
@@ -14251,7 +15737,11 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator",
           "RMCAttachmentBarrelCharger",
           "RMCAttachmentExtendedBarrel",
-          "RMCAttachmentExtendedCompensator"
+          "RMCAttachmentExtendedCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -14296,7 +15786,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 7,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverSpearhead",
@@ -14409,7 +15910,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 6,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverMatebaGold",
@@ -14497,7 +16009,7 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCRevolver",
-      "RMCMateba"
+      "RMCMatebaGolden"
     ],
     "skillAccuracyPerLevel": 0.15,
     "unskilledPenalty": {
@@ -14507,7 +16019,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 6,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverWarwickMkVII",
@@ -14576,7 +16099,11 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator",
           "RMCAttachmentBarrelCharger",
           "RMCAttachmentExtendedBarrel",
-          "RMCAttachmentExtendedCompensator"
+          "RMCAttachmentExtendedCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -14621,7 +16148,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 7,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverMatebaSpecial",
@@ -14709,7 +16247,7 @@ const GUNS = [
     "tags": [
       "Sidearm",
       "RMCRevolver",
-      "RMCMateba"
+      "RMCMatebaSpecial"
     ],
     "skillAccuracyPerLevel": 0.15,
     "unskilledPenalty": {
@@ -14719,7 +16257,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 6,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverSpearheadCustom",
@@ -14832,7 +16381,18 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 6,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   },
   {
     "id": "RMCWeaponRevolverWarwickMkVIISnub",
@@ -14901,7 +16461,11 @@ const GUNS = [
           "RMCAttachmentRecoilCompensator",
           "RMCAttachmentBarrelCharger",
           "RMCAttachmentExtendedBarrel",
-          "RMCAttachmentExtendedCompensator"
+          "RMCAttachmentExtendedCompensator",
+          "RMCCombatUtilityKnifeB",
+          "RMCType80BayonetReplica",
+          "RMCTantoB",
+          "RMCSawtoothDaggerB"
         ]
       },
       "rail": {
@@ -14946,6 +16510,17 @@ const GUNS = [
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 7,
-    "wieldable": true
+    "wieldable": true,
+    "akimbo": {
+      "accuracyMult": 1.5,
+      "scatterMult": 1.5,
+      "individualFireRateMult": 1.0,
+      "totalFireRateMult": 2.0
+    },
+    "dualWield": {
+      "group": "Handgun",
+      "accuracyAddMult": -0.6,
+      "scatterFlat": 16.0
+    }
   }
 ];
