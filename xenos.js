@@ -16,7 +16,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 500.0,
     "hpDead": 600.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoCarrier",
@@ -35,7 +37,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 650.0,
     "hpDead": 750.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoDefender",
@@ -77,7 +81,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 500.0,
     "hpDead": 600.0,
-    "tier": 1
+    "tier": 1,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoDefenderSteelcrest",
@@ -119,7 +125,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 500.0,
     "hpDead": 600.0,
-    "tier": 1
+    "tier": 1,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoDrone",
@@ -138,7 +146,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 500.0,
     "hpDead": 600.0,
-    "tier": 1
+    "tier": 1,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoDroneGardener",
@@ -157,7 +167,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 500.0,
     "hpDead": 600.0,
-    "tier": 1
+    "tier": 1,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoDroneHealer",
@@ -176,7 +188,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 500.0,
     "hpDead": 600.0,
-    "tier": 1
+    "tier": 1,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoHivelord",
@@ -195,7 +209,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 550.0,
     "hpDead": 650.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoHivelordDesigner",
@@ -214,7 +230,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 550.0,
     "hpDead": 650.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoHivelordResinWhisperer",
@@ -233,7 +251,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 550.0,
     "hpDead": 650.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoLarva",
@@ -252,7 +272,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 35.0,
     "hpDead": 70.0,
-    "tier": 0
+    "tier": 0,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoLesserDrone",
@@ -271,7 +293,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": null,
     "hpDead": 160.0,
-    "tier": 0
+    "tier": 0,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoLurker",
@@ -290,7 +314,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 450.0,
     "hpDead": 550.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoParasite",
@@ -309,7 +335,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": null,
     "hpDead": 35.0,
-    "tier": 0
+    "tier": 0,
+    "crusherShield": null,
+    "unshieldable": true
   },
   {
     "id": "CMXenoPraetorian",
@@ -328,7 +356,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 650.0,
     "hpDead": 750.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoQueen",
@@ -347,7 +377,9 @@ const XENOS = [
     "greenFireArmorMult": 0.7,
     "hpCrit": 500.0,
     "hpDead": 600.0,
-    "tier": 4
+    "tier": 4,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoRavager",
@@ -366,7 +398,9 @@ const XENOS = [
     "greenFireArmorMult": 0.6,
     "hpCrit": 650.0,
     "hpDead": 750.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoRunner",
@@ -385,7 +419,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 230.0,
     "hpDead": 330.0,
-    "tier": 1
+    "tier": 1,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoSentinel",
@@ -404,7 +440,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 500.0,
     "hpDead": 600.0,
-    "tier": 1
+    "tier": 1,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoSpitter",
@@ -432,7 +470,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 550.0,
     "hpDead": 650.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "CMXenoWarrior",
@@ -451,7 +491,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 500.0,
     "hpDead": 600.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoBoiler",
@@ -470,7 +512,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 650.0,
     "hpDead": 750.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoBoilerSapper",
@@ -489,7 +533,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 590.0,
     "hpDead": 690.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoCarrierEggsac",
@@ -508,7 +554,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 650.0,
     "hpDead": 750.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoCrusher",
@@ -527,7 +575,13 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 700.0,
     "hpDead": 800.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": {
+      "amount": 200,
+      "damageReduction": 10,
+      "duration": 7.0
+    },
+    "unshieldable": false
   },
   {
     "id": "RMCXenoCrusherCharger",
@@ -546,7 +600,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 780.0,
     "hpDead": 880.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoKing",
@@ -565,7 +621,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 1500.0,
     "hpDead": 1600.0,
-    "tier": 4
+    "tier": 4,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoLurkerVampire",
@@ -584,7 +642,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 390.0,
     "hpDead": 490.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoParasiteWatcher",
@@ -603,7 +663,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": null,
     "hpDead": 35.0,
-    "tier": 0
+    "tier": 0,
+    "crusherShield": null,
+    "unshieldable": true
   },
   {
     "id": "RMCXenoPraetorianDancer",
@@ -622,7 +684,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 650.0,
     "hpDead": 750.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoPraetorianOppressor",
@@ -641,7 +705,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 650.0,
     "hpDead": 750.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoPraetorianValkyrie",
@@ -669,7 +735,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 650.0,
     "hpDead": 750.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoPraetorianVanguard",
@@ -688,7 +756,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 590.0,
     "hpDead": 690.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoRavagerBerserker",
@@ -717,7 +787,9 @@ const XENOS = [
     "greenFireArmorMult": 0.6,
     "hpCrit": 590.0,
     "hpDead": 690.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoRavagerHedgehog",
@@ -746,7 +818,9 @@ const XENOS = [
     "greenFireArmorMult": 0.6,
     "hpCrit": 650.0,
     "hpDead": 750.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "RMCXenoRunnerAcider",
@@ -765,7 +839,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 345.0,
     "hpDead": 445.0,
-    "tier": 1
+    "tier": 1,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "STXenoDespoiler",
@@ -784,7 +860,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 650.0,
     "hpDead": 750.0,
-    "tier": 3
+    "tier": 3,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "STXenoWarriorBoxer",
@@ -803,7 +881,9 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 500.0,
     "hpDead": 600.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
   },
   {
     "id": "STXenoWarriorBulwark",
@@ -835,6 +915,39 @@ const XENOS = [
     "greenFireArmorMult": 0.5,
     "hpCrit": 600.0,
     "hpDead": 700.0,
-    "tier": 2
+    "tier": 2,
+    "crusherShield": null,
+    "unshieldable": false
+  },
+  {
+    "id": "STXenoPredalien",
+    "name": "Абоминация",
+    "strain": null,
+    "file": "_Stories/Entities/Mobs/Xeno/predalien.yml",
+    "xenoArmor": 30,
+    "frontalArmor": 0,
+    "sideArmor": 0,
+    "evasion": 0,
+    "size": "Big",
+    "sizeEvasionMod": -10,
+    "evasionModified": -10,
+    "hitboxRadius": 0.4,
+    "armorAbilities": [
+      {
+        "id": "feralRush",
+        "name": "Звериный рывок",
+        "kind": "toggle",
+        "xenoArmor": 10,
+        "frontalArmor": 0,
+        "sideArmor": 0,
+        "exclusiveWith": []
+      }
+    ],
+    "greenFireArmorMult": 0.5,
+    "hpCrit": 650,
+    "hpDead": 750,
+    "tier": 4,
+    "crusherShield": null,
+    "unshieldable": false
   }
 ];

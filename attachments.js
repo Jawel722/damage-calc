@@ -1,36 +1,5 @@
 const ATTACHMENTS = [
   {
-    "id": "RMCCombatUtilityKnifeA",
-    "name": "боевой универсальный нож \"Druzhina\"",
-    "tags": [
-      "Knife",
-      "RMCAttachmentBarrel",
-      "RMCM5Bayonet"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
     "id": "RMCAttachmentFP9000Scope",
     "name": "2-кратный телескопический мини-прицел FP9000",
     "tags": [
@@ -48,12 +17,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": -0.2,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.15,
         "shotsPerBurstFlat": 0
       },
@@ -66,13 +35,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -96,12 +65,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": -0.2,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.15,
         "shotsPerBurstFlat": 0
       },
@@ -114,69 +83,32 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
     "fireModeMods": []
   },
   {
-    "id": "RMCAttachmentB8SmartScope",
-    "name": "B8 умный прицел",
+    "id": "RMCAttachmentM16A5Stock",
+    "name": "бамп-сток M16A5",
     "tags": [
-      "RMCAttachmentRail",
-      "RMCAttachmentB8SmartScope"
+      "RMCAttachmentStock",
+      "RMCAttachmentM16A5Stock"
     ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": -0.2,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": true,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
+    "toggleable": false,
+    "modifiers": [],
     "fireModeMods": []
   },
   {
-    "id": "RMCSawtoothDaggerA",
-    "name": "окопный кинжал образца \"Фьоре\"",
+    "id": "RMCCombatUtilityKnifeA",
+    "name": "боевой универсальный нож \"Druzhina\"",
     "tags": [
       "Knife",
       "RMCAttachmentBarrel",
@@ -193,383 +125,103 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
     "fireModeMods": []
   },
   {
-    "id": "RMCL112IntegratedScope",
-    "name": "L112O1 интегрированный прицел",
+    "id": "RMCCombatUtilityKnifeB",
+    "name": "боевой универсальный нож \"Druzhina\"",
     "tags": [
-      "RMCAttachmentRail",
-      "RMCL112IntegratedScope"
+      "Knife",
+      "RMCAttachmentBarrel",
+      "RMCM5Bayonet"
     ],
-    "toggleable": true,
+    "toggleable": false,
     "modifiers": [
       {
         "conditions": {
           "wieldedOnly": false,
-          "unwieldedOnly": false,
+          "unwieldedOnly": true,
           "activeOnly": false,
           "inactiveOnly": false,
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.1,
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": -0.4,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.25,
-        "shotsPerBurstFlat": 0
-      },
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentVerticalGrip",
+    "name": "вертикальная рукоятка",
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentVerticalGrip"
+    ],
+    "toggleable": false,
+    "modifiers": [
       {
         "conditions": {
           "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
-          "inactiveOnly": true,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentL90UBS",
-    "name": "L90U1 подствольный дробовик",
-    "tags": [
-      "RMCAttachmentUnderbarrel",
-      "RMCAttachmentL90UBS"
-    ],
-    "toggleable": true,
-    "modifiers": [],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentL90GL",
-    "name": "L90U3 подствольный гранатомет",
-    "tags": [
-      "RMCAttachmentUnderbarrel",
-      "RMCAttachmentL90GL"
-    ],
-    "toggleable": true,
-    "modifiers": [],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentSASOS",
-    "name": "L91O1 SASOS",
-    "tags": [
-      "RMCAttachmentRail",
-      "RMCAttachmentSASOS"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": false,
           "inactiveOnly": false,
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": -0.2,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": true,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.2,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM13StockCollapsible",
-    "name": "M10 складной приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM13StockCollapsible"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -3.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": -2,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
         "conditions": {
           "wieldedOnly": false,
           "unwieldedOnly": true,
-          "activeOnly": true,
+          "activeOnly": false,
           "inactiveOnly": false,
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 1.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
     "fireModeMods": []
   },
   {
-    "id": "RMCAttachmentM13StockSolid",
-    "name": "M10 твердый приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM13StockSolid"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -5.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.25,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 5.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM54CStockCollapsible",
-    "name": "M41A складной приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM54CStockCollapsible"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.1,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -4.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM54CStockSolid",
-    "name": "M41A твердый приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM54CStockSolid"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.25,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -8.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCTantoA",
-    "name": "пехотный служебный танто MK3",
-    "tags": [
-      "Knife",
-      "RMCAttachmentBarrel",
-      "RMCM5Bayonet"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentS42xTelescopicMiniscope",
-    "name": "S4 2x телескопический мини-скоп",
+    "id": "RMCAttachmentL89Scope",
+    "name": "встроенная оптика L89",
     "tags": [
       "RMCAttachmentRail",
-      "RMCAttachmentS42xTelescopicMiniscope"
+      "RMCAttachmentL89Scope"
     ],
     "toggleable": true,
     "modifiers": [
@@ -582,12 +234,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": -0.2,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.15,
         "shotsPerBurstFlat": 0
       },
@@ -600,16 +252,27 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentL88Grip",
+    "name": "встроенная передняя рукоять L88",
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentL88Grip"
+    ],
+    "toggleable": false,
+    "modifiers": [],
     "fireModeMods": []
   },
   {
@@ -630,13 +293,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.25,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -4.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -4,
         "burstScatterAddMult": -1.16,
-        "fireDelayFlat": 0.0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -671,299 +334,6 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
-    "id": "RMCAttachmentM42A1WoodenStock",
-    "name": "М42А1 деревянный приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM42A1WoodenStock"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.2,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM42A2CollapsibleStock",
-    "name": "М42А2 складной приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM42A2CollapsibleStock"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.2,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -3.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 3.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentType77StockCollapsible",
-    "name": "Тип 77 складной приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentType77StockCollapsible"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.1,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -4.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM16A5Stock",
-    "name": "бамп-сток M16A5",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM16A5Stock"
-    ],
-    "toggleable": false,
-    "modifiers": [],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCCombatUtilityKnifeB",
-    "name": "боевой универсальный нож \"Druzhina\"",
-    "tags": [
-      "Knife",
-      "RMCAttachmentBarrel",
-      "RMCM5Bayonet"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentVerticalGrip",
-    "name": "вертикальная рукоятка",
-    "tags": [
-      "RMCAttachmentUnderbarrel",
-      "RMCAttachmentVerticalGrip"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": -2.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentL89Scope",
-    "name": "встроенная оптика L89",
-    "tags": [
-      "RMCAttachmentRail",
-      "RMCAttachmentL89Scope"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": -0.2,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.15,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": true,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentL88Grip",
-    "name": "встроенная передняя рукоять L88",
-    "tags": [
-      "RMCAttachmentUnderbarrel",
-      "RMCAttachmentL88Grip"
-    ],
-    "toggleable": false,
-    "modifiers": [],
-    "fireModeMods": []
-  },
-  {
     "id": "RMCAttachmentGyroscopicStabilizer",
     "name": "гироскопический стабилизатор",
     "tags": [
@@ -981,12 +351,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.25,
         "shotsPerBurstFlat": 0
       },
@@ -999,13 +369,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": -2.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": -2,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1017,13 +387,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -10.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -10,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1037,13 +407,13 @@ const ATTACHMENTS = [
           ],
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.55,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1057,13 +427,13 @@ const ATTACHMENTS = [
             "RMCWeaponShotgun"
           ]
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1087,13 +457,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": 0.1,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1117,13 +487,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": 0.1,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1158,13 +528,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -10.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -10,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1188,13 +558,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
         "rangeFlat": 0.5,
         "damageFalloffAddMult": -0.5,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1218,13 +588,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": -1.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": -1,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1236,13 +606,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -5.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -5,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1256,11 +626,11 @@ const ATTACHMENTS = [
         },
         "damageAddMult": -0.2,
         "accuracyAddMult": 0.25,
-        "rangeFlat": 1.0,
+        "rangeFlat": 1,
         "damageFalloffAddMult": -0.3,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1286,11 +656,11 @@ const ATTACHMENTS = [
         },
         "damageAddMult": -0.1,
         "accuracyAddMult": 0.2,
-        "rangeFlat": 0.0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": 0.1,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1314,12 +684,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.25,
         "shotsPerBurstFlat": 0
       },
@@ -1332,13 +702,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1350,13 +720,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.35,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1371,12 +741,12 @@ const ATTACHMENTS = [
           "blacklistTags": null
         },
         "damageAddMult": 0.05,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1391,12 +761,12 @@ const ATTACHMENTS = [
           ]
         },
         "damageAddMult": 0.3,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1431,145 +801,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": 0.1,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCM96SIntegratedScope",
-    "name": "интегрированный прицел M96S",
-    "tags": [
-      "RMCAttachmentRail",
-      "RMCM96SIntegratedScope"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.1,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": -0.4,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.25,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": true,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCXM43E1IntegratedScope",
-    "name": "интегрированный прицел XM43E1",
-    "tags": [
-      "RMCAttachmentRail",
-      "RMCXM43E1IntegratedScope"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.1,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": -0.4,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.25,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": true,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1593,12 +831,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.1,
         "shotsPerBurstFlat": 0
       },
@@ -1611,12 +849,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": -0.4,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.25,
         "shotsPerBurstFlat": 0
       },
@@ -1629,13 +867,145 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCM96SIntegratedScope",
+    "name": "интегрированный прицел M96S",
+    "tags": [
+      "RMCAttachmentRail",
+      "RMCM96SIntegratedScope"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.1,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.35,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": -0.4,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.25,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCXM43E1IntegratedScope",
+    "name": "интегрированный прицел XM43E1",
+    "tags": [
+      "RMCAttachmentRail",
+      "RMCXM43E1IntegratedScope"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.1,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.35,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": -0.4,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.25,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1659,13 +1029,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": 0.1,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1690,13 +1060,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1708,13 +1078,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1726,13 +1096,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -4.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -4,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1756,13 +1126,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1774,13 +1144,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -4.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -4,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1809,6 +1179,102 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
+    "id": "RMCAttachmentM42A1WoodenStock",
+    "name": "М42А1 деревянный приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM42A1WoodenStock"
+    ],
+    "toggleable": false,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.2,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM42A2CollapsibleStock",
+    "name": "М42А2 складной приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM42A2CollapsibleStock"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.2,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -3,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 3,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
     "id": "RMCAttachmentMagneticHarness",
     "name": "магнитный жгут",
     "tags": [
@@ -1826,13 +1292,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1856,13 +1322,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -1.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -1,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1874,13 +1340,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1904,13 +1370,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -1922,13 +1388,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -1975,13 +1441,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": -3
       },
       {
@@ -1993,13 +1459,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2011,13 +1477,44 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.2,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCSawtoothDaggerA",
+    "name": "окопный кинжал образца \"Фьоре\"",
+    "tags": [
+      "Knife",
+      "RMCAttachmentBarrel",
+      "RMCM5Bayonet"
+    ],
+    "toggleable": false,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2042,13 +1539,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2072,12 +1569,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": -0.2,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.15,
         "shotsPerBurstFlat": 0
       },
@@ -2090,13 +1587,44 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCTantoA",
+    "name": "пехотный служебный танто MK3",
+    "tags": [
+      "Knife",
+      "RMCAttachmentBarrel",
+      "RMCM5Bayonet"
+    ],
+    "toggleable": false,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2121,13 +1649,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2152,13 +1680,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2242,6 +1770,47 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
+    "id": "RMCAttachmentModel12Stock",
+    "name": "приклад дробовика Модель 12",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentModel12Stock"
+    ],
+    "toggleable": false,
+    "modifiers": [],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM63Stock",
+    "name": "приклад пистолета-пулемета",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM63Stock"
+    ],
+    "toggleable": false,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.35,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -10,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
     "id": "RMCAttachmentL49Stock",
     "name": "приклад L49",
     "tags": [
@@ -2259,13 +1828,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.25,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -3.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -3,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2277,13 +1846,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.25,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 3.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 3,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2318,13 +1887,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2336,13 +1905,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.1,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2366,13 +1935,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2384,13 +1953,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.25,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 10.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 10,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2431,13 +2000,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.3,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2449,54 +2018,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.1,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 14.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentModel12Stock",
-    "name": "приклад дробовика Модель 12",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentModel12Stock"
-    ],
-    "toggleable": false,
-    "modifiers": [],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM63Stock",
-    "name": "приклад пистолета-пулемета",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM63Stock"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -10.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 14,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2520,13 +2048,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.2,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2538,13 +2066,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2568,13 +2096,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -3.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -3,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2586,13 +2114,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.2,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2627,12 +2155,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": -0.2,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.15,
         "shotsPerBurstFlat": 0
       },
@@ -2645,13 +2173,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2676,13 +2204,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2706,13 +2234,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": -1.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": -1,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2724,13 +2252,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2756,13 +2284,13 @@ const ATTACHMENTS = [
             "RMCWeaponPistolL14"
           ]
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 2
       },
       {
@@ -2774,13 +2302,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2792,13 +2320,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.2,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2820,54 +2348,6 @@ const ATTACHMENTS = [
     ]
   },
   {
-    "id": "RMCAttachmentMP5AltStockCollapsible",
-    "name": "складной приклад MP5A5",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentMP5AltStockCollapsible"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
     "id": "RMCAttachmentM63StockCollapsible",
     "name": "складной приклад для пистолета-пулемета",
     "tags": [
@@ -2885,13 +2365,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2903,13 +2383,61 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentMP5AltStockCollapsible",
+    "name": "складной приклад MP5A5",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentMP5AltStockCollapsible"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -2933,12 +2461,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.25,
         "shotsPerBurstFlat": 0
       },
@@ -2951,13 +2479,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.25,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 4.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 4,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2969,13 +2497,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.25,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -2987,13 +2515,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": -3.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": -3,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -3007,12 +2535,12 @@ const ATTACHMENTS = [
           ],
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": -0.5,
         "shotsPerBurstFlat": 0
       },
@@ -3027,12 +2555,12 @@ const ATTACHMENTS = [
             "CMM96SSniperRifle"
           ]
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": -0.1,
         "shotsPerBurstFlat": 0
       },
@@ -3047,12 +2575,12 @@ const ATTACHMENTS = [
           ],
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": -0.1,
         "shotsPerBurstFlat": 0
       }
@@ -3094,12 +2622,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.25,
         "shotsPerBurstFlat": 0
       },
@@ -3112,13 +2640,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.25,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 4.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 4,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -3130,13 +2658,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.25,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -3148,13 +2676,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": -3.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": -3,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -3168,12 +2696,12 @@ const ATTACHMENTS = [
           ],
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": -0.5,
         "shotsPerBurstFlat": 0
       },
@@ -3188,12 +2716,12 @@ const ATTACHMENTS = [
             "CMM96SSniperRifle"
           ]
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": -0.1,
         "shotsPerBurstFlat": 0
       },
@@ -3208,12 +2736,12 @@ const ATTACHMENTS = [
           ],
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": -0.1,
         "shotsPerBurstFlat": 0
       }
@@ -3255,13 +2783,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.2,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -3273,13 +2801,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -3303,13 +2831,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -3321,13 +2849,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -3351,13 +2879,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.5,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -1.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -1,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -3369,13 +2897,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 6.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -3399,13 +2927,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.5,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -3417,13 +2945,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.5,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -3447,13 +2975,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.3,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": -2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -3465,13 +2993,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.1,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 2.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 2,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -3495,12 +3023,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.0,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.1,
         "shotsPerBurstFlat": 0
       },
@@ -3513,12 +3041,12 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": 0.35,
-        "rangeFlat": 0.0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": -0.4,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
         "fireDelayFlat": 0.25,
         "shotsPerBurstFlat": 0
       },
@@ -3531,13 +3059,61 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentType77StockCollapsible",
+    "name": "Тип 77 складной приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentType77StockCollapsible"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.1,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -4,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -3555,30 +3131,48 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
-    "id": "RMCAttachmentExtendedBarrel",
-    "name": "удлиненный ствол",
+    "id": "RMCAttachmentRecoilCompensatorM13",
+    "name": "удлинённый дульный тормоз М13 (и шипованый)",
     "tags": [
       "RMCAttachmentBarrel",
-      "RMCAttachmentExtendedBarrel"
+      "RMCAttachmentRecoilCompensatorM13"
     ],
     "toggleable": false,
     "modifiers": [
       {
         "conditions": {
-          "wieldedOnly": true,
+          "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
           "inactiveOnly": false,
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": 0.2,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0.05,
+        "accuracyAddMult": 0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.2,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -3604,11 +3198,11 @@ const ATTACHMENTS = [
         },
         "damageAddMult": -0.1,
         "accuracyAddMult": 0.3,
-        "rangeFlat": 0.0,
+        "rangeFlat": 0,
         "damageFalloffAddMult": -0.1,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -3620,61 +3214,43 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.3,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
     "fireModeMods": []
   },
   {
-    "id": "RMCAttachmentRecoilCompensatorM13",
-    "name": "удлинённый дульный тормоз М13 (и шипованый)",
+    "id": "RMCAttachmentExtendedBarrel",
+    "name": "удлиненный ствол",
     "tags": [
       "RMCAttachmentBarrel",
-      "RMCAttachmentRecoilCompensatorM13"
+      "RMCAttachmentExtendedBarrel"
     ],
     "toggleable": false,
     "modifiers": [
       {
         "conditions": {
-          "wieldedOnly": false,
+          "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
           "inactiveOnly": false,
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.05,
-        "accuracyAddMult": 0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0.0,
-        "accuracyAddMult": -0.2,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.2,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -3744,11 +3320,11 @@ const ATTACHMENTS = [
         },
         "damageAddMult": 0.05,
         "accuracyAddMult": 0.15,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       },
       {
@@ -3760,13 +3336,13 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.2,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],
@@ -3791,13 +3367,437 @@ const ATTACHMENTS = [
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.0,
+        "damageAddMult": 0,
         "accuracyAddMult": -0.05,
-        "rangeFlat": 0.0,
-        "damageFalloffAddMult": 0.0,
-        "scatterFlat": 0.0,
-        "burstScatterAddMult": 0.0,
-        "fireDelayFlat": 0.0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentB8SmartScope",
+    "name": "B8 умный прицел",
+    "tags": [
+      "RMCAttachmentRail",
+      "RMCAttachmentB8SmartScope"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": -0.2,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCL112IntegratedScope",
+    "name": "L112O1 интегрированный прицел",
+    "tags": [
+      "RMCAttachmentRail",
+      "RMCL112IntegratedScope"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.1,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.35,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": -0.4,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.25,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentL90UBS",
+    "name": "L90U1 подствольный дробовик",
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentL90UBS"
+    ],
+    "toggleable": true,
+    "modifiers": [],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentL90GL",
+    "name": "L90U3 подствольный гранатомет",
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentL90GL"
+    ],
+    "toggleable": true,
+    "modifiers": [],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentSASOS",
+    "name": "L91O1 SASOS",
+    "tags": [
+      "RMCAttachmentRail",
+      "RMCAttachmentSASOS"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": -0.2,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.2,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM13StockCollapsible",
+    "name": "M10 складной приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM13StockCollapsible"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -3,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 1,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM13StockSolid",
+    "name": "M10 твердый приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM13StockSolid"
+    ],
+    "toggleable": false,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.35,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -5,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.25,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 5,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM54CStockCollapsible",
+    "name": "M41A складной приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM54CStockCollapsible"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.1,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -4,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM54CStockSolid",
+    "name": "M41A твердый приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM54CStockSolid"
+    ],
+    "toggleable": false,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.25,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -8,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentS42xTelescopicMiniscope",
+    "name": "S4 2x телескопический мини-скоп",
+    "tags": [
+      "RMCAttachmentRail",
+      "RMCAttachmentS42xTelescopicMiniscope"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.35,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": -0.2,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.15,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
       }
     ],

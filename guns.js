@@ -1455,15 +1455,15 @@ const GUNS = [
         "FullAuto"
       ],
       "recoilWielded": 0,
-      "scatterWielded": 2,
+      "scatterWielded": 0,
       "baseFireRate": 5,
       "burstScatterMult": 4,
       "modifiers": {
         "FullAuto": {
-          "maxScatterModifier": 4,
+          "maxScatterModifier": 0,
           "useBurstScatterMult": true,
           "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
+          "shotsToMaxScatter": null
         }
       }
     },
@@ -1480,18 +1480,18 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 2.0,
+    "scatterWielded": 0.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0,
-        "maxScatterModifier": 4,
+        "fireDelay": 0.0,
+        "maxScatterModifier": 0.0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2,
-        "shotsToMaxScatter": 80
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": null
       }
     },
     "burstCooldown": 0,
@@ -1545,15 +1545,15 @@ const GUNS = [
         "FullAuto"
       ],
       "recoilWielded": 0,
-      "scatterWielded": 2,
+      "scatterWielded": 0,
       "baseFireRate": 5,
       "burstScatterMult": 4,
       "modifiers": {
         "FullAuto": {
-          "maxScatterModifier": 4,
+          "maxScatterModifier": 0,
           "useBurstScatterMult": true,
           "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
+          "shotsToMaxScatter": null
         }
       }
     },
@@ -1570,18 +1570,18 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 2.0,
+    "scatterWielded": 0.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0,
-        "maxScatterModifier": 4,
+        "fireDelay": 0.0,
+        "maxScatterModifier": 0.0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2,
-        "shotsToMaxScatter": 80
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": null
       }
     },
     "burstCooldown": 0,
@@ -1635,15 +1635,15 @@ const GUNS = [
         "FullAuto"
       ],
       "recoilWielded": 0,
-      "scatterWielded": 2,
+      "scatterWielded": 0,
       "baseFireRate": 5,
       "burstScatterMult": 4,
       "modifiers": {
         "FullAuto": {
-          "maxScatterModifier": 4,
+          "maxScatterModifier": 0,
           "useBurstScatterMult": true,
           "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
+          "shotsToMaxScatter": null
         }
       }
     },
@@ -1660,18 +1660,18 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 2.0,
+    "scatterWielded": 0.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0,
-        "maxScatterModifier": 4,
+        "fireDelay": 0.0,
+        "maxScatterModifier": 0.0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2,
-        "shotsToMaxScatter": 80
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": null
       }
     },
     "burstCooldown": 0,
@@ -1868,15 +1868,15 @@ const GUNS = [
         "FullAuto"
       ],
       "recoilWielded": 0,
-      "scatterWielded": 2,
+      "scatterWielded": 0,
       "baseFireRate": 6,
       "burstScatterMult": 4,
       "modifiers": {
         "FullAuto": {
-          "maxScatterModifier": 4,
+          "maxScatterModifier": 0,
           "useBurstScatterMult": true,
           "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
+          "shotsToMaxScatter": null
         }
       }
     },
@@ -1893,18 +1893,18 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 2.0,
+    "scatterWielded": 0.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0,
-        "maxScatterModifier": 4,
+        "fireDelay": 0.0,
+        "maxScatterModifier": 0.0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2,
-        "shotsToMaxScatter": 80
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": null
       }
     },
     "burstCooldown": 0,
@@ -1958,15 +1958,15 @@ const GUNS = [
         "FullAuto"
       ],
       "recoilWielded": 0,
-      "scatterWielded": 2,
+      "scatterWielded": 0,
       "baseFireRate": 5,
       "burstScatterMult": 4,
       "modifiers": {
         "FullAuto": {
-          "maxScatterModifier": 4,
+          "maxScatterModifier": 0,
           "useBurstScatterMult": true,
           "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
+          "shotsToMaxScatter": null
         }
       }
     },
@@ -1983,18 +1983,18 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 2.0,
+    "scatterWielded": 0.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0,
-        "maxScatterModifier": 4,
+        "fireDelay": 0.0,
+        "maxScatterModifier": 0.0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2,
-        "shotsToMaxScatter": 80
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": null
       }
     },
     "burstCooldown": 0,
@@ -2048,15 +2048,15 @@ const GUNS = [
         "FullAuto"
       ],
       "recoilWielded": 0,
-      "scatterWielded": 2,
+      "scatterWielded": 0,
       "baseFireRate": 6,
       "burstScatterMult": 4,
       "modifiers": {
         "FullAuto": {
-          "maxScatterModifier": 4,
+          "maxScatterModifier": 0,
           "useBurstScatterMult": true,
           "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
+          "shotsToMaxScatter": null
         }
       }
     },
@@ -2073,18 +2073,18 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 2.0,
+    "scatterWielded": 0.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0,
-        "maxScatterModifier": 4,
+        "fireDelay": 0.0,
+        "maxScatterModifier": 0.0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2,
-        "shotsToMaxScatter": 80
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": null
       }
     },
     "burstCooldown": 0,
@@ -2138,15 +2138,15 @@ const GUNS = [
         "FullAuto"
       ],
       "recoilWielded": 0,
-      "scatterWielded": 2,
+      "scatterWielded": 0,
       "baseFireRate": 6,
       "burstScatterMult": 4,
       "modifiers": {
         "FullAuto": {
-          "maxScatterModifier": 4,
+          "maxScatterModifier": 0,
           "useBurstScatterMult": true,
           "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
+          "shotsToMaxScatter": null
         }
       }
     },
@@ -2163,18 +2163,18 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 2.0,
+    "scatterWielded": 0.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0,
-        "maxScatterModifier": 4,
+        "fireDelay": 0.0,
+        "maxScatterModifier": 0.0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2,
-        "shotsToMaxScatter": 80
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": null
       }
     },
     "burstCooldown": 0,
@@ -2228,15 +2228,15 @@ const GUNS = [
         "FullAuto"
       ],
       "recoilWielded": 0,
-      "scatterWielded": 2,
+      "scatterWielded": 0,
       "baseFireRate": 6,
       "burstScatterMult": 4,
       "modifiers": {
         "FullAuto": {
-          "maxScatterModifier": 4,
+          "maxScatterModifier": 0,
           "useBurstScatterMult": true,
           "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
+          "shotsToMaxScatter": null
         }
       }
     },
@@ -2253,18 +2253,18 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 2.0,
+    "scatterWielded": 0.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0,
-        "maxScatterModifier": 4,
+        "fireDelay": 0.0,
+        "maxScatterModifier": 0.0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2,
-        "shotsToMaxScatter": 80
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": null
       }
     },
     "burstCooldown": 0,
@@ -2318,15 +2318,15 @@ const GUNS = [
         "FullAuto"
       ],
       "recoilWielded": 0,
-      "scatterWielded": 2,
+      "scatterWielded": 0,
       "baseFireRate": 5,
       "burstScatterMult": 4,
       "modifiers": {
         "FullAuto": {
-          "maxScatterModifier": 4,
+          "maxScatterModifier": 0,
           "useBurstScatterMult": true,
           "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
+          "shotsToMaxScatter": null
         }
       }
     },
@@ -2343,18 +2343,18 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 2.0,
+    "scatterWielded": 0.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0,
-        "maxScatterModifier": 4,
+        "fireDelay": 0.0,
+        "maxScatterModifier": 0.0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2,
-        "shotsToMaxScatter": 80
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": null
       }
     },
     "burstCooldown": 0,
@@ -2405,7 +2405,7 @@ const GUNS = [
     "rangeFlat": 0,
     "selectiveFire": {
       "recoilWielded": 0,
-      "scatterWielded": 2,
+      "scatterWielded": 0,
       "baseFireRate": 10,
       "burstScatterMult": 1,
       "modifiers": {
@@ -2413,7 +2413,7 @@ const GUNS = [
           "maxScatterModifier": 0,
           "useBurstScatterMult": true,
           "unwieldedScatterMultiplier": 2,
-          "shotsToMaxScatter": 80
+          "shotsToMaxScatter": null
         }
       },
       "baseFireModes": [
@@ -2433,18 +2433,18 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 2.0,
+    "scatterWielded": 0.0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 1,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0,
-        "maxScatterModifier": 0,
+        "fireDelay": 0.0,
+        "maxScatterModifier": 0.0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2,
-        "shotsToMaxScatter": 80
+        "unwieldedScatterMultiplier": 2.0,
+        "shotsToMaxScatter": null
       }
     },
     "burstCooldown": 0,

@@ -202,6 +202,8 @@ body > .megacol > .col:last-child span {
 <label>Стаки голотаргета: <input type = "number" id= "holotarget" value = "0" min = "0" max = "100" step = "10"></label>
 <label>Уровень фер щита: <input type = "number" id = "pheroShield" value = "0" max = "6" min = "0" step = "0.5"></label>
 <label>Фрукт щита: <input type = "checkbox" id = "fruitShield"></label>
+<label>Щит Короля: <input type = "checkbox" id = "kingShield"></label>
+<label id="labelCrusherShield">Защитный щит Крушителя: <input type = "checkbox" id = "crusherShield"></label>
 <label>Зелёный огонь: <input type = "checkbox" id = "greenfire"></label>
 <label>Бафф Валькирии: <input type = "checkbox" id = "valkyrieBuff"></label>
 <label>Отдых: <input type = "checkbox" id = "rest"></label>
@@ -211,6 +213,7 @@ body > .megacol > .col:last-child span {
 <summary>Характеристики</summary>
 <div class = "col">
 <label>Хп до крита: <span id= "hpCrit"></span></label>
+<label>Щит: <span id= "statShield"></span></label>
 <label>Хп до смерти: <span id= "hpDead"></span></label>
 <label>Базовая броня: <span id = "statArmorBase"></span></label>
 <label>Броня от способностей и баффов: <span id = "statArmorAbility"></span></label>
@@ -401,6 +404,7 @@ function recalc() {
     const xenoHpDeadHTML= document.getElementById("hpDead")
     const pheroShieldLevel = Math.min(Math.max(Number(document.getElementById("pheroShield").value),0),6)
     const fruitShield = document.getElementById("fruitShield").checked
+    const kingShieldOn = document.getElementById("kingShield").checked
     const valkyrieBuff = document.getElementById("valkyrieBuff").checked
     const gunId = gunSelect.value
     const magId = magazineSelect.value
@@ -420,6 +424,9 @@ function recalc() {
         projectile = Object.assign({}, projectile, {damage: ammoMode.damage, ap: ammoMode.ap})
     }
     const xeno = findById(XENOS, xenoId)
+    labelCrusherShield.hidden = !xeno.crusherShield
+    kingShield.disabled = xeno.unshieldable === true
+    const crusherShieldOn = document.getElementById("crusherShield").checked && !!xeno.crusherShield
     const magBullets = magazine.capacity
     let xenoHpCrit = xeno.hpCrit
     let xenoHpDead = xeno.hpDead
@@ -575,6 +582,42 @@ function recalc() {
     }
     const dpsResult = dps(damageResult,realFireRate)
     const dpsRealResult = dpsResult*hitChance/100
+    let shieldTime = 0
+    let shieldHits = 0
+    let shieldText = "нет"
+    if ((kingShieldOn && xeno.unshieldable !== true) || crusherShieldOn) {
+        let perPellet = 0
+        let shieldAmount = 200
+        if (crusherShieldOn) {
+            perPellet = Math.max(armorResult - xeno.crusherShield.damageReduction, 0)
+            shieldAmount = xeno.crusherShield.amount
+        } else {
+            let threshold = xeno.hpCrit
+            if (threshold === null) {
+                threshold = xeno.hpDead
+            }
+            perPellet = Math.min(armorResult, threshold * 0.1)
+        }
+        const shieldShot = perPellet * projectile.pellets
+        const shieldDps = shieldShot * realFireRate * hitChance / 100
+        if (crusherShieldOn) {
+            shieldTime = xeno.crusherShield.duration
+            if (shieldDps > 0) {
+                shieldTime = Math.min(shieldAmount / shieldDps, xeno.crusherShield.duration)
+            }
+        } else if (shieldDps * 10 >= shieldAmount) {
+            shieldTime = shieldAmount / shieldDps
+        } else {
+            shieldTime = 10 + (shieldAmount - shieldDps * 10) / (shieldDps + 100)
+        }
+        if (shieldShot > 0) {
+            shieldHits = Math.ceil(shieldDps * shieldTime / shieldShot - 1e-9)
+        } else {
+            shieldHits = Math.ceil(shieldTime * realFireRate * hitChance / 100)
+        }
+        shieldText = shieldAmount + " ед., урон по щиту " + shieldShot.toFixed(1) + " за выстрел, держится " + shieldTime.toFixed(1) + " с"
+    }
+    document.getElementById("statShield").textContent = shieldText
     document.getElementById("out").textContent = dpsResult.toFixed(1)
     document.getElementById("damageOut").textContent = damageResult.toFixed(1)
     document.getElementById("realOut").textContent = dpsRealResult.toFixed(1)
@@ -582,12 +625,12 @@ function recalc() {
     if (xenoHpCrit === null) {
         document.getElementById("timeCrit").textContent = "-"
     } else {
-        document.getElementById("timeCrit").textContent = (xenoHpCrit/dpsRealResult).toFixed(1)+'с'
+        document.getElementById("timeCrit").textContent = (shieldTime + xenoHpCrit/dpsRealResult).toFixed(1)+'с'
         if (xenoHpCrit/dpsRealResult===Infinity) {
             document.getElementById("timeCrit").textContent = "Никогда"
         }
     }
-    document.getElementById("timeDead").textContent = (xenoHpDead/dpsRealResult).toFixed(1)+'с'
+    document.getElementById("timeDead").textContent = (shieldTime + xenoHpDead/dpsRealResult).toFixed(1)+'с'
     if  (xenoHpDead/dpsRealResult===Infinity) {
         document.getElementById("timeDead").textContent = "Никогда"
     }
@@ -596,7 +639,7 @@ function recalc() {
     if (Math.ceil(xenoHpDead/damageResult)===Infinity) {
         document.getElementById("bulletsDead").textContent = "Бесконечно"
     } else {
-        document.getElementById("bulletsDead").textContent = Math.ceil(xenoHpDead/damageResult)
+        document.getElementById("bulletsDead").textContent = shieldHits + Math.ceil(xenoHpDead/damageResult)
     }
     if (magBullets === null) {
         document.getElementById("magBullets").textContent = gun.internalCapacity
@@ -655,7 +698,7 @@ function recalc() {
     if (Math.ceil(Math.ceil(xenoHpDead/damageResult)/shotsPerMag)===Infinity) {
         document.getElementById("magazinesDead").textContent = "Бесконечно"
     } else {
-        document.getElementById("magazinesDead").textContent = Math.ceil(Math.ceil(xenoHpDead/damageResult)/shotsPerMag)
+        document.getElementById("magazinesDead").textContent = Math.ceil((shieldHits + Math.ceil(xenoHpDead/damageResult))/shotsPerMag)
     }
 }
 
@@ -1129,7 +1172,17 @@ greenfire.addEventListener("input",recalc)
 firearmsSkill.addEventListener("input",recalc)
 focusLevel.addEventListener("input",recalc)
 pheroShield.addEventListener("input",recalc)
-fruitShield.addEventListener("input",recalc)
+function shieldExclusive(event) {
+    for (const el of [fruitShield, kingShield, crusherShield]) {
+        if (el !== event.target && event.target.checked) {
+            el.checked = false
+        }
+    }
+    recalc()
+}
+for (const el of [fruitShield, kingShield, crusherShield]) {
+    el.addEventListener("input", shieldExclusive)
+}
 valkyrieBuff.addEventListener("input",recalc)
 barrel.addEventListener("change",recalc)
 underbarrel.addEventListener("change",recalc)
