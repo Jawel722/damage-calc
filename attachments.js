@@ -96,6 +96,632 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
+    "id": "RMCAttachmentB8SmartScope",
+    "name": "B8 умный прицел",
+    "tags": [
+      "RMCAttachmentRail",
+      "RMCAttachmentB8SmartScope"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": -0.2,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCL112IntegratedScope",
+    "name": "L112O1 интегрированный прицел",
+    "tags": [
+      "RMCAttachmentRail",
+      "RMCL112IntegratedScope"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.1,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.35,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": -0.4,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.25,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentL90UBS",
+    "name": "L90U1 подствольный дробовик",
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentL90UBS"
+    ],
+    "toggleable": true,
+    "modifiers": [],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentL90GL",
+    "name": "L90U3 подствольный гранатомет",
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentL90GL"
+    ],
+    "toggleable": true,
+    "modifiers": [],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentSASOS",
+    "name": "L91O1 SASOS",
+    "tags": [
+      "RMCAttachmentRail",
+      "RMCAttachmentSASOS"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": -0.2,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.2,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM13StockCollapsible",
+    "name": "M10 складной приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM13StockCollapsible"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -3,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 1,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM13StockSolid",
+    "name": "M10 твердый приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM13StockSolid"
+    ],
+    "toggleable": false,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.35,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -5,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.25,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 5,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM54CStockCollapsible",
+    "name": "M41A складной приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM54CStockCollapsible"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.1,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -4,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM54CStockSolid",
+    "name": "M41A твердый приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM54CStockSolid"
+    ],
+    "toggleable": false,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.25,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -8,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentS42xTelescopicMiniscope",
+    "name": "S4 2x телескопический мини-скоп",
+    "tags": [
+      "RMCAttachmentRail",
+      "RMCAttachmentS42xTelescopicMiniscope"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.35,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": -0.2,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.15,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentL91Bipod",
+    "name": "Встроенные сошки L91 SWS",
+    "tags": [
+      "RMCAttachmentUnderbarrel",
+      "RMCAttachmentL91Bipod"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.25,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -4,
+        "burstScatterAddMult": -1.16,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": [
+            "RMCGunBipodFullAuto"
+          ],
+          "blacklistTags": null
+        },
+        "extraFireModes": [
+          "FullAuto"
+        ],
+        "setFireMode": "FullAuto"
+      }
+    ]
+  },
+  {
+    "id": "RMCAttachmentSuppressorL112",
+    "name": "Встроенный глушитель L112A1",
+    "tags": [
+      "RMCAttachmentBarrel",
+      "RMCAttachmentSuppressorL112"
+    ],
+    "toggleable": false,
+    "modifiers": [],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM42A1WoodenStock",
+    "name": "М42А1 деревянный приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM42A1WoodenStock"
+    ],
+    "toggleable": false,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.2,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM42A2CollapsibleStock",
+    "name": "М42А2 складной приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM42A2CollapsibleStock"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.2,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -3,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 3,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentType77StockCollapsible",
+    "name": "Тип 77 складной приклад",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentType77StockCollapsible"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.1,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -4,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 6,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
     "id": "RMCAttachmentM16A5Stock",
     "name": "бамп-сток M16A5",
     "tags": [
@@ -270,64 +896,6 @@ const ATTACHMENTS = [
     "tags": [
       "RMCAttachmentUnderbarrel",
       "RMCAttachmentL88Grip"
-    ],
-    "toggleable": false,
-    "modifiers": [],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentL91Bipod",
-    "name": "Встроенные сошки L91 SWS",
-    "tags": [
-      "RMCAttachmentUnderbarrel",
-      "RMCAttachmentL91Bipod"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.25,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": -4,
-        "burstScatterAddMult": -1.16,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": [
-            "RMCGunBipodFullAuto"
-          ],
-          "blacklistTags": null
-        },
-        "extraFireModes": [
-          "FullAuto"
-        ],
-        "setFireMode": "FullAuto"
-      }
-    ]
-  },
-  {
-    "id": "RMCAttachmentSuppressorL112",
-    "name": "Встроенный глушитель L112A1",
-    "tags": [
-      "RMCAttachmentBarrel",
-      "RMCAttachmentSuppressorL112"
     ],
     "toggleable": false,
     "modifiers": [],
@@ -814,72 +1382,6 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
-    "id": "RMCType88IntegratedScope",
-    "name": "интегрированный прицел типа 88",
-    "tags": [
-      "RMCAttachmentRail",
-      "RMCType88IntegratedScope"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0.1,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.35,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": -0.4,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0.25,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": true,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
     "id": "RMCM96SIntegratedScope",
     "name": "интегрированный прицел M96S",
     "tags": [
@@ -951,6 +1453,72 @@ const ATTACHMENTS = [
     "tags": [
       "RMCAttachmentRail",
       "RMCXM43E1IntegratedScope"
+    ],
+    "toggleable": true,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.1,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": false,
+          "activeOnly": true,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.35,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": -0.4,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0.25,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": true,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": -0.05,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCType88IntegratedScope",
+    "name": "интегрированный прицел типа 88",
+    "tags": [
+      "RMCAttachmentRail",
+      "RMCType88IntegratedScope"
     ],
     "toggleable": true,
     "modifiers": [
@@ -1176,102 +1744,6 @@ const ATTACHMENTS = [
     ],
     "toggleable": false,
     "modifiers": [],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM42A1WoodenStock",
-    "name": "М42А1 деревянный приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM42A1WoodenStock"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.2,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": -6,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 6,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM42A2CollapsibleStock",
-    "name": "М42А2 складной приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM42A2CollapsibleStock"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.2,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": -3,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 3,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
     "fireModeMods": []
   },
   {
@@ -1770,47 +2242,6 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
-    "id": "RMCAttachmentModel12Stock",
-    "name": "приклад дробовика Модель 12",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentModel12Stock"
-    ],
-    "toggleable": false,
-    "modifiers": [],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM63Stock",
-    "name": "приклад пистолета-пулемета",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM63Stock"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.35,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": -10,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
     "id": "RMCAttachmentL49Stock",
     "name": "приклад L49",
     "tags": [
@@ -2023,6 +2454,47 @@ const ATTACHMENTS = [
         "rangeFlat": 0,
         "damageFalloffAddMult": 0,
         "scatterFlat": 14,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      }
+    ],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentModel12Stock",
+    "name": "приклад дробовика Модель 12",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentModel12Stock"
+    ],
+    "toggleable": false,
+    "modifiers": [],
+    "fireModeMods": []
+  },
+  {
+    "id": "RMCAttachmentM63Stock",
+    "name": "приклад пистолета-пулемета",
+    "tags": [
+      "RMCAttachmentStock",
+      "RMCAttachmentM63Stock"
+    ],
+    "toggleable": false,
+    "modifiers": [
+      {
+        "conditions": {
+          "wieldedOnly": true,
+          "unwieldedOnly": false,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
+        "damageAddMult": 0,
+        "accuracyAddMult": 0.35,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": -10,
         "burstScatterAddMult": 0,
         "fireDelayFlat": 0,
         "shotsPerBurstFlat": 0
@@ -2348,11 +2820,11 @@ const ATTACHMENTS = [
     ]
   },
   {
-    "id": "RMCAttachmentM63StockCollapsible",
-    "name": "складной приклад для пистолета-пулемета",
+    "id": "RMCAttachmentMP5AltStockCollapsible",
+    "name": "складной приклад MP5A5",
     "tags": [
       "RMCAttachmentStock",
-      "RMCAttachmentM63StockCollapsible"
+      "RMCAttachmentMP5AltStockCollapsible"
     ],
     "toggleable": true,
     "modifiers": [
@@ -2396,11 +2868,11 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
-    "id": "RMCAttachmentMP5AltStockCollapsible",
-    "name": "складной приклад MP5A5",
+    "id": "RMCAttachmentM63StockCollapsible",
+    "name": "складной приклад для пистолета-пулемета",
     "tags": [
       "RMCAttachmentStock",
-      "RMCAttachmentMP5AltStockCollapsible"
+      "RMCAttachmentM63StockCollapsible"
     ],
     "toggleable": true,
     "modifiers": [
@@ -3072,54 +3544,6 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
-    "id": "RMCAttachmentType77StockCollapsible",
-    "name": "Тип 77 складной приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentType77StockCollapsible"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.1,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": -4,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 6,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
     "id": "RMCAttachmentAngledGrip",
     "name": "угловая рукоятка",
     "tags": [
@@ -3131,43 +3555,25 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
-    "id": "RMCAttachmentRecoilCompensatorM13",
-    "name": "удлинённый дульный тормоз М13 (и шипованый)",
+    "id": "RMCAttachmentExtendedBarrel",
+    "name": "удлиненный ствол",
     "tags": [
       "RMCAttachmentBarrel",
-      "RMCAttachmentRecoilCompensatorM13"
+      "RMCAttachmentExtendedBarrel"
     ],
     "toggleable": false,
     "modifiers": [
       {
         "conditions": {
-          "wieldedOnly": false,
+          "wieldedOnly": true,
           "unwieldedOnly": false,
           "activeOnly": false,
           "inactiveOnly": false,
           "whitelistTags": null,
           "blacklistTags": null
         },
-        "damageAddMult": 0.05,
-        "accuracyAddMult": 0.15,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
         "damageAddMult": 0,
-        "accuracyAddMult": -0.2,
+        "accuracyAddMult": 0.2,
         "rangeFlat": 0,
         "damageFalloffAddMult": 0,
         "scatterFlat": 0,
@@ -3227,25 +3633,43 @@ const ATTACHMENTS = [
     "fireModeMods": []
   },
   {
-    "id": "RMCAttachmentExtendedBarrel",
-    "name": "удлиненный ствол",
+    "id": "RMCAttachmentRecoilCompensatorM13",
+    "name": "удлинённый дульный тормоз М13 (и шипованый)",
     "tags": [
       "RMCAttachmentBarrel",
-      "RMCAttachmentExtendedBarrel"
+      "RMCAttachmentRecoilCompensatorM13"
     ],
     "toggleable": false,
     "modifiers": [
       {
         "conditions": {
-          "wieldedOnly": true,
+          "wieldedOnly": false,
           "unwieldedOnly": false,
           "activeOnly": false,
           "inactiveOnly": false,
           "whitelistTags": null,
           "blacklistTags": null
         },
+        "damageAddMult": 0.05,
+        "accuracyAddMult": 0.15,
+        "rangeFlat": 0,
+        "damageFalloffAddMult": 0,
+        "scatterFlat": 0,
+        "burstScatterAddMult": 0,
+        "fireDelayFlat": 0,
+        "shotsPerBurstFlat": 0
+      },
+      {
+        "conditions": {
+          "wieldedOnly": false,
+          "unwieldedOnly": true,
+          "activeOnly": false,
+          "inactiveOnly": false,
+          "whitelistTags": null,
+          "blacklistTags": null
+        },
         "damageAddMult": 0,
-        "accuracyAddMult": 0.2,
+        "accuracyAddMult": -0.2,
         "rangeFlat": 0,
         "damageFalloffAddMult": 0,
         "scatterFlat": 0,
@@ -3364,430 +3788,6 @@ const ATTACHMENTS = [
           "unwieldedOnly": true,
           "activeOnly": false,
           "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentB8SmartScope",
-    "name": "B8 умный прицел",
-    "tags": [
-      "RMCAttachmentRail",
-      "RMCAttachmentB8SmartScope"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": -0.2,
-        "accuracyAddMult": 0,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": true,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCL112IntegratedScope",
-    "name": "L112O1 интегрированный прицел",
-    "tags": [
-      "RMCAttachmentRail",
-      "RMCL112IntegratedScope"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0.1,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.35,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": -0.4,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0.25,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": true,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.05,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentL90UBS",
-    "name": "L90U1 подствольный дробовик",
-    "tags": [
-      "RMCAttachmentUnderbarrel",
-      "RMCAttachmentL90UBS"
-    ],
-    "toggleable": true,
-    "modifiers": [],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentL90GL",
-    "name": "L90U3 подствольный гранатомет",
-    "tags": [
-      "RMCAttachmentUnderbarrel",
-      "RMCAttachmentL90GL"
-    ],
-    "toggleable": true,
-    "modifiers": [],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentSASOS",
-    "name": "L91O1 SASOS",
-    "tags": [
-      "RMCAttachmentRail",
-      "RMCAttachmentSASOS"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": -0.2,
-        "accuracyAddMult": 0,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": true,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.2,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM13StockCollapsible",
-    "name": "M10 складной приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM13StockCollapsible"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.15,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": -3,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 1,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM13StockSolid",
-    "name": "M10 твердый приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM13StockSolid"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.35,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": -5,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.25,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 5,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM54CStockCollapsible",
-    "name": "M41A складной приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM54CStockCollapsible"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.1,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": -4,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 6,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentM54CStockSolid",
-    "name": "M41A твердый приклад",
-    "tags": [
-      "RMCAttachmentStock",
-      "RMCAttachmentM54CStockSolid"
-    ],
-    "toggleable": false,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.25,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": -8,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": true,
-          "activeOnly": false,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": -0.15,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": 0,
-        "scatterFlat": 6,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0,
-        "shotsPerBurstFlat": 0
-      }
-    ],
-    "fireModeMods": []
-  },
-  {
-    "id": "RMCAttachmentS42xTelescopicMiniscope",
-    "name": "S4 2x телескопический мини-скоп",
-    "tags": [
-      "RMCAttachmentRail",
-      "RMCAttachmentS42xTelescopicMiniscope"
-    ],
-    "toggleable": true,
-    "modifiers": [
-      {
-        "conditions": {
-          "wieldedOnly": false,
-          "unwieldedOnly": false,
-          "activeOnly": true,
-          "inactiveOnly": false,
-          "whitelistTags": null,
-          "blacklistTags": null
-        },
-        "damageAddMult": 0,
-        "accuracyAddMult": 0.35,
-        "rangeFlat": 0,
-        "damageFalloffAddMult": -0.2,
-        "scatterFlat": 0,
-        "burstScatterAddMult": 0,
-        "fireDelayFlat": 0.15,
-        "shotsPerBurstFlat": 0
-      },
-      {
-        "conditions": {
-          "wieldedOnly": true,
-          "unwieldedOnly": false,
-          "activeOnly": false,
-          "inactiveOnly": true,
           "whitelistTags": null,
           "blacklistTags": null
         },

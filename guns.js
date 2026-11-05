@@ -101,7 +101,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -208,7 +208,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -310,15 +310,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -350,30 +350,30 @@ const GUNS = [
     "fireModes": [
       "SemiAuto"
     ],
-    "burstFireRateMult": 2.0,
+    "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 10.0,
-    "scatterUnwielded": 10.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 3.0,
+    "scatterWielded": 10,
+    "scatterUnwielded": 10,
+    "scatterIncrease": 0,
+    "scatterDecay": 0,
+    "burstScatterMult": 3,
     "fireModeMods": {
       "Burst": {
         "fireDelay": 0.1,
-        "maxScatterModifier": 10.0,
+        "maxScatterModifier": 10,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": 6
       },
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 26.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 26,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0,
+    "burstCooldown": 0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -415,21 +415,21 @@ const GUNS = [
     "unskilledPenalty": {
       "minSkill": 1,
       "accuracyAddMult": -0.15,
-      "scatterFlat": 5.0
+      "scatterFlat": 5
     },
     "gunBurstFireRate": 8,
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -437,20 +437,20 @@ const GUNS = [
     "name": "служебный пистолет M4A3",
     "category": "Пистолеты",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/m1984_pistol.yml",
-    "fireRate": 10,
+    "fireRate": 8,
     "fireRateSource": "RMCSelectiveFire",
     "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
     "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto"
-      ],
       "scatterWielded": 10,
       "scatterUnwielded": 10,
-      "baseFireRate": 10,
-      "burstScatterMult": 5
+      "baseFireRate": 8,
+      "burstScatterMult": 5,
+      "baseFireModes": [
+        "SemiAuto"
+      ]
     },
     "magazines": [
       "CMMagazinePistolM1984",
@@ -534,15 +534,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -550,20 +550,20 @@ const GUNS = [
     "name": "индивидуальный служебный пистолет M4A3",
     "category": "Пистолеты",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/m1984_custom_pistol.yml",
-    "fireRate": 10,
+    "fireRate": 8,
     "fireRateSource": "RMCSelectiveFire",
     "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
     "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto"
-      ],
       "scatterWielded": 10,
       "scatterUnwielded": 10,
-      "baseFireRate": 10,
-      "burstScatterMult": 5
+      "baseFireRate": 8,
+      "burstScatterMult": 5,
+      "baseFireModes": [
+        "SemiAuto"
+      ]
     },
     "magazines": [
       "CMMagazinePistolM1984",
@@ -647,15 +647,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -909,7 +909,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -1023,7 +1023,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -1137,7 +1137,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -1244,15 +1244,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -1359,15 +1359,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -1480,17 +1480,17 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.0,
+    "scatterWielded": 0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 0.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": null
       }
     },
@@ -1570,17 +1570,17 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.0,
+    "scatterWielded": 0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 0.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": null
       }
     },
@@ -1660,17 +1660,17 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.0,
+    "scatterWielded": 0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 0.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": null
       }
     },
@@ -1893,17 +1893,17 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.0,
+    "scatterWielded": 0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 0.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": null
       }
     },
@@ -1983,17 +1983,17 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.0,
+    "scatterWielded": 0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 0.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": null
       }
     },
@@ -2073,17 +2073,17 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.0,
+    "scatterWielded": 0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 0.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": null
       }
     },
@@ -2163,17 +2163,17 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.0,
+    "scatterWielded": 0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 0.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": null
       }
     },
@@ -2253,17 +2253,17 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.0,
+    "scatterWielded": 0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 0.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": null
       }
     },
@@ -2343,17 +2343,17 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.0,
+    "scatterWielded": 0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 4,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 0.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": null
       }
     },
@@ -2433,17 +2433,17 @@ const GUNS = [
     ],
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 0.0,
+    "scatterWielded": 0,
     "scatterUnwielded": 10,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 1,
     "fireModeMods": {
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 0.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 0,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": null
       }
     },
@@ -2599,7 +2599,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -2718,7 +2718,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -2819,7 +2819,7 @@ const GUNS = [
     "dualWield": {
       "group": "Heavy",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -2914,7 +2914,7 @@ const GUNS = [
     "dualWield": {
       "group": "Heavy",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -3012,7 +3012,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -3020,19 +3020,19 @@ const GUNS = [
     "name": "беретта 92FS",
     "category": "Пистолеты",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/b92fs.yml",
-    "fireRate": 10,
+    "fireRate": 8,
     "fireRateSource": "RMCSelectiveFire",
     "shotsPerBurst": 3,
     "damageMult": 0.9,
     "falloffMult": 1,
     "rangeFlat": 0,
     "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto"
-      ],
       "scatterWielded": 8,
       "scatterUnwielded": 8,
-      "baseFireRate": 10
+      "baseFireRate": 8,
+      "baseFireModes": [
+        "SemiAuto"
+      ]
     },
     "magazines": [
       "RMCMagazinePistolB92FS"
@@ -3111,15 +3111,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -3127,20 +3127,20 @@ const GUNS = [
     "name": "D18 Колибри",
     "category": "Пистолеты",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/hummingbird.yml",
-    "fireRate": 10,
+    "fireRate": 8,
     "fireRateSource": "RMCSelectiveFire",
     "shotsPerBurst": 3,
     "damageMult": 1.2,
     "falloffMult": 1,
     "rangeFlat": 0,
     "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto"
-      ],
       "scatterWielded": 6,
       "scatterUnwielded": 6,
-      "baseFireRate": 10,
-      "burstScatterMult": 3
+      "baseFireRate": 8,
+      "burstScatterMult": 3,
+      "baseFireModes": [
+        "SemiAuto"
+      ]
     },
     "magazines": [
       "RMCMagazinePistolD18"
@@ -3209,15 +3209,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -3331,15 +3331,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -3453,15 +3453,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -3563,15 +3563,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -3675,15 +3675,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -3778,15 +3778,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -3794,19 +3794,19 @@ const GUNS = [
     "name": "автомаг КТ-42",
     "category": "Пистолеты",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/kt42_pistol.yml",
-    "fireRate": 10,
+    "fireRate": 8,
     "fireRateSource": "RMCSelectiveFire",
     "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
     "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto"
-      ],
       "scatterWielded": 5,
       "scatterUnwielded": 6,
-      "baseFireRate": 10
+      "baseFireRate": 8,
+      "baseFireModes": [
+        "SemiAuto"
+      ]
     },
     "magazines": [
       "RMCMagazinePistolKT42"
@@ -3885,15 +3885,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -3998,15 +3998,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -4111,15 +4111,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -4127,20 +4127,20 @@ const GUNS = [
     "name": "служебный пистолет L54",
     "category": "Пистолеты",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/l54_pistol.yml",
-    "fireRate": 10,
+    "fireRate": 8,
     "fireRateSource": "RMCSelectiveFire",
     "shotsPerBurst": 3,
     "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
     "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto"
-      ],
       "scatterWielded": 10,
       "scatterUnwielded": 10,
-      "baseFireRate": 10,
-      "burstScatterMult": 5
+      "baseFireRate": 8,
+      "burstScatterMult": 5,
+      "baseFireModes": [
+        "SemiAuto"
+      ]
     },
     "magazines": [
       "RMCMagazinePistolL54"
@@ -4221,15 +4221,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -4237,20 +4237,20 @@ const GUNS = [
     "name": "доработанный служебный пистолет L54",
     "category": "Пистолеты",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/l54_pistol.yml",
-    "fireRate": 10,
+    "fireRate": 8,
     "fireRateSource": "RMCSelectiveFire",
     "shotsPerBurst": 3,
     "damageMult": 1.25,
     "falloffMult": 1,
     "rangeFlat": 0,
     "selectiveFire": {
-      "baseFireModes": [
-        "SemiAuto"
-      ],
       "scatterWielded": 10,
       "scatterUnwielded": 10,
-      "baseFireRate": 10,
-      "burstScatterMult": 5
+      "baseFireRate": 8,
+      "burstScatterMult": 5,
+      "baseFireModes": [
+        "SemiAuto"
+      ]
     },
     "magazines": [
       "RMCMagazinePistolL54Custom"
@@ -4331,15 +4331,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -4457,15 +4457,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -4575,15 +4575,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -4697,15 +4697,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -4801,15 +4801,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -4902,15 +4902,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -5000,15 +5000,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -5016,7 +5016,7 @@ const GUNS = [
     "name": "умный пистолет SU-6",
     "category": "Пистолеты",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Pistols/su6_pistol.yml",
-    "fireRate": 10,
+    "fireRate": 8,
     "fireRateSource": "RMCSelectiveFire",
     "shotsPerBurst": 3,
     "damageMult": 1,
@@ -5031,7 +5031,7 @@ const GUNS = [
       "recoilUnwielded": 2,
       "scatterWielded": 10,
       "scatterUnwielded": 10,
-      "baseFireRate": 10,
+      "baseFireRate": 8,
       "burstScatterMult": 5,
       "modifiers": {
         "Burst": {
@@ -5114,15 +5114,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -5224,15 +5224,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -5324,15 +5324,15 @@ const GUNS = [
     "internalCapacity": null,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -5465,7 +5465,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -5598,7 +5598,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -5753,7 +5753,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -5890,7 +5890,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -6029,7 +6029,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -6183,7 +6183,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -6322,7 +6322,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -6477,7 +6477,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -6610,7 +6610,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -6753,7 +6753,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -6880,7 +6880,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -7011,7 +7011,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -7148,7 +7148,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -7300,7 +7300,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -7421,7 +7421,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -7572,7 +7572,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -7731,7 +7731,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -7872,7 +7872,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -8007,7 +8007,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -8152,7 +8152,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -8312,7 +8312,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -8455,7 +8455,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -8603,7 +8603,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -8737,7 +8737,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -8871,7 +8871,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -8996,7 +8996,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -9124,7 +9124,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -9234,7 +9234,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -9390,7 +9390,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -9498,7 +9498,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -9617,7 +9617,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -9740,7 +9740,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -9891,7 +9891,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -10046,7 +10046,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -10205,7 +10205,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -10347,7 +10347,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -10497,7 +10497,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -10627,7 +10627,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -10757,7 +10757,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -10886,7 +10886,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -11026,7 +11026,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -11140,7 +11140,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -11259,7 +11259,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -11375,7 +11375,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -11484,7 +11484,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -11614,7 +11614,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -11743,7 +11743,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -11873,7 +11873,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -12000,7 +12000,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -12132,7 +12132,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -12358,7 +12358,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -12452,7 +12452,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -12575,7 +12575,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -12706,7 +12706,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -12857,7 +12857,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -13000,7 +13000,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -13129,7 +13129,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -13263,7 +13263,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -13397,7 +13397,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -13534,7 +13534,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -13668,7 +13668,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -13802,7 +13802,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -13810,10 +13810,10 @@ const GUNS = [
     "name": "рычажная винтовка R4T",
     "category": "Винтовки",
     "file": "_RMC14/Entities/Objects/Weapons/Guns/Rifles/r4t_lever_action.yml",
-    "fireRate": 1.0,
+    "fireRate": 1,
     "fireRateSource": "RMCSelectiveFire",
     "shotsPerBurst": 1,
-    "damageMult": 1.0,
+    "damageMult": 1,
     "falloffMult": 1,
     "rangeFlat": 0,
     "selectiveFire": {
@@ -13851,30 +13851,30 @@ const GUNS = [
     "fireModes": [
       "SemiAuto"
     ],
-    "burstFireRateMult": 2.0,
+    "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 5.0,
-    "scatterUnwielded": 16.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
+    "scatterWielded": 5,
+    "scatterUnwielded": 16,
+    "scatterIncrease": 0,
+    "scatterDecay": 0,
+    "burstScatterMult": 4,
     "fireModeMods": {
       "Burst": {
         "fireDelay": 0.1665,
-        "maxScatterModifier": 10.0,
+        "maxScatterModifier": 10,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": 6
       },
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 13.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 13,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0,
+    "burstCooldown": 0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -13931,7 +13931,7 @@ const GUNS = [
     "unskilledPenalty": {
       "minSkill": 1,
       "accuracyAddMult": -0.15,
-      "scatterFlat": 75.0
+      "scatterFlat": 75
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 9,
@@ -13940,7 +13940,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -13989,30 +13989,30 @@ const GUNS = [
     "fireModes": [
       "SemiAuto"
     ],
-    "burstFireRateMult": 2.0,
+    "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 5.0,
-    "scatterUnwielded": 16.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
+    "scatterWielded": 5,
+    "scatterUnwielded": 16,
+    "scatterIncrease": 0,
+    "scatterDecay": 0,
+    "burstScatterMult": 4,
     "fireModeMods": {
       "Burst": {
         "fireDelay": 0.1665,
-        "maxScatterModifier": 10.0,
+        "maxScatterModifier": 10,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": 6
       },
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 13.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 13,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0,
+    "burstCooldown": 0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -14069,7 +14069,7 @@ const GUNS = [
     "unskilledPenalty": {
       "minSkill": 1,
       "accuracyAddMult": -0.15,
-      "scatterFlat": 75.0
+      "scatterFlat": 75
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 9,
@@ -14078,7 +14078,7 @@ const GUNS = [
     "dualWield": {
       "group": "Rifle",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -14202,7 +14202,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -14345,7 +14345,7 @@ const GUNS = [
     "dualWield": {
       "group": "Submachinegun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -14404,13 +14404,13 @@ const GUNS = [
     "scatterUnwielded": 20,
     "scatterIncrease": 0,
     "scatterDecay": 0,
-    "burstScatterMult": 7.0,
+    "burstScatterMult": 7,
     "fireModeMods": {
       "Burst": {
         "fireDelay": 0.25,
-        "maxScatterModifier": 0.0,
+        "maxScatterModifier": 0,
         "useBurstScatterMult": false,
-        "unwieldedScatterMultiplier": 0.0,
+        "unwieldedScatterMultiplier": 0,
         "shotsToMaxScatter": null
       }
     },
@@ -14440,7 +14440,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -14569,7 +14569,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -14684,7 +14684,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -14814,7 +14814,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -14835,7 +14835,7 @@ const GUNS = [
       "recoilWielded": 2,
       "recoilUnwielded": 4,
       "scatterWielded": 9,
-      "scatterUnwielded": 18,
+      "scatterUnwielded": 20,
       "baseFireRate": 4,
       "burstScatterMult": 1
     },
@@ -14854,7 +14854,7 @@ const GUNS = [
     "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
     "scatterWielded": 9,
-    "scatterUnwielded": 18,
+    "scatterUnwielded": 20,
     "scatterIncrease": 0,
     "scatterDecay": 0,
     "burstScatterMult": 1,
@@ -14941,7 +14941,7 @@ const GUNS = [
     "dualWield": {
       "group": "Shotgun",
       "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "scatterFlat": 16
     }
   },
   {
@@ -15062,15 +15062,15 @@ const GUNS = [
     "internalCapacity": 7,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -15147,15 +15147,15 @@ const GUNS = [
     "internalCapacity": 6,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -15253,15 +15253,15 @@ const GUNS = [
     "internalCapacity": 6,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -15362,15 +15362,15 @@ const GUNS = [
     "internalCapacity": 6,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -15482,15 +15482,15 @@ const GUNS = [
     "internalCapacity": 7,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -15570,15 +15570,15 @@ const GUNS = [
     "internalCapacity": 6,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -15589,7 +15589,7 @@ const GUNS = [
     "fireRate": 1.67,
     "fireRateSource": "RMCSelectiveFire",
     "shotsPerBurst": 3,
-    "damageMult": 2.0,
+    "damageMult": 2,
     "falloffMult": 1,
     "rangeFlat": 0,
     "selectiveFire": {
@@ -15612,30 +15612,30 @@ const GUNS = [
     "fireModes": [
       "SemiAuto"
     ],
-    "burstFireRateMult": 2.0,
+    "burstFireRateMult": 2,
     "scatterSource": "RMCSelectiveFire",
-    "scatterWielded": 8.0,
-    "scatterUnwielded": 12.0,
-    "scatterIncrease": 0.0,
-    "scatterDecay": 0.0,
-    "burstScatterMult": 4.0,
+    "scatterWielded": 8,
+    "scatterUnwielded": 12,
+    "scatterIncrease": 0,
+    "scatterDecay": 0,
+    "burstScatterMult": 4,
     "fireModeMods": {
       "Burst": {
         "fireDelay": 0.1,
-        "maxScatterModifier": 10.0,
+        "maxScatterModifier": 10,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": 6
       },
       "FullAuto": {
-        "fireDelay": 0.0,
-        "maxScatterModifier": 26.0,
+        "fireDelay": 0,
+        "maxScatterModifier": 26,
         "useBurstScatterMult": true,
-        "unwieldedScatterMultiplier": 2.0,
+        "unwieldedScatterMultiplier": 2,
         "shotsToMaxScatter": 4
       }
     },
-    "burstCooldown": 0.0,
+    "burstCooldown": 0,
     "attachmentSlots": {
       "barrel": {
         "locked": false,
@@ -15653,21 +15653,21 @@ const GUNS = [
     "unskilledPenalty": {
       "minSkill": 1,
       "accuracyAddMult": -0.15,
-      "scatterFlat": 5.0
+      "scatterFlat": 5
     },
     "gunBurstFireRate": 8,
     "internalCapacity": 6,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -15788,15 +15788,15 @@ const GUNS = [
     "internalCapacity": 7,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -15912,15 +15912,15 @@ const GUNS = [
     "internalCapacity": 6,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -16021,15 +16021,15 @@ const GUNS = [
     "internalCapacity": 6,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -16150,15 +16150,15 @@ const GUNS = [
     "internalCapacity": 7,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -16259,15 +16259,15 @@ const GUNS = [
     "internalCapacity": 6,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -16383,15 +16383,15 @@ const GUNS = [
     "internalCapacity": 6,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   },
   {
@@ -16512,15 +16512,15 @@ const GUNS = [
     "internalCapacity": 7,
     "wieldable": true,
     "akimbo": {
-      "accuracyMult": 1.5,
-      "scatterMult": 1.5,
-      "individualFireRateMult": 1.0,
-      "totalFireRateMult": 2.0
+      "accuracyMult": 1,
+      "scatterMult": 1,
+      "individualFireRateMult": 0.625,
+      "totalFireRateMult": 1.25
     },
     "dualWield": {
       "group": "Handgun",
-      "accuracyAddMult": -0.6,
-      "scatterFlat": 16.0
+      "accuracyAddMult": -0.5,
+      "scatterFlat": 10
     }
   }
 ];
